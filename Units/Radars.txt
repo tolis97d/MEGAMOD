@@ -1,0 +1,272 @@
+/*
+Modifier options:
+  Range,
+  MinRange,
+  Precision
+*/
+
+[TYPE] "ShortWave"
+  PreciseTargeting Yes       // Means the conventional missile can be used to follow the detected target
+  CanDetect Ground
+  CanDetect Naval
+  CanDetect Airborne     
+  CanDetect Missile
+  CanDetect HighMissile
+//  RadarColor 0.0 0.0 0.16 0.15
+  GlobalShowType SW_RANGES
+  GlobalShowType OVERHORIZONT_RANGES
+
+[TYPE] "LongWave"
+  PreciseTargeting No
+  CanDetect Ground
+  CanDetect Naval
+  CanDetect Airborne
+  CanDetect Missile
+  CanDetect HighMissile
+  GlobalShowType LW_RANGES
+
+[TYPE] "OverHorizon"
+  PreciseTargeting Yes
+  CanCalculateLaunchPosition Yes
+  CanDetect HighMissile // This is for the high-flying missiles only (on the low orbit)
+  RadarColor 0.0 0.05 0.1 0.15
+  GlobalShowType OVERHORIZONT_RANGES
+
+[TYPE] "OverHorizon Naval"
+  PreciseTargeting No
+  CanDetect Naval
+  GlobalShowType OVERHORIZONT_RANGES
+
+[TYPE] "SpaceObserver"
+  PreciseTargeting No
+  CanDetect Satellite
+  CanDetect HighMissile
+  RadarColor 0.05 0.0 0.1 0.15
+  GlobalShowType SPACE_RANGES
+
+[TYPE] "Sonar"
+  PreciseTargeting Yes
+  CanDetect Naval
+  CanDetect Subwater
+  CanDetect SubwaterMissile
+//  RadarColor 0.0 0.0 0.17 0.15
+  RadarColor 0.15 0.17 0.0 0.15
+  GlobalShowType SONAR_RANGES
+
+[TYPE] "Optical"
+  PreciseTargeting Yes
+  CanDetect Ground
+  CanDetect Naval
+  CanDetect Airborne
+  CanDetect Missile
+  CanDetect HighMissile
+  GlobalShowType OVERHORIZONT_RANGES
+  GlobalShowType SATELLITE_RANGES
+
+/////// Now, actual radars
+
+[RADAR] "STD Vision"
+  Tech "R_Visor"
+  Type "Optical" // copy the settings of this type. however these setting strings can be used here as well
+  Range 100
+  Sector 360
+  Precision 0.25
+  DoNotShow
+
+[RADAR] "STD Short Wave"
+  Tech "R_Short_wave_radar"
+  Type "ShortWave"
+  Range 250
+  Sector 360
+  Precision 0
+  ImprovedBy "SW_Mk2" Set Range 350
+  ImprovedBy "SW_Mk2" Set MaxHeight 250
+  ImprovedBy "SW_Mk3" Set Range 450
+  ImprovedBy "SW_Mk3" Set MaxHeight 400
+  AffectedBy Unit "5GEN" Range 0.5
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "Underground" Range 0.5
+
+[RADAR] "Fixed Short Wave"
+  Tech "R_Short_wave_radar"
+  Type "ShortWave"
+  Range 500
+  Sector 360
+  Precision 0
+  ImprovedBy "SW_Mk2" Set Range 650
+  ImprovedBy "SW_Mk2" Set MaxHeight 250
+  ImprovedBy "SW_Mk3" Set Range 800
+  ImprovedBy "SW_Mk3" Set MaxHeight 400
+  AffectedBy Unit "5GEN" Range 0.5
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "Underground" Range 0.5
+
+[RADAR] "AWACS Short Wave"
+  Tech "R_Short_wave_radar"
+  Type "ShortWave"
+  Range 1000
+  Sector 360
+  MaxHeight 1500 // the default value is 100
+  Precision 0
+  ImprovedBy "SW_Mk2" Set Range 1250
+  ImprovedBy "SW_Mk3" Set Range 1500
+  AffectedBy Unit "5GEN" Range 0.5
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "Underground" Range 0.5
+  GlobalShowType OVERHORIZONT_RANGES
+
+[RADAR] "Naval AWACS Short Wave"
+  Tech "R_Short_wave_radar"
+  Type "ShortWave"
+  Range 800
+  Sector 360
+  MaxHeight 1500 // the default value is 100
+  Precision 0
+  ImprovedBy "SW_Mk2" Set Range 1000
+  ImprovedBy "SW_Mk3" Set Range 1200
+  AffectedBy Unit "5GEN" Range 0.5
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "Underground" Range 0.5
+  GlobalShowType OVERHORIZONT_RANGES
+
+[RADAR] "STD Long Wave"
+  Tech "R_Long_wave_radar"
+  Type "LongWave"
+  Range 700
+  Sector 360
+  Precision 0
+  ImprovedBy "LW_Mk2" Set Range 850
+  ImprovedBy "LW_Mk2" Set MaxHeight 250
+  ImprovedBy "LW_Mk3" Set Range 1000
+  ImprovedBy "LW_Mk3" Set MaxHeight 400
+  AffectedBy Unit "5GEN" Range 0.75
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
+  AffectedBy Unit "Underground" Range 0.5
+
+[RADAR] "Fixed Long Wave"
+  Tech "R_Long_wave_radar"
+  Type "LongWave"
+  Range 1000
+  Sector 360
+  Precision 0
+  ImprovedBy "LW_Mk2" Set Range 1300
+  ImprovedBy "LW_Mk2" Set MaxHeight 250
+  ImprovedBy "LW_Mk3" Set Range 1600
+  ImprovedBy "LW_Mk3" Set MaxHeight 400
+  AffectedBy Unit "5GEN" Range 0.75
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
+  AffectedBy Unit "Underground" Range 0.5
+//  AffectedBy InRange "EW" Range 0.1
+
+[RADAR] "AWACS Long Wave"
+  Tech "R_Long_wave_radar"
+  Type "LongWave"
+  Range 1500
+  Sector 360
+  MaxHeight 1500 // the default value is 100
+  Precision 0
+  ImprovedBy "LW_Mk2" Set Range 1750
+  ImprovedBy "LW_Mk3" Set Range 2000
+  AffectedBy Unit "5GEN" Range 0.75
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
+  AffectedBy Unit "Underground" Range 0.5
+
+[RADAR] "Naval AWACS Long Wave"
+  Tech "R_Long_wave_radar"
+  Type "LongWave"
+  Range 1300
+  Sector 360
+  MaxHeight 1500 // the default value is 100
+  Precision 0
+  ImprovedBy "LW_Mk2" Set Range 1550
+  ImprovedBy "LW_Mk3" Set Range 1800
+  AffectedBy Unit "5GEN" Range 0.75
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
+  AffectedBy Unit "Underground" Range 0.5
+
+[RADAR] "Sonar"
+  Tech "R_Sonar"
+  Type "Sonar"
+  Range 400
+  Sector 360
+  Precision 0.75
+  ImprovedBy Unit "Advanced_Sonar" Range 1.25 // 500 for subs
+  AffectedBy Unit "ENGINE_SSN1" Range 0.75 // 300
+  AffectedBy Unit "ENGINE_SSBN1" Range 0.875 // 350
+  AffectedBy Unit "ENGINE_SSN2" Range 0.84 // 252
+  AffectedBy Unit "ENGINE_SSBN2" Range 0.857 // 300
+  AffectedBy Unit "ENGINE_SSN3" Range 0.8 // 200
+  AffectedBy Unit "ENGINE_SSBN3" Range 0.84 // 250
+  AffectedBy Unit "NAVY60" Range 1.5
+  AffectedBy Unit "NAVY80" Range 0.67 // to compensate the influence of the "Powerful_Engine"
+//  AffectedBy InRange "EW" Range 0.1
+
+[RADAR] "AWACS Sonar"
+  Tech "R_Sonar"
+  Type "Sonar"
+  Range 550
+  Sector 360
+  Precision 0.75
+  AffectedBy Unit "ENGINE_SSN1" Range 450
+  AffectedBy Unit "ENGINE_SSBN1" Set Range 500
+  AffectedBy Unit "ENGINE_SSN2" Set Range 400
+  AffectedBy Unit "ENGINE_SSBN2" Set Range 450
+  AffectedBy Unit "ENGINE_SSN3" Set Range 350
+  AffectedBy Unit "ENGINE_SSBN3" Set Range 400
+
+[RADAR] "Over_Horizon"
+  Tech "R_Over_horizon_radar"
+  Type "OverHorizon"
+  Range 5000
+  Sector 360
+  MaxHeight 1500 // the default value is 100
+  ImprovedBy "Over_horizon_radar_Mk2" Set Range 8000
+
+[RADAR] "Naval_Over_Horizon"
+  Tech "R_Over_horizon_radar"
+  Type "OverHorizon"
+  Range 1200
+  Sector 360
+  MaxHeight 1500 // the default value is 100
+  ImprovedBy "Over_horizon_radar_Mk2" Set Range 1750
+
+[RADAR] "Small_Over_Horizon"
+  Tech "R_Space_radar_OTH"
+  Type "OverHorizon"
+  Range 1000
+  Sector 360
+  MaxHeight 1500 // the default value is 100
+
+[RADAR] "Naval_Small_Over_Horizon"
+  Tech "R_Over_horizon_radar"
+  Type "OverHorizon"
+  Range 1000
+  Sector 360
+  MaxHeight 1500 // the default value is 100
+
+[RADAR] "Space_Radar"
+  Tech "R_Space_radar"
+  Type "SpaceObserver"
+  Range 3000
+  Sector 360
+  MaxHeight 50000 // the default value is 100
+
+[RADAR] "Naval Space_Radar"
+  Tech "R_Space_radar"
+  Type "SpaceObserver"
+  Range 1000
+  Sector 360
+  MaxHeight 50000 // the default value is 100
+
+[RADAR] "Satellite Camera"
+  Tech "R_Camera"
+  Type "Optical" // copy the settings of this type. however these setting strings can be used here as well
+  CanCalculateLaunchPosition Yes
+  Range 1000
+  Sector 360
+  MaxHeight 3000
+  AffectedBy Unit "Underground" Range 0.25
+  ImprovedBy "Improved_optics" Range 1.5
+
+[END]
+

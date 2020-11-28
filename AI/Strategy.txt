@@ -1,0 +1,320 @@
+// describes the develpment path for the AI
+//
+
+Strategy "Standard"
+// involves gradual development and building equilibrated attack and defence capabilities
+// shold not have any "Critical" technologies, so it could work with all the technologies disabled
+  Discover "Surface_to_air_missile"
+  Discover "MRBM"
+  Discover "Nuclear_Submarine"
+  Discover "Thermonuclear_bomb"
+  Discover "ICBM"
+  Discover "Over_horizon_radar"
+  Discover "anti_ballistic_missile"
+  Discover "ABM_Mk2"
+  Discover "Mega-warheads"
+  Discover "Heavy_Missiles"
+  Allow Attack
+    Discover "Cruise_missiles"
+    Discover "Mobile_SAM"
+    Discover "SAM60"
+    Discover "Air_to_surface_missile"
+    Discover "Advanced_aircrafts"
+    Discover "Air_refuel"
+    Discover "Satellite"
+    Discover "Over_horizon_radar_Mk2"
+    Discover "MIRV"
+
+  Build "Airport" // standard units
+  Build "HiddenPatrol" // standard units
+  Build "Carrier" // standard units
+  Build "Patrol" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "SAMSite"
+  Build "OverHorizon"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "Airport"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "Cruiser"
+  Build "OverHorizon"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "Airport"
+  Build "Airport"
+  Allow Attack
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  
+Strategy "Rockets First"
+// Prioritize ICBMs to be able to nuke everybody asap
+  BlockShareNuclear
+  Discover "MRBM"
+  Discover "ICBM" Critical
+  Discover "Thermonuclear_bomb"
+  Discover "Mega-warheads"
+  Discover "Heavy_Missiles"
+  Discover "MIRV"
+  Discover "False_warheads"
+  Allow Attack
+    Discover "Over_horizon_radar"
+//    Discover "SAM"
+
+  Build "Airport" // standard units
+  Build "HiddenPatrol" // standard units
+  Build "Carrier" // standard units
+  Build "Patrol" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Allow Attack
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+
+Strategy "Air superiority"
+// Accent to the aircrafts and bombs
+  WantShareNuclear
+  Discover "Thermonuclear_bomb"
+  Discover "Cruise_missiles"
+  Discover "Air_to_surface_missile"
+  Discover "Advanced_aircrafts"
+  Discover "Air_refuel"
+  Discover "AAM_Mk2"
+  Discover "ASM_Mk2"
+  Discover "Surface_to_air_missile"
+  Discover "SW_Mk2"
+  Discover "LW_Mk2"
+  Discover "Stealth_aircrafts" Critical
+  Allow Attack
+//    Discover "MRBM"
+//    Discover "Aircraft-launched_MRBM"
+
+  Build "Airport" // standard units
+  Build "HiddenPatrol" // standard units
+  Build "Carrier" // standard units
+  Build "Patrol" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "Airport"
+  Build "Airport"
+  Build "Airport"
+  Build "Airport"
+  Build "Airport"
+  Build "Airport"
+  Build "Airport"
+  Build "Carrier"
+  Build "Carrier"
+  Allow Attack
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MissileSilo"
+
+Strategy "Defence First"
+  Discover "Surface_to_air_missile"
+  Discover "Over_horizon_radar"
+  Discover "anti_ballistic_missile"
+  Discover "ABM_Mk2" Critical
+  Discover "MRBM"
+  Discover "ICBM"
+  Discover "Mobile_SAM"
+  Discover "SAM60"
+  Discover "Thermonuclear_bomb"
+  Discover "Advanced_aircrafts"
+  Discover "SW_Mk2"
+  Discover "LW_Mk2"
+  Allow Attack
+
+  Build "Airport" // standard units
+  Build "HiddenPatrol" // standard units
+  Build "Carrier" // standard units
+  Build "Patrol" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "OverHorizon"
+  Build "OverHorizon"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "Airport"
+  Build "Airport"
+  Build "Airport"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "MissileSilo"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+
+  Allow Attack
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+
+Strategy "Submarines"
+  BlockShareNuclear
+  Discover "MRBM"
+  Discover "Nuclear_Submarine" Critical
+//  Discover "ICBM"
+  Discover "SUB60"
+  Discover "SUB80"
+  Discover "SUB00"
+  Discover "Surface_to_air_missile"
+  Discover "Over_horizon_radar"
+  Discover "anti_ballistic_missile"
+  Discover "ABM_Mk2" Critical
+  Discover "Satellite"
+  Discover "MIRV" Critical
+  Allow Attack
+
+  Build "Airport" // standard units
+  Build "HiddenPatrol" // standard units
+  Build "Carrier" // standard units
+  Build "Patrol" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "LWRadar" // standard units
+  Build "OverHorizon"
+  Build "OverHorizon"
+  Build "Submarine"
+  Build "Submarine"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "SAMSite"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Submarine"
+  Build "Satellite"
+  Build "Satellite"
+  Build "Satellite"
+  Allow Attack
+
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileMRBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MobileICBM"
+  Build "MissileSilo"

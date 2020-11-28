@@ -1,0 +1,189 @@
+// Describes the complement of each unit group.
+// As we always operate groups, even the single units must be described as a group
+
+// PlacementType means the points where AI should deplay the unit, "self" modifier means to use the own points instead of selecting the ones that can be used against the choosen enemy
+// AttackType means where the unit group should go to perform the attack. This actually influences the selection of the placement point and wait point as well
+// WaitType means where to wait before moving to the attack point, until the global attack is commanded
+// PatrolType means what type of points to patrol, randomly selecting from the available ones.
+//
+// Default Priority is 1
+// Default Fade is 0.02 for units, 0.4 for the cities - the fade means the multiplier applied to the priority each time the unit is targeted
+// Default PriorityDivider is 50 - this means the target is to be changed if the candidate target has the priority at least PriorityDivider times bigger
+
+// the standard carrier group, to attack enemy territory
+Group Carrier
+  PlacementType NavalBase self
+  AttackType CarrierAttack
+  WaitType SubmarineHide
+  "Carrier" leader
+  "Destroyer"
+  "Destroyer"
+  "Submarine" optional
+  "Cruiser" optional
+  Target "Over_Horizon radar" Priority 10000 Fade 0.01
+  Target "Missile Silo"  Priority 10000 Nuclear
+  Target "Mobile_ICBM"  Priority 10000 Conventional Nuclear
+  Target "Mobile_MRBM"  Priority 5000 Conventional Nuclear
+  Target "SAM_site" Priority 3000
+  Target "MOBILE_SAM" Priority 3000
+  Target City Priority 100 Nuclear
+//  Target "Fixed SW radar" Priority 100
+  Target "Fixed LW radar" Priority 100
+  Target "Space_radar" Priority 100
+  Target "Airport" Priority 100 Nuclear
+  Target "Carrier" Priority 100 Nuclear
+  Target "Nuclear_Submarine" Immediate Priority 1000
+  Avoid "Destroyer"
+  MaxTargets 2
+
+  return when type "Fighter" 3 type "Attack" 5
+
+// the nuclear submarine group, to attack enemy cities
+Group Submarine
+  PlacementType NavalBase self
+  AttackType SubmarineAttack distant
+  WaitType SubmarineHide
+  "Nuclear_Submarine" leader
+  "Submarine" optional
+  Target "Over_Horizon radar" Priority 10000 Fade 0.01 Nuclear
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Mobile_ICBM" Priority 10000 Nuclear
+  Target "Mobile_MRBM" Priority 10000 Nuclear
+  Target "Airport" Priority 10000 Nuclear
+  Target City Priority 100 Nuclear
+  Target "Carrier" Priority 100 Nuclear
+  Target "Nuclear_Submarine" Immediate Priority 100
+  MaxTargets 4
+
+// the small defensive group, to attack the Carrier group
+// it should not necessarily be extremely strong, just strong enough to significanly lower
+// the potential of the Carrier group
+Group Cruiser
+  PlacementType NavalBase self
+  PatrolType SubmarineHide self distant
+  PatrolType CarrierAttack self 
+  "Cruiser" leader
+  "Cruiser"
+  "Destroyer"
+  "Destroyer" optional
+  Target "Nuclear_Submarine" Immediate Priority 10000
+  Target "Carrier" Immediate Priority 1000
+  Target "Submarine" Immediate Priority 500
+  Target "Destroyer" Immediate Priority 100
+  Avoid City
+
+// the small and fast group to search for enemy submarines and destroy them
+Group Patrol
+  PlacementType NavalBase self
+  PatrolType SubmarineAttack self distant
+  "Destroyer" leader
+  "Destroyer" optional
+  Target "Nuclear_Submarine" Immediate Priority 10000
+  Target "Submarine" Immediate Priority 500
+  Avoid City
+  Avoid "Cruiser"
+  Avoid "Carrier"
+
+// the subwater group to search for enemy carrier groups and submarines
+Group HiddenPatrol
+  PlacementType NavalBase self
+  PatrolType SubmarineHide self distant
+  "Submarine" leader
+  "Submarine" optional
+  Target "Nuclear_Submarine" Immediate Priority 10000
+  Target "Submarine" Immediate Priority 1000
+  Target "Carrier" Immediate Priority 100
+  Avoid City
+  Avoid "Destroyer"
+
+Group MissileSilo
+  PlacementType MissileSilo
+  DistanceFrom "Missile Silo"
+  "Missile Silo"
+  "SAM_site" optional
+  extra missile 3
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Airport" Priority 10000 Nuclear
+  Target City Priority 100 Nuclear
+  MaxTargets 2
+
+Group OverHorizon
+  PlacementType OverHorizonRadar distant
+  DistanceFrom "Over_Horizon radar"
+  "Over_Horizon radar" 
+  "SAM_site"
+  "SAM_site" optional
+
+Group Airport
+  PlacementType Airbase
+  DistanceFrom "Bomber"
+  DistanceType flight
+  "Airport"
+  "SAM_site"
+  "SAM_site" optional
+  extra missile 10
+  Target "Missile Silo" Priority 8000 Nuclear
+  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
+  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
+  Target City Priority 100 Nuclear
+  Avoid "Carrier"
+  Avoid "SAM_site"
+  Avoid "MOBILE_SAM"
+  Avoid "Destroyer"
+  MaxTargets 3
+
+Group LWRadar
+  PlacementType Radar distant
+  "Fixed LW radar"
+
+Group SpaceRadar
+  PlacementType Orbit self distant
+  "Space_radar"
+  "SAM_site" optional
+
+Group SAMSite
+  PlacementType CityDefence self
+  "SAM_site"
+  Avoid City
+
+Group MobileSAM
+  PlacementType ObjectDefence self
+  "MOBILE_SAM"
+  Avoid City
+
+Group MobileMRBM
+  PlacementType MobileMissile
+  "Mobile_MRBM"
+  extra missile 3
+  Target "Over_Horizon radar" Priority 10000 Nuclear
+  Target "Airport" Priority 10000 Nuclear
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Mobile_ICBM" Priority 10000 Nuclear
+  Target "Nuclear_Submarine" Immediate Priority 10000 Nuclear
+  Target "Mobile_MRBM" Priority 5000 Nuclear
+  Target "Carrier" Priority 3000 Nuclear
+  Target "Cruiser" Priority 1000 Nuclear
+  Target "Destroyer" Priority 300 Nuclear
+  Target "Submarine" Priority 300 Nuclear
+  Target "SAM_site" Priority 100 Nuclear
+  Target City Priority 100 Nuclear
+  MaxTargets 3
+
+Group MobileICBM
+  PlacementType MissileSilo
+  "Mobile_ICBM"
+  extra missile 3
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Airport" Priority 10000 Nuclear
+  Target "Nuclear_Submarine" Priority 10000 Nuclear
+  Target "Carrier" Priority 3000 Nuclear
+  Target City Priority 100 Nuclear
+  MaxTargets 2
+
+Group Satellite
+  PlacementType Orbit distant
+  "Satellite"
+
+END
+

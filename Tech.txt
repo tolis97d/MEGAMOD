@@ -1,0 +1,892 @@
+[TECHNOLOGY] "U_City"
+  Name "U_CITY_NAME"
+  Description "U_CITY_DESC"
+
+[TECHNOLOGY] "U_Carrier"
+  Name "U_CARRIER_NAME"
+  Description "U_CARRIER_DESC"
+
+[TECHNOLOGY] "U_Submarine"
+  Name "U_SUBMARINE_NAME"
+  Description "U_SUBMARINE_DESC"
+
+[TECHNOLOGY] "U_Destroyer"
+  Name "U_DESTROYER_NAME"
+  Description "U_DESTROYER_DESC"
+
+[TECHNOLOGY] "U_Cruiser"
+  Name "U_CRUISER_NAME"
+  Description "U_CRUISER_DESC"
+  
+[TECHNOLOGY] "U_Battlecruiser"
+  Name "U_BATTLECRUISER_NAME"
+  Description "U_BATTLECRUISER_DESC"
+
+[TECHNOLOGY] "U_Fighter"
+  Name "U_FIGHTER_NAME"
+  Description "U_FIGHTER_DESC"
+
+[TECHNOLOGY] "U_Fighter_Carrier"
+  Name "U_FIGHTER_Carrier_NAME"
+  Description "U_FIGHTER_Carrier_DESC"
+
+[TECHNOLOGY] "U_Attack"
+  Name "U_ATTACK_NAME"
+  Description "U_ATTACK_DESC"
+
+[TECHNOLOGY] "U_Bomber"
+  Name "U_BOMBER_NAME"
+  Description "U_BOMBER_DESC"
+
+[TECHNOLOGY] "U_Airport"
+  Name "U_AIRPORT_NAME"
+  Description "U_AIRPORT_DESC"
+
+[TECHNOLOGY] "M_Free_fall_bomb"
+  Name "M_FREE_FALL_BOMB_NAME"
+  Description "M_FREE_FALL_BOMB_DESC"
+  LeadsTo "M_Guided_bomb"
+
+[TECHNOLOGY] "M_Nuclear_bomb"
+  Name "M_NUCLEAR_BOMB_NAME"
+  Description "M_NUCLEAR_BOMB_DESC"
+
+[TECHNOLOGY] "M_1M_nuclear_bomb"
+  Name "M_1M_NUCLEAR_BOMB_NAME"
+  Description "M_1M_NUCLEAR_BOMB_DESC"
+
+[TECHNOLOGY] "M_Air_to_air_missile"
+  Name "M_Air_to_air_missile_NAME"
+  Description "M_Air_to_air_missile_DESC"
+
+[TECHNOLOGY] "M_Surface_to_surface_missile"
+  Name "M_Surface_to_surface_missile_NAME"
+  Description "M_Surface_to_surface_missile_DESC"
+
+[TECHNOLOGY] "M_Torpedo"
+  Name "M_TORPEDO_NAME"
+  Description "M_TORPEDO_DESC"
+
+[TECHNOLOGY] "M_DepthCharge"
+  Name "M_DEPTH_CHARGE_NAME"
+  Description "M_DEPTH_CHARGE_DESC"
+
+[TECHNOLOGY] "M_EW"
+  Name "M_EW_NAME"
+  Description "M_EW_DESC"
+
+[TECHNOLOGY] "R_Visor"
+  Name "R_VISOR_NAME"
+  Description "R_VISOR_DESC"
+  
+[TECHNOLOGY] "Advanced_aircrafts"
+  Name "Advanced_aircrafts_NAME"
+  Description "Advanced_aircrafts_DESC"
+  
+[TECHNOLOGY] "Stealth_aircrafts"
+  Name "Stealth_aircrafts_NAME"
+  Description "Stealth_aircrafts_DESC"
+  
+[TECHNOLOGY] "Air_refuel"
+  Name "Air_refuel_NAME"
+  Description "Air_refuel_DESC"
+  
+[TECHNOLOGY] "U_AWACS"
+  Name "U_AWACS_NAME"
+  Description "U_AWACS_DESC"
+  
+[TECHNOLOGY] "U_AWACS_CARRIER"
+  Name "U_AWACS_CARRIER_NAME"
+  Description "U_AWACS_CARRIER_DESC"
+  
+  
+[TECHNOLOGY] "U_Mobile_SAM"
+  Name "U_Mobile_SAM_NAME"
+  Description "U_Mobile_SAM_DESC"
+  
+[TECHNOLOGY] "Mobile_SAM"
+  Name "Mobile_SAM_NAME"
+  Description "Mobile_SAM_DESC"
+  
+[TECHNOLOGY] "Surface_to_air_missile"
+  Name "Surface_to_air_missile_NAME"
+  Description "Surface_to_air_missile_DESC"
+  
+[TECHNOLOGY] "Air_to_surface_missile"
+  Name "Air_to_surface_missile_NAME"
+  Description "Air_to_surface_missile_DESC"
+  
+[TECHNOLOGY] "AAM_Mk2"
+  Name "AAM_Mk2_NAME"
+  Description "AAM_Mk2_DESC"
+  
+[TECHNOLOGY] "Hypersonic_missiles"
+  Name "Hypersonic_missiles_NAME"
+  Description "Hypersonic_missiles_DESC"
+
+[TECHNOLOGY] "ASM_Mk2"
+  Name "ASM_Mk2_NAME"
+  Description "ASM_Mk2_DESC"
+  Image "Images/Science/ASM_Mk2.png"
+
+[TECHNOLOGY] "Aircraft-launched_MRBM"
+  Name "Aircraft-launched_MRBM_NAME"
+  Description "Aircraft-launched_MRBM_DESC"
+  Image "Images/Science/Aircraft-launched_MRBM.png"
+
+[TECHNOLOGY] "M_Aircraft-launched_MRBM"
+  Name "M_Aircraft-launched_MRBM_NAME"
+  Description "M_Aircraft-launched_MRBM_DESC"
+  
+[TECHNOLOGY] "Cruise_missiles"
+  Name "Cruise_missiles_NAME"
+  Description "Cruise_missiles_DESC"
+
+[TECHNOLOGY] "R_Camera"
+  Name "R_CAMERA_NAME"
+  Description "R_CAMERA_DESC"
+
+[TECHNOLOGY] "R_Short_wave_radar"
+  Name "R_SHORT_WAVE_RADAR_NAME"
+  Description "R_SHORT_WAVE_RADAR_DESC"
+  LeadsTo "U_Short_wave_radar"
+
+[TECHNOLOGY] "U_Short_wave_radar"
+  Name "U_SHORT_WAVE_RADAR_NAME"
+  Description "U_SHORT_WAVE_RADAR_DESC"
+
+[TECHNOLOGY] "R_Long_wave_radar"
+  Name "R_LONG_WAVE_RADAR_NAME"
+  Description "R_LONG_WAVE_RADAR_DESC"
+  LeadsTo "U_Long_wave_radar"
+  LeadsTo "LW_Mk2"
+
+[TECHNOLOGY] "U_Long_wave_radar"
+  Name "U_LONG_WAVE_RADAR_NAME"
+  Description "U_LONG_WAVE_RADAR_DESC"
+
+[TECHNOLOGY] "R_Sonar"
+  Name "R_SONAR_NAME"
+  Description "R_SONAR_DESC"
+
+[TECHNOLOGY] "Antitorpedo"
+  Name "ANTITORPEDO_NAME"
+  Description "ANTITORPEDO_DESC"
+
+[TECHNOLOGY] "Underground"
+  Name "Underground_NAME"
+  Description "Underground_DESC"
+
+[TECHNOLOGY] "Advanced_Sonar"
+  Name "Advanced_Sonar_NAME"
+  Description "Advanced_Sonar_DESC"
+
+//[TECHNOLOGY] "Advanced_MRBM"
+//  Name "Advanced_MRBM_NAME"
+//  Description "Advanced_MRBM_DESC"
+
+[TECHNOLOGY] "Advanced_MRBM_MIRV"
+  Name "Advanced_MRBM_NAME"
+  Description "Advanced_MRBM_DESC"
+
+
+
+
+
+[TECHNOLOGY] "CVN_FR"
+  Name "CVN_FR_NAME"
+  Description "CVN_FR_DESC"
+
+[TECHNOLOGY] "CVN_ATK"  
+  Name "CVN_ATK_NAME"
+  Description "CVN_ATK_DESC"
+  
+[TECHNOLOGY] "CVN_AWACS"  
+  Name "CVN_AWACS_NAME"
+  Description "CVN_AWACS_DESC"
+  
+[TECHNOLOGY] "CVN_ASW"  
+  Name "CVN_ASW_NAME"
+  Description "CVN_ASW_DESC"
+  
+[TECHNOLOGY] "U_Cavern"
+Name "U_Cavern_NAME"
+Description "U_Cavern_DESC"
+  
+  
+[TECHNOLOGY] "3GEN"
+  Name "3GEN_NAME"
+  Description "3GEN_DESC"
+  Image "Images/Science/3GEN.png"
+  Points 45
+  LeadsTo "4GEN"
+  
+[TECHNOLOGY] "4GEN"
+  Name "4GEN_NAME"
+  Description "4GEN_DESC"
+  Image "Images/Science/4GEN.png"
+  Points 45
+  LeadsTo "4GEN2"
+  
+[TECHNOLOGY] "4GEN2"
+  Name "4GEN2_NAME"
+  Description "4GEN2_DESC"
+  Image "Images/Science/4GEN2.png"
+  Points 45
+  LeadsTo "5GEN"
+  
+[TECHNOLOGY] "5GEN"
+  Name "5GEN_NAME"
+  Description "5GEN_DESC"
+  Image "Images/Science/5GEN.png"
+  Points 45
+  LeadsTo "Stealth_aircrafts_bombers"
+
+[TECHNOLOGY] "Stealth_aircrafts_bombers"
+  Name "Stealth_aircrafts_bombers_NAME"
+  Description "Stealth_aircrafts_bombers_DESC"
+  
+[TECHNOLOGY] "AA1"
+  Name "AA1_NAME"
+  Description "AA1_DESC"
+  Image "Images/Science/AA1.png"
+  Points 15
+  LeadsTo "AA2"
+  
+[TECHNOLOGY] "AA2"
+  Name "AA2_NAME"
+  Description "AA2_DESC"
+  Image "Images/Science/AA2.png"
+  Points 15
+  LeadsTo "AA3"
+  
+[TECHNOLOGY] "AA3"
+  Name "AA3_NAME"
+  Description "AA3_DESC"
+  Image "Images/Science/AA3.png"
+  Points 15
+  LeadsTo "AA4"
+  
+[TECHNOLOGY] "AA4"
+  Name "AA4_NAME"
+  Description "AA4_DESC"
+  Image "Images/Science/AA4.png"
+  Points 15
+  
+[TECHNOLOGY] "B1"
+  Name "B1_NAME"
+  Description "B1_DESC"
+  Image "Images/Science/B1.png"
+  Points 15
+  LeadsTo "B2"
+  
+[TECHNOLOGY] "B2"
+  Name "B2_NAME"
+  Description "B2_DESC"
+  Image "Images/Science/B2.png"
+  Points 15
+  LeadsTo "B3"
+  
+[TECHNOLOGY] "B3"
+  Name "B3_NAME"
+  Description "B3_DESC"
+  Image "Images/Science/B3.png"
+  Points 15
+  LeadsTo "B4"
+  
+[TECHNOLOGY] "B4"
+  Name "B4_NAME"
+  Description "B4_DESC"
+  Image "Images/Science/B4.png"
+  Points 15
+  
+[TECHNOLOGY] "ASM1"
+  Name "ASM1_NAME"
+  Description "ASM1_DESC"
+  Image "Images/Science/ASM1.png"
+  Points 15
+  LeadsTo "ASM2"
+  
+[TECHNOLOGY] "ASM2"
+  Name "ASM2_NAME"
+  Description "ASM2_DESC"
+  Image "Images/Science/ASM2.png"
+  Points 15
+  LeadsTo "ASM3"
+  
+[TECHNOLOGY] "ASM3"
+  Name "ASM3_NAME"
+  Description "ASM3_DESC"
+  Image "Images/Science/ASM3.png"
+  Points 15
+  LeadsTo "ASM4"
+  
+[TECHNOLOGY] "ASM4"
+  Name "ASM4_NAME"
+  Description "ASM4_DESC"
+  Image "Images/Science/ASM4.png"
+  Points 15
+  
+[TECHNOLOGY] "SAM50"
+  Name "SAM50_NAME"
+  Description "SAM50_DESC"
+  Image "Images/Science/SAM1.png"
+  Points 40
+  LeadsTo "SAM60"
+  LeadsTo "M_Surface_to_air_missile"
+  LeadsTo "U_SAM_site"
+  LeadsTo "anti_ballistic_missile"
+
+[TECHNOLOGY] "M_Surface_to_air_missile"
+  Name "M_Surface_to_air_missile_NAME"
+  Description "M_Surface_to_air_missile_DESC"
+[TECHNOLOGY] "U_SAM_site"
+  Name "U_SAM_SITE_NAME"
+  Description "U_SAM_SITE_DESC"
+  
+[TECHNOLOGY] "SAM60"
+  Name "SAM60_NAME"
+  Description "SAM60_DESC"
+  Image "Images/Science/SAM2.png"
+  Points 40
+  LeadsTo "SAM80"
+  
+[TECHNOLOGY] "SAM80"
+  Name "SAM80_NAME"
+  Description "SAM80_DESC"
+  Image "Images/Science/SAM3.png"
+  Points 40
+  LeadsTo "SAM10"
+  
+[TECHNOLOGY] "SAM10"
+  Name "SAM10_NAME"
+  Description "SAM10_DESC"
+  Image "Images/Science/SAM4.png"
+  Points 40
+  
+[TECHNOLOGY] "anti_ballistic_missile"
+  Name "anti_ballistic_missile_NAME"
+  Description "anti_ballistic_missile_DESC"
+  Image "Images/Science/anti_ballistic_missile.png"
+  Points 30
+  LeadsTo "M_anti_ballistic_missile"
+  LeadsTo "ABM_Mk2"
+  LeadsTo "ASAT"
+
+[TECHNOLOGY] "M_anti_ballistic_missile"
+  Name "M_anti_ballistic_missile_NAME"
+  Description "M_anti_ballistic_missile_DESC"
+
+[TECHNOLOGY] "ABM_Mk2"
+  Name "ABM_Mk2_NAME"
+  Description "ABM_Mk2_DESC"
+  Image "Images/Science/ABM_Mk2.png"
+  Points 80
+  LeadsTo "ABM_Mk2"
+
+[TECHNOLOGY] "ASAT"
+  Name "ASAT_NAME"
+  Description "ASAT_DESC"
+  Image "Images/Science/ASAT.png"
+  Points 55
+  LeadsTo "M_ASAT"
+
+[TECHNOLOGY] "M_ASAT"
+  Name "M_ASAT_NAME"
+  Description "M_ASAT_DESC"
+
+[TECHNOLOGY] "ABM_Mk2"
+  Name "ABM_Mk2_NAME"
+  Description "ABM_Mk2_DESC"  
+  
+  
+[TECHNOLOGY] "CRUISE1"
+  Name "CRUISE1_NAME"
+  Description "CRUISE1_DESC"
+  Image "Images/Science/CRUISE60.png"
+  Points 55
+  LeadsTo "CRUISE2"
+  
+[TECHNOLOGY] "CRUISE2"
+  Name "CRUISE2_NAME"
+  Description "CRUISE2_DESC"
+  Image "Images/Science/CRUISE70.png"
+  Points 55
+  LeadsTo "CRUISE3"  
+  
+[TECHNOLOGY] "CRUISE3"
+  Name "CRUISE3_NAME"
+  Description "CRUISE3_DESC"
+  Image "Images/Science/CRUISE80.png"
+  Points 55
+  LeadsTo "CRUISE4"
+
+[TECHNOLOGY] "CRUISE4"
+  Name "CRUISE4_NAME"
+  Description "CRUISE4_DESC"
+  Image "Images/Science/CRUISE00.png"
+  Points 55
+  LeadsTo "CRUISE5"
+
+[TECHNOLOGY] "CRUISE5"
+  Name "CRUISE5_NAME"
+  Description "CRUISE5_DESC"
+  Image "Images/Science/CRUISE10.png"
+  Points 55
+  LeadsTo "CRUISE6"
+
+[TECHNOLOGY] "CRUISE6"
+  Name "CRUISE6_NAME"
+  Description "CRUISE6_DESC"
+  Image "Images/Science/CRUISE30.png"
+  Points 55
+  
+  
+[TECHNOLOGY] "NAVY60"
+  Name "NAVY60_NAME"
+  Description "NAVY60_DESC"
+  Image "Images/Science/NAV60.png"
+  Points 15
+  LeadsTo "NAVY80"
+
+[TECHNOLOGY] "NAVY80"
+  Name "NAVY80_NAME"
+  Description "NAVY80_DESC"
+  Image "Images/Science/NAV80.png"
+  Points 15
+  LeadsTo "NAVY00"
+
+[TECHNOLOGY] "NAVY00"
+  Name "NAVY00_NAME"
+  Description "NAVY00_DESC"
+  Image "Images/Science/NAV00.png"
+  Points 15
+  LeadsTo "NAVY30"
+  
+[TECHNOLOGY] "NAVY30"
+  Name "NAVY30_NAME"
+  Description "NAVY30_DESC"
+  Image "Images/Science/NAV30.png"
+  Points 15
+  
+[TECHNOLOGY] "SUB60"
+  Name "SUB60_NAME"
+  Description "SUB60_DESC"
+  Image "Images/Science/SUB60.png"
+  Points 15
+  LeadsTo "SUB80"
+  LeadsTo "ENGINE_SSBN1"
+  LeadsTo "ENGINE_SSN1"
+
+[TECHNOLOGY] "ENGINE_SSBN1"
+  Name "ENGINE_SSBN1_NAME"
+  Description "ENGINE_SSBN1_DESC"
+  
+[TECHNOLOGY] "ENGINE_SSN1"
+  Name "ENGINE_SSN1_NAME"
+  Description "ENGINE_SSN1_DESC"
+  
+[TECHNOLOGY] "SUB80"
+  Name "SUB80_NAME"
+  Description "SUB80_DESC"
+  Image "Images/Science/SUB80.png"
+  Points 15
+  LeadsTo "SUB00"
+  LeadsTo "ENGINE_SSBN2"
+  LeadsTo "ENGINE_SSN2"
+  
+[TECHNOLOGY] "ENGINE_SSN2"
+  Name "ENGINE_SSN2_NAME"
+  Description "ENGINE_SSN2_DESC"
+
+[TECHNOLOGY] "ENGINE_SSBN2"
+  Name "ENGINE_SSBN2_NAME"
+  Description "ENGINE_SSBN2_DESC"
+  
+[TECHNOLOGY] "SUB00"
+  Name "SUB00_NAME"
+  Description "SUB00_DESC"
+  Image "Images/Science/SUB00.png"
+  Points 15
+  LeadsTo "SUB30"
+  LeadsTo "ENGINE_SSBN3"
+  LeadsTo "ENGINE_SSN3"
+
+[TECHNOLOGY] "ENGINE_SSBN3"
+  Name "ENGINE_SSBN3_NAME"
+  Description "ENGINE_SSBN3_DESC"
+  
+[TECHNOLOGY] "ENGINE_SSN3"
+  Name "ENGINE_SSN3_NAME"
+  Description "ENGINE_SSN3_DESC"
+  
+[TECHNOLOGY] "SUB30"
+  Name "SUB30_NAME"
+  Description "SUB30_DESC"
+  Image "Images/Science/SUB30.png"
+  Points 15
+  LeadsTo "ENGINE_SSBN4"
+  LeadsTo "ENGINE_SSN3"
+
+[TECHNOLOGY] "ENGINE_SSBN4"
+  Name "ENGINE_SSBN4_NAME"
+  Description "ENGINE_SSBN4_DESC"
+ 
+[TECHNOLOGY] "ENGINE_SSN4"
+  Name "ENGINE_SSN4_NAME"
+  Description "ENGINE_SSN4_DESC"
+  
+[TECHNOLOGY] "TOR1"
+  Name "TOR1_NAME"
+  Description "TOR1_DESC"
+  Image "Images/Science/TOR1.png"
+  Points 15
+  LeadsTo "TOR2" 
+  
+[TECHNOLOGY] "TOR2"
+  Name "TOR2_NAME"
+  Description "TOR2_DESC"
+  Image "Images/Science/TOR2.png"
+  Points 15
+  LeadsTo "TOR3" 
+  
+[TECHNOLOGY] "TOR3"
+  Name "TOR3_NAME"
+  Description "TOR3_DESC"
+  Image "Images/Science/TOR3.png"
+  Points 15
+  LeadsTo "TOR4" 
+  
+[TECHNOLOGY] "TOR4"
+  Name "TOR4_NAME"
+  Description "TOR4_DESC"
+  Image "Images/Science/TOR4.png"
+  Points 15
+  
+  
+//RADARS
+
+// chain SW Mk2  SW Mk3
+
+[TECHNOLOGY] "SW_Mk2"
+  Name "SW_Mk2_NAME"
+  Description "SW_Mk2_DESC"
+  Image "Images/Science/SW_Mk2.png"
+  Points 15
+  LeadsTo "SW_Mk3"
+
+[TECHNOLOGY] "SW_Mk3"
+  Name "SW_Mk3_NAME"
+  Description "SW_Mk3_DESC"
+  Image "Images/Science/SW_Mk3.png"
+  Points 15
+
+// chain LW Mk2  LW Mk3
+
+[TECHNOLOGY] "LW_Mk2"
+  Name "LW_Mk2_NAME"
+  Description "LW_Mk2_DESC"
+  Image "Images/Science/LW_Mk2.png"
+  Points 15
+  LeadsTo "LW_Mk3"
+
+[TECHNOLOGY] "LW_Mk3"
+  Name "LW_Mk3_NAME"
+  Description "LW_Mk3_DESC"
+  Image "Images/Science/LW_Mk3.png"
+  Points 15 
+  
+// chain Overhorizon radar  Ovehorizon sea radar  Space radar
+
+[TECHNOLOGY] "Space_radar"
+  Name "Space_radar_NAME"
+  Description "Space_radar_DESC"
+  Image "Images/Science/Space_radar.png"
+  Points 13
+  LeadsTo "ASAT"
+  LeadsTo "R_Space_radar"
+  LeadsTo "R_Space_radar_OTH"
+  LeadsTo "U_Space_radar"
+  LeadsTo "Over_horizon_radar"
+
+[TECHNOLOGY] "R_Space_radar"
+  Name "R_Space_radar_NAME"
+  Description "R_Space_radar_DESC"
+
+[TECHNOLOGY] "R_Space_radar_OTH"
+  Name "R_Space_radar_OTH_NAME"
+  Description "R_Space_radar_OTH_DESC"
+
+[TECHNOLOGY] "U_Space_radar"
+  Name "U_Space_radar_NAME"
+  Description "U_Space_radar_DESC"
+
+
+[TECHNOLOGY] "Over_horizon_radar"
+  Name "OVER_HORIZON_RADAR_NAME"
+  Description "OVER_HORIZON_RADAR_DESC"
+  Image "Images/Science/Over_horizon_radar.png"
+  Points 30
+  LeadsTo "U_Over_horizon_radar"
+  LeadsTo "R_Over_horizon_radar"
+  LeadsTo "Over_horizon_radar_Mk2"
+
+[TECHNOLOGY] "U_Over_horizon_radar"
+  Name "U_Over_horizon_radar_NAME"
+  Description "U_Over_horizon_radar_DESC"
+
+[TECHNOLOGY] "R_Over_horizon_radar"
+  Name "R_Over_horizon_radar_NAME"
+  Description "R_Over_horizon_radar_DESC"
+
+[TECHNOLOGY] "Over_horizon_radar_Mk2"
+  Name "Over_horizon_radar_Mk2_NAME"
+  Description "Over_horizon_radar_Mk2_DESC"
+  Image "Images/Science/Over_horizon_radar_Mk2.png"
+  Points 20
+//  LeadsTo "Space_radar"
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+// chain MRBM  ICBM          Heavy missiles
+//             Mobile MRBM   Mobile ICBM
+
+[TECHNOLOGY] "MRBM"
+  Name "MRBM_NAME"
+  Description "MRBM_DESC"
+  Image "Images/Science/MRBM.png"
+  Points 50
+  LeadsTo "M_MRBM"
+  LeadsTo "M_SUB_MRBM"
+  LeadsTo "Mobile_MRBM"
+  LeadsTo "ICBM"
+  LeadsTo "Nuclear_Submarine"
+  LeadsTo "Aircraft-launched_MRBM"
+
+[TECHNOLOGY] "M_MRBM"
+  Name "M_MRBM_NAME"
+  Description "M_MRBM_DESC"
+
+[TECHNOLOGY] "M_SUB_MRBM"
+  Name "M_SUB_MRBM_NAME"
+  Description "M_SUB_MRBM_DESC"
+
+[TECHNOLOGY] "ICBM"
+  Name "ICBM_NAME"
+  Description "ICBM_DESC"
+  Image "Images/Science/ICBM.png"
+  Points 60
+  LeadsTo "Heavy_Missiles"
+  LeadsTo "Mobile_ICBM"
+  LeadsTo "U_Missile_Silo"
+  LeadsTo "M_ICBM_1M"
+
+[TECHNOLOGY] "M_ICBM_1M"
+  Name "M_ICBM_1M_NAME"
+  Description "M_ICBM_1M_DESC"
+
+[TECHNOLOGY] "M_ICBM_10M"
+  Name "M_ICBM_10M_NAME"
+  Description "M_ICBM_10M_DESC"
+
+[TECHNOLOGY] "M_ICBM_MIRV"
+  Name "M_ICBM_MIRV_NAME"
+  Description "M_ICBM_MIRV_DESC"
+
+[TECHNOLOGY] "M_1M_WARHEAD"
+  Name "M_1M_WARHEAD_NAME"
+  Description "M_1M_WARHEAD_DESC"
+
+[TECHNOLOGY] "M_500K_WARHEAD"
+  Name "M_500K_WARHEAD_NAME"
+  Description "M_500K_WARHEAD_DESC"
+
+[TECHNOLOGY] "M_ICBM_MIRV_FALSE"
+  Name "M_ICBM_MIRV_FALSE_NAME"
+  Description "M_ICBM_MIRV_FALSE_DESC"
+
+[TECHNOLOGY] "M_1M_WARHEAD_FALSE"
+  Name "M_1M_WARHEAD_FALSE_NAME"
+  Description "M_1M_WARHEAD_FALSE_DESC"
+
+[TECHNOLOGY] "U_Missile_Silo"
+  Name "U_Missile_Silo_NAME"
+  Description "U_Missile_Silo_DESC"
+
+[TECHNOLOGY] "Heavy_Missiles"
+  Name "Heavy_Missiles_NAME"
+  Description "Heavy_Missiles_DESC"
+  Image "Images/Science/Heavy_Missiles.png"
+  Points 85
+  LeadsTo "M_ICBM_10M"
+  LeadsTo "M_ICBM_MIRV"
+  LeadsTo "M_ICBM_MIRV_FALSE"
+
+[TECHNOLOGY] "Mobile_MRBM"
+  Name "MOBILE_MRBM_NAME"
+  Description "MOBILE_MRBM_DESC"
+  Image "Images/Science/Mobile_MRBM.png"
+  Points 25
+  LeadsTo "U_Mobile_MRBM"
+  LeadsTo "Mobile_ICBM"
+
+[TECHNOLOGY] "U_Mobile_MRBM"
+  Name "U_Mobile_MRBM_NAME"
+  Description "U_Mobile_MRBM_DESC"
+
+[TECHNOLOGY] "Mobile_ICBM"
+  Name "MOBILE_ICBM_NAME"
+  Description "MOBILE_ICBM_DESC"
+  Image "Images/Science/Mobile_ICBM.png"
+  Points 25
+  LeadsTo "U_Mobile_ICBM"
+
+[TECHNOLOGY] "U_Mobile_ICBM"
+  Name "U_Mobile_ICBM_NAME"
+  Description "U_Mobile_ICBM_DESC"
+
+[TECHNOLOGY] "Nuclear_Submarine"
+  Name "NUCLEAR_SUBMARINE_NAME"
+  Description "NUCLEAR_SUBMARINE_DESC"
+  Image "Images/Science/Nuclear_Submarine.png"
+  Points 40
+  LeadsTo "U_Nuclear_Submarine"
+
+[TECHNOLOGY] "U_Nuclear_Submarine"
+  Name "U_Nuclear_Submarine_NAME"
+  Description "U_Nuclear_Submarine_DESC"
+
+
+
+// chain Thermonuclear explosion  Mega-warheads  Tactical nukes
+//                                MIRV  False warheads
+
+[TECHNOLOGY] "Thermonuclear_bomb"
+  Name "THERMONUCLEAR_BOMB_NAME"
+  Description "THERMONUCLEAR_BOMB_DESC"
+  Image "Images/Science/Thermonuclear_bomb.png"
+  Points 50
+  LeadsTo "Mega-warheads"
+  LeadsTo "MIRV"
+  LeadsTo "M_10M_thermonuclear_bomb"
+  LeadsTo "Tactical_nukes"
+
+[TECHNOLOGY] "M_10M_thermonuclear_bomb"
+  Name "M_10M_THERMONUCLEAR_BOMB_NAME"
+  Description "M_10M_THERMONUCLEAR_BOMB_DESC"
+
+[TECHNOLOGY] "M_50M_thermonuclear_bomb"
+  Name "M_50M_THERMONUCLEAR_BOMB_NAME"
+  Description "M_50M_THERMONUCLEAR_BOMB_DESC"
+
+[TECHNOLOGY] "Mega-warheads"
+  Name "Mega-warheads_NAME"
+  Description "Mega-warheads_DESC"
+  Image "Images/Science/Mega-warheads.png"
+  Points 85
+//  LeadsTo "Tactical_nukes"
+  LeadsTo "Heavy_Missiles"
+  LeadsTo "M_50M_thermonuclear_bomb"
+
+[TECHNOLOGY] "Tactical_nukes"
+  Name "Tactical_nukes_NAME"
+  Description "Tactical_nukes_DESC"
+  Image "Images/Science/Tactical_nukes.png"
+  Points 15
+  LeadsTo "M_SRBM"
+  LeadsTo "M_Aircraft-launched_MRBM"
+
+[TECHNOLOGY] "M_SRBM"
+  Name "M_SRBM_NAME"
+  Description "M_SRBM_DESC"
+
+[TECHNOLOGY] "MIRV"
+  Name "MIRV_NAME"
+  Description "MIRV_DESC"
+  Image "Images/Science/MIRV.png"
+  Points 125
+  LeadsTo "False_warheads"
+  LeadsTo "M_ICBM_MIRV"
+  LeadsTo "Advanced_MRBM_MIRV"
+
+[TECHNOLOGY] "False_warheads"
+  Name "False_warheads_NAME"
+  Description "False_warheads_DESC"
+  Image "Images/Science/False_warheads.png"
+  Points 60
+  LeadsTo "M_ICBM_MIRV_FALSE"
+  
+  
+  
+// chain Satellite	Geostationary satellites
+//	                Improved optics	          Laser weapon
+//	                GPS
+
+[TECHNOLOGY] "Satellite"
+  Name "SATELLITE_NAME"
+  Description "SATELLITE_DESC"
+  Image "Images/Science/Satellite.png"
+  Points 50
+  LeadsTo "U_Satellite"
+//  LeadsTo "GPS"
+//  LeadsTo "Geostationary_satellites"
+  LeadsTo "Improved_optics"
+
+[TECHNOLOGY] "U_Satellite"
+  Name "U_Satellite_NAME"
+  Description "U_Satellite_DESC"
+
+/*
+[TECHNOLOGY] "Geostationary_satellites"
+  Name "Geostationary_satellites_NAME"
+  Description "Geostationary_satellites_DESC"
+  Points 100
+*/
+
+[TECHNOLOGY] "Improved_optics"
+  Name "Improved_optics_NAME"
+  Description "Improved_optics_DESC"
+  Image "Images/Science/Improved_optics.png"
+  Points 25
+  LeadsTo "Laser_weapon"
+
+/*
+[TECHNOLOGY] "GPS"
+  Name "GPS_NAME"
+  Description "GPS_DESC"
+  Points 100
+  LeadsTo "GPS-based_weapon"
+
+[TECHNOLOGY] "GPS-based_weapon"
+  Name "GPS-based_weapon_NAME"
+  Description "GPS-based_weapon_DESC"
+  Points 100
+  LeadsTo "M_Guided_bomb"
+
+[TECHNOLOGY] "M_Guided_bomb"
+  Name "M_GUIDED_BOMB_NAME"
+  Description "M_GUIDED_BOMB_DESC"
+*/
+
+[TECHNOLOGY] "Laser_weapon"
+  Name "Laser_weapon_NAME"
+  Description "Laser_weapon_DESC"
+  Image "Images/Science/Laser_weapon.png"
+  Points 80
+  LeadsTo "M_Laser_weapon"
+
+[TECHNOLOGY] "M_Laser_weapon"
+  Name "M_Laser_weapon_NAME"
+  Description "M_Laser_weapon_DESC"
+
+
+[END]

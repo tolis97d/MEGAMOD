@@ -1,0 +1,7 @@
+ICBM MOD "LIGHT OVERHAUL"
+
+Version "0.5.0"
+
+Description "Early dev phase of a light overhaul mod"
+
+ChangeLog "This probably no longer is a meme mod"

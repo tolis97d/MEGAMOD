@@ -1,0 +1,30 @@
+USE PREVIOUS "LANG/ENG/tech_t.lng"
+
+"U_Cavern" LANG "Cavern Airfield"
+"U_Cavern_DESC" LANG "Underground Airfield facilities provide better protecition against the effects of weapons deployed against this structure. However, this limits the size of the aircraft that can be stored in the caverns."
+"U_Cavern_NAME" LANG "Cavern Airfield"
+
+"CVN_FR_NAME" LANG "Carrier Fighter"
+"CVN_FR_DESC" LANG "Carrier capable fighters"
+
+"CVN_AWACS_NAME" LANG "Carrier AWACS"
+"CVN_AWACS_DESC" LANG "Carrier AWACS"
+
+"CVN_ASW_NAME" LANG "ASW Heli"
+"CVN_ASW_DESC" LANG "ASW Heli"
+
+"CVN_ATK_NAME" LANG "Carrier Attack Aircraft"
+"CVN_ATK_DESC" LANG "Carrier capable Attack Aircraft"
+
+"NAVY60_NAME" LANG "1960s Naval Designs"
+"NAVY60_DESC" LANG "1960s Naval Designs"
+
+"NAVY80_NAME" LANG "1980s Naval Designs"
+"NAVY60_DESC" LANG "1960s Naval Designs"
+
+"NAVY00_NAME" LANG "2000s Naval Designs"
+"NAVY60_DESC" LANG "1960s Naval Designs"
+
+"NAVY30_NAME" LANG "2030s Naval Designs"
+"NAVY60_DESC" LANG "1960s Naval Designs"
+END
