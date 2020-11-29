@@ -455,6 +455,20 @@ Description "U_Cavern_DESC"
   Image "Images/Science/NAV80.png"
   Points 15
   LeadsTo "NAVY00"
+  LeadsTo "CWIS"
+  
+[TECHNOLOGY] "CWIS"
+  Name "CWIS_NAME"
+  Description "CWIS_DESC"
+  Image "Images/Science/NAV80.png"
+  Points 15
+  LeadsTo "CWIS_LASER"
+  
+[TECHNOLOGY] "CWIS_LASER"
+  Name "CWIS_LASER_NAME"
+  Description "CWIS_LASER_DESC"
+  Image "Images/Science/NAV80.png"
+  Points 15
 
 [TECHNOLOGY] "NAVY00"
   Name "NAVY00_NAME"
@@ -580,6 +594,19 @@ Description "U_Cavern_DESC"
   Description "SW_Mk3_DESC"
   Image "Images/Science/SW_Mk3.png"
   Points 15
+  LeadsTo "AESA_RADAR"
+  
+[TECHNOLOGY] "AESA_RADAR"
+  Name "AESA_RADAR_NAME"
+  Description "AESA_RADAR_DESC"
+  Image "Images/Science/SW_Mk3.png"
+  Points 15
+  LeadsTo "4GEN2_R"
+  
+[TECHNOLOGY] "4GEN2_R"
+  Name "4GEN2_R_NAME"
+  Description "4GEN2_R_DESC"
+  LeadsTo "4GEN2"
 
 // chain LW Mk2  LW Mk3
 
@@ -644,15 +671,9 @@ Description "U_Cavern_DESC"
   Description "Over_horizon_radar_Mk2_DESC"
   Image "Images/Science/Over_horizon_radar_Mk2.png"
   Points 20
-//  LeadsTo "Space_radar"
+//  LeadsTo "Space_radar" 
   
-  
-  
-  
-  
-  
-  
-  
+ 
   
   
   
@@ -837,7 +858,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/Satellite.png"
   Points 50
   LeadsTo "U_Satellite"
-//  LeadsTo "GPS"
+    LeadsTo "GPS"
 //  LeadsTo "Geostationary_satellites"
   LeadsTo "Improved_optics"
 
@@ -859,24 +880,17 @@ Description "U_Cavern_DESC"
   Points 25
   LeadsTo "Laser_weapon"
 
-/*
 [TECHNOLOGY] "GPS"
   Name "GPS_NAME"
   Description "GPS_DESC"
   Points 100
-  LeadsTo "GPS-based_weapon"
-
-[TECHNOLOGY] "GPS-based_weapon"
-  Name "GPS-based_weapon_NAME"
-  Description "GPS-based_weapon_DESC"
-  Points 100
-  LeadsTo "M_Guided_bomb"
-
-[TECHNOLOGY] "M_Guided_bomb"
-  Name "M_GUIDED_BOMB_NAME"
-  Description "M_GUIDED_BOMB_DESC"
-*/
-
+  LeadsTo "B2_R"
+  
+[TECHNOLOGY] "B2_R"
+  Name "B2_R_NAME"
+  Description "B2_R_DESC"
+  LeadsTo "B2"
+  
 [TECHNOLOGY] "Laser_weapon"
   Name "Laser_weapon_NAME"
   Description "Laser_weapon_DESC"
@@ -935,6 +949,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP70.png"
   Points 15
   LeadsTo "COMP3" 
+  LeadsTo "LASER_GUIDE" 
   
 [TECHNOLOGY] "COMP3"
   Name "COMP3_NAME"
@@ -948,7 +963,8 @@ Description "U_Cavern_DESC"
   Description "COMP4_DESC"
   Image "Images/Science/COMP90.png"
   Points 15
-  LeadsTo "COMP5" 
+  LeadsTo "COMP5"
+  LeadsTo "GPS_weapon"  
 
 [TECHNOLOGY] "COMP5"
   Name "COMP5_NAME"
@@ -962,6 +978,37 @@ Description "U_Cavern_DESC"
   Description "COMP6_DESC"
   Image "Images/Science/COMP10.png"
   Points 15 
+  LeadsTo "LASER_PRACTICAL_R" 
+  
+[TECHNOLOGY] "LASER_PRACTICAL_R"
+  Name "LASER_PRACTICAL_R_NAME"
+  Description "LASER_PRACTICAL_R_DESC"
+  LeadsTo "LASER_PRACTICAL"
+  
+[TECHNOLOGY] "LASER_GUIDE"
+  Name "LASER_GUIDE_NAME"
+  Description "LASER_GUIDE_DESC"
+  Image "Images/Science/COMP70.png"
+  Points 15
+  LeadsTo "B1_R"
+  LeadsTo "LASER_PRACTICAL"   
+  
+[TECHNOLOGY] "LASER_PRACTICAL"
+  Name "LASER_PRACTICAL_NAME"
+  Description "LASER_PRACTICAL_DESC"
+  Image "Images/Science/COMP70.png"
+  Points 15
+  LeadsTo "CWIS_LASER_R" 
+  
+[TECHNOLOGY] "CWIS_LASER_R"
+  Name "CWIS_LASER_R_NAME"
+  Description "CWIS_LASER_R_DESC"
+  LeadsTo "CWIS_LASER" 
+  
+[TECHNOLOGY] "B1_R"
+  Name "B1_R_NAME"
+  Description "B1_R_DESC"
+  LeadsTo "B1"
 
 
 [END]

@@ -81,10 +81,10 @@ Modifier options:
   ImprovedBy "B3" Set Range 40 
   ImprovedBy "B4" Precision 0.001 
   ImprovedBy "B4" Set Range 50 
-  ImprovedBy "B1" Movie Image "Images/Science/B1.png" 
-  ImprovedBy "B2" Movie Image "Images/Science/B2.png" 
-  ImprovedBy "B3" Movie Image "Images/Science/B3.png" 
-  ImprovedBy "B4" Movie Image "Images/Science/B4.png" 
+  ImprovedBy "B1" Movie Image "Units/IMAGES/MISSILES/B1.png" 
+  ImprovedBy "B2" Movie Image "Units/IMAGES/MISSILES/B2.png" 
+  ImprovedBy "B3" Movie Image "Units/IMAGES/MISSILES/B3.png" 
+  ImprovedBy "B4" Movie Image "Units/IMAGES/MISSILES/B4.png" 
 
 [MISSILE] "Low-power nuclear bomb"
   Tech "M_Nuclear_bomb"
