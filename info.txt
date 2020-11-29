@@ -1,4 +1,4 @@
-ICBM MOD "LIGHT OVERHAUL"
+ICBM MOD "MEGA MOD"
 
 Version "0.5.0"
 

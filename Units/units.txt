@@ -581,8 +581,7 @@ Modifier options:
   
 [UNIT] "CVN_FR"
   Tech "CVN_FR"
-  Movie "Units/Images/Airborne/carrier_fighter.vidx"
-  Icon "Units/Images/Icons/CVN_FR1.png"
+  Movie "Units/Images/Airborne/CVN_FR50.vidx"
   IconIDX 52
   DrawSize 16
   LaunchMeSound 83
@@ -617,22 +616,23 @@ Config "Anti Air" Default
 
   Modifier "5GEN"
 
-  ImprovedBy "3GEN" Movie "Units/Images/Airborne/carrier_advanced.vidx" Icon "Units/Images/Icons/CVN_FR2.png"
   ImprovedBy "3GEN" Set Speed 1000
   ImprovedBy "3GEN" Set TurnSpeed 10
   ImprovedBy "3GEN" Set Size 0.015
-
-  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/carrier_stealth.vidx" Icon "Units/Images/Icons/CVN_FR3.png"
+  
   ImprovedBy "5GEN" Set Power 1.5
   ImprovedBy "5GEN" Set TurnSpeed 15
   ImprovedBy "5GEN" Size 0.75
+  
+  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"
+  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR80.vidx"
+  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_FR00.vidx"
+  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_FR10.vidx"
 
-  ImprovedBy "Air_refuel" Range 1.5
   
 [UNIT] "CVN_ATK"
   Tech "CVN_ATK"
-  Movie "Units/Images/Airborne/CVN_ATK1.vidx"
-  Icon "Units/Images/Icons/CVN_ATK1.png"
+  Movie "Units/Images/Airborne/CVN_ATK50.vidx"
   IconIDX 5
   DrawSize 15.5
   LaunchMeSound 83
@@ -674,17 +674,18 @@ Config "Anti Air" Default
 
   Modifier "5GEN"
 
-  ImprovedBy "3GEN" Movie "Units/Images/Airborne/CVN_ATK2.vidx" Icon "Units/Images/Icons/CVN_ATK2.png"
   ImprovedBy "3GEN" Set Speed 750
   ImprovedBy "3GEN" Set TurnSpeed 8
   ImprovedBy "3GEN" Set Size 0.02
 
-  ImprovedBy "5GEN" Movie "Units/Images/Airborne/CVN_ATK3.vidx" Icon "Units/Images/Icons/CVN_ATK3.png"
   ImprovedBy "5GEN" Set Speed 900
   ImprovedBy "5GEN" Set TurnSpeed 11
   ImprovedBy "5GEN" Size 0.75
 
-  ImprovedBy "Air_refuel" Range 1.5
+  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_ATK60.vidx"
+  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK80.vidx"
+  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_ATK00.vidx"
+  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_ATK10.vidx"
   
 [UNIT] "CVN_AWACS"
   Tech "CVN_AWACS"
