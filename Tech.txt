@@ -887,6 +887,81 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_Laser_weapon"
   Name "M_Laser_weapon_NAME"
   Description "M_Laser_weapon_DESC"
+  
+[TECHNOLOGY] "ENG1"
+  Name "ENG1_NAME"
+  Description "ENG1_DESC"
+  Image "Images/Science/ENG60.png"
+  Points 15
+  LeadsTo "ENG2" 
+  
+[TECHNOLOGY] "ENG2"
+  Name "ENG2_NAME"
+  Description "ENG2_DESC"
+  Image "Images/Science/ENG70.png"
+  Points 15
+  LeadsTo "ENG3" 
+
+[TECHNOLOGY] "ENG3"
+  Name "ENG3_NAME"
+  Description "ENG3_DESC"
+  Image "Images/Science/ENG80.png"
+  Points 15
+  LeadsTo "ENG4" 
+  
+[TECHNOLOGY] "ENG4"
+  Name "ENG4_NAME"
+  Description "ENG4_DESC"
+  Image "Images/Science/ENG00.png"
+  Points 15
+  LeadsTo "ENG5" 
+  
+[TECHNOLOGY] "ENG5"
+  Name "ENG5_NAME"
+  Description "ENG5_DESC"
+  Image "Images/Science/ENG20.png"
+  Points 15
+  
+[TECHNOLOGY] "COMP1"
+  Name "COMP1_NAME"
+  Description "COMP1_DESC"
+  Image "Images/Science/COMP60.png"
+  Points 15
+  LeadsTo "COMP2" 
+  
+[TECHNOLOGY] "COMP2"
+  Name "COMP2_NAME"
+  Description "COMP2_DESC"
+  Image "Images/Science/COMP70.png"
+  Points 15
+  LeadsTo "COMP3" 
+  
+[TECHNOLOGY] "COMP3"
+  Name "COMP3_NAME"
+  Description "COMP3_DESC"
+  Image "Images/Science/COMP80.png"
+  Points 15
+  LeadsTo "COMP4" 
+  
+[TECHNOLOGY] "COMP4"
+  Name "COMP4_NAME"
+  Description "COMP4_DESC"
+  Image "Images/Science/COMP90.png"
+  Points 15
+  LeadsTo "COMP5" 
+
+[TECHNOLOGY] "COMP5"
+  Name "COMP5_NAME"
+  Description "COMP5_DESC"
+  Image "Images/Science/COMP00.png"
+  Points 15
+  LeadsTo "COMP6" 
+  
+[TECHNOLOGY] "COMP6"
+  Name "COMP6_NAME"
+  Description "COMP6_DESC"
+  Image "Images/Science/COMP10.png"
+  Points 15 
 
 
 [END]
