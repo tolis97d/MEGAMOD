@@ -233,7 +233,7 @@ Modifier options:
 [MISSILE] "AAM"
   Tech "M_Air_to_air_missile"
   Type "AntiAir"
-  Icon "Units/Images/Missiles/AAM.png"
+  Icon "Units/Images/Missiles/AA0.png"
   Sound 109 or 110 or 111 Volume 0.5
   Explosion "std_bomb"
   Range 300
