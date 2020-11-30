@@ -33,6 +33,7 @@ Group Carrier_Balanced
   Target "CVN_ATK" Priority 10
   Target "CVN_AWACS" Priority 10
   Target "CVN_ASW" Priority 10
+  Target "CVN_FR" Priority 10
   Target "Carrier" Priority 100 Conventional Nuclear
   Avoid "Submarine"
   Avoid "Destroyer"
