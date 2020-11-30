@@ -148,9 +148,9 @@ Modifier options:
     ImprovedBy "3GEN"
       Weapon "Low-power nuclear bomb" 2
   Config "Air Launched Ballistic Missile" 
-    Weapon "ASNM" 1
+    Weapon "NUKE_CRUISE" 1
     ImprovedBy "3GEN"
-      Weapon "ASNM" 2
+      Weapon "NUKE_CRUISE" 2
   Config "Megaton"
     Weapon "1M nuke" 1
   Config "10 Megaton"
@@ -283,21 +283,30 @@ Modifier options:
   Weapon "Torpedo" 25000 Launch 2 AutoEngage
   Weapon "SNAVALGUN" 20000 Launch 2 Time 60 AutoEngage
   Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
-    ImprovedBy "SAM60"
-      Weapon "Torpedo" 25000 Launch 2 AutoEngage
-      Weapon "SSM" 20000 AutoEngage
+    ImprovedBy "SAM50"
       Weapon "SAM" 20000 Launch 2 Time 50 AutoEngage
       Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
-    ImprovedBy "ABM_Mk2"
-      Weapon "Torpedo" 25000 Launch 2 AutoEngage
-      Weapon "SSM" 20000 AutoEngage
+    ImprovedBy "SAM60"
+      Weapon "SAM" 20000 Launch 2 Time 55 AutoEngage
+      Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
+    ImprovedBy "SAM60"
+      Weapon "SAM" 20000 Launch 2 Time 50 AutoEngage
+      Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
+    ImprovedBy "SAM80"
       Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
       Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
-    ImprovedBy "ABM_Mk2"
-      Weapon "Torpedo" 25000 Launch 2 AutoEngage
-      Weapon "SSM" 20000 AutoEngage
+    ImprovedBy "SAM10"
       Weapon "SAM" 20000 Launch 2 Time 50 AutoEngage
       Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
+	  
+    ImprovedBy "CRUISE1"
+      Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+    ImprovedBy "CRUISE2"
+      Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+    ImprovedBy "CRUISE3"
+      Weapon "SPSPM" 20000 Launch 2 Time 70 AutoEngage
+    ImprovedBy "CRUISE4"
+      Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
 
   Radar "STD Vision"
   Radar "Sonar"

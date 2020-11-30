@@ -91,14 +91,6 @@
   Name "Air_refuel_NAME"
   Description "Air_refuel_DESC"
   
-[TECHNOLOGY] "U_AWACS"
-  Name "U_AWACS_NAME"
-  Description "U_AWACS_DESC"
-  
-[TECHNOLOGY] "U_AWACS_CARRIER"
-  Name "U_AWACS_CARRIER_NAME"
-  Description "U_AWACS_CARRIER_DESC"
-  
   
 [TECHNOLOGY] "U_Mobile_SAM"
   Name "U_Mobile_SAM_NAME"
@@ -137,6 +129,18 @@
 [TECHNOLOGY] "M_Aircraft-launched_MRBM"
   Name "M_Aircraft-launched_MRBM_NAME"
   Description "M_Aircraft-launched_MRBM_DESC"
+  
+[TECHNOLOGY] "M_SHIP_SHIP"
+  Name "M_SHIP_SHIP_NAME"
+  Description "M_SHIP_SHIP_DESC"
+  
+[TECHNOLOGY] "M_CONV_CRUISE"
+  Name "M_CONV_CRUISE_NAME"
+  Description "M_CONV_CRUISE_DESC"
+  
+[TECHNOLOGY] "M_NUKE_CRUISE"
+  Name "M_NUKE_CRUISE_NAME"
+  Description "M_NUKE_CRUISE_DESC"
   
 [TECHNOLOGY] "Cruise_missiles"
   Name "Cruise_missiles_NAME"
@@ -201,10 +205,6 @@
   Name "CVN_ATK_NAME"
   Description "CVN_ATK_DESC"
   
-[TECHNOLOGY] "CVN_AWACS"  
-  Name "CVN_AWACS_NAME"
-  Description "CVN_AWACS_DESC"
-  
 [TECHNOLOGY] "CVN_ASW"  
   Name "CVN_ASW_NAME"
   Description "CVN_ASW_DESC"
@@ -227,6 +227,25 @@ Description "U_Cavern_DESC"
   Image "Images/Science/4GEN.png"
   Points 45
   LeadsTo "4GEN2"
+  LeadsTo "TAWACS"
+  
+[TECHNOLOGY] "TAWACS"
+  Name "TAWACS_NAME"
+  Description "TAWACS_DESC"
+  Image "Images/Science/AWACS.png"
+  Points 45
+  LeadsTo "4GEN2"
+  LeadsTo "CVN_AWACS"
+  LeadsTo "U_AWACS"
+  
+[TECHNOLOGY] "CVN_AWACS"
+  Name "CVN_AWACS_NAME"
+  Description "CVN_AWACS_DESC"
+  
+[TECHNOLOGY] "U_AWACS"
+  Name "U_AWACS_NAME"
+  Description "U_AWACS_DESC"
+  
   
 [TECHNOLOGY] "4GEN2"
   Name "4GEN2_NAME"
@@ -406,6 +425,8 @@ Description "U_Cavern_DESC"
   Image "Images/Science/CRUISE60.png"
   Points 55
   LeadsTo "CRUISE2"
+  LeadsTo "M_SHIP_SHIP"
+  LeadsTo "M_NUKE_CRUISE"
   
 [TECHNOLOGY] "CRUISE2"
   Name "CRUISE2_NAME"
@@ -420,6 +441,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/CRUISE80.png"
   Points 55
   LeadsTo "CRUISE4"
+  LeadsTo "M_CONV_CRUISE"
 
 [TECHNOLOGY] "CRUISE4"
   Name "CRUISE4_NAME"

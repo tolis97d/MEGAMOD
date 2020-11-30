@@ -80,7 +80,7 @@ Modifier options:
 
 [MISSILE] "FLAKGUN"
   Tech "M_FLAKGUN"
-  Icon "Units/Images/Missiles/SAM.png"
+  Icon "Units/Images/Missiles/FLAK.png"
   Sound 203
    Volume 3
     MuteLength 0.25
@@ -116,7 +116,7 @@ Modifier options:
 
 [MISSILE] "SNAVALGUN"
   Tech "M_SNAVALGUN"
-  Icon "Units/Images/Missiles/ASM.png" 
+  Icon "Units/Images/Missiles/LIGHTGUN.png" 
   Sound 202
     Volume 0.80 
   Type "SNAVALGUN_TYPE"
@@ -309,9 +309,9 @@ Modifier options:
   AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
   
 [MISSILE] "SPSPM"
-  Tech "M_Surface_to_surface_missile"
+  Tech "M_SHIP_SHIP"
   Type "AntiShip"
-  Icon "Units/Images/Missiles/SSM.png"
+  Icon "Units/Images/Missiles/SM60.png"
   Sound 113 or 114 Volume 0.5
   Explosion "big_bomb_old"
 //  Explosion "big_bomb"
@@ -323,17 +323,80 @@ Modifier options:
   CanBeIntercepted 0.5
   Precision 1.5
   ImprovedBy "ASM3" Precision 0.33
-  ImprovedBy "ASM3" Movie Image "Units/Images/Missiles/Cruise.png"
   ImprovedBy "ASM2" Set CanBeIntercepted 0.4
   ImprovedBy "ASM2" Range 1.1
-  ImprovedBy "ASM2" Movie Image "Units/Images/Missiles/Maneur.png"
-  ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/hypersonic.png"
   ImprovedBy "ASM4" Range 1.5
   ImprovedBy "ASM4" Speed 3
   ImprovedBy "ASM4" CanBeIntercepted 0.1
   ImprovedBy "ASM4" Precision 0.9
   ImprovedBy "ASM4" Damage 1.5
   AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  
+  ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/SM70.png"
+  ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/SM80.png"
+  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/SM90.png"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/SM90.png"
+  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/SM20.png"
+  
+[MISSILE] "CONV_CRUISE"
+  Tech "M_CONV_CRUISE"
+  Type "Default"
+  Icon "Units/Images/Missiles/TLAM80.png"
+  Sound 113 or 114 Volume 0.5
+  Explosion "big_bomb_old"
+//  Explosion "big_bomb"
+//  Explosion "big_bombV2"
+//  Explosion "big_bombV3"
+//  Explosion "big_bombV4"
+  Range 1000
+  Speed 800
+  CanBeIntercepted 0.5
+  Precision 1.5
+  ImprovedBy "ASM3" Precision 0.33
+  ImprovedBy "ASM2" Set CanBeIntercepted 0.4
+  ImprovedBy "ASM2" Range 1.1
+  ImprovedBy "ASM4" Range 1.5
+  ImprovedBy "ASM4" Speed 3
+  ImprovedBy "ASM4" CanBeIntercepted 0.1
+  ImprovedBy "ASM4" Precision 0.9
+  ImprovedBy "ASM4" Damage 1.5
+  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  
+  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/TLAM00.png"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/TLAM10.png"
+  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/TLAM30.png"
+  
+[MISSILE] "NUKE_CRUISE"
+  Tech "M_NUKE_CRUISE"
+  Type "Default"
+  Icon "Units/Images/Missiles/TLAM60.png"
+  Sound 68
+  DrawSize 10
+  DrawNuke
+  Type "Nuke"
+  Explosion "nuke_100"
+  Range 2000
+  SingleAttack
+  CanBeIntercepted 0.6
+  Speed 1000
+  Precision 1.0
+  ProductionCost 0.5
+  ProductionCostDegrades
+  MaxNumberToOrder 25
+  ImprovedBy "ASM4" Range 1.5
+  ImprovedBy "ASM4" Speed 3
+  ImprovedBy "ASM4" CanBeIntercepted 0.1
+  ImprovedBy "ASM4" Precision 0.9
+  ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/AIR_MRBM_Hyper.png"
+  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5  
+
+  ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/TLAM70.png"
+  ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/TLAM80.png"  
+  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/TLAM00.png"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/TLAM10.png"
+  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/TLAM30.png"
+  
+  
 
 [MISSILE] "SAM"
   Tech "M_Surface_to_air_missile"

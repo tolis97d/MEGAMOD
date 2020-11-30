@@ -27,4 +27,17 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "NAVY30_NAME" LANG "2030s Naval Designs"
 "NAVY60_DESC" LANG "1960s Naval Designs"
+
+"M_SNAVALGUN_NAME" LANG "Mark 12 5''/38 Cal gun"
+"M_SNAVALGUN_DESC" LANG "5 INCH NAVAL GUNS, SECONDARY"
+
+"M_BIGGUNS_NAME" LANG "Mark 7 16''/50 Cal gun"
+"M_BIGGUNS_DESC" LANG "The 16INCH/50 caliber Mark 7 – United States Naval Gun is the main armament of the Iowa-class battleship. Fires Mark 8 'Super-heavy' shell, a 2700-Pound (1200kg) Armor Piercing, Capped, Ballistic Capped ammo or HC MARK 13 1900-Pound (860kg) High Explosive for shore bombardment. Was also able to fire the Nuclear Mk 23 (W23) Shell"
+
+"M_FLAKGUN_NAME" LANG "BOFORS 40MM FLAK"
+"M_FLAKGUN_DESC" LANG "The Bofors 40 mm gun, often referred to simply as the Bofors gun, is an anti-aircraft autocannon designed in the 1930s by the Swedish arms manufacturer AB Bofors. It was one of the most popular medium-weight anti-aircraft systems during World War II, used by most of the western Allies as well as some captured systems being used by the Axis powers. A small number of these weapons remain in service to this day, and saw action as late as the Persian Gulf War."
+
+"M_CIWS_NAME" LANG "CIWS"
+"M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
+
 END
