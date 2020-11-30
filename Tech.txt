@@ -455,19 +455,19 @@ Description "U_Cavern_DESC"
   Image "Images/Science/NAV80.png"
   Points 15
   LeadsTo "NAVY00"
-  LeadsTo "CWIS"
+  LeadsTo "CIWS"
   
-[TECHNOLOGY] "CWIS"
-  Name "CWIS_NAME"
-  Description "CWIS_DESC"
-  Image "Images/Science/NAV80.png"
+[TECHNOLOGY] "CIWS"
+  Name "CIWS_NAME"
+  Description "CIWS_DESC"
+  Image "Images/Science/CIWS1.png"
   Points 15
-  LeadsTo "CWIS_LASER"
+  LeadsTo "CIWS_LASER"
   
-[TECHNOLOGY] "CWIS_LASER"
-  Name "CWIS_LASER_NAME"
-  Description "CWIS_LASER_DESC"
-  Image "Images/Science/NAV80.png"
+[TECHNOLOGY] "CIWS_LASER"
+  Name "CIWS_LASER_NAME"
+  Description "CIWS_LASER_DESC"
+  Image "Images/Science/CIWS2.png"
   Points 15
 
 [TECHNOLOGY] "NAVY00"
@@ -592,7 +592,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "SW_Mk3"
   Name "SW_Mk3_NAME"
   Description "SW_Mk3_DESC"
-  Image "Images/Science/SW_Mk3.png"
+  Image "Images/Science/AESA.png"
   Points 15
   LeadsTo "AESA_RADAR"
   
@@ -883,6 +883,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "GPS"
   Name "GPS_NAME"
   Description "GPS_DESC"
+  Image "Images/Science/GPS.png"
   Points 100
   LeadsTo "B2_R"
   
@@ -988,7 +989,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "LASER_GUIDE"
   Name "LASER_GUIDE_NAME"
   Description "LASER_GUIDE_DESC"
-  Image "Images/Science/COMP70.png"
+  Image "Images/Science/LASER_TARGET.png"
   Points 15
   LeadsTo "B1_R"
   LeadsTo "LASER_PRACTICAL"   
@@ -996,7 +997,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "LASER_PRACTICAL"
   Name "LASER_PRACTICAL_NAME"
   Description "LASER_PRACTICAL_DESC"
-  Image "Images/Science/COMP70.png"
+  Image "Images/Science/PRACTICAL_LASER.png"
   Points 15
   LeadsTo "CWIS_LASER_R" 
   
@@ -1009,6 +1010,36 @@ Description "U_Cavern_DESC"
   Name "B1_R_NAME"
   Description "B1_R_DESC"
   LeadsTo "B1"
+  
+//BATTLESHIP STUFF
+
+[TECHNOLOGY] "M_SNAVALGUN"
+  Name "M_SNAVALGUN_NAME"
+  Description "M_SNAVALGUN_DESC"
+
+[TECHNOLOGY] "M_BIGGUNS"
+  Name "M_BIGGUNS_NAME"
+  Description "M_BIGGUNS_DESC"
+
+[TECHNOLOGY] "M_FLAKGUN"
+  Name "M_FLAKGUN_NAME"
+  Description "M_FLAKGUN_DESC"
+
+[TECHNOLOGY] "M_CIWS"
+  Name "M_CIWS_NAME"
+  Description "M_CIWS_DESC"
+
+[TECHNOLOGY] "Not_Targetable"
+  Name "Not_Targetable_NAME"
+  Description "Not_Targetable_DESC" 
+
+[TECHNOLOGY] "Not_Targetable_BIGGUNS"
+  Name "Not_Targetable_BIGGUNS_N"
+  Description "Not_Targetable_BIGGUNS_D" 
+
+[TECHNOLOGY] "Not_Targetable_FLACKGUN"
+  Name "Not_Targetable_FLAKGUN_N"
+  Description "Not_Targetable_FLAKGUN_D" 
 
 
 [END]

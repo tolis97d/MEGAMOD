@@ -47,8 +47,11 @@ Modifier options:
 
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
 
-  Modifier "5GEN"
-
+  Modifier "3GEN"
+  Modifier "4GEN"
+  Modifier "4GEN2"
+  Modifier "5GEN"  
+ 
   ImprovedBy "4GEN" Set Speed 1000
   ImprovedBy "4GEN" Set TurnSpeed 10
   ImprovedBy "4GEN" Set Size 0.015
@@ -278,9 +281,8 @@ Modifier options:
   TurnSpeed 5 // in angles per second
   Power 10
   Weapon "Torpedo" 25000 Launch 2 AutoEngage
-  Weapon "SSM" 20000 AutoEngage
-  Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
-  Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
+  Weapon "SNAVALGUN" 20000 Launch 2 Time 60 AutoEngage
+  Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
     ImprovedBy "SAM60"
       Weapon "Torpedo" 25000 Launch 2 AutoEngage
       Weapon "SSM" 20000 AutoEngage
@@ -331,10 +333,8 @@ Modifier options:
   Speed 40
   TurnSpeed 5 // in angles per second
   Power 20
-  Weapon "SSM" 20000 Launch 4 AutoEngage
-  Weapon "SAM" 20000 Launch 1 Time 120 AutoEngage
-  Weapon "SRBM" 1000 Time 360
-  Weapon "ASAT" 3 DefaultOff
+  Weapon "SNAVALGUN" 20000 Launch 2 Time 60 AutoEngage
+  Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
     ImprovedBy "SAM60"
       Weapon "SSM" 20000 Launch 4 AutoEngage
       Weapon "SAM" 20000 Launch 1 Time 70 AutoEngage
@@ -374,10 +374,10 @@ Modifier options:
   Speed 40
   TurnSpeed 5 // in angles per second
   Power 20
-  Weapon "SSM" 20000 Launch 4 AutoEngage
-  Weapon "SAM" 20000 Launch 1 Time 120 AutoEngage
-  Weapon "SRBM" 1000 Time 360
-  Weapon "ASAT" 3 DefaultOff
+  Weapon "SNAVALGUN" 20000 Launch 2 Time 60 AutoEngage
+  Weapon "BIGGUNS" 20000 Launch 12 Time 360 AutoEngage
+  Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
+  Weapon "Torpedo" 20000 Launch 2 AutoEngage
     ImprovedBy "SAM60"
       Weapon "SSM" 20000 Launch 4 AutoEngage
       Weapon "SAM" 20000 Launch 1 Time 70 AutoEngage
@@ -591,57 +591,7 @@ Modifier options:
   MaxElevation 10000
   Radar "Satellite Camera"
   ProductionCost 38
-  
-  
-[UNIT] "CVN_FR"
-  Tech "CVN_FR"
-  Movie "Units/Images/Airborne/CVN_FR50.vidx"
-  IconIDX 52
-  DrawSize 16
-  LaunchMeSound 83
-  Size 0.04
-  Sound 134 Volume 0.3
-  Type Airborne
-  NoAutoDeploy
-  Speed 800 // in km per h
-  TurnSpeed 8 // in angles per second
-  Range 4500 // in km
-  Power 1
-Config "Combat Air Patrol" Default   
-    Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time
-      ImprovedBy "3GEN"
-        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage
-  Config "Air to Surface Missile"
-        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage 
-        Weapon "ASM" 2 Launch 2 Time 90 AutoEngage Principal 
-        ImprovedBy "3GEN"
-    Weapon "AAM" 4 Launch 1 Time 60 AutoEngage
-      Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal
-        Config "Airlaunched Ballistic Missile"
-      ImprovedBy "5GEN"
-        Weapon "ASM" 1 Principal
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage
-  Radar "STD Vision"
-  Radar "STD Short Wave"
-  ProductionCost 2.2
-  Crash "std_bomb"
 
-  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842-
-
-  Modifier "5GEN"
-
-  ImprovedBy "3GEN" Set Speed 1000
-  ImprovedBy "3GEN" Set TurnSpeed 10
-  ImprovedBy "3GEN" Set Size 0.015
-  
-  ImprovedBy "5GEN" Set Power 1.5
-  ImprovedBy "5GEN" Set TurnSpeed 15
-  ImprovedBy "5GEN" Size 0.75
-  
-  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"
-  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR80.vidx"
-  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_FR00.vidx"
-  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_FR10.vidx"
 
   
 [UNIT] "CVN_ATK"
@@ -755,6 +705,56 @@ Config "Anti Submarine Warfare"
 
   ImprovedBy "Air_refuel" Range 1.5
 
+[UNIT] "CVN_FR"
+  Tech "CVN_FR"
+  Movie "Units/Images/Airborne/CVN_FR50.vidx"
+  IconIDX 52
+  DrawSize 16
+  LaunchMeSound 83
+  Size 0.04
+  Sound 134 Volume 0.3
+  Type Airborne
+  NoAutoDeploy
+  Speed 800 // in km per h
+  TurnSpeed 8 // in angles per second
+  Range 4500 // in km
+  Power 1
+  Config "Combat Air Patrol" Default   
+    Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time
+      ImprovedBy "3GEN"
+        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage
+  Config "Air to Surface Missile"
+        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage 
+        Weapon "ASM" 2 Launch 2 Time 90 AutoEngage Principal 
+        ImprovedBy "3GEN"
+          Weapon "AAM" 4 Launch 1 Time 60 AutoEngage
+          Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal
+  Config "Airlaunched Ballistic Missile"
+        ImprovedBy "5GEN"
+          Weapon "ASM" 1 Principal
+          Weapon "AAM" 2 Launch 1 Time 60 AutoEngage
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  ProductionCost 2.2
+  Crash "std_bomb"
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842-
+
+  Modifier "5GEN"
+
+  ImprovedBy "3GEN" Set Speed 1000
+  ImprovedBy "3GEN" Set TurnSpeed 10
+  ImprovedBy "3GEN" Set Size 0.015
+  
+  ImprovedBy "5GEN" Set Power 1.5
+  ImprovedBy "5GEN" Set TurnSpeed 15
+  ImprovedBy "5GEN" Size 0.75
+  
+  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"
+  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR80.vidx"
+  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_FR00.vidx"
+  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_FR10.vidx"
+  
 [UNIT] "Carrier"
   Tech "U_Carrier"
   Movie "Units/Images/Naval/CVN50.vidx"
@@ -785,6 +785,9 @@ Config "Anti Submarine Warfare"
   CanStoreMissiles "Torpedo" 50000
   CanStoreMissiles "Free fall bomb" 50000
   CanStoreMissiles "DepthCharge" 20000
+  Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
+  ImprovedBy "NAVY60"
+      Weapon "SAM" 20000 Launch 1 Time 70 AutoEngage  
   Radar "STD Vision"
   Radar "STD Long Wave"
   Modifier "NAVY60"

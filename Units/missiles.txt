@@ -59,8 +59,76 @@ Modifier options:
   RequiresPreciseTargeting No
   CanBeUsedAgainst Subwater
   
-  
+[TYPE] "BIGGUNS_TYPE"
+  RequiresPreciseTargeting No     
+  CanBeUsedAgainst Ground
+  CanBeUsedAgainst Naval
+  CanBeUsedAgainst AbstractPosition
+
+[TYPE] "SNAVALGUN_TYPE"
+  RequiresPreciseTargeting No      
+  CanBeUsedAgainst Ground
+  CanBeUsedAgainst Naval
+  CanBeUsedAgainst AbstractPosition
+
+[TYPE] "FLAKGUN_TYPE"
+  RequiresPreciseTargeting Yes      
+  CanBeUsedAgainst Airborne
+
 /////// Now, actual Missiles
+
+
+[MISSILE] "FLAKGUN"
+  Tech "M_FLAKGUN"
+  Icon "Units/Images/Missiles/SAM.png"
+  Sound 203
+   Volume 3
+    MuteLength 0.25
+  Type "FLAKGUN_TYPE"
+  Explosion "FLAKGUN_EXP"
+  Drawsize 2
+  Ballistic
+//  drawbomb 
+  Range 600
+  Speed 1400
+  Precision 30
+  Switchable ON
+
+
+[MISSILE] "BIGGUNS"
+  Tech "M_BIGGUNS"
+  Icon "Units/Images/Missiles/BBTURRET.png"
+  Sound 204
+    Volume 2
+    MuteLength .25
+  Type "BIGGUNS_TYPE"
+  Explosion "BIGGUNS_EXP"
+  Drawsize 8
+  Ballistic
+//  Heads 12 "SHELLS"
+  drawbomb 
+  Range 1200
+  Speed 1400
+  Elevation 400
+  Precision 50
+  Switchable ON
+  AffectedBy Unit "Not_Targetable_BIGGUNS" Set Precision 200
+
+[MISSILE] "SNAVALGUN"
+  Tech "M_SNAVALGUN"
+  Icon "Units/Images/Missiles/ASM.png" 
+  Sound 202
+    Volume 0.80 
+  Type "SNAVALGUN_TYPE"
+  Explosion "SNAVALGUN_EXP"
+  Drawsize 6
+  Ballistic
+  drawbomb 
+  Range 1000
+  Speed 1800
+  Elevation 200
+  Precision 4
+  Switchable ON
 
 
 [MISSILE] "Free fall bomb"
@@ -216,6 +284,33 @@ Modifier options:
 [MISSILE] "SSM"
   Tech "M_Surface_to_surface_missile"
   Type "Default"
+  Icon "Units/Images/Missiles/SSM.png"
+  Sound 113 or 114 Volume 0.5
+  Explosion "big_bomb_old"
+//  Explosion "big_bomb"
+//  Explosion "big_bombV2"
+//  Explosion "big_bombV3"
+//  Explosion "big_bombV4"
+  Range 1000
+  Speed 800
+  CanBeIntercepted 0.5
+  Precision 1.5
+  ImprovedBy "ASM3" Precision 0.33
+  ImprovedBy "ASM3" Movie Image "Units/Images/Missiles/Cruise.png"
+  ImprovedBy "ASM2" Set CanBeIntercepted 0.4
+  ImprovedBy "ASM2" Range 1.1
+  ImprovedBy "ASM2" Movie Image "Units/Images/Missiles/Maneur.png"
+  ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/hypersonic.png"
+  ImprovedBy "ASM4" Range 1.5
+  ImprovedBy "ASM4" Speed 3
+  ImprovedBy "ASM4" CanBeIntercepted 0.1
+  ImprovedBy "ASM4" Precision 0.9
+  ImprovedBy "ASM4" Damage 1.5
+  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  
+[MISSILE] "SPSPM"
+  Tech "M_Surface_to_surface_missile"
+  Type "AntiShip"
   Icon "Units/Images/Missiles/SSM.png"
   Sound 113 or 114 Volume 0.5
   Explosion "big_bomb_old"

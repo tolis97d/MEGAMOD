@@ -1,0 +1,53 @@
+USE PREVIOUS "Units/explosion.txt"
+
+
+[EXPLOSION] "BIGGUNS_EXP"
+  Movie "Images/Explosion/small_1.midx"
+  Sound 70
+    MuteLength 0.25
+  Damage 3.5
+  Range 5
+  FullEffectRange 1
+  DrawSize 5 
+  TimeGrowing 0.25 
+  TimeTotal 0.25 
+
+  
+  Variant Water
+    Emulated "Units/Emulated/Water_100K.txt"
+    DrawSize 10
+    TimeGrowing 1.0
+    TimeTotal 1.5
+    DrawYShift 0.55
+
+[EXPLOSION] "SNAVALGUN_EXP"
+  Movie "Images/Explosion/small_1.midx"
+  Sound 70
+    MuteLength 0.25
+  Damage .75 
+  Range 1
+  FullEffectRange 0.5
+  DrawSize 4
+  TimeGrowing 0.5
+  TimeTotal 0.5
+
+  
+  Variant Water
+    Emulated "Units/Emulated/Water_100K.txt"
+    DrawSize 2
+    TimeGrowing 0.50
+    TimeTotal 1.25
+    DrawYShift 0.55
+
+
+[EXPLOSION] "FLAKGUN_EXP"
+  Movie "Images/Explosion/small_1.midx" 
+  Damage 1.85
+  Range 10
+  FullEffectRange 0.5
+  DrawSize 3
+  TimeGrowing .5 
+  TimeTotal 2 
+
+
+[END]
