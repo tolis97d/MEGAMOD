@@ -269,7 +269,7 @@ Modifier options:
   Ballistic 
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.25
-  AffectedBy "ABM_Mk2" CanBeIntercepted 0.9 
+  AffectedBy "ABM2" CanBeIntercepted 0.9 
   ImprovedBy "ASM2" Precision 0.5 
   ImprovedBy "ASM2" Set Range 125 
   ImprovedBy "ASM3" Precision 0.1 
@@ -306,7 +306,7 @@ Modifier options:
   ImprovedBy "ASM4" CanBeIntercepted 0.1
   ImprovedBy "ASM4" Precision 0.9
   ImprovedBy "ASM4" Damage 1.5
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
   
 [MISSILE] "SPSPM"
   Tech "M_SHIP_SHIP"
@@ -330,7 +330,7 @@ Modifier options:
   ImprovedBy "ASM4" CanBeIntercepted 0.1
   ImprovedBy "ASM4" Precision 0.9
   ImprovedBy "ASM4" Damage 1.5
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
   
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/SM70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/SM80.png"
@@ -360,7 +360,7 @@ Modifier options:
   ImprovedBy "ASM4" CanBeIntercepted 0.1
   ImprovedBy "ASM4" Precision 0.9
   ImprovedBy "ASM4" Damage 1.5
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
   
   ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/TLAM00.png"
   ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/TLAM10.png"
@@ -388,7 +388,7 @@ Modifier options:
   ImprovedBy "ASM4" CanBeIntercepted 0.1
   ImprovedBy "ASM4" Precision 0.9
   ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/AIR_MRBM_Hyper.png"
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5  
+  AffectedBy "ABM2" CanBeIntercepted 1.5  
 
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/TLAM70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/TLAM80.png"  
@@ -426,9 +426,9 @@ Modifier options:
   Range 600
   Speed 5000
   Precision 0.05
-  ImprovedBy "ABM_Mk2" Set Range 800
-  ImprovedBy "ABM_Mk2" Set Speed 6000
-  ImprovedBy "ABM_Mk2" Movie Image "Units/Images/Missiles/abm_mk2.png"
+  ImprovedBy "ABM2" Set Range 800
+  ImprovedBy "ABM2" Set Speed 6000
+  ImprovedBy "ABM2" Movie Image "Units/Images/Missiles/ABM_MK2.png"
 
   GlobalShowType ABM_RANGES
 
@@ -494,7 +494,7 @@ Modifier options:
   ImprovedBy "ASM4" Speed 2
   ImprovedBy "ASM4" Range 1.5
   ImprovedBy "ASM4" CanBeIntercepted 0.15
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
 [MISSILE] "MRBM MIRV warhead"
   Tech "M_500K_WARHEAD"
@@ -510,7 +510,7 @@ Modifier options:
   AutoSlowDown
   Precision 3.0
   CanBeIntercepted 0.4
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
 [MISSILE] "MRBM"
   Tech "M_MRBM"
@@ -532,7 +532,7 @@ Modifier options:
   ProductionCostDegrades
   MaxNumberToOrder 25
   AutoSlowDown
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType MRBM_RANGES
 
@@ -560,7 +560,7 @@ Modifier options:
   ImprovedBy Unit "Advanced_MRBM_MIRV" Set Heads 3
 //  ImprovedBy Unit "Advanced_MRBM_MIRV" Set Range 6500
   ImprovedBy "MIRV" Movie Image "Units/Images/Missiles/MIRV_MRBM.png"
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType MRBM_RANGES
 
@@ -585,7 +585,7 @@ Modifier options:
   ImprovedBy "ASM4" CanBeIntercepted 0.1
   ImprovedBy "ASM4" Precision 0.9
   ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/AIR_MRBM_Hyper.png"
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType MRBM_RANGES
 
@@ -610,7 +610,7 @@ Modifier options:
   ProductionCost 1.8
   ProductionCostDegrades
   MaxNumberToOrder 3
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType ICBM_RANGES
 
@@ -635,7 +635,7 @@ Modifier options:
   ProductionCost 3.0
   ProductionCostDegrades
   MaxNumberToOrder 0
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType ICBM_RANGES
 
@@ -654,7 +654,7 @@ Modifier options:
   AutoSlowDown
   Precision 3.0
   CanBeIntercepted 0.3
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
 [MISSILE] "Fake warhead"
   Tech "M_1M_WARHEAD_FALSE"
@@ -670,7 +670,7 @@ Modifier options:
   AutoSlowDown
   Precision 3.0
   CanBeIntercepted 0.3
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
 [MISSILE] "ICBM MIRV"
   Tech "M_ICBM_MIRV"
@@ -692,7 +692,7 @@ Modifier options:
   ProductionCost 3.6
   ProductionCostDegrades
   MaxNumberToOrder 0
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType ICBM_RANGES
 
@@ -717,7 +717,7 @@ Modifier options:
   ProductionCost 4.0
   ProductionCostDegrades
   MaxNumberToOrder 0
-  AffectedBy "ABM_Mk2" CanBeIntercepted 1.5
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType ICBM_RANGES
 

@@ -572,10 +572,10 @@ Modifier options:
     ImprovedBy "SAM60"
       Weapon "SAM" 20000 Launch 4 Time 45 AutoEngage
       Weapon "ABM" 20000 Launch 1 Time 150 AutoEngage
-    ImprovedBy "ABM_Mk2"
+    ImprovedBy "ABM2"
       Weapon "SAM" 20000 Launch 4 Time 70 AutoEngage
       Weapon "ABM" 20000 Launch 1 Time 50 AutoEngage
-    ImprovedBy "ABM_Mk2"
+    ImprovedBy "ABM2"
       Weapon "SAM" 20000 Launch 4 Time 45 AutoEngage
       Weapon "ABM" 20000 Launch 1 Time 50 AutoEngage
   Radar "STD Short Wave"

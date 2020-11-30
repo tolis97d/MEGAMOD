@@ -375,7 +375,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SAM3.png"
   Points 40
   LeadsTo "SAM10"
-  LeadsTo "anti_ballistic_missile"		
+  LeadsTo "ABM1"		
   
 [TECHNOLOGY] "SAM10"
   Name "SAM10_NAME"
@@ -383,25 +383,25 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SAM4.png"
   Points 40
   
-[TECHNOLOGY] "anti_ballistic_missile"
-  Name "anti_ballistic_missile_NAME"
-  Description "anti_ballistic_missile_DESC"
+[TECHNOLOGY] "ABM1"
+  Name "ABM1_NAME"
+  Description "ABM1_DESC"
   Image "Images/Science/ABM1.png"
   Points 30
   LeadsTo "M_anti_ballistic_missile"
-  LeadsTo "ABM_Mk2"
+  LeadsTo "ABM2"
   LeadsTo "ASAT"
   
-[TECHNOLOGY] "ABM_Mk2"
-  Name "ABM_Mk2_NAME"
-  Description "ABM_Mk2_DESC"
+[TECHNOLOGY] "ABM2"
+  Name "ABM2_NAME"
+  Description "ABM2_DESC"
   Image "Images/Science/ABM2.png"
   Points 80
-  LeadsTo "ABM_Mk3"
+  LeadsTo "ABM3"
   
-[TECHNOLOGY] "ABM_Mk3"
-  Name "ABM_Mk3_NAME"
-  Description "ABM_Mk3_DESC"
+[TECHNOLOGY] "ABM3"
+  Name "ABM3_NAME"
+  Description "ABM3_DESC"
   Image "Images/Science/ABM3.png"
   Points 80  
 
@@ -419,10 +419,6 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_ASAT"
   Name "M_ASAT_NAME"
   Description "M_ASAT_DESC"
-
-[TECHNOLOGY] "ABM_Mk2"
-  Name "ABM_Mk2_NAME"
-  Description "ABM_Mk2_DESC"  
   
   
 [TECHNOLOGY] "CRUISE1"

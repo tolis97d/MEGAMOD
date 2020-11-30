@@ -10,8 +10,8 @@ Strategy "Standard"
   Discover "Thermonuclear_bomb"
   Discover "ICBM"
   Discover "Over_horizon_radar"
-  Discover "anti_ballistic_missile"
-  Discover "ABM_Mk2"
+  Discover "ABM1"
+  Discover "ABM2"
   Discover "Mega-warheads"
   Discover "Heavy_Missiles"
   Allow Attack
@@ -182,8 +182,8 @@ Strategy "Air superiority"
 Strategy "Defence First"
   Discover "Surface_to_air_missile"
   Discover "Over_horizon_radar"
-  Discover "anti_ballistic_missile"
-  Discover "ABM_Mk2" Critical
+  Discover "ABM1"
+  Discover "ABM2" Critical
   Discover "MRBM"
   Discover "ICBM"
   Discover "Mobile_SAM"
@@ -261,8 +261,8 @@ Strategy "Submarines"
   Discover "SUB00"
   Discover "Surface_to_air_missile"
   Discover "Over_horizon_radar"
-  Discover "anti_ballistic_missile"
-  Discover "ABM_Mk2" Critical
+  Discover "ABM1"
+  Discover "ABM2" Critical
   Discover "Satellite"
   Discover "MIRV" Critical
   Allow Attack
