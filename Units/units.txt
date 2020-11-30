@@ -10,6 +10,9 @@ Modifier options:
   DisassembleTime
 */
 
+//Please include an AIVarietyHint comment with any unit if it meets any of these categories. If no category suits, contact Rushyo.
+//AIVarietyHint Fighter, Bomber, AWACS, CarrierFighter, CarrierStrike, CarrierAWACS, AttackSub, SSBN, Carrier, NavalCapital, NavalEscort, Airport, MobileMissile, StaticMissile, LWRadar, MissileTrackRadar, SpaceTrackRadar, SAM, Satellite
+
 [UNIT] "Fighter"
   Tech "U_Fighter"
   Movie "Units/Images/Airborne/FR50.vidx"
@@ -20,6 +23,7 @@ Modifier options:
   Size 0.04
   Sound 134 Volume 0.3
   Type Airborne
+  //AIVarietyHint Fighter
   NoAutoDeploy
   Speed 800 // in km per h
   TurnSpeed 8 // in angles per second
@@ -73,6 +77,7 @@ Modifier options:
   Size 0.045
   Sound 134 Volume 0.3
   Type Airborne
+  //AIVarietyHint CarrierStrike
   NoAutoDeploy
   Speed 600
   TurnSpeed 6
@@ -127,6 +132,7 @@ Modifier options:
   Size 0.06
   Sound 135 Volume 0.3
   Type Airborne
+  //AIVarietyHint Bomber
   NoAutoDeploy
   Speed 400
   TurnSpeed 3
@@ -185,6 +191,7 @@ Modifier options:
   Size 0.075
   Sound 136 Volume 0.4
   Type Airborne
+  //AIVarietyHint AWACS
   NoAutoDeploy
   Speed 400
   TurnSpeed 3
@@ -209,6 +216,7 @@ Modifier options:
   Size 0.2
   Sound 133  Volume 0.75
   Type Subwater
+  //AIVarietyHint AttackSub
   Speed 60
   TurnSpeed 5 // in angles per second
   Power 5
@@ -238,6 +246,7 @@ Modifier options:
   Size 0.25
   Sound 133 Volume 0.75
   Type Subwater
+  //AIVarietyHint SSBN
   AttackerInPlanner
   Speed 50
   TurnSpeed 5 // in angles per second
@@ -274,6 +283,7 @@ Modifier options:
   Size 0.2
   Sound 131 Volume 0.75
   Type Naval
+  //AIVarietyHint NavalEscort
   Speed 55
   TurnSpeed 5 // in angles per second
   Power 10
@@ -327,6 +337,7 @@ Modifier options:
   Size 0.3
   Sound 130 Volume 0.75
   Type Naval
+  //AIVarietyHint NavalEscort
   AttackerInPlanner
   Speed 40
   TurnSpeed 5 // in angles per second
@@ -370,6 +381,7 @@ Modifier options:
   Size 0.3
   Sound 130 Volume 0.75
   Type Naval
+  //AIVarietyHint NavalCapital
   AttackerInPlanner
   Speed 40
   TurnSpeed 5 // in angles per second
@@ -410,6 +422,7 @@ Modifier options:
   Size 1.5
   Sound 138 Volume 0.5
   Type Ground
+  //AIVarietyHint Airport
   AttackerInPlanner
   Power 20
   Airway Launch 2 Time 180 // in seconds in 1x time
@@ -431,6 +444,7 @@ Modifier options:
   Size 0.05
   Sound 140 Volume 0.75
   Type Ground
+  //AIVarietyHint MobileMissile
   AttackerInPlanner
   HiddenFromAllies
   Disassemble 0.35
@@ -449,6 +463,7 @@ Modifier options:
   Size 0.06
   Sound 140 Volume 0.75
   Type Ground
+  //AIVarietyHint MobileMissile
   AttackerInPlanner
   HiddenFromAllies
   Disassemble 0.45
@@ -469,6 +484,7 @@ Modifier options:
   Size 0.2
   Sound 137
   Type Ground
+  //AIVarietyHint StaticMissile
   AttackerInPlanner
   HiddenFromAllies
   AttackIfDestroyed
@@ -494,6 +510,7 @@ Modifier options:
   Size 0.6
   Sound 139 Volume 0.25
   Type Ground
+  //AIVarietyHint LWRadar
   Power 2
   Radar "Fixed Long Wave"
   Radar "Fixed Short Wave"
@@ -506,6 +523,7 @@ Modifier options:
   Size 0.1
   Sound 139 Volume 0.25
   Type Ground
+  //AIVarietyHint MissileTrackRadar
   Power 10
   Radar "Over_Horizon"
   ProductionCost 36
@@ -518,6 +536,7 @@ Modifier options:
   Size 0.1
   Sound 139 Volume 0.25
   Type Ground
+  //AIVarietyHint SpaceTrackRadar
   Power 3
   Radar "Space_Radar"
   Radar "Small_Over_Horizon"
@@ -530,6 +549,7 @@ Modifier options:
   Size 0.1
   Sound 141 Volume 0.4
   Type Ground
+  //AIVarietyHint SAM
   Power 2
   Weapon "SAM" 20000 Launch 4 Time 70 AutoEngage
   Weapon "ABM" 20000 Launch 1 Time 150 AutoEngage
@@ -559,6 +579,7 @@ Modifier options:
   Size 0.05
   Sound 141 Volume 0.6
   Type Ground
+  //AIVarietyHint SAM
   Disassemble 0.15
   VirtualSpeed 750
   Power 2
@@ -585,6 +606,7 @@ Modifier options:
   Size 0.175
   Sound 142 Volume 0.75
   Type Satellite
+  //AIVarietyHint Satellite
   Power 1
   Weapon "Laser" 20000 Launch 1 Time 60 AutoEngage
   MinElevation 4000
@@ -602,6 +624,7 @@ Modifier options:
   Size 0.04
   Sound 134 Volume 0.3
   Type Airborne
+  //AIVarietyHint CarrierFighter
   NoAutoDeploy
   Speed 800 // in km per h
   TurnSpeed 8 // in angles per second
@@ -653,6 +676,7 @@ Config "Combat Air Patrol" Default
   Size 0.045
   Sound 134 Volume 0.3
   Type Airborne
+  //AIVarietyHint CarrierStrike
   NoAutoDeploy
   Speed 600
   TurnSpeed 6
@@ -711,6 +735,7 @@ Config "Combat Air Patrol" Default
   Size 0.075
   Sound 136 Volume 0.4
   Type Airborne
+  //AIVarietyHint CarrierAWACS
   NoAutoDeploy
   Speed 400
   TurnSpeed 3
@@ -736,6 +761,7 @@ Config "Combat Air Patrol" Default
   Size 0.075
   Sound 143 Volume 0.4
   Type Airborne
+  //AIVarietyHint CarrierStrike
   NoAutoDeploy
   Speed 350
   TurnSpeed 3
@@ -767,6 +793,7 @@ Config "Anti Submarine Warfare"
   Size 0.4
   Sound 132 Volume 0.9
   Type Naval
+  //AIVarietyHint Carrier
   AttackerInPlanner
   Speed 35
   TurnSpeed 5 // in angles per second
