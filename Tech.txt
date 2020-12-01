@@ -41,6 +41,10 @@
 [TECHNOLOGY] "U_Airport"
   Name "U_AIRPORT_NAME"
   Description "U_AIRPORT_DESC"
+  
+[TECHNOLOGY] "U_Airport2"
+  Name "U_AIRPORT2_NAME"
+  Description "U_AIRPORT2_DESC"
 
 [TECHNOLOGY] "M_Free_fall_bomb"
   Name "M_FREE_FALL_BOMB_NAME"

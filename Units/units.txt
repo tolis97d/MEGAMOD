@@ -31,7 +31,7 @@ Modifier options:
   Power 1
   Config "Combat Air Patrol" Default 
     Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage 
+    Weapon "AAM" 4 Launch 2 Time 60 AutoEngage 
    Config "Air to Surface Missile" 
     Weapon "AAM" 2 Launch 1 Time 60 AutoEngage  
     Weapon "ASM" 2 Launch 2 Time 90 AutoEngage Principal 
@@ -65,10 +65,10 @@ Modifier options:
   ImprovedBy "5GEN" Set TurnSpeed 15
   ImprovedBy "5GEN" Size 0.75
  
-  ImprovedBy "3GEN" Movie "Units/Images/Airborne/FR60.vidx" Icon "Units/Images/Icons/aircraft_advanced.png"   
-  ImprovedBy "4GEN" Movie "Units/Images/Airborne/FR80.vidx" Icon "Units/Images/Icons/aircraft_advanced.png"
-  ImprovedBy "4GEN2" Movie "Units/Images/Airborne/FR00.vidx" Icon "Units/Images/Icons/aircraft_advanced.png"    
-  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/FR30.vidx" Icon "Units/Images/Icons/aircraft_stealth.png"
+  ImprovedBy "3GEN" Movie "Units/Images/Airborne/FR60.vidx"  
+  ImprovedBy "4GEN" Movie "Units/Images/Airborne/FR70.vidx"
+  ImprovedBy "4GEN2" Movie "Units/Images/Airborne/FR00.vidx"   
+  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/FR30.vidx"
   
 [UNIT] "Attack"
   Tech "U_Attack"
@@ -114,15 +114,18 @@ Modifier options:
 
   Modifier "5GEN"
 
-  ImprovedBy "3GEN" Movie "Units/Images/Airborne/carrier_advanced.vidx" Icon "Units/Images/Icons/carrier_advanced.png"
   ImprovedBy "3GEN" Set Speed 750
   ImprovedBy "3GEN" Set TurnSpeed 8
   ImprovedBy "3GEN" Set Size 0.02
 
-  ImprovedBy "5GEN" Movie "Units/Images/Airborne/carrier_stealth.vidx" Icon "Units/Images/Icons/carrier_stealth.png"
   ImprovedBy "5GEN" Set Speed 900
   ImprovedBy "5GEN" Set TurnSpeed 11
   ImprovedBy "5GEN" Size 0.75
+  
+  ImprovedBy "3GEN" Movie "Units/Images/Airborne/MULTI60.vidx"
+  ImprovedBy "4GEN" Movie "Units/Images/Airborne/MULTI70.vidx"
+  ImprovedBy "4GEN2" Movie "Units/Images/Airborne/MULTI00.vidx"
+  ImprovedBy "5GEN" Movie "Units/Images/Airborne/MULTI10.vidx"
 
 
 [UNIT] "Bomber"
@@ -208,9 +211,10 @@ Modifier options:
 
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
 
+
 [UNIT] "Submarine"
   Tech "U_Submarine"
-  Movie "Units/Images/Naval/ss.vidx"
+  Movie "Units/Images/Naval/SSN50.vidx"
   Icon "Units/Images/Icons/ss.png"
   RoundIcon "Units/Images/Icons/ss_round.png"
   IconIDX 9
@@ -236,10 +240,15 @@ Modifier options:
 //  ImprovedBy "SUB60" Set Speed 50
   ImprovedBy "SUB80" Set Speed 65
   ImprovedBy "SUB00" Set Speed 75
+  
+  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/SSN60.vidx"
+  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/SSN80.vidx"
+  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/SSN00.vidx"
+  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/SSN30.vidx"
 
 [UNIT] "Nuclear_Submarine"
   Tech "U_Nuclear_Submarine"
-  Movie "Units/Images/Naval/ssn.vidx"
+  Movie "Units/Images/Naval/SSBN60.vidx"
   Icon "Units/Images/Icons/ssbn.png"
   RoundIcon "Units/Images/Icons/ssbn_round.png"
   IconIDX 9
@@ -271,6 +280,10 @@ Modifier options:
 //  ImprovedBy "SUB60" Set Speed 40
   ImprovedBy "SUB80" Set Speed 55
   ImprovedBy "SUB00" Set Speed 65
+  
+  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/SSBN80.vidx"
+  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/SSBN00.vidx"
+  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/SSBN30.vidx"
 
   MaxNumberToOrder 0
 
@@ -420,7 +433,7 @@ Modifier options:
 
 [UNIT] "Airport"
   Tech "U_Airport"
-  Movie "Units/Images/Ground/Airport.midx"
+  Movie "Units/Images/Ground/AIR2.midx"
 //  Icon "Units/Images/Ground/airport_img.png"
   DrawSize 34
   DrawOrder 1
@@ -434,6 +447,29 @@ Modifier options:
   Airway Launch 1 Time 220 // in seconds in 1x time
   CanHostAircrafts "Fighter" 15 Patrol 2
   CanHostAircrafts airway 1 "Bomber" 5
+  CanHostAircrafts airway 1 "AWACS" 1
+  CanAccessGlobalStorage
+  Radar "STD Vision"
+  Radar "STD Long Wave"
+  ProductionCost 12
+  NoAutoAttack
+  
+[UNIT] "Airport2"
+  Tech "U_Airport2"
+  Movie "Units/Images/Ground/AIR1.midx"
+//  Icon "Units/Images/Ground/airport_img.png"
+  DrawSize 34
+  DrawOrder 1
+  Size 1.5
+  Sound 138 Volume 0.5
+  Type Ground
+  //AIVarietyHint Airport
+  AttackerInPlanner
+  Power 20
+  Airway Launch 2 Time 180 // in seconds in 1x time
+  Airway Launch 1 Time 220 // in seconds in 1x time
+  CanHostAircrafts "Fighter" 15 Patrol 2
+  CanHostAircrafts airway 1 "Attack" 10
   CanHostAircrafts airway 1 "AWACS" 1
   CanAccessGlobalStorage
   Radar "STD Vision"
@@ -510,7 +546,7 @@ Modifier options:
 
 [UNIT] "Fixed LW radar"
   Tech "U_Long_wave_radar"
-  Movie "Units/Images/Ground/long_wave.midx"
+  Movie "Units/Images/Ground/RADAREARLY.vidx"
   DrawSize 24
   Size 0.6
   Sound 139 Volume 0.25

@@ -1,4 +1,3 @@
-Default "units/images/airborne/F84.midx"
-Variant 2 "units/images/airborne/EF2000.midx"
-Variant 3 "units/images/airborne/SU27.midx"
-Variant 4 "units/images/airborne/J10.midx"
+Default "units/images/airborne/F102.midx"
+Variant 3 "units/images/airborne/SU9.midx"
+Variant 4 "units/images/airborne/SU9.midx"
