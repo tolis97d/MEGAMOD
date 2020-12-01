@@ -1,5 +1,42 @@
 USE PREVIOUS "AI/Groups.txt"
 
+Group FixedLWradar_Balanced
+  PlacementType Radar distant
+  "Fixed LW radar"
+  "SAM_site"
+
+
+Group SAM_site_Balanced
+  PlacementType CityDefence self
+  "SAM_site"
+  Avoid City
+
+
+Group MOBILE_SAM_Balanced
+  PlacementType ObjectDefence self
+  "MOBILE_SAM"
+  Avoid City
+
+
+Group Satellite_Balanced
+  PlacementType Orbit self
+  "Satellite"
+  Avoid City
+
+
+Group Over_Horizonradar_Balanced
+  PlacementType OverHorizonRadar distant
+  DistanceFrom "Over_Horizon radar"
+  "Over_Horizon radar"
+  "SAM_site"
+
+
+Group Space_radar_Balanced
+  PlacementType Orbit self distant
+  "Space_radar"
+  "SAM_site"
+
+
 Group Carrier_Balanced
   PlacementType NavalBase self
   AttackType CarrierAttack
@@ -33,11 +70,170 @@ Group Carrier_Balanced
   Target "CVN_ATK" Priority 10
   Target "CVN_AWACS" Priority 10
   Target "CVN_ASW" Priority 10
+  Target "CVN_FR" Priority 10
   Target "Carrier" Priority 100 Conventional Nuclear
   Avoid "Submarine"
   Avoid "Destroyer"
   Avoid "Cruiser"
   MaxTargets 2
   return when type "Fighter" 3 type "Attack" 5
+
+
+Group FixedLWradar_Aggressive
+  PlacementType Radar distant
+  "Fixed LW radar"
+  "SAM_site"
+
+
+Group SAM_site_Aggressive
+  PlacementType CityDefence self
+  "SAM_site"
+  Avoid City
+
+
+Group MOBILE_SAM_Aggressive
+  PlacementType ObjectDefence self
+  "MOBILE_SAM"
+  Avoid City
+
+
+Group Satellite_Aggressive
+  PlacementType Orbit self
+  "Satellite"
+  Avoid City
+
+
+Group Over_Horizonradar_Aggressive
+  PlacementType OverHorizonRadar distant
+  DistanceFrom "Over_Horizon radar"
+  "Over_Horizon radar"
+  "SAM_site"
+
+
+Group Space_radar_Aggressive
+  PlacementType Orbit self distant
+  "Space_radar"
+
+
+Group Carrier_Aggressive
+  PlacementType NavalBase self
+  AttackType CarrierAttack
+  WaitType SubmarineHide
+  "Carrier" leader
+  "Destroyer"
+  "Destroyer"
+  "Cruiser" optional
+  "Submarine" optional
+  Target City Priority 100 Nuclear
+  Target "Fighter" Priority 10
+  Target "Attack" Priority 10
+  Target "Bomber" Priority 30
+  Target "AWACS" Priority 10
+  Target "Submarine" Priority 50
+  Target "Nuclear_Submarine" Immediate Priority 1000
+  Target "Destroyer" Priority 100
+  Target "Cruiser" Priority 200
+  Target "Battlecruiser" Priority 200
+  Target "Airport" Priority 100 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
+  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Fixed LW radar" Priority 100
+  Target "Over_Horizon radar" Priority 10000 Fade 0.01
+  Target "Space_radar" Priority 100
+  Target "SAM_site" Priority 3000
+  Target "MOBILE_SAM" Priority 3000
+  Target "Satellite" Priority 10
+  Target "CVN_FR" Priority 10
+  Target "CVN_ATK" Priority 10
+  Target "CVN_AWACS" Priority 10
+  Target "CVN_ASW" Priority 10
+  Target "CVN_FR" Priority 10
+  Target "Carrier" Priority 100 Conventional Nuclear
+  Avoid "Submarine"
+  Avoid "Destroyer"
+  Avoid "Cruiser"
+  MaxTargets 2
+  return when type "Fighter" 3 type "Attack" 5
+
+
+Group FixedLWradar_Cautious
+  PlacementType Radar distant
+  "Fixed LW radar"
+
+
+Group SAM_site_Cautious
+  PlacementType CityDefence self
+  "SAM_site"
+  Avoid City
+
+
+Group MOBILE_SAM_Cautious
+  PlacementType ObjectDefence self
+  "MOBILE_SAM"
+  Avoid City
+
+
+Group Satellite_Cautious
+  PlacementType Orbit self
+  "Satellite"
+  Avoid City
+
+
+Group Over_Horizonradar_Cautious
+  PlacementType OverHorizonRadar distant
+  DistanceFrom "Over_Horizon radar"
+  "Over_Horizon radar"
+  "SAM_site"
+  "SAM_site"
+
+
+Group Space_radar_Cautious
+  PlacementType Orbit self distant
+  "Space_radar"
+  "SAM_site"
+
+
+Group Carrier_Cautious
+  PlacementType NavalBase self
+  AttackType CarrierAttack
+  WaitType SubmarineHide
+  "Carrier" leader
+  "Destroyer"
+  "Destroyer"
+  "Cruiser" optional
+  "Submarine" optional
+  Target City Priority 100 Nuclear
+  Target "Fighter" Priority 10
+  Target "Attack" Priority 10
+  Target "Bomber" Priority 30
+  Target "AWACS" Priority 10
+  Target "Submarine" Priority 50
+  Target "Nuclear_Submarine" Immediate Priority 1000
+  Target "Destroyer" Priority 100
+  Target "Cruiser" Priority 200
+  Target "Battlecruiser" Priority 200
+  Target "Airport" Priority 100 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
+  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Fixed LW radar" Priority 100
+  Target "Over_Horizon radar" Priority 10000 Fade 0.01
+  Target "Space_radar" Priority 100
+  Target "SAM_site" Priority 3000
+  Target "MOBILE_SAM" Priority 3000
+  Target "Satellite" Priority 10
+  Target "CVN_FR" Priority 10
+  Target "CVN_ATK" Priority 10
+  Target "CVN_AWACS" Priority 10
+  Target "CVN_ASW" Priority 10
+  Target "CVN_FR" Priority 10
+  Target "Carrier" Priority 100 Conventional Nuclear
+  Avoid "Submarine"
+  Avoid "Destroyer"
+  Avoid "Cruiser"
+  MaxTargets 2
+  return when type "Fighter" 3 type "Attack" 5
+
 
 END
