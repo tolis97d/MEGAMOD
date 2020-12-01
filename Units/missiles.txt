@@ -134,7 +134,7 @@ Modifier options:
 [MISSILE] "Free fall bomb"
   Tech "M_Free_fall_bomb"
   Type "Default"
-  Icon "Units/Images/Missiles/B0.png"
+  Icon "Units/Images/Missiles/B0.vidx"
   DrawBomb
   Explosion "std_bomb"
   Range 30
