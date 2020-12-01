@@ -16,8 +16,6 @@ Modifier options:
 [UNIT] "Fighter"
   Tech "U_Fighter"
   Movie "Units/Images/Airborne/FR50.vidx"
-  Icon "Units/Images/Icons/aircraft_fighter.png"
-  IconIDX 52
   DrawSize 16
   LaunchMeSound 83
   Size 0.04
@@ -73,8 +71,6 @@ Modifier options:
 [UNIT] "Attack"
   Tech "U_Attack"
   Movie "Units/Images/Airborne/carrier_fighter.vidx"
-  Icon "Units/Images/Icons/carrier_fighter.png"
-  IconIDX 5
   DrawSize 15.5
   LaunchMeSound 83
   Size 0.045
@@ -131,8 +127,6 @@ Modifier options:
 [UNIT] "Bomber"
   Tech "U_Bomber"
   Movie "Units/Images/Airborne/Bomber_default.vidx"
-  Icon "Units/Images/Icons/Bomber_default.png"
-  IconIDX 12
   DrawSize 24
   LaunchMeSound 84
   Size 0.06
@@ -190,8 +184,6 @@ Modifier options:
 [UNIT] "AWACS"
   Tech "U_AWACS"
   Movie "Units/Images/Airborne/awacs.vidx"
-  Icon "Units/Images/Icons/aircraft_AWACS.png"
-  IconIDX 2
   DrawSize 24
   LaunchMeSound 84
   Size 0.075
@@ -215,9 +207,6 @@ Modifier options:
 [UNIT] "Submarine"
   Tech "U_Submarine"
   Movie "Units/Images/Naval/SSN50.vidx"
-  Icon "Units/Images/Icons/ss.png"
-  RoundIcon "Units/Images/Icons/ss_round.png"
-  IconIDX 9
   DrawSize 27
   FollowRadius 28//24
   Size 0.2
