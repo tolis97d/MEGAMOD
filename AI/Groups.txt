@@ -49,6 +49,7 @@ Group Carrier_Balanced
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Immediate Priority 1000
   Target "Airport" Priority 100 Conventional Nuclear
+  Target "Airport2" Priority 100 Conventional Nuclear
   Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
   Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
@@ -70,6 +71,25 @@ Group Airport_Balanced
   DistanceFrom "Bomber"
   DistanceType flight
   "Airport"
+  extra missile 10
+  Target City Priority 100 Nuclear
+  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
+  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
+  Target "Missile Silo" Priority 8000 Nuclear
+  Avoid "Destroyer"
+  Avoid "Cruiser"
+  Avoid "SAM_site"
+  Avoid "MOBILE_SAM"
+  Avoid "Carrier"
+  MaxTargets 3
+
+
+Group Airport2_Balanced
+  PlacementType Airbase
+  DistanceFrom "Bomber"
+  DistanceType flight
+  "Airport2"
   extra missile 10
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
@@ -132,6 +152,7 @@ Group Nuclear_Submarine_Balanced
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Immediate Priority 100
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Mobile_MRBM" Priority 10000 Nuclear
   Target "Mobile_ICBM" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
@@ -146,6 +167,7 @@ Group MissileSilo_Balanced
   extra missile 3
   Target City Priority 100 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
 
 
@@ -155,6 +177,7 @@ Group Mobile_MRBM_Balanced
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 10000 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
   Target "Carrier" Priority 3000 Nuclear
   extra missile 3
@@ -167,6 +190,7 @@ Group Mobile_ICBM_Balanced
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 10000 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
   Target "Carrier" Priority 3000 Nuclear
   extra missile 3
@@ -187,6 +211,7 @@ Group Cruiser_SAG_Balanced
   Target "Destroyer" Immediate Priority 100
   Target "Cruiser" Immediate Priority 100
   Target "Airport" Immediate Priority 1000
+  Target "Airport2" Immediate Priority 1000
   Target "Missile Silo" Priority 1000 Conventional Nuclear
   Target "Carrier" Immediate Priority 1000
   Avoid City
@@ -206,6 +231,7 @@ Group Battlecruiser_SAG_Balanced
   Target "Destroyer" Immediate Priority 100
   Target "Cruiser" Immediate Priority 100
   Target "Airport" Immediate Priority 1000
+  Target "Airport2" Immediate Priority 1000
   Target "Missile Silo" Priority 1000 Conventional Nuclear
   Target "Carrier" Immediate Priority 1000
   Avoid City
@@ -223,6 +249,7 @@ Group Carrier_Aggressive
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Immediate Priority 1000
   Target "Airport" Priority 100 Conventional Nuclear
+  Target "Airport2" Priority 100 Conventional Nuclear
   Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
   Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
@@ -244,6 +271,25 @@ Group Airport_Aggressive
   DistanceFrom "Bomber"
   DistanceType flight
   "Airport"
+  extra missile 10
+  Target City Priority 100 Nuclear
+  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
+  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
+  Target "Missile Silo" Priority 8000 Nuclear
+  Avoid "Destroyer"
+  Avoid "Cruiser"
+  Avoid "SAM_site"
+  Avoid "MOBILE_SAM"
+  Avoid "Carrier"
+  MaxTargets 3
+
+
+Group Airport2_Aggressive
+  PlacementType Airbase
+  DistanceFrom "Bomber"
+  DistanceType flight
+  "Airport2"
   extra missile 10
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
@@ -306,6 +352,7 @@ Group Nuclear_Submarine_Aggressive
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Immediate Priority 100
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Mobile_MRBM" Priority 10000 Nuclear
   Target "Mobile_ICBM" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
@@ -320,6 +367,7 @@ Group MissileSilo_Aggressive
   extra missile 3
   Target City Priority 100 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
 
 
@@ -329,6 +377,7 @@ Group Mobile_MRBM_Aggressive
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 10000 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
   Target "Carrier" Priority 3000 Nuclear
   extra missile 3
@@ -341,6 +390,7 @@ Group Mobile_ICBM_Aggressive
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 10000 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
   Target "Carrier" Priority 3000 Nuclear
   extra missile 3
@@ -361,6 +411,7 @@ Group Cruiser_SAG_Aggressive
   Target "Destroyer" Immediate Priority 100
   Target "Cruiser" Immediate Priority 100
   Target "Airport" Immediate Priority 1000
+  Target "Airport2" Immediate Priority 1000
   Target "Missile Silo" Priority 1000 Conventional Nuclear
   Target "Carrier" Immediate Priority 1000
   Avoid City
@@ -380,6 +431,7 @@ Group Battlecruiser_SAG_Aggressive
   Target "Destroyer" Immediate Priority 100
   Target "Cruiser" Immediate Priority 100
   Target "Airport" Immediate Priority 1000
+  Target "Airport2" Immediate Priority 1000
   Target "Missile Silo" Priority 1000 Conventional Nuclear
   Target "Carrier" Immediate Priority 1000
   Avoid City
@@ -397,6 +449,7 @@ Group Carrier_Cautious
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Immediate Priority 1000
   Target "Airport" Priority 100 Conventional Nuclear
+  Target "Airport2" Priority 100 Conventional Nuclear
   Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
   Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
@@ -418,6 +471,25 @@ Group Airport_Cautious
   DistanceFrom "Bomber"
   DistanceType flight
   "Airport"
+  extra missile 10
+  Target City Priority 100 Nuclear
+  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
+  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
+  Target "Missile Silo" Priority 8000 Nuclear
+  Avoid "Destroyer"
+  Avoid "Cruiser"
+  Avoid "SAM_site"
+  Avoid "MOBILE_SAM"
+  Avoid "Carrier"
+  MaxTargets 3
+
+
+Group Airport2_Cautious
+  PlacementType Airbase
+  DistanceFrom "Bomber"
+  DistanceType flight
+  "Airport2"
   extra missile 10
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
@@ -480,6 +552,7 @@ Group Nuclear_Submarine_Cautious
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Immediate Priority 100
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Mobile_MRBM" Priority 10000 Nuclear
   Target "Mobile_ICBM" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
@@ -494,6 +567,7 @@ Group MissileSilo_Cautious
   extra missile 3
   Target City Priority 100 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
 
 
@@ -503,6 +577,7 @@ Group Mobile_MRBM_Cautious
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 10000 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
   Target "Carrier" Priority 3000 Nuclear
   extra missile 3
@@ -515,6 +590,7 @@ Group Mobile_ICBM_Cautious
   Target City Priority 100 Nuclear
   Target "Nuclear_Submarine" Priority 10000 Nuclear
   Target "Airport" Priority 10000 Nuclear
+  Target "Airport2" Priority 10000 Nuclear
   Target "Missile Silo" Priority 10000 Nuclear
   Target "Carrier" Priority 3000 Nuclear
   extra missile 3
@@ -535,6 +611,7 @@ Group Cruiser_SAG_Cautious
   Target "Destroyer" Immediate Priority 100
   Target "Cruiser" Immediate Priority 100
   Target "Airport" Immediate Priority 1000
+  Target "Airport2" Immediate Priority 1000
   Target "Missile Silo" Priority 1000 Conventional Nuclear
   Target "Carrier" Immediate Priority 1000
   Avoid City
@@ -554,6 +631,7 @@ Group Battlecruiser_SAG_Cautious
   Target "Destroyer" Immediate Priority 100
   Target "Cruiser" Immediate Priority 100
   Target "Airport" Immediate Priority 1000
+  Target "Airport2" Immediate Priority 1000
   Target "Missile Silo" Priority 1000 Conventional Nuclear
   Target "Carrier" Immediate Priority 1000
   Avoid City
