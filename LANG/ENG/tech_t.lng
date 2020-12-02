@@ -4,6 +4,30 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "U_Cavern_DESC" LANG "Underground Airfield facilities provide better protecition against the effects of weapons deployed against this structure. However, this limits the size of the aircraft that can be stored in the caverns."
 "U_Cavern_NAME" LANG "Cavern Airfield"
 
+"U_BATTLECRUISER_NAME" LANG "Heavy surface combatant"
+"U_BATTLECRUISER_DESC" LANG "Heavy surface combatans refer to both battleships still used as gun platforms during the early cold war as well as a class of nuclear-powered guided missile cruisers of the Soviet Navy and Russian Navy, the largest and heaviest surface combatant warships in operation in the world. Among modern warships, they are second in size only to large aircraft carriers, and of similar size to a World War I era battleship."
+
+"U_ATTACK_NAME" LANG "Multirole combat aircraft"
+"U_ATTACK_DESC" LANG "A multirole combat aircraft (MRCA) is a combat aircraft intended to perform different roles in combat.A multirole fighter is a multirole combat aircraft which is, at the same time, also a fighter aircraft; in other words, an aircraft whose various roles include, among others, the role of air-to-air combat."
+
+"U_AIRPORT_NAME" LANG "Strategic Airbase"
+"U_AIRPORT_DESC" LANG "An airbase which host strategic bombers and interceptors"
+
+"U_AIRPORT2_NAME" LANG "Tactical AirBase"
+"U_AIRPORT2_DESC" LANG "An airbase which hosts interceptors as well as fighter-bombers"
+
+"ASM1_M_NAME" LANG "Air-to-surface missile"
+"ASM1_M_DESC" LANG "An air-to-surface missile is a missile designed to be launched from military aircraft at targets on land or sea.The two most common propulsion systems for air-to-surface missiles are rocket motors, usually with shorter range, and slower, longer-range jet engines. Some air-to-surface missiles are powered by ramjets, giving them both long range and high speed."
+
+"M_CONV_CRUISE_NAME" LANG "Conventional Cruise Missile"
+"M_CONV_CRUISE_DESC" LANG "A cruise missile is a guided missile using GPS guidance and used against terrestrial targets, that remains in the atmosphere and flies the major portion of its flight path at approximately constant speed. Cruise missiles are designed to deliver a large warhead over long distances with high precision. Modern cruise missiles are capable of travelling at supersonic or high subsonic speeds, are self-navigating, and are able to fly on a non-ballistic, extremely low-altitude trajectory."
+
+"M_NUKE_CRUISE_NAME" LANG "Nuclear Cruise Missile"
+"M_NUKE_CRUISE_DESC" LANG "Cruise missiles armed with nuclear warheads were first became operational and used by soviet strategic bombers against NATO naval groups.Later with the emergance of GPS they became a viable weapon against surface targets"
+
+"M_SHIP_SHIP_NAME" LANG "Anti-Ship Missile"
+"M_SHIP_SHIP_DESC" LANG "An anti-ship missile is a guided missile that is designed for use against ships and large boats. Most anti-ship missiles are of the sea skimming variety, and many use a combination of inertial guidance and active radar homing. A good number of other anti-ship missiles use infrared homing to follow the heat that is emitted by a ship; it is also possible for anti-ship missiles to be guided by radio command all the way."
+
 "CVN_FR_NAME" LANG "Carrier-capable Fighter"
 "CVN_FR_DESC" LANG "Carrier capable fighters are the primary defense of a carrier, tasked with intercepting attacks against the carrier and ensuring air superiority that enables the carrier to perform its operations. Many fighters can be re-fitted for multiple roles, allowing them to participate in all types of operations once air superiority is achieved."
 
@@ -40,15 +64,14 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "5GEN_NAME" LANG "5th Generation Aircraft"
 "5GEN_DESC" LANG "The most advanced aircraft currently in service, 5th generation aircraft such as the F-22 or J-20 employ modern stealth construction, extremely capable electronic capabilities, next-generation networked digital systems, low-probability-of-intercept radars, and high-performance airframes capable of operating at extremes."
 
+"M_SNAVALGUN_NAME" LANG "Light Naval Guns"
+"M_SNAVALGUN_DESC" LANG "Light Naval Artillery is found on escort and cruisers and used mainly against enemy escorts while causing minimal damage to Battleships."
 
-"M_SNAVALGUN_NAME" LANG "Mark 12 5''/38 Cal gun"
-"M_SNAVALGUN_DESC" LANG "5 INCH NAVAL GUNS, SECONDARY"
+"M_BIGGUNS_NAME" LANG "Heavy Naval Guns"
+"M_BIGGUNS_DESC" LANG "Heavy Artillery Guns can cause significant damage to both enemy capital and escort ships as well as land targets"
 
-"M_BIGGUNS_NAME" LANG "Mark 7 16''/50 Cal gun"
-"M_BIGGUNS_DESC" LANG "The 16INCH/50 caliber Mark 7 – United States Naval Gun is the main armament of the Iowa-class battleship. Fires Mark 8 'Super-heavy' shell, a 2700-Pound (1200kg) Armor Piercing, Capped, Ballistic Capped ammo or HC MARK 13 1900-Pound (860kg) High Explosive for shore bombardment. Was also able to fire the Nuclear Mk 23 (W23) Shell"
-
-"M_FLAKGUN_NAME" LANG "BOFORS 40MM FLAK"
-"M_FLAKGUN_DESC" LANG "The Bofors 40 mm gun, often referred to simply as the Bofors gun, is an anti-aircraft autocannon designed in the 1930s by the Swedish arms manufacturer AB Bofors. It was one of the most popular medium-weight anti-aircraft systems during World War II, used by most of the western Allies as well as some captured systems being used by the Axis powers. A small number of these weapons remain in service to this day, and saw action as late as the Persian Gulf War."
+"M_FLAKGUN_NAME" LANG "Naval FLAK"
+"M_FLAKGUN_DESC" LANG "FLAK guns are an AA self defence weapon used against enemy aircraft."
 
 "M_CIWS_NAME" LANG "CIWS"
 "M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."

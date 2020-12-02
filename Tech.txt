@@ -137,6 +137,7 @@
 [TECHNOLOGY] "M_SHIP_SHIP"
   Name "M_SHIP_SHIP_NAME"
   Description "M_SHIP_SHIP_DESC"
+ 
   
 [TECHNOLOGY] "M_CONV_CRUISE"
   Name "M_CONV_CRUISE_NAME"
@@ -329,6 +330,11 @@ Description "U_Cavern_DESC"
   Image "Images/Science/ASM1.png"
   Points 15
   LeadsTo "ASM2"
+  LeadsTo "ASM1_M"
+  
+[TECHNOLOGY] "ASM1_M"
+  Name "ASM1_M_NAME"
+  Description "ASM1_M_DESC"
   
 [TECHNOLOGY] "ASM2"
   Name "ASM2_NAME"
@@ -440,7 +446,7 @@ Description "U_Cavern_DESC"
   Description "CRUISE2_DESC"
   Image "Images/Science/CRUISE70.png"
   Points 55
-  LeadsTo "CRUISE3"  
+  LeadsTo "CRUISE3" 
   
 [TECHNOLOGY] "CRUISE3"
   Name "CRUISE3_NAME"

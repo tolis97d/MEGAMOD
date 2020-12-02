@@ -258,7 +258,7 @@ Modifier options:
   ImprovedBy "AA4" Movie Image "Units/Images/Missiles/AA4.png"
 
 [MISSILE] "ASM"
-  Tech "ASM1"
+  Tech "ASM1_M"
   Type "Default"
   Icon "Units/Images/Missiles/ASM1.png"
   Sound 67 or 107 or 108 Volume 0.5
@@ -335,13 +335,13 @@ Modifier options:
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/SM70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/SM80.png"
   ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/SM90.png"
-  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/SM90.png"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/SM00.png"
   ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/SM20.png"
   
 [MISSILE] "CONV_CRUISE"
   Tech "M_CONV_CRUISE"
   Type "Default"
-  Icon "Units/Images/Missiles/TLAM80.png"
+  Icon "Units/Images/Missiles/CRUISE80.png"
   Sound 113 or 114 Volume 0.5
   Explosion "big_bomb_old"
 //  Explosion "big_bomb"
@@ -362,14 +362,14 @@ Modifier options:
   ImprovedBy "ASM4" Damage 1.5
   AffectedBy "ABM2" CanBeIntercepted 1.5
   
-  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/TLAM00.png"
-  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/TLAM10.png"
-  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/TLAM30.png"
+  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.png"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.png"
+  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/CRUISE20.png"
   
 [MISSILE] "NUKE_CRUISE"
   Tech "M_NUKE_CRUISE"
   Type "Default"
-  Icon "Units/Images/Missiles/TLAM60.png"
+  Icon "Units/Images/Missiles/CRUISE60.png"
   Sound 68
   DrawSize 10
   DrawNuke
@@ -390,11 +390,11 @@ Modifier options:
   ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/AIR_MRBM_Hyper.png"
   AffectedBy "ABM2" CanBeIntercepted 1.5  
 
-  ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/TLAM70.png"
-  ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/TLAM80.png"  
-  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/TLAM00.png"
-  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/TLAM10.png"
-  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/TLAM30.png"
+  ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/CRUISE70.png"
+  ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/CRUISE80.png"  
+  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.png"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.png"
+  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/CRUISE20.png"
   
   
 
@@ -453,7 +453,7 @@ Modifier options:
 [MISSILE] "Torpedo"
   Tech "M_Torpedo"
   Type "Torpedo"
-  Icon "Units/Images/Missiles/Torpedo.png"
+  Icon "Units/Images/Missiles/TOR0.png"
   Sound 119
   Explosion "std_torpedo"
   Range 350
@@ -464,6 +464,11 @@ Modifier options:
   ImprovedBy "TOR3" Set Range 400
   ImprovedBy "TOR4" Set Range 450
   AffectedBy Unit "Antitorpedo" Precision 1.5
+  
+  ImprovedBy "TOR1" Movie Image "Units/Images/Missiles/TOR1.png"
+  ImprovedBy "TOR2" Movie Image "Units/Images/Missiles/TOR2.png"
+  ImprovedBy "TOR3" Movie Image "Units/Images/Missiles/TOR3.png"
+  ImprovedBy "TOR4" Movie Image "Units/Images/Missiles/TOR4.png"
 
 [MISSILE] "DepthCharge"
   Tech "M_DepthCharge"
