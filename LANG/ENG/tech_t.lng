@@ -28,29 +28,41 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "M_SHIP_SHIP_NAME" LANG "Anti-Ship Missile"
 "M_SHIP_SHIP_DESC" LANG "An anti-ship missile is a guided missile that is designed for use against ships and large boats. Most anti-ship missiles are of the sea skimming variety, and many use a combination of inertial guidance and active radar homing. A good number of other anti-ship missiles use infrared homing to follow the heat that is emitted by a ship; it is also possible for anti-ship missiles to be guided by radio command all the way."
 
-"CVN_FR_NAME" LANG "Carrier Fighter"
-"CVN_FR_DESC" LANG "Carrier capable fighters."
+"CVN_FR_NAME" LANG "Carrier-capable Fighter"
+"CVN_FR_DESC" LANG "Carrier capable fighters are the primary defense of a carrier, tasked with intercepting attacks against the carrier and ensuring air superiority that enables the carrier to perform its operations. Many fighters can be re-fitted for multiple roles, allowing them to participate in all types of operations once air superiority is achieved."
 
-"CVN_AWACS_NAME" LANG "Carrier AWACS"
-"CVN_AWACS_DESC" LANG "Carrier AWACS"
+"CVN_AWACS_NAME" LANG "Carrier-capable AWACS"
+"CVN_AWACS_DESC" LANG "Typically smaller than their land-based equivalents, carrier-based AEW&C (AWACS) offer the same ability for a carrier to get a picture of the battlespace around them, combining both exceptional airborne early warning and command and control, battle management capabilities essential for both attack and defense."
 
-"CVN_ASW_NAME" LANG "ASW Heli"
-"CVN_ASW_DESC" LANG "ASW Heli"
+"CVN_ASW_NAME" LANG "ASW Helicopter"
+"CVN_ASW_DESC" LANG "Anti-Submarine Warfare helicopters provide naval fleets with the ability to track down and eliminate otherwise hidden submarines before they can strike. Utilising a range of technologies such as torpedoes, dipping sonars, and sonobuoys, ASW are hunter-killers that keep the fleet safe by turning would-be predators in to prey."
 
-"CVN_ATK_NAME" LANG "Carrier Fighter-Bomber"
-"CVN_ATK_DESC" LANG "Carrier capable Multirole Aircraft."
+"CVN_ATK_NAME" LANG "Carrier-capable Attack Aircraft"
+"CVN_ATK_DESC" LANG "The most important element of a carrier's force projection is their attack aircraft. These aircraft are designed to strike both naval and ground targets, allowing a carrier to threaten a huge number of enemy assets, from nuclear infrastructure to surface fleets."
 
 "NAVY60_NAME" LANG "1960s Naval Designs"
-"NAVY60_DESC" LANG "1960s Naval Designs"
+"NAVY60_DESC" LANG "The 60s saw the advent of the nuclear missile submarine, the world's first nuclear-powered warships, and the space race define this era. Many Second World War technologies and practices remained relevant, with guns continuing to be used alongside early missile systems. With enhanced fire control systems and helicopter anti-submarine capabilities now available, technology rather than barrel size is starting to re-define naval warfare."
 
 "NAVY80_NAME" LANG "1980s Naval Designs"
-"NAVY60_DESC" LANG "1960s Naval Designs"
+"NAVY80_DESC" LANG "The 70s and 80s saw a technological arms race between the superpowers, leading to many advances in naval technologies. Missile guidance and advanced radar technologies led to the rapid obsolesence of older hulls that remained after the Second World War which could not be retrofitted with guided missiles, ushering in beyond visual range naval warfare. The Aegis Combat System typifies enhancements in information warfare."
 
 "NAVY00_NAME" LANG "2000s Naval Designs"
-"NAVY60_DESC" LANG "1960s Naval Designs"
+"NAVY00_DESC" LANG "The 2000s saw the introduction of ubiquituous and deadly accurate guided missiles of many shapes and sizes, both for offense and defense. The threat of stealth fighters and electronic warfare really began to dominate, requiring more advanced electronics and intelligent defensive systems, such as CIWS, to compensate. The advent of GPS would allow for enhanced fleet co-ordination on a level never before thought possible."
 
 "NAVY30_NAME" LANG "2030s Naval Designs"
-"NAVY60_DESC" LANG "1960s Naval Designs"
+"NAVY30_DESC" LANG "Experimentation with littoral combat ships, drone-based systems, the first laser and railgun systems, fully integrated Command and Control systems, and stealth hulls define the near-future for warships. Many warships are once again growing in size but shrinking in number, equipped to handle a multitude of potential future threats and operating in a battlespace that includes both cyber warfare and space operations."
+
+"3GEN_NAME" LANG "3rd Generation Aircraft"
+"3GEN_DESC" LANG "With 3rd generation aircraft, air-to-air missiles became the standard method of dogfighting, with guns taking a backseat. The first generation of mainstream guided weapons would also be deployed on these aircraft, providing new ground attack capabilities that had previously required much more error to perform; further enhanced by the employment of analogue avionics over steam."
+
+"4GEN_NAME" LANG "4th Generation Aircraft"
+"4GEN_DESC" LANG "4th generation aircraft would be typified by fly-by wire flight control systems, digitisation of avionics, early stealth technology, and modern fire control systems. Air combat manoeuvring, rather than raw speed, was established as a key doctrinal requirement of most fighters. Many 4th generation aircraft are still in use across the world today and fighters enjoy a fantastic record when employed against older generation aircraft."
+
+"4GEN2_NAME" LANG "4.5 Generation Aircraft"
+"4GEN2_DESC" LANG "As fourth generation aircraft came to dominate the battlefield, but their technology and hardware started to age, the 4.5 generation of aircraft were defined by their upgrades; better radar, avionics, data links, and modernised weapon systems built upon the same principles as their earlier counterparts - often in the same airframe."
+
+"5GEN_NAME" LANG "5th Generation Aircraft"
+"5GEN_DESC" LANG "The most advanced aircraft currently in service, 5th generation aircraft such as the F-22 or J-20 employ modern stealth construction, extremely capable electronic capabilities, next-generation networked digital systems, low-probability-of-intercept radars, and high-performance airframes capable of operating at extremes."
 
 "M_SNAVALGUN_NAME" LANG "Light Naval Guns"
 "M_SNAVALGUN_DESC" LANG "Light Naval Artillery is found on escort and cruisers and used mainly against enemy escorts while causing minimal damage to Battleships."
@@ -60,5 +72,14 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "M_FLAKGUN_NAME" LANG "Naval FLAK"
 "M_FLAKGUN_DESC" LANG "FLAK guns are an AA self defence weapon used against enemy aircraft."
+
+"M_CIWS_NAME" LANG "CIWS"
+"M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
+
+"CIWS_NAME" LANG "CIWS"
+"CIWS_DESC" LANG "Close-in Weapon Systems provide a last-line defense against missile attacks, tracking missiles at high speed and pumping them full of bullets before they can close the final distance with ships."
+
+"GPS_NAME" LANG "GPS"
+"GPS_DESC" LANG "Global Positioning Systems are provided by satellite networks acting as a precise navigation aid, allowing for tracking of targets during combat, providing precision guidance to missile systems of all shapes and sizes, supporting search & rescue, and allowing for precise reconnaissance. They are often tied directly to nuclear capabilities."
 
 END
