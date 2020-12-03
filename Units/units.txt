@@ -550,8 +550,10 @@ Modifier options:
     Weapon "ICBM MIRV" 1  Time 1480
   Config "MIRV 4x1M+6F" Default
     Weapon "ICBM MIRV+" 1  Time 1480
-  Config "ASAT"
-    Weapon "ASAT" 1
+  Config "MIRV 4x1M+6F" Default
+    Weapon "ICBM MIRV+" 1  Time 1480
+  Config "ICBM (50M)"
+    Weapon "ICBM (50M)" 1
   ProductionCost 30
   Modifier "Underground"
 
@@ -809,6 +811,8 @@ Modifier options:
   Type Airborne
   //AIVarietyHint CarrierStrike
   NoAutoDeploy
+  Slave
+  AutoReturn Yes
   Speed 350
   TurnSpeed 3
   Range 2000
