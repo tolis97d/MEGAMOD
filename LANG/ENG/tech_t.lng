@@ -40,23 +40,23 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "CVN_ATK_NAME" LANG "Carrier-capable Attack Aircraft"
 "CVN_ATK_DESC" LANG "The most important element of a carrier's force projection is their attack aircraft. These aircraft are designed to strike both naval and ground targets, allowing a carrier to threaten a huge number of enemy assets, from nuclear infrastructure to surface fleets."
 
-"NAVY60_NAME" LANG "1960s Naval Designs"
-"NAVY60_DESC" LANG "The 60s saw the advent of the nuclear missile submarine, the world's first nuclear-powered warships, and the space race define this era. Many Second World War technologies and practices remained relevant, with guns continuing to be used alongside early missile systems. With enhanced fire control systems and helicopter anti-submarine capabilities now available, technology rather than barrel size is starting to re-define naval warfare."
+"NAVY60_NAME" LANG "Nuclear-Powered Warships"
+"NAVY60_DESC" LANG "The 60s saw the advent of the nuclear missile submarine and the world's first nuclear-powered warships. Many Second World War technologies and practices remained relevant, with guns continuing to be used alongside early missile systems. With enhanced fire control systems and helicopter anti-submarine capabilities now available, technology rather than barrel size is starting to re-define naval warfare."
 
-"NAVY80_NAME" LANG "1980s Naval Designs"
-"NAVY80_DESC" LANG "The 70s and 80s saw a technological arms race between the superpowers, leading to many advances in naval technologies. Missile guidance and advanced radar technologies led to the rapid obsolesence of older hulls that remained after the Second World War which could not be retrofitted with guided missiles, ushering in beyond visual range naval warfare. The Aegis Combat System typifies enhancements in information warfare."
+"NAVY80_NAME" LANG "Cold War Naval Designs"
+"NAVY80_DESC" LANG "Off the space of the space race, the 70s and 80s saw a technological arms race between the superpowers, leading to many advances in naval technologies. Missile guidance and advanced radar technologies led to the rapid obsolesence of older hulls that remained after the Second World War which could not be retrofitted with guided missiles, ushering in beyond visual range naval warfare. The Aegis Combat System typifies enhancements in information warfare."
 
-"NAVY00_NAME" LANG "2000s Naval Designs"
+"NAVY00_NAME" LANG "Modern Warships"
 "NAVY00_DESC" LANG "The 2000s saw the introduction of ubiquituous and deadly accurate guided missiles of many shapes and sizes, both for offense and defense. The threat of stealth fighters and electronic warfare really began to dominate, requiring more advanced electronics and intelligent defensive systems, such as CIWS, to compensate. The advent of GPS would allow for enhanced fleet co-ordination on a level never before thought possible."
 
-"NAVY30_NAME" LANG "2030s Naval Designs"
+"NAVY30_NAME" LANG "Experimental Naval Designs"
 "NAVY30_DESC" LANG "Experimentation with littoral combat ships, drone-based systems, the first laser and railgun systems, fully integrated Command and Control systems, and stealth hulls define the near-future for warships. Many warships are once again growing in size but shrinking in number, equipped to handle a multitude of potential future threats and operating in a battlespace that includes both cyber warfare and space operations."
 
 "3GEN_NAME" LANG "3rd Generation Aircraft"
 "3GEN_DESC" LANG "With 3rd generation aircraft, air-to-air missiles became the standard method of dogfighting, with guns taking a backseat. The first generation of mainstream guided weapons would also be deployed on these aircraft, providing new ground attack capabilities that had previously required much more error to perform; further enhanced by the employment of analogue avionics over steam."
 
 "4GEN_NAME" LANG "4th Generation Aircraft"
-"4GEN_DESC" LANG "4th generation aircraft would be typified by fly-by wire flight control systems, digitisation of avionics, early stealth technology, and modern fire control systems. Air combat manoeuvring, rather than raw speed, was established as a key doctrinal requirement of most fighters. Many 4th generation aircraft are still in use across the world today and fighters enjoy a fantastic record when employed against older generation aircraft."
+"4GEN_DESC" LANG "4th generation aircraft would be typified by fly-by wire flight control systems, digitisation of avionics, early stealth technology, and modern fire control systems. Air combat manoeuvring, rather than raw speed, was established as a key doctrinal requirement of most fighters. Many 4th generation aircraft are still in use across the world today and continue to enjoy a fantastic record when employed against older generation aircraft."
 
 "4GEN2_NAME" LANG "4.5 Generation Aircraft"
 "4GEN2_DESC" LANG "As fourth generation aircraft came to dominate the battlefield, but their technology and hardware started to age, the 4.5 generation of aircraft were defined by their upgrades; better radar, avionics, data links, and modernised weapon systems built upon the same principles as their earlier counterparts - often in the same airframe."
@@ -76,10 +76,11 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "GPS_NAME" LANG "GPS"
 "GPS_DESC" LANG "Global Positioning Systems are provided by satellite networks acting as a precise navigation aid, allowing for tracking of targets during combat, providing precision guidance to missile systems of all shapes and sizes, supporting search & rescue, and allowing for precise reconnaissance. They are often tied directly to nuclear capabilities."
 
-"CIWS_DESC" LANG "Close-in Weapon Systems provide a last-line defense against missile attacks, tracking missiles at high speed and pumping them full of bullets before they can close the final distance with ships."
 "CIWS_NAME" LANG "CIWS"
-"M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
+"CIWS_DESC" LANG "Close-in Weapon Systems provide a last-line defense against missile attacks, tracking missiles at high speed and pumping them full of bullets before they can close the final distance with ships."
+
 "M_CIWS_NAME" LANG "CIWS"
+"M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
 
 "COMP1_NAME" LANG "1960s Electronincs"
 "COMP1_DESC" LANG "The invention of the integrated circuit and the silicon MOSFET revolutionized the electronics industry and opened a new field of radio,computing and telecommunications applications."
@@ -131,4 +132,44 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "CRUISE6_NAME" LANG "2020S Cruise Missiles"
 "CRUISE6_DESC" LANG "1960s Naval Designs"
+
+"AA1_NAME" LANG "Early AAMs"
+"AA1_DESC" LANG "After World War 2, the major powers sought to equip planes with missiles capable of automatically locking on to enemy planes, greatly increasing the range at which enemy fighters and bombers could be destroyed. Guided AA missiles of this era, such as the AIM-9 Sidewinder, were so effective in changing warfare that they continue to be used to this day even by the world's leading militaries."
+
+"AA2_NAME" LANG "Cold War AAMs"
+"AA2_DESC" LANG "The cold war saw the development of many new missile types, including beyond-visual range missiles that could reach out 100nm and new technologies like infrared homing guidance that removed the dependence on radar tracking."
+
+"AA3_NAME" LANG "All-aspect AAMs"
+"AA3_DESC" LANG "All-aspect missiles capable of maintaining a lock on a plane at any angle, combined with ever increasing beyond-visual range capabilities, typify modern anti-air missiles. Active missiles also now come with on-board 'home on jam' capabilities, reducing the relevance of simple jamming technologies."
+
+"AA4_NAME" LANG "Electro-optical AAMs"
+"AA4_DESC" LANG "Electro-optical enhancements allow the latest missile technologies to operate independently of both heat-signatures and radar, as well as enabling precise targeting of specific weak points on vehicles."
+
+"ASM1_NAME" LANG "Early ASMs"
+"ASM1_DESC" LANG "World War 2 saw the development of bombs capable of gliding and being steered to precisely hit individual targets on the battlefield. Operating on radio-transmitted guidance, early guided munitions were a surprisingly deadly and precise threat to ships and ground targets, but were vulnerable to radio jamming and often required the plane to continue flying towards the target behind the missile."
+
+"ASM2_NAME" LANG "Precision-guided Munitions"
+"ASM2_DESC" LANG "The cold war saw lots of development in air-to-surface missiles, allowing rocket-powered missiles to strike a variety of targets using new methologies such as on-board television guidance and infrared tracking. Weapons of this era continue to be among to deployed and used worldwide due to their effectiveness and versatility against land, sea, or air targets."
+
+"ASM3_NAME" LANG "Stand-off Munitions"
+"ASM3_DESC" LANG "Satellite-guidance provided a major boon to air strike capabilities, enabling precise pinpointing of targets without a dependency on any specific external signature that could be fired from a greater range, leading to the development of 'stand-off' weapons."
+
+"ASM4_NAME" LANG "Hybrid-guidance Missiles"
+"ASM4_DESC" LANG "By combining multiple guidance systems such as radar, electro-optical, inertial navigation, GPS, and laser-guidance, modern ASMs can bypass jamming, be deployed at longer ranges, guarantee precision, and operate well even in unfavourable conditions."
+
+"SAM50_NAME" LANG "Early SAMs"
+"SAM50_DESC" LANG "Existing anti-aircraft guns proved highly ineffective against new jet-propelled aircraft. Although there was competition, the idea of a rocket fired from the ground to independently track and chase an aircraft using radar proved the most reliable solution and the US deployed them at to protect all their critical nuclear assets."
+
+"SAM60_NAME" LANG "Improved SAM Guidance"
+"SAM60_DESC" LANG "Although early surface-to-air missiles proved very effective, they were unable to deal with rapid advancements in aircraft technology. Mach 3-capable aircraft and electronic countermeasures required the development of a new generation of SAMs with better tracking and hardened radars."
+
+"SAM80_NAME" LANG "Phased Array Tracking Radars"
+"SAM80_DESC" LANG "Modern passive electronically scanned array radars would prove pivotal in designing general-purpose SAM systems capable of dealing with airbourne threats of all kinds, at long range, with high reliability, and capable of feeding in to newly developed external data links over computer networks."
+
+"SAM10_NAME" LANG "Modern SAMs"
+"SAM10_DESC" LANG "Modern SAM networks utilise distributed computer and radar networks with high redundancy against both kinetic and cyber attacks, and can be expected to operate even in hostile environments with the threat of radiation missiles and significant electronic countermeasures. Laser illumination can also now be utilised as an alternative to radar."
+
+"TAWACS_NAME" LANG "Airborne Early Warning"
+"TAWACS_DESC" LANG "Airborne early warning and command systems such as AWACS provide a mobile long-wave radar platform that provides commanders with a bird's eye view of the battlescape, tracking targets across a huge area to provide communications on enemy positions and transfer that information across data-links to the computer systems of weapon platforms such as aircraft."
+
 END
