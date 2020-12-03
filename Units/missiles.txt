@@ -97,7 +97,7 @@ Modifier options:
 //  drawbomb 
   Range 300
   Speed 1400
-  Precision 20
+  Precision 30
   Switchable ON
   
   DisablingTech "SAM60"
@@ -135,7 +135,7 @@ Modifier options:
   Drawsize 6
   Ballistic
   drawbomb 
-  Range 600
+  Range 400
   Speed 1800
   Elevation 200
   Precision 4
@@ -841,7 +841,7 @@ Modifier options:
   
 [MISSILE] "CIWS"
   Tech "M_CIWS"
-  Icon "Units/Images/Missiles/SAM.png"
+  Icon "Units/Images/Missiles/CIWS.png"
   Sound 205 or 206
     Volume .50
     MuteLength 1
@@ -854,6 +854,22 @@ Modifier options:
   Speed 1400
 //  Elevation 200
   Precision 2
+  Switchable ON
+  
+  DisablingTech "M_CIWS_LASER"
+  
+  [MISSILE] "CIWS_LASER"
+  Tech "M_CIWS_LASER"
+  Icon "Units/Images/Missiles/CIWS2.png"
+  Sound 120
+    MuteLength 1.25
+  Type "CIWS_TYPE"
+  Explosion "LASER_EXP2"
+  DrawLaser
+  Ballistic 
+  Range 400
+  Speed 1000
+  Precision 0.05
   Switchable ON
 
 [END]

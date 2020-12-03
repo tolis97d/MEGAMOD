@@ -491,12 +491,14 @@ Description "U_Cavern_DESC"
   Points 15
   LeadsTo "NAVY00"
   LeadsTo "CIWS"
+  LeadsTo "M_CIWS"
   
 [TECHNOLOGY] "CIWS"
   Name "CIWS_NAME"
   Description "CIWS_DESC"
   Image "Images/Science/CIWS1.png"
   Points 15
+  LeadsTo "M_CIWS"
   LeadsTo "CIWS_LASER"
   
 [TECHNOLOGY] "CIWS_LASER"
@@ -504,6 +506,7 @@ Description "U_Cavern_DESC"
   Description "CIWS_LASER_DESC"
   Image "Images/Science/CIWS2.png"
   Points 15
+  LeadsTo "M_CIWS_LASER"
 
 [TECHNOLOGY] "NAVY00"
   Name "NAVY00_NAME"
@@ -738,6 +741,7 @@ Description "U_Cavern_DESC"
   LeadsTo "M_SUB_MRBM"
   LeadsTo "Mobile_MRBM"
   LeadsTo "ICBM1"
+  LeadsTo "SLBM"
   LeadsTo "U_Nuclear_Submarine"
   LeadsTo "Aircraft-launched_MRBM"
 
@@ -790,7 +794,6 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SLBM.png"
   Points 60
   LeadsTo "U_Nuclear_Submarine"
-  LeadsTo "SLBM"
   
 [TECHNOLOGY] "MIRV"
   Name "MIRV_NAME"
@@ -1087,6 +1090,10 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_CIWS"
   Name "M_CIWS_NAME"
   Description "M_CIWS_DESC"
+  
+[TECHNOLOGY] "M_CIWS_LASER"
+  Name "M_CIWS_LASER_NAME"
+  Description "M_CIWS_LASER_DESC" 
 
 [TECHNOLOGY] "Not_Targetable"
   Name "Not_Targetable_NAME"

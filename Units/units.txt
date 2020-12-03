@@ -318,7 +318,9 @@ Modifier options:
   Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
   Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
   Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+  Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
   Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+  Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
 
   Radar "STD Vision"
   Radar "Sonar"
@@ -366,11 +368,10 @@ Modifier options:
   Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
   Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
   Weapon "SAM" 20000 Launch 2 Time 50 AutoEngage
-    ImprovedBy "SAM60"
-      Weapon "SSM" 20000 Launch 4 AutoEngage
-      Weapon "SAM" 20000 Launch 1 Time 70 AutoEngage
-      Weapon "SRBM" 1000 Time 360
-      Weapon "ASAT" 3 DefaultOff
+  Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+  Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+  
+
   Radar "STD Vision"
   Radar "STD Short Wave"
   Radar "STD Long Wave"
@@ -383,6 +384,12 @@ Modifier options:
   ImprovedBy "NAVY60" Set Speed 50
   ImprovedBy "NAVY80" Set Speed 60
   ImprovedBy "NAVY00" Set Speed 70
+  
+  ImprovedBy "SAM60" Modify Weapon "SAM" Set Time 60
+  ImprovedBy "SAM80" Modify Weapon "SAM" Set Time 50
+  ImprovedBy "SAM80" Modify Weapon "SAM" Set Launch 2
+  ImprovedBy "SAM10" Modify Weapon "SAM" Set Time 30
+  ImprovedBy "SAM10" Modify Weapon "SAM" Set Launch 4 
   
   ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/CR60.vidx"
   ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/CR80.vidx"
@@ -406,11 +413,11 @@ Modifier options:
   Weapon "BIGGUNS" 20000 Launch 12 Time 360 AutoEngage
   Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
   Weapon "Torpedo" 20000 Launch 2 AutoEngage
-    ImprovedBy "SAM60"
-      Weapon "SSM" 20000 Launch 4 AutoEngage
-      Weapon "SAM" 20000 Launch 1 Time 70 AutoEngage
-      Weapon "SRBM" 1000 Time 360
-      Weapon "ASAT" 3 DefaultOff
+  Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+  Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+  Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+  
+	  
   Radar "STD Vision"
   Radar "STD Short Wave"
   Radar "STD Long Wave"
@@ -420,9 +427,16 @@ Modifier options:
   Modifier "NAVY80"
   Modifier "NAVY00"
   ProductionCost 27
+  
   ImprovedBy "NAVY60" Set Speed 50
   ImprovedBy "NAVY80" Set Speed 60
   ImprovedBy "NAVY00" Set Speed 70
+  
+  ImprovedBy "SAM60" Modify Weapon "SAM" Set Time 60
+  ImprovedBy "SAM80" Modify Weapon "SAM" Set Time 50
+  ImprovedBy "SAM80" Modify Weapon "SAM" Set Launch 2
+  ImprovedBy "SAM10" Modify Weapon "SAM" Set Time 30
+  ImprovedBy "SAM10" Modify Weapon "SAM" Set Launch 4 
   
   ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/BC50.vidx"
   ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/BC50.vidx"
@@ -886,9 +900,12 @@ Config "Anti Submarine Warfare"
   CanStoreMissiles "Torpedo" 50000
   CanStoreMissiles "Free fall bomb" 50000
   CanStoreMissiles "DepthCharge" 20000
+  
   Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
-  ImprovedBy "NAVY60"
-      Weapon "SAM" 20000 Launch 1 Time 70 AutoEngage  
+  Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+  Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+  
+	  
   Radar "STD Vision"
   Radar "STD Long Wave"
   Modifier "NAVY60"

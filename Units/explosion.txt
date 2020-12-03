@@ -57,6 +57,17 @@ USE PREVIOUS "Units/explosion.txt"
   DrawSize .001
   TimeGrowing .25 
   TimeTotal 0.25
-
+  
+[EXPLOSION] "LASER_EXP2"
+  Movie "Images/Explosion/small_1.midx"
+  Sound 120
+    Volume 0.25
+    MuteLength 0.25
+  Damage .10
+  Range 0.07
+  FullEffectRange 0.05
+  DrawSize 1
+  TimeGrowing 0.5
+  TimeTotal 0.5
 
 [END]
