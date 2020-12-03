@@ -146,10 +146,10 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "AA4_DESC" LANG "Electro-optical enhancements allow the latest missile technologies to operate independently of both heat-signatures and radar, as well as enabling precise targeting of specific weak points on vehicles."
 
 "ASM1_NAME" LANG "Early ASMs"
-"ASM1_DESC" LANG "World War 2 saw the development of bombs capable of gliding and being steered to precisely hit individual targets on the battlefield. Operating on radio-transmitted guidance, early guided munitions were a surprisingly deadly and precise threat to ships and ground targets, but were vulnerable to radio jamming and often required the plane to continue flying towards the target behind the missile."
+"ASM1_DESC" LANG "The cold war saw lots of development in air-to-surface missiles, allowing rocket-powered missiles to strike a variety of targets using new methologies such as on-board television guidance and infrared tracking. Weapons of this era continue to be among to deployed and used worldwide due to their effectiveness and versatility against land, sea, or air targets."
 
 "ASM2_NAME" LANG "Precision-guided Munitions"
-"ASM2_DESC" LANG "The cold war saw lots of development in air-to-surface missiles, allowing rocket-powered missiles to strike a variety of targets using new methologies such as on-board television guidance and infrared tracking. Weapons of this era continue to be among to deployed and used worldwide due to their effectiveness and versatility against land, sea, or air targets."
+"ASM2_DESC" LANG "The addition of a gps guidance kit enabled air to surface missiles to be deployed from greater distances with an IR/TV sensor guiding the missile during the terminal phase."
 
 "ASM3_NAME" LANG "Stand-off Munitions"
 "ASM3_DESC" LANG "Satellite-guidance provided a major boon to air strike capabilities, enabling precise pinpointing of targets without a dependency on any specific external signature that could be fired from a greater range, leading to the development of 'stand-off' weapons."
