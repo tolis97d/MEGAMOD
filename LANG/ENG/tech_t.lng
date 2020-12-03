@@ -76,10 +76,11 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "GPS_NAME" LANG "GPS"
 "GPS_DESC" LANG "Global Positioning Systems are provided by satellite networks acting as a precise navigation aid, allowing for tracking of targets during combat, providing precision guidance to missile systems of all shapes and sizes, supporting search & rescue, and allowing for precise reconnaissance. They are often tied directly to nuclear capabilities."
 
-"CIWS_DESC" LANG "Close-in Weapon Systems provide a last-line defense against missile attacks, tracking missiles at high speed and pumping them full of bullets before they can close the final distance with ships."
 "CIWS_NAME" LANG "CIWS"
-"M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
+"CIWS_DESC" LANG "Close-in Weapon Systems provide a last-line defense against missile attacks, tracking missiles at high speed and pumping them full of bullets before they can close the final distance with ships."
+
 "M_CIWS_NAME" LANG "CIWS"
+"M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
 
 "COMP1_NAME" LANG "1960s Electronincs"
 "COMP1_DESC" LANG "The invention of the integrated circuit and the silicon MOSFET revolutionized the electronics industry and opened a new field of radio,computing and telecommunications applications."
@@ -129,6 +130,9 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "CRUISE5_NAME" LANG "2010s Engineering"
 "CRUISE5_DESC" LANG "1960s Naval Designs"
 
+"CRUISE6_NAME" LANG "2020S Cruise Missiles"
+"CRUISE6_DESC" LANG "1960s Naval Designs"
+
 "AA1_NAME" LANG "Early AAMs"
 "AA1_DESC" LANG "After World War 2, the major powers sought to equip planes with missiles capable of automatically locking on to enemy planes, greatly increasing the range at which enemy fighters and bombers could be destroyed. Guided AA missiles of this era, such as the AIM-9 Sidewinder, were so effective in changing warfare that they continue to be used to this day even by the world's leading militaries."
 
@@ -168,5 +172,4 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "TAWACS_NAME" LANG "Airborne Early Warning"
 "TAWACS_DESC" LANG "Airborne early warning and command systems such as AWACS provide a mobile long-wave radar platform that provides commanders with a bird's eye view of the battlescape, tracking targets across a huge area to provide communications on enemy positions and transfer that information across data-links to the computer systems of weapon platforms such as aircraft."
 
-"CRUISE6_NAME" LANG "2020S Cruise Missiles"
-"CRUISE6_DESC" LANG "1960s Naval Designs"
+END
