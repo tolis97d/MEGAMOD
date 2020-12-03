@@ -740,7 +740,6 @@ Description "U_Cavern_DESC"
   LeadsTo "ICBM1"
   LeadsTo "U_Nuclear_Submarine"
   LeadsTo "Aircraft-launched_MRBM"
-  LeadsTo "SLBM"
 
 [TECHNOLOGY] "M_MRBM"
   Name "M_MRBM_NAME"
@@ -791,6 +790,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SLBM.png"
   Points 60
   LeadsTo "U_Nuclear_Submarine"
+  LeadsTo "SLBM"
   
 [TECHNOLOGY] "MIRV"
   Name "MIRV_NAME"
