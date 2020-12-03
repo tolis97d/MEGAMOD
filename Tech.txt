@@ -526,6 +526,19 @@ Description "U_Cavern_DESC"
   LeadsTo "SUB80"
   LeadsTo "ENGINE_SSBN1"
   LeadsTo "ENGINE_SSN1"
+  LeadsTo "Nuclear_Submarine"
+  
+  
+[TECHNOLOGY] "Nuclear_Submarine"
+  Name "NUCLEAR_SUBMARINE_NAME"
+  Description "NUCLEAR_SUBMARINE_DESC"
+  Image "Images/Science/SSBN.png"
+  Points 40
+  LeadsTo "U_Nuclear_Submarine"
+
+[TECHNOLOGY] "U_Nuclear_Submarine"
+  Name "U_Nuclear_Submarine_NAME"
+  Description "U_Nuclear_Submarine_DESC"
 
 [TECHNOLOGY] "ENGINE_SSBN1"
   Name "ENGINE_SSBN1_NAME"
@@ -724,9 +737,10 @@ Description "U_Cavern_DESC"
   LeadsTo "M_MRBM"
   LeadsTo "M_SUB_MRBM"
   LeadsTo "Mobile_MRBM"
-  LeadsTo "ICBM"
-  LeadsTo "Nuclear_Submarine"
+  LeadsTo "ICBM1"
+  LeadsTo "U_Nuclear_Submarine"
   LeadsTo "Aircraft-launched_MRBM"
+  LeadsTo "SLBM"
 
 [TECHNOLOGY] "M_MRBM"
   Name "M_MRBM_NAME"
@@ -736,15 +750,63 @@ Description "U_Cavern_DESC"
   Name "M_SUB_MRBM_NAME"
   Description "M_SUB_MRBM_DESC"
 
-[TECHNOLOGY] "ICBM"
-  Name "ICBM_NAME"
-  Description "ICBM_DESC"
-  Image "Images/Science/ICBM.png"
+[TECHNOLOGY] "ICBM1"
+  Name "ICBM1_NAME"
+  Description "ICBM1_DESC"
+  Image "Images/Science/ICBM1.png"
+  Points 60
+  LeadsTo "ICBM2"
+  LeadsTo "U_Missile_Silo"
+  LeadsTo "M_ICBM_1M"
+  
+[TECHNOLOGY] "ICBM2"
+  Name "ICBM2_NAME"
+  Description "ICBM2_DESC"
+  Image "Images/Science/ICBM2.png"
   Points 60
   LeadsTo "Heavy_Missiles"
   LeadsTo "Mobile_ICBM"
-  LeadsTo "U_Missile_Silo"
   LeadsTo "M_ICBM_1M"
+  LeadsTo "MIRV"
+  
+[TECHNOLOGY] "Heavy_Missiles"
+  Name "Heavy_Missiles_NAME"
+  Description "Heavy_Missiles_DESC"
+  Image "Images/Science/HEAVY_ICBM.png"
+  Points 85
+  LeadsTo "M_ICBM_10M"
+  LeadsTo "M_ICBM_MIRV"
+  LeadsTo "M_ICBM_MIRV_FALSE"
+  LeadsTo "Super_Heavy_Missiles"
+  
+[TECHNOLOGY] "Super_Heavy_Missiles"
+  Name "Super_Heavy_Missiles_NAME"
+  Description "Super_Heavy_Missiles_DESC"
+  Image "Images/Science/SHEAVY_ICBM.png"
+  Points 85
+  
+[TECHNOLOGY] "SLBM"
+  Name "SLBM_NAME"
+  Description "SLBM_DESC"
+  Image "Images/Science/SLBM.png"
+  Points 60
+  LeadsTo "U_Nuclear_Submarine"
+  
+[TECHNOLOGY] "MIRV"
+  Name "MIRV_NAME"
+  Description "MIRV_DESC"
+  Image "Images/Science/MIRV.png"
+  Points 125
+  LeadsTo "False_warheads"
+  LeadsTo "M_ICBM_MIRV"
+  LeadsTo "Advanced_MRBM_MIRV"
+
+[TECHNOLOGY] "False_warheads"
+  Name "False_warheads_NAME"
+  Description "False_warheads_DESC"
+  Image "Images/Science/False_warheads.png"
+  Points 60
+  LeadsTo "M_ICBM_MIRV_FALSE"
 
 [TECHNOLOGY] "M_ICBM_1M"
   Name "M_ICBM_1M_NAME"
@@ -778,15 +840,6 @@ Description "U_Cavern_DESC"
   Name "U_Missile_Silo_NAME"
   Description "U_Missile_Silo_DESC"
 
-[TECHNOLOGY] "Heavy_Missiles"
-  Name "Heavy_Missiles_NAME"
-  Description "Heavy_Missiles_DESC"
-  Image "Images/Science/Heavy_Missiles.png"
-  Points 85
-  LeadsTo "M_ICBM_10M"
-  LeadsTo "M_ICBM_MIRV"
-  LeadsTo "M_ICBM_MIRV_FALSE"
-
 [TECHNOLOGY] "Mobile_MRBM"
   Name "MOBILE_MRBM_NAME"
   Description "MOBILE_MRBM_DESC"
@@ -810,18 +863,6 @@ Description "U_Cavern_DESC"
   Name "U_Mobile_ICBM_NAME"
   Description "U_Mobile_ICBM_DESC"
 
-[TECHNOLOGY] "Nuclear_Submarine"
-  Name "NUCLEAR_SUBMARINE_NAME"
-  Description "NUCLEAR_SUBMARINE_DESC"
-  Image "Images/Science/Nuclear_Submarine.png"
-  Points 40
-  LeadsTo "U_Nuclear_Submarine"
-
-[TECHNOLOGY] "U_Nuclear_Submarine"
-  Name "U_Nuclear_Submarine_NAME"
-  Description "U_Nuclear_Submarine_DESC"
-
-
 
 // chain Thermonuclear explosion  Mega-warheads  Tactical nukes
 //                                MIRV  False warheads
@@ -832,7 +873,6 @@ Description "U_Cavern_DESC"
   Image "Images/Science/Thermonuclear_bomb.png"
   Points 50
   LeadsTo "Mega-warheads"
-  LeadsTo "MIRV"
   LeadsTo "M_10M_thermonuclear_bomb"
   LeadsTo "Tactical_nukes"
 
@@ -864,22 +904,6 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_SRBM"
   Name "M_SRBM_NAME"
   Description "M_SRBM_DESC"
-
-[TECHNOLOGY] "MIRV"
-  Name "MIRV_NAME"
-  Description "MIRV_DESC"
-  Image "Images/Science/MIRV.png"
-  Points 125
-  LeadsTo "False_warheads"
-  LeadsTo "M_ICBM_MIRV"
-  LeadsTo "Advanced_MRBM_MIRV"
-
-[TECHNOLOGY] "False_warheads"
-  Name "False_warheads_NAME"
-  Description "False_warheads_DESC"
-  Image "Images/Science/False_warheads.png"
-  Points 60
-  LeadsTo "M_ICBM_MIRV_FALSE"
   
   
   
