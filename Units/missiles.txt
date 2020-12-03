@@ -334,8 +334,8 @@ Modifier options:
   
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/SM70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/SM80.png"
-  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/SM90.png"
-  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/SM00.png"
+  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/SM00.png"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/SM10.png"
   ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/SM20.png"
   
 [MISSILE] "CONV_CRUISE"

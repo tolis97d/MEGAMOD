@@ -715,7 +715,7 @@ Modifier options:
         ImprovedBy "4GEN2"
 	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
   Config "Bombs" Default
-        Weapon "Free fall bomb" 4 Launch 1 Time 2 AutoEngage
+        Weapon "Free fall bomb" 4 Launch 1 Time 2 AutoEngage Principal
         Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
         ImprovedBy "3GEN" 
 	        Weapon "Free fall bomb" 8 Launch 2 Time 2 AutoEngage Principal 
@@ -734,7 +734,7 @@ Modifier options:
             Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
             Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
   Config "Nuclear bomb"
-        Weapon "Low-power nuclear bomb" 1
+        Weapon "Low-power nuclear bomb" 1 Principal
         Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
   Config "ALBM"
         ImprovedBy "CRUISE4"
@@ -868,10 +868,6 @@ Config "Anti Submarine Warfare"
 [UNIT] "Carrier"
   Tech "U_Carrier"
   Movie "Units/Images/Naval/CVN50.vidx"
-  Icon "Units/Images/Icons/carrier.png"
-  RoundIcon "Units/Images/Icons/carrier_round.png"
-//  IconIDX 54
-  IconIDX 10
   DrawSize 38.25
   FollowRadius 39//34
   Size 0.4

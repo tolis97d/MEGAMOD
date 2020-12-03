@@ -61,4 +61,34 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "M_FLAKGUN_NAME" LANG "Naval FLAK"
 "M_FLAKGUN_DESC" LANG "FLAK guns are an AA self defence weapon used against enemy aircraft."
 
+"COMP1_NAME" LANG "1960s Electronincs"
+"COMP1_DESC" LANG "The invention of the integrated circuit and the silicon MOSFET revolutionized the electronics industry and opened a new field of radio,computing and telecommunications applications."
+
+"COMP2_NAME" LANG "1970s Electronincs"
+"COMP2_DESC" LANG "1960s Naval Designs"
+
+"COMP3_NAME" LANG "1980s Electronincs"
+"COMP3_DESC" LANG "1960s Naval Designs"
+
+"COMP4_NAME" LANG "1990s Electronincs"
+"COMP1_DESC" LANG "1960s Naval Designs"
+
+"COMP5_NAME" LANG "2000s Electronincs"
+"COMP1_DESC" LANG "1960s Naval Designs"
+
+"COMP6_NAME" LANG "2010s Electronincs"
+"COMP1_DESC" LANG "1960s Naval Designs"
+
+"ENG1_NAME" LANG "1970s Electronincs"
+"ENG1_DESC" LANG "1960s Naval Designs"
+
+"ENG2_NAME" LANG "1970s Electronincs"
+"ENG2_DESC" LANG "1960s Naval Designs"
+
+"ENG3_NAME" LANG "1970s Electronincs"
+"ENG3_DESC" LANG "1960s Naval Designs"
+
+"ENG4_NAME" LANG "1970s Electronincs"
+"ENG4_DESC" LANG "1960s Naval Designs"
+
 END
