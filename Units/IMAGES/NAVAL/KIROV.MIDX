@@ -1,2 +1,4 @@
-Indexed Prefix "units/images/naval/KIROV/KIROV_00" Ext "png"
-Size 64
+AutoRotate
+Size 1
+"units/images/naval/KIROV/KIROV.png"
+Overlay "units/images/naval/BC_N/BC_N.png" x 0.5 y 0.5 sx 1 sy 1 speed 0

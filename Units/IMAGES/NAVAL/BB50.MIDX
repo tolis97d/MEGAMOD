@@ -1,2 +1,4 @@
-Indexed Prefix "units/images/naval/BB50/BB50_00" Ext "png"
-Size 64
+AutoRotate
+Size 1
+"units/images/naval/BB50/BB50.png"
+Overlay "units/images/naval/BB_N/BB_N.png" x 0.5 y 0.5 sx 1 sy 1 speed 0

@@ -1,2 +1,4 @@
-Indexed Prefix "units/images/airborne/F14/F14_00" Ext "png"
-Size 64
+AutoRotate
+Size 1
+"units/images/AIRBORNE/F14/F14.png"
+Overlay "units/images/AIRBORNE/F14/F14_N.png" x 0.5 y 0.5 sx 1 sy 1 speed 0
