@@ -146,16 +146,29 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "AA4_DESC" LANG "Electro-optical enhancements allow the latest missile technologies to operate independently of both heat-signatures and radar, as well as enabling precise targeting of specific weak points on vehicles."
 
 "ASM1_NAME" LANG "Early ASMs"
-"ASM1_DESC" LANG "World War 2 saw the development of bombs capable of gliding and being steered to precisely hit individual targets on the battlefield. Operating on radio-transmitted guidance, early guided munitions were a surprisingly deadly and precise threat to ships and ground targets, but were vulnerable to radio jamming and often required the plane to continue flying towards the target behind the missile."
+"ASM1_DESC" LANG "The cold war saw lots of development in air-to-surface missiles, allowing rocket-powered missiles to strike a variety of targets using new methologies such as on-board television guidance and infrared tracking. Weapons of this era continue to be among to deployed and used worldwide due to their effectiveness and versatility against land, sea, or air targets."
 
 "ASM2_NAME" LANG "Precision-guided Munitions"
-"ASM2_DESC" LANG "The cold war saw lots of development in air-to-surface missiles, allowing rocket-powered missiles to strike a variety of targets using new methologies such as on-board television guidance and infrared tracking. Weapons of this era continue to be among to deployed and used worldwide due to their effectiveness and versatility against land, sea, or air targets."
+"ASM2_DESC" LANG "The addition of a GPS guidance kit enabled air-to-surface missiles to be deployed from greater distances with an IR/TV sensor guiding the missile during the terminal phase."
 
 "ASM3_NAME" LANG "Stand-off Munitions"
 "ASM3_DESC" LANG "Satellite-guidance provided a major boon to air strike capabilities, enabling precise pinpointing of targets without a dependency on any specific external signature that could be fired from a greater range, leading to the development of 'stand-off' weapons."
 
 "ASM4_NAME" LANG "Hybrid-guidance Missiles"
 "ASM4_DESC" LANG "By combining multiple guidance systems such as radar, electro-optical, inertial navigation, GPS, and laser-guidance, modern ASMs can bypass jamming, be deployed at longer ranges, guarantee precision, and operate well even in unfavourable conditions."
+
+"Β1_NAME" LANG "Laser Guided Bombs"
+"Β1_DESC" LANG "A laser-guided bomb is a guided bomb that uses semi-active laser guidance to strike a designated target with greater accuracy than an unguided bomb. First developed by the United States during the Vietnam War, laser-guided bombs quickly proved their value in precision strikes of difficult point targets. These weapons use on-board electronics to track targets that are designated by laser, typically in the infrared spectrum, and adjust their glide path to accurately strike the target."
+
+"Β2_NAME" LANG "GPS Guided Bombs"
+"Β2_DESC" LANG "Lessons learned during the first Gulf War showed the value of precision munitions, yet they also highlighted the difficulties in employing them—specifically when visibility of the ground or target from the air was degraded.The problem of poor visibility does not affect satellite-guided weapons such as Joint Direct Attack Munition and Joint Stand-Off Weapon, which make use of the United States' GPS system for guidance. This weapon can be employed in all weather conditions, without any need for ground support. Because it is possible to jam GPS, the guidance package reverts to inertial navigation in the event of GPS signal loss."
+
+"Β3_NAME" LANG "Stand-off Glide Bombs"
+"Β3_DESC" LANG "A glide bomb or stand-off bomb is a standoff weapon with flight control surfaces to give it a flatter, gliding flight path than that of a conventional bomb without such surfaces. This allows it to be released at a distance from the target rather than right over it, allowing a successful attack without the aircraft needing to survive until reaching the target."
+
+"Β4_NAME" LANG "Swarm Stand-off Glide Bombs"
+"Β4_DESC" LANG "By deploying multiple independent less powerfull gliding munitions one can saturate advanced enemy air defences an neutralise multiple stationary and moving targets."
+
 
 "SAM50_NAME" LANG "Early SAMs"
 "SAM50_DESC" LANG "Existing anti-aircraft guns proved highly ineffective against new jet-propelled aircraft. Although there was competition, the idea of a rocket fired from the ground to independently track and chase an aircraft using radar proved the most reliable solution and the US deployed them at to protect all their critical nuclear assets."

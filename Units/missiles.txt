@@ -97,7 +97,7 @@ Modifier options:
 //  drawbomb 
   Range 300
   Speed 1400
-  Precision 20
+  Precision 30
   Switchable ON
   
   DisablingTech "SAM60"
@@ -135,7 +135,7 @@ Modifier options:
   Drawsize 6
   Ballistic
   drawbomb 
-  Range 600
+  Range 400
   Speed 1800
   Elevation 200
   Precision 4
@@ -631,7 +631,7 @@ Modifier options:
 
 [MISSILE] "SUB_MRBM"
   Tech "M_SUB_MRBM"
-  Icon "Units/Images/Missiles/MRBM.png"
+  Icon "Units/Images/Missiles/SLBM.png"
   Sound 68 Volume 1.25
   DrawSize 12
   DrawNuke
@@ -652,7 +652,7 @@ Modifier options:
   MaxNumberToOrder 3
   ImprovedBy Unit "Advanced_MRBM_MIRV" Set Heads 3
 //  ImprovedBy Unit "Advanced_MRBM_MIRV" Set Range 6500
-  ImprovedBy "MIRV" Movie Image "Units/Images/Missiles/MIRV_MRBM.png"
+  ImprovedBy "MIRV" Movie Image "Units/Images/Missiles/MIRV_SLBM.png"
   AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType MRBM_RANGES
@@ -685,7 +685,7 @@ Modifier options:
 
 [MISSILE] "ICBM (1M)"
   Tech "M_ICBM_1M"
-  Icon "Units/Images/Missiles/1M_ICBM.png"
+  Icon "Units/Images/Missiles/ICBM1.png"
   Sound 69 Volume 1.25
   DrawSize 14
   DrawNuke
@@ -704,18 +704,45 @@ Modifier options:
   ProductionCostDegrades
   MaxNumberToOrder 3
   AffectedBy "ABM2" CanBeIntercepted 1.5
+  
+  ImprovedBy "ICBM2" Set Range 12000
+  ImprovedBy "ICBM2" Movie Image "Units/IMAGES/MISSILES/ICBM2.png" 
 
   GlobalShowType ICBM_RANGES
 
 
 [MISSILE] "ICBM (10M)"
   Tech "M_ICBM_10M"
-  Icon "Units/Images/Missiles/10M_ICBM.png"
+  Icon "Units/Images/Missiles/HICBM.png"
   Sound 69 Volume 1.25
   DrawSize 14
   DrawNuke
   Type "Nuke"
   Explosion "nuke_10000"
+  Range 18000
+  MinRange 3000
+  Ballistic
+  SingleAttack
+  AutoSlowDown
+  CanBeIntercepted 0.3
+  Elevation 1000
+  Speed 3000
+  Precision 5.0
+  ProductionCost 3.0
+  ProductionCostDegrades
+  MaxNumberToOrder 0
+  AffectedBy "ABM2" CanBeIntercepted 1.5
+
+  GlobalShowType ICBM_RANGES
+  
+[MISSILE] "ICBM (50M)"
+  Tech "M_ICBM_50M"
+  Icon "Units/Images/Missiles/SHICBM.png"
+  Sound 69 Volume 1.25
+  DrawSize 14
+  DrawNuke
+  Type "Nuke"
+  Explosion "nuke_50000"
   Range 18000
   MinRange 3000
   Ballistic
@@ -791,7 +818,7 @@ Modifier options:
 
 [MISSILE] "ICBM MIRV+"
   Tech "M_ICBM_MIRV_FALSE"
-  Icon "Units/Images/Missiles/MIRV_FW.png"
+  Icon "Units/Images/Missiles/ICBM_MIRVF.png"
   RoundIcon "Units/Images/Missiles/MIRV_FW_round.png"
   Sound 69 Volume 1.25
   DrawSize 14
@@ -841,7 +868,7 @@ Modifier options:
   
 [MISSILE] "CIWS"
   Tech "M_CIWS"
-  Icon "Units/Images/Missiles/SAM.png"
+  Icon "Units/Images/Missiles/CIWS.png"
   Sound 205 or 206
     Volume .50
     MuteLength 1
@@ -854,6 +881,22 @@ Modifier options:
   Speed 1400
 //  Elevation 200
   Precision 2
+  Switchable ON
+  
+  DisablingTech "M_CIWS_LASER"
+  
+  [MISSILE] "CIWS_LASER"
+  Tech "M_CIWS_LASER"
+  Icon "Units/Images/Missiles/CIWS2.png"
+  Sound 120
+    MuteLength 1.25
+  Type "CIWS_TYPE"
+  Explosion "LASER_EXP2"
+  DrawLaser
+  Ballistic 
+  Range 400
+  Speed 1000
+  Precision 0.05
   Switchable ON
 
 [END]
