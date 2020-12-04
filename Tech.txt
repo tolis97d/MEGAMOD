@@ -491,12 +491,14 @@ Description "U_Cavern_DESC"
   Points 15
   LeadsTo "NAVY00"
   LeadsTo "CIWS"
+  LeadsTo "M_CIWS"
   
 [TECHNOLOGY] "CIWS"
   Name "CIWS_NAME"
   Description "CIWS_DESC"
   Image "Images/Science/CIWS1.png"
   Points 15
+  LeadsTo "M_CIWS"
   LeadsTo "CIWS_LASER"
   
 [TECHNOLOGY] "CIWS_LASER"
@@ -504,6 +506,7 @@ Description "U_Cavern_DESC"
   Description "CIWS_LASER_DESC"
   Image "Images/Science/CIWS2.png"
   Points 15
+  LeadsTo "M_CIWS_LASER"
 
 [TECHNOLOGY] "NAVY00"
   Name "NAVY00_NAME"
@@ -735,9 +738,9 @@ Description "U_Cavern_DESC"
   Image "Images/Science/MRBM.png"
   Points 50
   LeadsTo "M_MRBM"
-  LeadsTo "M_SUB_MRBM"
   LeadsTo "Mobile_MRBM"
   LeadsTo "ICBM1"
+  LeadsTo "SLBM"
   LeadsTo "U_Nuclear_Submarine"
   LeadsTo "Aircraft-launched_MRBM"
 
@@ -765,7 +768,6 @@ Description "U_Cavern_DESC"
   Points 60
   LeadsTo "Heavy_Missiles"
   LeadsTo "Mobile_ICBM"
-  LeadsTo "M_ICBM_1M"
   LeadsTo "MIRV"
   
 [TECHNOLOGY] "Heavy_Missiles"
@@ -774,8 +776,6 @@ Description "U_Cavern_DESC"
   Image "Images/Science/HEAVY_ICBM.png"
   Points 85
   LeadsTo "M_ICBM_10M"
-  LeadsTo "M_ICBM_MIRV"
-  LeadsTo "M_ICBM_MIRV_FALSE"
   LeadsTo "Super_Heavy_Missiles"
   
 [TECHNOLOGY] "Super_Heavy_Missiles"
@@ -783,6 +783,7 @@ Description "U_Cavern_DESC"
   Description "Super_Heavy_Missiles_DESC"
   Image "Images/Science/SHEAVY_ICBM.png"
   Points 85
+  LeadsTo "M_ICBM_50M"
   
 [TECHNOLOGY] "SLBM"
   Name "SLBM_NAME"
@@ -790,7 +791,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SLBM.png"
   Points 60
   LeadsTo "U_Nuclear_Submarine"
-  LeadsTo "SLBM"
+  LeadsTo "M_SUB_MRBM"
   
 [TECHNOLOGY] "MIRV"
   Name "MIRV_NAME"
@@ -804,7 +805,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "False_warheads"
   Name "False_warheads_NAME"
   Description "False_warheads_DESC"
-  Image "Images/Science/False_warheads.png"
+  Image "Images/Science/MIRV2.png"
   Points 60
   LeadsTo "M_ICBM_MIRV_FALSE"
 
@@ -815,6 +816,10 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_ICBM_10M"
   Name "M_ICBM_10M_NAME"
   Description "M_ICBM_10M_DESC"
+  
+[TECHNOLOGY] "M_ICBM_50M"
+  Name "M_ICBM_50M_NAME"
+  Description "M_ICBM_50M_DESC"
 
 [TECHNOLOGY] "M_ICBM_MIRV"
   Name "M_ICBM_MIRV_NAME"
@@ -1087,6 +1092,10 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_CIWS"
   Name "M_CIWS_NAME"
   Description "M_CIWS_DESC"
+  
+[TECHNOLOGY] "M_CIWS_LASER"
+  Name "M_CIWS_LASER_NAME"
+  Description "M_CIWS_LASER_DESC" 
 
 [TECHNOLOGY] "Not_Targetable"
   Name "Not_Targetable_NAME"
