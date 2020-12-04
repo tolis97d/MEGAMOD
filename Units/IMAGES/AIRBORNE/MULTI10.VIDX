@@ -1,4 +1,4 @@
-Default "units/images/airborne/F35B.midx"
-Variant 2 "units/images/airborne/MIR3.midx"
-Variant 3 "units/images/airborne/MIG25.midx"
-Variant 4 "units/images/airborne/J7.midx"
+Default "units/images/airborne/F35A.midx"
+Variant 2 "units/images/airborne/TEMPEST.midx"
+Variant 3 "units/images/airborne/SU60.midx"
+Variant 4 "units/images/airborne/J31.midx"

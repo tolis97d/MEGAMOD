@@ -393,26 +393,18 @@ Modifier options:
   Speed 800
   CanBeIntercepted 0.5
   Precision 1.5
-
-  ImprovedBy "CRUISE2" Set Range 350
-  ImprovedBy "CRUISE2" Set Speed 1000
-  ImprovedBy "CRUISE2" Set Precision 1.3
   
-  ImprovedBy "CRUISE3" Set Range 550
-  ImprovedBy "CRUISE3" Set Speed 1500
-  ImprovedBy "CRUISE3" Set Precision 0.4
-  
-  ImprovedBy "CRUISE4" Set Range 700
+  ImprovedBy "CRUISE4" Set Range 1600
   ImprovedBy "CRUISE4" Set Speed 2000
   ImprovedBy "CRUISE4" Set Precision 0.3
   AffectedBy "CRUISE4" CanBeIntercepted 0.4
   
-  ImprovedBy "CRUISE5" Set Range 700
+  ImprovedBy "CRUISE5" Set Range 2000
   ImprovedBy "CRUISE5" Set Speed 2500
   ImprovedBy "CRUISE5" Set Precision 0.05
   AffectedBy "CRUISE4" CanBeIntercepted 0.3
   
-  ImprovedBy "CRUISE6" Set Range 700
+  ImprovedBy "CRUISE6" Set Range 3000
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
   ImprovedBy "CRUISE6" Set Damage 1.5
@@ -420,6 +412,7 @@ Modifier options:
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
+  AffectedBy "ABM3" CanBeIntercepted 1.9
   
   ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.png"
   ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.png"
@@ -434,7 +427,7 @@ Modifier options:
   DrawNuke
   Type "Nuke"
   Explosion "nuke_100"
-  Range 2000
+  Range 1000
   SingleAttack
   CanBeIntercepted 0.6
   Speed 1000
@@ -443,25 +436,25 @@ Modifier options:
   ProductionCostDegrades
   MaxNumberToOrder 25
 
-  ImprovedBy "CRUISE2" Set Range 2000
-  ImprovedBy "CRUISE2" Set Speed 1000
+  ImprovedBy "CRUISE2" Set Range 1000
+  ImprovedBy "CRUISE2" Set Speed 1200
   ImprovedBy "CRUISE2" Set Precision 1.3
   
-  ImprovedBy "CRUISE3" Set Range 2000
+  ImprovedBy "CRUISE3" Set Range 2500
   ImprovedBy "CRUISE3" Set Speed 1500
   ImprovedBy "CRUISE3" Set Precision 0.4
   
-  ImprovedBy "CRUISE4" Set Range 2000
+  ImprovedBy "CRUISE4" Set Range 2500
   ImprovedBy "CRUISE4" Set Speed 2000
   ImprovedBy "CRUISE4" Set Precision 0.3
   AffectedBy "CRUISE4" CanBeIntercepted 0.4
   
-  ImprovedBy "CRUISE5" Set Range 2500
+  ImprovedBy "CRUISE5" Set Range 3000
   ImprovedBy "CRUISE5" Set Speed 2500
   ImprovedBy "CRUISE5" Set Precision 0.05
   AffectedBy "CRUISE4" CanBeIntercepted 0.3
   
-  ImprovedBy "CRUISE6" Set Range 3000
+  ImprovedBy "CRUISE6" Set Range 3500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
   ImprovedBy "CRUISE6" Set Damage 1.5
@@ -469,6 +462,7 @@ Modifier options:
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
+  AffectedBy "ABM3" CanBeIntercepted 1.9
 
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/CRUISE70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/CRUISE80.png"  
@@ -508,15 +502,19 @@ Modifier options:
 [MISSILE] "ABM"
   Tech "M_anti_ballistic_missile"
   Type "AntiMissile"
-  Icon "Units/Images/Missiles/ABM.png"
+  Icon "Units/Images/Missiles/ABM1.png"
   Sound 117 or 118
   Explosion "std_bomb"
   Range 600
   Speed 5000
   Precision 0.05
+  
   ImprovedBy "ABM2" Set Range 800
   ImprovedBy "ABM2" Set Speed 6000
-  ImprovedBy "ABM2" Movie Image "Units/Images/Missiles/ABM_MK2.png"
+  
+  ImprovedBy "ABM3" Set Range 1000
+  ImprovedBy "ABM3" Set Speed 7000
+  ImprovedBy "ABM3" Movie Image "Units/Images/Missiles/ABM3.png"
 
   GlobalShowType ABM_RANGES
 
