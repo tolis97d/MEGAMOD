@@ -386,7 +386,8 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SAM3.png"
   Points 40
   LeadsTo "SAM10"
-  LeadsTo "ABM1"		
+  LeadsTo "ABM1"	
+  LeadsTo "U_Mobile_SAM"  
   
 [TECHNOLOGY] "SAM10"
   Name "SAM10_NAME"
@@ -652,12 +653,7 @@ Description "U_Cavern_DESC"
   Description "AESA_RADAR_DESC"
   Image "Images/Science/SW_Mk3.png"
   Points 15
-  LeadsTo "4GEN2_R"
-  
-[TECHNOLOGY] "4GEN2_R"
-  Name "4GEN2_R_NAME"
-  Description "4GEN2_R_DESC"
-  LeadsTo "4GEN2"
+  LeadsTo "4GEN2" HideLink   
 
 // chain LW Mk2  LW Mk3
 
@@ -949,12 +945,9 @@ Description "U_Cavern_DESC"
   Description "GPS_DESC"
   Image "Images/Science/GPS.png"
   Points 100
-  LeadsTo "B2_R"
+  LeadsTo "B2" HideLink
+  LeadsTo "ASM2" HideLink  
   
-[TECHNOLOGY] "B2_R"
-  Name "B2_R_NAME"
-  Description "B2_R_DESC"
-  LeadsTo "B2"
   
 [TECHNOLOGY] "Laser_weapon"
   Name "Laser_weapon_NAME"
@@ -972,14 +965,17 @@ Description "U_Cavern_DESC"
   Description "ENG1_DESC"
   Image "Images/Science/ENG60.png"
   Points 15
-  LeadsTo "ENG2" 
+  LeadsTo "ENG2"
+  LeadsTo "ICBM1" HideLink 
+  LeadsTo "SLBM" HideLink   
   
 [TECHNOLOGY] "ENG2"
   Name "ENG2_NAME"
   Description "ENG2_DESC"
   Image "Images/Science/ENG70.png"
   Points 15
-  LeadsTo "ENG3" 
+  LeadsTo "ENG3"
+  LeadsTo "ICBM2" HideLink  
 
 [TECHNOLOGY] "ENG3"
   Name "ENG3_NAME"
@@ -987,6 +983,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/ENG80.png"
   Points 15
   LeadsTo "ENG4" 
+  LeadsTo "MIRV" HideLink
   
 [TECHNOLOGY] "ENG4"
   Name "ENG4_NAME"
@@ -994,6 +991,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/ENG00.png"
   Points 15
   LeadsTo "ENG5" 
+  LeadsTo "False_warheads" HideLink
   
 [TECHNOLOGY] "ENG5"
   Name "ENG5_NAME"
@@ -1007,6 +1005,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP60.png"
   Points 15
   LeadsTo "COMP2" 
+  LeadsTo "AA1" HideLink
   
 [TECHNOLOGY] "COMP2"
   Name "COMP2_NAME"
@@ -1021,7 +1020,11 @@ Description "U_Cavern_DESC"
   Description "COMP3_DESC"
   Image "Images/Science/COMP80.png"
   Points 15
-  LeadsTo "COMP4" 
+  LeadsTo "COMP4"
+  LeadsTo "GPS" HideLink 
+  LeadsTo "ABM1" HideLink 
+  LeadsTo "4GEN" HideLink 
+  LeadsTo "AA2" HideLink  
   
 [TECHNOLOGY] "COMP4"
   Name "COMP4_NAME"
@@ -1029,51 +1032,46 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP90.png"
   Points 15
   LeadsTo "COMP5"
-  LeadsTo "GPS_weapon"  
+  LeadsTo "GPS_weapon"
+  LeadsTo "ABM2" HideLink   
 
 [TECHNOLOGY] "COMP5"
   Name "COMP5_NAME"
   Description "COMP5_DESC"
   Image "Images/Science/COMP00.png"
   Points 15
-  LeadsTo "COMP6" 
+  LeadsTo "COMP6"
+  LeadsTo "AESA" HideLink
+  LeadsTo "4GEN2" HideLink 
+  LeadsTo "AA3" HideLink  
+  
   
 [TECHNOLOGY] "COMP6"
   Name "COMP6_NAME"
   Description "COMP6_DESC"
   Image "Images/Science/COMP10.png"
   Points 15 
-  LeadsTo "LASER_PRACTICAL_R" 
-  
-[TECHNOLOGY] "LASER_PRACTICAL_R"
-  Name "LASER_PRACTICAL_R_NAME"
-  Description "LASER_PRACTICAL_R_DESC"
-  LeadsTo "LASER_PRACTICAL"
+  LeadsTo "CIWS_LASER" HideLink 
+  LeadsTo "ABM3" HideLink 
+  LeadsTo "5GEN" HideLink  
+  LeadsTo "AA4" HideLink
   
 [TECHNOLOGY] "LASER_GUIDE"
   Name "LASER_GUIDE_NAME"
   Description "LASER_GUIDE_DESC"
   Image "Images/Science/LASER_TARGET.png"
   Points 15
-  LeadsTo "B1_R"
-  LeadsTo "LASER_PRACTICAL"   
+  LeadsTo "LASER_PRACTICAL"  
+  LeadsTo "B1" HideLink  
+  LeadsTo "ASM1" HideLink
   
 [TECHNOLOGY] "LASER_PRACTICAL"
   Name "LASER_PRACTICAL_NAME"
   Description "LASER_PRACTICAL_DESC"
   Image "Images/Science/PRACTICAL_LASER.png"
   Points 15
-  LeadsTo "CWIS_LASER_R" 
+  LeadsTo "CIWS_LASER" HideLink  
   
-[TECHNOLOGY] "CWIS_LASER_R"
-  Name "CWIS_LASER_R_NAME"
-  Description "CWIS_LASER_R_DESC"
-  LeadsTo "CWIS_LASER" 
-  
-[TECHNOLOGY] "B1_R"
-  Name "B1_R_NAME"
-  Description "B1_R_DESC"
-  LeadsTo "B1"
   
 //BATTLESHIP STUFF
 

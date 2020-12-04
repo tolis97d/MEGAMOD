@@ -127,7 +127,7 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "CRUISE4_NAME" LANG "2000s Cruise Missiles"
 "CRUISE4_DESC" LANG "1960s Naval Designs"
 
-"CRUISE5_NAME" LANG "2010s Engineering"
+"CRUISE5_NAME" LANG "2010s Cruise Missiles"
 "CRUISE5_DESC" LANG "1960s Naval Designs"
 
 "CRUISE6_NAME" LANG "2020S Cruise Missiles"
@@ -157,17 +157,17 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "ASM4_NAME" LANG "Hybrid-guidance Missiles"
 "ASM4_DESC" LANG "By combining multiple guidance systems such as radar, electro-optical, inertial navigation, GPS, and laser-guidance, modern ASMs can bypass jamming, be deployed at longer ranges, guarantee precision, and operate well even in unfavourable conditions."
 
-"Β1_NAME" LANG "Laser Guided Bombs"
-"Β1_DESC" LANG "A laser-guided bomb is a guided bomb that uses semi-active laser guidance to strike a designated target with greater accuracy than an unguided bomb. First developed by the United States during the Vietnam War, laser-guided bombs quickly proved their value in precision strikes of difficult point targets. These weapons use on-board electronics to track targets that are designated by laser, typically in the infrared spectrum, and adjust their glide path to accurately strike the target."
+"B1_NAME" LANG "Laser Guided Bombs"
+"B1_DESC" LANG "A laser-guided bomb is a guided bomb that uses semi-active laser guidance to strike a designated target with greater accuracy than an unguided bomb. First developed by the United States during the Vietnam War, laser-guided bombs quickly proved their value in precision strikes of difficult point targets. These weapons use on-board electronics to track targets that are designated by laser, typically in the infrared spectrum, and adjust their glide path to accurately strike the target."
 
-"Β2_NAME" LANG "GPS Guided Bombs"
-"Β2_DESC" LANG "Lessons learned during the first Gulf War showed the value of precision munitions, yet they also highlighted the difficulties in employing them—specifically when visibility of the ground or target from the air was degraded.The problem of poor visibility does not affect satellite-guided weapons such as Joint Direct Attack Munition and Joint Stand-Off Weapon, which make use of the United States' GPS system for guidance. This weapon can be employed in all weather conditions, without any need for ground support. Because it is possible to jam GPS, the guidance package reverts to inertial navigation in the event of GPS signal loss."
+"B2_NAME" LANG "GPS Guided Bombs"
+"B2_DESC" LANG "Lessons learned during the first Gulf War showed the value of precision munitions, yet they also highlighted the difficulties in employing them—specifically when visibility of the ground or target from the air was degraded.The problem of poor visibility does not affect satellite-guided weapons such as Joint Direct Attack Munition and Joint Stand-Off Weapon, which make use of the United States' GPS system for guidance. This weapon can be employed in all weather conditions, without any need for ground support. Because it is possible to jam GPS, the guidance package reverts to inertial navigation in the event of GPS signal loss."
 
-"Β3_NAME" LANG "Stand-off Glide Bombs"
-"Β3_DESC" LANG "A glide bomb or stand-off bomb is a standoff weapon with flight control surfaces to give it a flatter, gliding flight path than that of a conventional bomb without such surfaces. This allows it to be released at a distance from the target rather than right over it, allowing a successful attack without the aircraft needing to survive until reaching the target."
+"B3_NAME" LANG "Stand-off Glide Bombs"
+"B3_DESC" LANG "A glide bomb or stand-off bomb is a standoff weapon with flight control surfaces to give it a flatter, gliding flight path than that of a conventional bomb without such surfaces. This allows it to be released at a distance from the target rather than right over it, allowing a successful attack without the aircraft needing to survive until reaching the target."
 
-"Β4_NAME" LANG "Swarm Stand-off Glide Bombs"
-"Β4_DESC" LANG "By deploying multiple independent less powerfull gliding munitions one can saturate advanced enemy air defences an neutralise multiple stationary and moving targets."
+"B4_NAME" LANG "Swarm Stand-off Glide Bombs"
+"B4_DESC" LANG "By deploying multiple independent less powerfull gliding munitions one can saturate advanced enemy air defences an neutralise multiple stationary and moving targets."
 
 
 "SAM50_NAME" LANG "Early SAMs"

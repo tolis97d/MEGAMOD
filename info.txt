@@ -1,9 +1,9 @@
 ICBM MOD "MEGA MOD"
 
-Version "0.5.0"
+Version "0.6.0"
 
 Description "Early dev phase of a light overhaul mod"
 
-ChangeLog "This probably no longer is a meme mod"
+ChangeLog "Release"
 
 Incompatible "Naval Super MOD: Si Vis Pacem Parabellum"
