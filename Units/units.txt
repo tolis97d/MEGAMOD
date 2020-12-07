@@ -1027,4 +1027,20 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/CVN00.vidx" Icon "Units/Images/Naval/CVN00_I.vidx"
   ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/CVN30.vidx" Icon "Units/Images/Naval/CVN30_I.vidx"
   
+[UNIT] "ARMY"
+  Tech "ARMY"
+  Movie "Units/Images/Ground/ARMY.midx"
+  IconIDX 17
+  DrawSize 28
+  Size 1
+  Sound 141 Volume 0.6
+  Type Ground
+  Speed 25 // in km per h
+  Power 5000
+  Weapon "SAM" 5000 Launch 2 Time 70 AutoEngage
+  Weapon "ARMY_WEP" 20 Time 180
+  ProductionCost 50
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  
 [END]

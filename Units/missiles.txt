@@ -269,6 +269,7 @@ Modifier options:
   Speed 2000
   AttackAngle 120
   Precision 0.1
+  LeadGuidance 0.5
   AffectedBy Unit "5GEN" Precision 1.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Precision 1.25
   
@@ -301,6 +302,7 @@ Modifier options:
   Ballistic 
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.25
+  LeadGuidance 1
   AffectedBy "ABM2" CanBeIntercepted 0.9 
   
   ImprovedBy "ASM2" Precision 0.5 
@@ -367,12 +369,12 @@ Modifier options:
   ImprovedBy "CRUISE3" Set Precision 0.4
   
   ImprovedBy "CRUISE4" Set Range 700
-  ImprovedBy "CRUISE4" Set Speed 2000
+  ImprovedBy "CRUISE4" Set Speed 1700
   ImprovedBy "CRUISE4" Set Precision 0.3
   AffectedBy "CRUISE4" CanBeIntercepted 0.4
   
   ImprovedBy "CRUISE5" Set Range 700
-  ImprovedBy "CRUISE5" Set Speed 2500
+  ImprovedBy "CRUISE5" Set Speed 2000
   ImprovedBy "CRUISE5" Set Precision 0.05
   AffectedBy "CRUISE4" CanBeIntercepted 0.3
   
@@ -921,5 +923,21 @@ Modifier options:
   Speed 1
   Ballistic
   Switchable ON
+  
+[MISSILE] "ARMY_WEP"
+  Tech "M_Surface_to_surface_missile"
+  Type "Default"
+  Icon "Units/Images/Missiles/ARMY_WEP.png"
+  Sound 120
+    MuteLength 1.25
+  Explosion "big_bomb_old"
+//  Explosion "big_bomb"
+//  Explosion "big_bombV2"
+//  Explosion "big_bombV3"
+//  Explosion "big_bombV4"
+  Range 400
+  Speed 600
+  CanBeIntercepted 0.5
+  Precision 0.5
 
 [END]
