@@ -391,10 +391,10 @@ Modifier options:
   ImprovedBy "SUB80" Set Speed 65
   ImprovedBy "SUB00" Set Speed 75
   
-  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/SSN60.vidx"
-  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/SSN80.vidx"
-  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/SSN00.vidx"
-  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/SSN30.vidx"
+  ImprovedBy "SUB60" Movie "Units/Images/NAVAL/SSN60.vidx"
+  ImprovedBy "SUB80" Movie "Units/Images/NAVAL/SSN80.vidx"
+  ImprovedBy "SUB00" Movie "Units/Images/NAVAL/SSN00.vidx"
+  ImprovedBy "SUB30" Movie "Units/Images/NAVAL/SSN30.vidx"
 
 [UNIT] "Nuclear_Submarine"
   Tech "U_Nuclear_Submarine"
@@ -427,9 +427,9 @@ Modifier options:
   ImprovedBy "SUB80" Set Speed 55
   ImprovedBy "SUB00" Set Speed 65
   
-  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/SSBN80.vidx"
-  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/SSBN00.vidx"
-  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/SSBN30.vidx"
+  ImprovedBy "SUB80" Movie "Units/Images/NAVAL/SSBN80.vidx"
+  ImprovedBy "SUB00" Movie "Units/Images/NAVAL/SSBN00.vidx"
+  ImprovedBy "SUB30" Movie "Units/Images/NAVAL/SSBN30.vidx"
 
   MaxNumberToOrder 0
 
@@ -487,6 +487,7 @@ Modifier options:
 [UNIT] "Cruiser"
   Tech "U_Cruiser"
   Movie "Units/Images/Naval/CR50.vidx"
+  Icon "Units/Images/Naval/CR50_I.vidx"
   DrawSize 37
   FollowRadius 38//33
   Size 0.3
@@ -525,14 +526,15 @@ Modifier options:
   ImprovedBy "SAM10" Modify Weapon "SAM" Set Time 30
   ImprovedBy "SAM10" Modify Weapon "SAM" Set Launch 4 
   
-  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/CR60.vidx"
-  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/CR80.vidx"
-  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/CR00.vidx"
-  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/CR30.vidx"
+  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/CR60.vidx" Icon "Units/Images/Naval/CR60_I.vidx"
+  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/CR80.vidx" Icon "Units/Images/Naval/CR80_I.vidx"
+  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/CR00.vidx" Icon "Units/Images/Naval/CR00_I.vidx"
+  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/CR30.vidx" Icon "Units/Images/Naval/CR30_I.vidx"
   
 [UNIT] "Battlecruiser"
   Tech "U_Battlecruiser"
   Movie "Units/Images/Naval/BC50.vidx"
+  Icon "Units/Images/Naval/BC50_I.vidx"
   DrawSize 40
   FollowRadius 38//33
   Size 0.3
@@ -550,6 +552,11 @@ Modifier options:
   Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
   Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
   Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+  
+  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/BC60.vidx" Icon "Units/Images/Naval/BC60_I.vidx"
+  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/BC80.vidx" Icon "Units/Images/Naval/BC80_I.vidx"
+  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/BC00.vidx" Icon "Units/Images/Naval/BC00_I.vidx"
+  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/BC30.vidx" Icon "Units/Images/Naval/BC30_I.vidx"
   
 	  
   Radar "STD Vision"
@@ -974,6 +981,7 @@ Config "Anti Submarine Warfare"
 [UNIT] "Carrier"
   Tech "U_Carrier"
   Movie "Units/Images/Naval/CVN50.vidx"
+  Icon "Units/Images/Naval/UI/ESSEX.png"
   DrawSize 38.25
   FollowRadius 39//34
   Size 0.4
@@ -1014,9 +1022,9 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY80" Set Speed 55
   ImprovedBy "NAVY00" Set Speed 65
   
-  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/CVN60.vidx"
-  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/CVN80.vidx"
-  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/CVN00.vidx"
-  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/CVN30.vidx"
+  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/CVN60.vidx" Icon "Units/Images/Naval/CVN60_I.vidx"
+  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/CVN80.vidx" Icon "Units/Images/Naval/CVN80_I.vidx"
+  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/CVN00.vidx" Icon "Units/Images/Naval/CVN00_I.vidx"
+  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/CVN30.vidx" Icon "Units/Images/Naval/CVN30_I.vidx"
   
 [END]

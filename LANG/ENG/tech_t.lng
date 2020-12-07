@@ -116,22 +116,22 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "ENG5_DESC" LANG "1960s Naval Designs"
 
 "CRUISE1_NAME" LANG "1960s Cruise Missiles"
-"CRUISE1_DESC" LANG "1960s Naval Designs"
+"CRUISE1_DESC" LANG "A cruise missile is a guided missile used against terrestrial targets, that remains in the atmosphere and flies the major portion of its flight path at approximately constant speed. Cruise missiles are designed to deliver a large warhead over long distances.In the Early years of the Cold War the lack of a precise guidance system meant that the only viable way to deliver a warhead was with radar guidance which could only be applied in an anti-ship role or with a nuclear warhead for land targets with a CEP of 500-1500m."
 
 "CRUISE2_NAME" LANG "1970s Cruise Missiles"
-"CRUISE2_DESC" LANG "1960s Naval Designs"
+"CRUISE2_DESC" LANG "Improvements in radar guidance slightly improved the precision of both conventional and nuclear cruise missiles and new developments in engines and aerodynamics further increased their range."
 
 "CRUISE3_NAME" LANG "1980s Cruise Missiles"
-"CRUISE3_DESC" LANG "1960s Naval Designs"
+"CRUISE3_DESC" LANG "The introduction of GPS made cruise missiles a viable weapon against land targets in extreme ranges while new ground radar avoidance systems made them considerably harder to shoot down."
 
 "CRUISE4_NAME" LANG "2000s Cruise Missiles"
-"CRUISE4_DESC" LANG "1960s Naval Designs"
+"CRUISE4_DESC" LANG "Further improvements in missile avoidance and terrain masking protected the missiles against increasingly advanced missile defence systems."
 
 "CRUISE5_NAME" LANG "2010s Cruise Missiles"
-"CRUISE5_DESC" LANG "1960s Naval Designs"
+"CRUISE5_DESC" LANG "By adopting stealth characteristics cruise missiles became more survivable in an ever increasingly anti-missile environment."
 
 "CRUISE6_NAME" LANG "2020S Cruise Missiles"
-"CRUISE6_DESC" LANG "1960s Naval Designs"
+"CRUISE6_DESC" LANG "Advanced in materials science allowed the fielding of hyper-sonic cruise missiles flying over 80000 feet during their cruise phase rendering all previous air defence systems nearly obsolete."
 
 "AA1_NAME" LANG "Early AAMs"
 "AA1_DESC" LANG "After World War 2, the major powers sought to equip planes with missiles capable of automatically locking on to enemy planes, greatly increasing the range at which enemy fighters and bombers could be destroyed. Guided AA missiles of this era, such as the AIM-9 Sidewinder, were so effective in changing warfare that they continue to be used to this day even by the world's leading militaries."

@@ -41,6 +41,10 @@ Modifier options:
 [TYPE] "AntiAir"
   RequiresPreciseTargeting Yes
   CanBeUsedAgainst Airborne
+  
+[TYPE] "AntiAir2"
+  RequiresPreciseTargeting Yes
+  CanBeUsedAgainst Airborne
 
 [TYPE] "AntiMissile"
   RequiresPreciseTargeting Yes
@@ -80,6 +84,14 @@ Modifier options:
   CanBeUsedAgainst Missile
   CanBeUsedAgainst HighMissile
   Affects Missile
+  
+[TYPE] "NORAD_EFFECT"
+  RequiresPreciseTargeting No
+  CanBeUsedAgainst Ground
+  CanBeUsedAgainst Airborne
+  CanBeUsedAgainst Naval
+  CanBeUsedAgainst Subwater
+  CanBeUsedAgainst Satellite
 
 /////// Now, actual Missiles
 
@@ -97,7 +109,7 @@ Modifier options:
 //  drawbomb 
   Range 300
   Speed 1400
-  Precision 30
+  Precision 40
   Switchable ON
   
   DisablingTech "SAM60"
@@ -426,7 +438,7 @@ Modifier options:
   DrawSize 10
   DrawNuke
   Type "Nuke"
-  Explosion "nuke_100"
+  Explosion "nuke_500"
   Range 1000
   SingleAttack
   CanBeIntercepted 0.6
@@ -878,7 +890,7 @@ Modifier options:
   Range 350
   Speed 1400
 //  Elevation 200
-  Precision 2
+  Precision 0.05
   Switchable ON
   
   DisablingTech "M_CIWS_LASER"
@@ -895,6 +907,19 @@ Modifier options:
   Range 400
   Speed 1000
   Precision 0.05
+  Switchable ON
+  
+[MISSILE] "NORAD_EFFECT"
+  Tech "NORAD_EFFECT"
+  Type "NORAD_EFFECT"
+  RequiresPreciseTargeting No
+  Icon "Units/Images/Missiles/SAM.png"
+  Sound 119
+  DrawWave
+  Explosion "std_torpedo"
+  Range 10000
+  Speed 1
+  Ballistic
   Switchable ON
 
 [END]

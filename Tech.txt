@@ -717,10 +717,15 @@ Description "U_Cavern_DESC"
   Name "AESA_RADAR_NAME"
   Description "AESA_RADAR_DESC"
   Image "Images/Science/SW_Mk3.png"
-  Points 15
-  LeadsTo "4GEN2" HideLink   
+  Points 15 
+  LeadsTo "4GEN2_REQ"
   //AIUpgradeTechHint Aircraft
   //AIUpgradeTechHint SurfaceToAir
+  
+[TECHNOLOGY] "4GEN2_REQ"
+  Name "4GEN2_REQ_NAME"
+  Description "4GEN2_REQ_DESC"
+  LeadsTo "4GEN2"
 
 // chain LW Mk2  LW Mk3
 
@@ -1013,9 +1018,20 @@ Description "U_Cavern_DESC"
   Description "GPS_DESC"
   Image "Images/Science/GPS.png"
   Points 100
-  LeadsTo "B2" HideLink
-  LeadsTo "ASM2" HideLink  
+  LeadsTo "B2_REQ"
+  LeadsTo "ASM2_REQ" 
   //AIUpgradeTechHint Science
+  
+[TECHNOLOGY] "B2_REQ"
+  Name "B2_REQ_NAME"
+  Description "B2_REQ_DESC"
+  LeadsTo "B2"
+  
+  
+[TECHNOLOGY] "ASM2_REQ"
+  Name "ASM2_REQ_NAME"
+  Description "ASM2_REQ_DESC"
+  LeadsTo "ASM2"
   
   
 [TECHNOLOGY] "Laser_weapon"
@@ -1036,9 +1052,19 @@ Description "U_Cavern_DESC"
   Image "Images/Science/ENG60.png"
   Points 15
   LeadsTo "ENG2"
-  LeadsTo "ICBM1" HideLink 
-  LeadsTo "SLBM" HideLink   
-  //AIUpgradeTechHint Naval   
+  LeadsTo "ICBM1_REQ"
+  LeadsTo "SLBM_REQ"  
+  //AIUpgradeTechHint Naval 
+
+[TECHNOLOGY] "ICBM1_REQ"
+  Name "ICBM1_REQ_NAME"
+  Description "ICBM1_REQ_DESC" 
+  LeadsTo "ICBM1"
+
+[TECHNOLOGY] "SLBM_REQ"
+  Name "SLBM_REQ_NAME"
+  Description "SLBM_REQ_DESC" 
+  LeadsTo "SLBM"  
   
 [TECHNOLOGY] "ENG2"
   Name "ENG2_NAME"
@@ -1046,8 +1072,13 @@ Description "U_Cavern_DESC"
   Image "Images/Science/ENG70.png"
   Points 15
   LeadsTo "ENG3"
-  LeadsTo "ICBM2" HideLink  
-  //AIUpgradeTechHint Naval  
+  LeadsTo "ICBM2_REQ"  
+  //AIUpgradeTechHint Naval
+
+[TECHNOLOGY] "ICBM2_REQ"
+  Name "ICBM2_REQ_NAME"
+  Description "ICBM2_REQ_DESC" 
+  LeadsTo "ICBM2"
 
 [TECHNOLOGY] "ENG3"
   Name "ENG3_NAME"
@@ -1055,8 +1086,13 @@ Description "U_Cavern_DESC"
   Image "Images/Science/ENG80.png"
   Points 15
   LeadsTo "ENG4" 
-  LeadsTo "MIRV" HideLink
+  LeadsTo "MIRV_REQ"
   //AIUpgradeTechHint Naval 
+  
+[TECHNOLOGY] "MIRV_REQ"
+  Name "MIRV_REQ_NAME"
+  Description "MIRV_REQ_DESC" 
+  LeadsTo "MIRV"
   
 [TECHNOLOGY] "ENG4"
   Name "ENG4_NAME"
@@ -1064,8 +1100,13 @@ Description "U_Cavern_DESC"
   Image "Images/Science/ENG00.png"
   Points 15
   LeadsTo "ENG5" 
-  LeadsTo "False_warheads" HideLink
+  LeadsTo "False_warheads_REQ"
   //AIUpgradeTechHint Naval 
+  
+[TECHNOLOGY] "False_warheads_REQ"
+  Name "False_warheads_REQ_NAME"
+  Description "False_warheads_REQ_DESC" 
+  LeadsTo "False_warheads" 
   
 [TECHNOLOGY] "ENG5"
   Name "ENG5_NAME"
@@ -1080,8 +1121,13 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP60.png"
   Points 15
   LeadsTo "COMP2" 
-  LeadsTo "AA1" HideLink
-  //AIUpgradeTechHint Science  
+  LeadsTo "AA1_REQ"
+  //AIUpgradeTechHint Science 
+
+[TECHNOLOGY] "AA1_REQ"
+  Name "AA1_REQ_NAME"
+  Description "AA1_REQ_DESC" 
+  LeadsTo "AA1"  
   
 [TECHNOLOGY] "COMP2"
   Name "COMP2_NAME"
@@ -1098,11 +1144,25 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP80.png"
   Points 15
   LeadsTo "COMP4"
-  LeadsTo "GPS" HideLink 
-  LeadsTo "ABM1" HideLink 
-  LeadsTo "4GEN" HideLink 
-  LeadsTo "AA2" HideLink  
-  //AIUpgradeTechHint Science  
+  LeadsTo "GPS_REQ"
+  LeadsTo "ABM1_REQ" 
+  LeadsTo "AA2_REQ"  
+  //AIUpgradeTechHint Science 
+
+[TECHNOLOGY] "GPS_REQ"
+  Name "GPS_REQ_NAME"
+  Description "GPS_REQ_DESC"
+  LeadsTo "GPS"
+
+[TECHNOLOGY] "ABM1_REQ"
+  Name "ABM1_REQ_NAME"
+  Description "ABM1_REQ_DESC"
+  LeadsTo "ABM1" 
+
+[TECHNOLOGY] "AA2_REQ"
+  Name "AA2_REQ_NAME"
+  Description "AA2_REQ_DESC"  
+  LeadsTo "AA2"
   
 [TECHNOLOGY] "COMP4"
   Name "COMP4_NAME"
@@ -1110,9 +1170,13 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP90.png"
   Points 15
   LeadsTo "COMP5"
-  LeadsTo "GPS_weapon"
-  LeadsTo "ABM2" HideLink   
-  //AIUpgradeTechHint Science  
+  LeadsTo "ABM2_REQ"
+  //AIUpgradeTechHint Science
+
+[TECHNOLOGY] "ABM2_REQ"
+  Name "ABM2_REQ_NAME"
+  Description "ABM2_REQ_DESC"  
+  LeadsTo "ABM2"  
 
 [TECHNOLOGY] "COMP5"
   Name "COMP5_NAME"
@@ -1120,10 +1184,25 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP00.png"
   Points 15
   LeadsTo "COMP6"
-  LeadsTo "AESA" HideLink
-  LeadsTo "4GEN2" HideLink 
-  LeadsTo "AA3" HideLink  
+  LeadsTo "AESA_REQ"
+  LeadsTo "4GEN2_REQ"
+  LeadsTo "AA3_REQ"
   //AIUpgradeTechHint Science  
+  
+[TECHNOLOGY] "AESA_REQ"
+  Name "AESA_REQ_NAME"
+  Description "AESA_REQ_DESC"  
+  LeadsTo "ABM2"
+  
+[TECHNOLOGY] "4GEN2_REQ"
+  Name "4GEN2_REQ_NAME"
+  Description "4GEN2_REQ_DESC"  
+  LeadsTo "4GEN2"
+  
+[TECHNOLOGY] "AA3_REQ"
+  Name "AA3_REQ_NAME"
+  Description "AA3_REQ_DESC"  
+  LeadsTo "AA3"
   
   
 [TECHNOLOGY] "COMP6"
@@ -1131,11 +1210,31 @@ Description "U_Cavern_DESC"
   Description "COMP6_DESC"
   Image "Images/Science/COMP10.png"
   Points 15 
-  LeadsTo "CIWS_LASER" HideLink 
-  LeadsTo "ABM3" HideLink 
-  LeadsTo "5GEN" HideLink  
-  LeadsTo "AA4" HideLink
-  //AIUpgradeTechHint Science  
+  LeadsTo "CIWS_LASER_REQ"
+  LeadsTo "ABM3_REQ"
+  LeadsTo "5GEN_REQ" 
+  LeadsTo "AA4_REQ"
+  //AIUpgradeTechHint Science 
+
+[TECHNOLOGY] "CIWS_LASER_REQ"
+  Name "CIWS_LASER_REQ_NAME"
+  Description "CIWS_LASER_REQ_DESC"  
+  LeadsTo "CIWS_LASER"
+
+[TECHNOLOGY] "ABM3_REQ"
+  Name "ABM3_REQ_NAME"
+  Description "ABM3_REQ_DESC"  
+  LeadsTo "ABM3"
+
+[TECHNOLOGY] "5GEN_REQ"
+  Name "5GEN_REQ_NAME"
+  Description "5GEN_REQ_DESC"  
+  LeadsTo "5GEN"  
+ 
+[TECHNOLOGY] "AA4_REQ"
+  Name "AA4_REQ_NAME"
+  Description "AA4_REQ_DESC"  
+  LeadsTo "AA4"
   
 [TECHNOLOGY] "LASER_GUIDE"
   Name "LASER_GUIDE_NAME"
@@ -1143,17 +1242,32 @@ Description "U_Cavern_DESC"
   Image "Images/Science/LASER_TARGET.png"
   Points 15
   LeadsTo "LASER_PRACTICAL"  
-  LeadsTo "B1" HideLink  
-  LeadsTo "ASM1" HideLink
+  LeadsTo "B1_REQ"
+  LeadsTo "ASM1_RE"
   //AIUpgradeTechHint ShipToShip  
+  
+[TECHNOLOGY] "B1_REQ"
+  Name "B1_REQ_NAME"
+  Description "B1_REQ_DESC"  
+  LeadsTo "B1"
+  
+[TECHNOLOGY] "ASM1_REQ"
+  Name "ASM1_REQ_NAME"
+  Description "ASM1_REQ_DESC"  
+  LeadsTo "ASM1"
   
 [TECHNOLOGY] "LASER_PRACTICAL"
   Name "LASER_PRACTICAL_NAME"
   Description "LASER_PRACTICAL_DESC"
   Image "Images/Science/PRACTICAL_LASER.png"
   Points 15
-  LeadsTo "CIWS_LASER" HideLink  
+  LeadsTo "CIWS_LASER_REQ" 
   //AIUpgradeTechHint ShipToShip
+  
+[TECHNOLOGY] "CIWS_LASER_REQ"
+  Name "CIWS_LASER_REQ_NAME"
+  Description "CIWS_LASER_REQ_DESC"  
+  LeadsTo "CIWS_LASER"
   
   
 //BATTLESHIP STUFF
@@ -1184,11 +1298,20 @@ Description "U_Cavern_DESC"
 
 [TECHNOLOGY] "Not_Targetable_BIGGUNS"
   Name "Not_Targetable_BIGGUNS_N"
-  Description "Not_Targetable_BIGGUNS_D" 
+  Description "Not_Targetable_BIGGUNS_D"
 
 [TECHNOLOGY] "Not_Targetable_FLACKGUN"
   Name "Not_Targetable_FLAKGUN_N"
   Description "Not_Targetable_FLAKGUN_D" 
+  
+  
+[TECHNOLOGY] "NORAD_EFFECT"
+  Name "NORAD_EFFECT_NAME"
+  Description "NORAD_EFFECT_DESC" 
+  
+[TECHNOLOGY] "U_NORAD"
+  Name "U_NORAD_NAME"
+  Description "U_NORAD_DESC" 
 
 
 [END]

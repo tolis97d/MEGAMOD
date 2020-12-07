@@ -90,12 +90,12 @@ Modifier options:
 [RADAR] "Fixed Short Wave"
   Tech "R_Short_wave_radar"
   Type "ShortWave"
-  Range 500
+  Range 300
   Sector 360
   Precision 0
-  ImprovedBy "SW_Mk2" Set Range 650
+  ImprovedBy "SW_Mk2" Set Range 500
   ImprovedBy "SW_Mk2" Set MaxHeight 250
-  ImprovedBy "SW_Mk3" Set Range 800
+  ImprovedBy "SW_Mk3" Set Range 700
   ImprovedBy "SW_Mk3" Set MaxHeight 400
   AffectedBy Unit "5GEN" Range 0.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
@@ -104,11 +104,11 @@ Modifier options:
 [RADAR] "AWACS Short Wave"
   Tech "R_Short_wave_radar"
   Type "ShortWave"
-  Range 1000
+  Range 800
   Sector 360
   MaxHeight 1500 // the default value is 100
   Precision 0
-  ImprovedBy "SW_Mk2" Set Range 1250
+  ImprovedBy "SW_Mk2" Set Range 1100
   ImprovedBy "SW_Mk3" Set Range 1500
   AffectedBy Unit "5GEN" Range 0.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
