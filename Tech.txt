@@ -1018,7 +1018,8 @@ Description "U_Cavern_DESC"
   Image "Images/Science/GPS.png"
   Points 100
   LeadsTo "B2_REQ"
-  LeadsTo "ASM2_REQ" 
+  LeadsTo "ASM2_REQ"
+  LeadsTo "CRUISE3_REQ2"  
   //AIUpgradeTechHint Science
   
 [TECHNOLOGY] "B2_REQ"
@@ -1031,6 +1032,11 @@ Description "U_Cavern_DESC"
   Name "ASM2_REQ_NAME"
   Description "ASM2_REQ_DESC"
   LeadsTo "ASM2"
+  
+[TECHNOLOGY] "CRUISE3_REQ2"
+  Name "CRUISE3_REQ2_NAME"
+  Description "CRUISE3_REQ2_DESC"
+  LeadsTo "CRUISE3"
   
   
 [TECHNOLOGY] "Laser_weapon"
@@ -1055,7 +1061,9 @@ Description "U_Cavern_DESC"
   LeadsTo "SLBM_REQ"
   LeadsTo "3GEN_REQ"
   LeadsTo "NAVY60_REQ"
-  LeadsTo "CRUISE1_REQ"   
+  LeadsTo "CRUISE1_REQ"
+  LeadsTo "TOR1_REQ"   
+  LeadsTo "SUB60_REQ"    
   //AIUpgradeTechHint Naval 
 
 [TECHNOLOGY] "ICBM1_REQ"
@@ -1082,6 +1090,16 @@ Description "U_Cavern_DESC"
   Name "CRUISE1_REQ_NAME"
   Description "CRUISE1_REQ_DESC" 
   LeadsTo "CRUISE1"
+  
+[TECHNOLOGY] "TOR1_REQ"
+  Name "TOR1_REQ_NAME"
+  Description "TOR1_REQ_DESC" 
+  LeadsTo "TOR1"
+  
+[TECHNOLOGY] "SUB60_REQ"
+  Name "SUB60_REQ_NAME"
+  Description "SUB60_REQ_DESC" 
+  LeadsTo "SUB60"
   
 [TECHNOLOGY] "ENG2"
   Name "ENG2_NAME"
@@ -1118,6 +1136,8 @@ Description "U_Cavern_DESC"
   LeadsTo "MIRV_REQ"
   LeadsTo "NAVY80_REQ"
   LeadsTo "CRUISE3_REQ"
+  LeadsTo "TOR3_REQ"
+  LeadsTo "SUB80_REQ"
   //AIUpgradeTechHint Naval 
   
 [TECHNOLOGY] "MIRV_REQ"
@@ -1135,6 +1155,16 @@ Description "U_Cavern_DESC"
   Description "CRUISE3_REQ_DESC" 
   LeadsTo "CRUISE3"
   
+[TECHNOLOGY] "TOR2_REQ"
+  Name "TOR2_REQ_NAME"
+  Description "TOR2_REQ_DESC" 
+  LeadsTo "TOR2"
+  
+[TECHNOLOGY] "SUB80_REQ"
+  Name "SUB80_REQ_NAME"
+  Description "SUB80_REQ_DESC" 
+  LeadsTo "SUB80"
+  
 [TECHNOLOGY] "ENG4"
   Name "ENG4_NAME"
   Description "ENG4_DESC"
@@ -1145,6 +1175,7 @@ Description "U_Cavern_DESC"
   LeadsTo "Heavy_Missiles_REQ"
   LeadsTo "4GEN2_REQ2"
   LeadsTo "NAVY00_REQ"
+  LeadsTo "SUB00_REQ"
   //AIUpgradeTechHint Naval 
   
 [TECHNOLOGY] "False_warheads_REQ"
@@ -1167,6 +1198,11 @@ Description "U_Cavern_DESC"
   Description "NAVY00_REQ_DESC" 
   LeadsTo "NAVY00"
   
+[TECHNOLOGY] "SUB00_REQ"
+  Name "SUB00_REQ_NAME"
+  Description "SUB00_REQ_DESC" 
+  LeadsTo "SUB00"
+  
 [TECHNOLOGY] "ENG5"
   Name "ENG5_NAME"
   Description "ENG5_DESC"
@@ -1175,6 +1211,7 @@ Description "U_Cavern_DESC"
   LeadsTo "Super_Heavy_Missiles_REQ"
   LeadsTo "NAVY30_REQ"
   LeadsTo "CRUISE6_REQ"
+  LeadsTo "SUB30_REQ"
   //AIUpgradeTechHint Naval 
   
 [TECHNOLOGY] "Super_Heavy_Missiles_REQ"
@@ -1191,6 +1228,11 @@ Description "U_Cavern_DESC"
   Name "CRUISE6_REQ_NAME"
   Description "CRUISE6_REQ_DESC" 
   LeadsTo "CRUISE6"
+  
+[TECHNOLOGY] "SUB30_REQ"
+  Name "SUB30_REQ_NAME"
+  Description "SUB30_REQ_DESC" 
+  LeadsTo "SUB30"
   
 [TECHNOLOGY] "COMP1"
   Name "COMP1_NAME"
@@ -1230,7 +1272,8 @@ Description "U_Cavern_DESC"
   LeadsTo "COMP4"
   LeadsTo "GPS_REQ"
   LeadsTo "ABM1_REQ" 
-  LeadsTo "AA2_REQ"  
+  LeadsTo "AA2_REQ" 
+  LeadsTo "TOR2_REQ2"   
   //AIUpgradeTechHint Science 
 
 [TECHNOLOGY] "GPS_REQ"
@@ -1247,6 +1290,11 @@ Description "U_Cavern_DESC"
   Name "AA2_REQ_NAME"
   Description "AA2_REQ_DESC"  
   LeadsTo "AA2"
+  
+[TECHNOLOGY] "TOR2_REQ2"
+  Name "TOR2_REQ2_NAME"
+  Description "TOR2_REQ2_DESC" 
+  LeadsTo "TOR2"
   
 [TECHNOLOGY] "COMP4"
   Name "COMP4_NAME"
@@ -1272,6 +1320,7 @@ Description "U_Cavern_DESC"
   LeadsTo "4GEN2_REQ3"
   LeadsTo "AA3_REQ"
   LeadsTo "Improved_optics_REQ"
+  LeadsTo "TOR3_REQ"
   //AIUpgradeTechHint Science  
   
 [TECHNOLOGY] "AESA_REQ"
@@ -1293,6 +1342,11 @@ Description "U_Cavern_DESC"
   Name "Improved_optics_REQ_NAME"
   Description "Improved_optics_REQ_DESC"  
   LeadsTo "Improved_optics"
+  
+[TECHNOLOGY] "TOR3_REQ"
+  Name "TOR3_REQ_NAME"
+  Description "TOR3_REQ_DESC" 
+  LeadsTo "TOR3"
   
   
 [TECHNOLOGY] "COMP6"
@@ -1328,6 +1382,7 @@ Description "U_Cavern_DESC"
   Points 15 
   LeadsTo "LASER_PRACTICAL_REQ" 
   LeadsTo "ABM3_REQ"
+  LeadsTo "TOR4_REQ"
   //AIUpgradeTechHint Science 
   
 [TECHNOLOGY] "LASER_PRACTICAL_REQ"
@@ -1339,6 +1394,11 @@ Description "U_Cavern_DESC"
   Name "ABM3_REQ_NAME"
   Description "ABM3_REQ_DESC"  
   LeadsTo "ABM3"
+  
+[TECHNOLOGY] "TOR4_REQ"
+  Name "TOR4_REQ_NAME"
+  Description "TOR4_REQ_DESC" 
+  LeadsTo "TOR4"
   
 [TECHNOLOGY] "LASER_GUIDE"
   Name "LASER_GUIDE_NAME"
