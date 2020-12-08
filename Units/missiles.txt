@@ -17,6 +17,12 @@ Modifier options:
   CanBeUsedAgainst Naval
   CanBeUsedAgainst City
   CanBeUsedAgainst AbstractPosition
+  
+[TYPE] "CRUISE"
+  RequiresPreciseTargeting No
+  CanBeUsedAgainst Ground
+  CanBeUsedAgainst City
+  CanBeUsedAgainst AbstractPosition
 
 [TYPE] "Nuke"
   RequiresPreciseTargeting No
@@ -371,12 +377,12 @@ Modifier options:
   ImprovedBy "CRUISE4" Set Precision 0.3
   AffectedBy "CRUISE4" CanBeIntercepted 0.4
   
-  ImprovedBy "CRUISE5" Set Range 700
+  ImprovedBy "CRUISE5" Set Range 800
   ImprovedBy "CRUISE5" Set Speed 2000
   ImprovedBy "CRUISE5" Set Precision 0.05
   AffectedBy "CRUISE4" CanBeIntercepted 0.3
   
-  ImprovedBy "CRUISE6" Set Range 700
+  ImprovedBy "CRUISE6" Set Range 900
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
   ImprovedBy "CRUISE6" Set Damage 1.5
@@ -393,7 +399,7 @@ Modifier options:
   
 [MISSILE] "CONV_CRUISE"
   Tech "M_CONV_CRUISE"
-  Type "Default"
+  Type "CRUISE"
   Icon "Units/Images/Missiles/CRUISE80.png"
   Sound 113 or 114 Volume 0.5
   Explosion "big_bomb_old"
@@ -893,7 +899,7 @@ Modifier options:
   Range 350
   Speed 1400
 //  Elevation 200
-  Precision 0.05
+  Precision 0.6
   Switchable ON
   
   DisablingTech "M_CIWS_LASER"
@@ -908,7 +914,7 @@ Modifier options:
   DrawLaser
   Ballistic 
   Range 400
-  Speed 1000
+  Speed 1400
   Precision 0.05
   Switchable ON
   

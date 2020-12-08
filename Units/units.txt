@@ -66,53 +66,6 @@ Modifier options:
   ImprovedBy "5GEN"  Movie "Units/Images/Airborne/FR10.vidx" Icon "Units/Images/Airborne/FR10_I.vidx"
 
   
-  
-[UNIT] "CVN_FR"
-  Tech "CVN_FR"
-  Movie "Units/Images/Airborne/CVN_FR50.vidx"
-  DrawSize 16
-  LaunchMeSound 83
-  Size 0.04
-  Sound 134 Volume 0.3
-  Type Airborne
-  NoAutoDeploy
-  Speed 800 // in km per h
-  TurnSpeed 8 // in angles per second
-  Range 4500 // in km
-  Power 1
-  Config "Combat Air Patrol" Default 
-    Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "3GEN"
-	        Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN"
-	        Weapon "AAM" 4 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN2"
-	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-  Config "Air Launched Ballistic Missile"
-        ImprovedBy "CRUISE4"
-            Weapon "ASNM" 1
-  Radar "STD Vision"
-  Radar "STD Short Wave"
-  ProductionCost 2.2
-  Crash "std_bomb"
-
-  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842-
-
-  Modifier "5GEN"
-
-  ImprovedBy "3GEN" Set Speed 1000
-  ImprovedBy "3GEN" Set TurnSpeed 10
-  ImprovedBy "3GEN" Set Size 0.015
-  
-  ImprovedBy "5GEN" Set Power 1.5
-  ImprovedBy "5GEN" Set TurnSpeed 15
-  ImprovedBy "5GEN" Size 0.75
-  
-  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"
-  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR80.vidx"
-  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_FR00.vidx"
-  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_FR10.vidx"
-  
 [UNIT] "Attack"
   Tech "U_Attack"
   Movie "Units/Images/Airborne/MULTI50.vidx"
@@ -193,76 +146,6 @@ Modifier options:
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/MULTI70.vidx" Icon "Units/Images/Airborne/MULTI70_I.vidx"
   ImprovedBy "4GEN2" Movie "Units/Images/Airborne/MULTI00.vidx" Icon "Units/Images/Airborne/MULTI00_I.vidx"
   ImprovedBy "5GEN" Movie "Units/Images/Airborne/MULTI10.vidx" Icon "Units/Images/Airborne/MULTI10_I.vidx"
-  
-[UNIT] "CVN_ATK"
-  Tech "CVN_ATK"
-  Movie "Units/Images/Airborne/CVN_ATK50.vidx"
-  DrawSize 16
-  LaunchMeSound 83
-  Size 0.045
-  Sound 134 Volume 0.3
-  Type Airborne
-  //AIVarietyHint CarrierStrike
-  NoAutoDeploy
-  Speed 600
-  TurnSpeed 6
-  Range 5000
-  Power 1
-  Config "Combat Air Patrol" Default 
-    Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "3GEN"
-	        Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN"
-	        Weapon "AAM" 4 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN2"
-	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-  Config "Bombs" Default
-        Weapon "Free fall bomb" 4 Launch 1 Time 2 AutoEngage Principal
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "3GEN" 
-	        Weapon "Free fall bomb" 8 Launch 2 Time 2 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-    Config "ASM" Default
-        ImprovedBy "ASM1_M"
-        Weapon "ASM" 2 Launch 2 Time 90 AutoEngage 
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "3GEN" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "4GEN" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "4GEN2" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-  Config "Nuclear bomb"
-        Weapon "Low-power nuclear bomb" 1 Principal
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-  Config "ALBM"
-        ImprovedBy "CRUISE4"
-            Weapon "ASNM" 1 Principal 
-            Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-  Radar "STD Vision"
-  Radar "STD Short Wave"
-  ProductionCost 2.2
-  Crash "std_bomb"
-
-  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
-
-  Modifier "5GEN"
-
-  ImprovedBy "3GEN" Set Speed 750
-  ImprovedBy "3GEN" Set TurnSpeed 8
-  ImprovedBy "3GEN" Set Size 0.02
-
-  ImprovedBy "5GEN" Set Speed 900
-  ImprovedBy "5GEN" Set TurnSpeed 11
-  ImprovedBy "5GEN" Size 0.75
-
-  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_ATK60.vidx"
-  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK80.vidx"
-  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_ATK00.vidx"
-  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_ATK10.vidx"
 
 
 [UNIT] "Bomber"
@@ -442,7 +325,7 @@ Config "Anti Submarine Warfare"
   Power 8
   Config "Nuclear"
     Weapon "Torpedo" 20000 AutoEngage
-    Weapon "SUB_MRBM" 12 Launch 2  Time 640 Principal
+    Weapon "SUB_MRBM" 12 Launch 1  Time 300 Principal
   Radar "Sonar"
   ProductionCost 20
   NoAutoAttack
@@ -467,6 +350,7 @@ Config "Anti Submarine Warfare"
 [UNIT] "Destroyer"
   Tech "U_Destroyer"
   Movie "Units/Images/Naval/DD50.vidx"
+  Icon "Units/Images/Naval/UI/DD50.png"
   DrawSize 27
   FollowRadius 28//24
   Size 0.2
@@ -517,10 +401,10 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY80" Set Speed 75
   ImprovedBy "NAVY00" Set Speed 85
   
-  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/DD60.vidx"
-  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/DD80.vidx"
-  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/DD00.vidx"
-  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/DD30.vidx"
+  ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/DD60.vidx"  Icon "Units/Images/Naval/DD60_I.vidx"
+  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/DD80.vidx"  Icon "Units/Images/Naval/DD80_I.vidx"
+  ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/DD00.vidx"  Icon "Units/Images/Naval/DD00_I.vidx"
+  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/DD30.vidx"  Icon "Units/Images/Naval/DD30_I.vidx"
 
 [UNIT] "Cruiser"
   Tech "U_Cruiser"
@@ -889,6 +773,7 @@ Config "Anti Submarine Warfare"
 [UNIT] "CVN_FR"
   Tech "CVN_FR"
   Movie "Units/Images/Airborne/CVN_FR50.vidx"
+  Icon "Units/Images/Airborne/CVN_FR50_I.vidx"
   DrawSize 16
   LaunchMeSound 83
   Size 0.04
@@ -919,11 +804,16 @@ Config "Anti Submarine Warfare"
   ProductionCost 2.2
   Crash "std_bomb"
 
+  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"  Icon "Units/Images/Airborne/CVN_FR60_I.vidx"
+  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR70.vidx"  Icon "Units/Images/Airborne/CVN_FR70_I.vidx"
+  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_FR00.vidx"  Icon "Units/Images/Airborne/CVN_FR00_I.vidx"
+  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_FR10.vidx"  Icon "Units/Images/Airborne/CVN_FR10_I.vidx"
 
   
 [UNIT] "CVN_ATK"
   Tech "CVN_ATK"
   Movie "Units/Images/Airborne/CVN_ATK50.vidx"
+  Icon "Units/Images/Airborne/CVN_ATK50_I.vidx"
   DrawSize 16
   LaunchMeSound 83
   Size 0.045
@@ -986,10 +876,10 @@ Config "Anti Submarine Warfare"
   ImprovedBy "5GEN" Set TurnSpeed 11
   ImprovedBy "5GEN" Size 0.75
 
-  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_ATK60.vidx"
-  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK80.vidx"
-  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_ATK00.vidx"
-  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_ATK10.vidx"
+  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_ATK60.vidx"  Icon "Units/Images/Airborne/CVN_ATK60_I.vidx"
+  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK70.vidx"  Icon "Units/Images/Airborne/CVN_ATK70_I.vidx"
+  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_ATK00.vidx"  Icon "Units/Images/Airborne/CVN_ATK00_I.vidx"
+  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_ATK10.vidx"  Icon "Units/Images/Airborne/CVN_ATK10_I.vidx"
   
 [UNIT] "CVN_AWACS"
   Tech "CVN_AWACS"

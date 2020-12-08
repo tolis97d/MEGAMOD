@@ -52,8 +52,8 @@ USE PREVIOUS "Units/explosion.txt"
 [EXPLOSION] "CIWS_EXP"
   Movie "Images/Explosion/small_1.midx" 
   Damage 1.85
-  Range 0.4
-  FullEffectRange 0.4
+  Range 0.01
+  FullEffectRange 0.01
   DrawSize .001
   TimeGrowing .25 
   TimeTotal 0.25
@@ -65,7 +65,7 @@ USE PREVIOUS "Units/explosion.txt"
     MuteLength 0.25
   Damage .10
   Range 0.07
-  FullEffectRange 0.05
+  FullEffectRange 0.07
   DrawSize 1
   TimeGrowing 0.5
   TimeTotal 0.5

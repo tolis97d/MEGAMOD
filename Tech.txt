@@ -1306,8 +1306,19 @@ Description "U_Cavern_DESC"
   Points 15
   LeadsTo "COMP3" 
   LeadsTo "LASER_GUIDE" 
-  LeadsTo "LASER_GUIDE" 
+  LeadsTo "JAM1_REQ"
+  LeadsTo "LW_MK2_REQ"
   //AIUpgradeTechHint Science 
+  
+[TECHNOLOGY] "JAM1_REQ"
+  Name "JAM1_REQ_NAME"
+  Description "JAM1_REQ_DESC" 
+  LeadsTo "JAM1"
+  
+[TECHNOLOGY] "LW_MK2_REQ"
+  Name "LW_MK2_REQ_NAME"
+  Description "LW_MK2_REQ_DESC" 
+  LeadsTo "LW_MK2"
   
 [TECHNOLOGY] "COMP3"
   Name "COMP3_NAME"
@@ -1348,12 +1359,18 @@ Description "U_Cavern_DESC"
   Points 15
   LeadsTo "COMP5"
   LeadsTo "ABM2_REQ"
+  LeadsTo "LW_MK3_REQ"
   //AIUpgradeTechHint Science
 
 [TECHNOLOGY] "ABM2_REQ"
   Name "ABM2_REQ_NAME"
   Description "ABM2_REQ_DESC"  
   LeadsTo "ABM2"  
+  
+[TECHNOLOGY] "LW_MK3_REQ"
+  Name "LW_MK3_REQ_NAME"
+  Description "LW_MK3_REQ_DESC" 
+  LeadsTo "LW_MK3"
 
 [TECHNOLOGY] "COMP5"
   Name "COMP5_NAME"
@@ -1366,6 +1383,7 @@ Description "U_Cavern_DESC"
   LeadsTo "AA3_REQ"
   LeadsTo "Improved_optics_REQ"
   LeadsTo "TOR3_REQ"
+  LeadsTo "JAM2_REQ"
   //AIUpgradeTechHint Science  
   
 [TECHNOLOGY] "AESA_REQ"
@@ -1393,6 +1411,11 @@ Description "U_Cavern_DESC"
   Description "TOR3_REQ_DESC" 
   LeadsTo "TOR3"
   
+[TECHNOLOGY] "JAM2_REQ"
+  Name "JAM2_REQ_NAME"
+  Description "JAM2_REQ_DESC" 
+  LeadsTo "JAM2"
+  
   
 [TECHNOLOGY] "COMP6"
   Name "COMP6_NAME"
@@ -1403,6 +1426,7 @@ Description "U_Cavern_DESC"
   LeadsTo "CIWS_LASER_REQ"
   LeadsTo "5GEN_REQ" 
   LeadsTo "AA4_REQ"
+  LeadsTo "LW_MK4_REQ"
   //AIUpgradeTechHint Science 
 
 [TECHNOLOGY] "CIWS_LASER_REQ"
@@ -1420,6 +1444,11 @@ Description "U_Cavern_DESC"
   Description "AA4_REQ_DESC"  
   LeadsTo "AA4"
   
+[TECHNOLOGY] "LW_MK4_REQ"
+  Name "LW_MK4_REQ_NAME"
+  Description "LW_MK4_REQ_DESC" 
+  LeadsTo "LW_MK4"
+  
 [TECHNOLOGY] "COMP7"
   Name "COMP7_NAME"
   Description "COMP7_DESC"
@@ -1428,6 +1457,7 @@ Description "U_Cavern_DESC"
   LeadsTo "LASER_PRACTICAL_REQ" 
   LeadsTo "ABM3_REQ"
   LeadsTo "TOR4_REQ"
+  LeadsTo "JAM3_REQ"
   //AIUpgradeTechHint Science 
   
 [TECHNOLOGY] "LASER_PRACTICAL_REQ"
@@ -1444,6 +1474,11 @@ Description "U_Cavern_DESC"
   Name "TOR4_REQ_NAME"
   Description "TOR4_REQ_DESC" 
   LeadsTo "TOR4"
+  
+[TECHNOLOGY] "JAM3_REQ"
+  Name "JAM3_REQ_NAME"
+  Description "JAM3_REQ_DESC" 
+  LeadsTo "JAM3"
   
 [TECHNOLOGY] "LASER_GUIDE"
   Name "LASER_GUIDE_NAME"
