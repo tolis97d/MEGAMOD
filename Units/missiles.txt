@@ -134,8 +134,6 @@ Modifier options:
   Precision 50
   Switchable ON
   AffectedBy Unit "Not_Targetable_BIGGUNS" Set Precision 200
-  
-  DisablingTech "NAVY00"
 
 [MISSILE] "SNAVALGUN"
   Tech "M_SNAVALGUN"
@@ -561,8 +559,8 @@ Modifier options:
   Precision 0.5
   ImprovedBy "TOR1" Set Range 375
   ImprovedBy "TOR2" Set Range 400
-  ImprovedBy "TOR3" Set Range 400
-  ImprovedBy "TOR4" Set Range 450
+  ImprovedBy "TOR3" Set Range 425
+  ImprovedBy "TOR4" Set Range 500
   AffectedBy Unit "Antitorpedo" Precision 1.5
   
   ImprovedBy "TOR1" Movie Image "Units/Images/Missiles/TOR1.png"
@@ -873,10 +871,13 @@ Modifier options:
   Sound 119
   DrawWave
   Explosion "std_torpedo"
-  Range 1000
+  Range 500
   Speed 1
   Ballistic
-  Switchable OFF
+  Switchable ON
+  
+  ImprovedBy "JAM2" Set Range 600
+  ImprovedBy "JAM3" Set Range 700
   
 [MISSILE] "CIWS"
   Tech "M_CIWS"

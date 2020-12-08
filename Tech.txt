@@ -48,6 +48,10 @@
 [TECHNOLOGY] "U_Airport2"
   Name "U_AIRPORT2_NAME"
   Description "U_AIRPORT2_DESC"
+  
+[TECHNOLOGY] "U_Airport3"
+  Name "U_AIRPORT3_NAME"
+  Description "U_AIRPORT3_DESC"
 
 [TECHNOLOGY] "M_Free_fall_bomb"
   Name "M_FREE_FALL_BOMB_NAME"
@@ -219,6 +223,10 @@
 [TECHNOLOGY] "CVN_ASW"  
   Name "CVN_ASW_NAME"
   Description "CVN_ASW_DESC"
+  
+[TECHNOLOGY] "ASW"  
+  Name "ASW_NAME"
+  Description "ASW_DESC"
   
 [TECHNOLOGY] "U_Cavern"
 Name "U_Cavern_NAME"
@@ -701,21 +709,28 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "SW_Mk2"
   Name "SW_Mk2_NAME"
   Description "SW_Mk2_DESC"
-  Image "Images/Science/SW_Mk2.png"
+  Image "Images/Science/SW1.png"
   Points 15
   LeadsTo "SW_Mk3"
 
 [TECHNOLOGY] "SW_Mk3"
   Name "SW_Mk3_NAME"
   Description "SW_Mk3_DESC"
-  Image "Images/Science/AESA.png"
+  Image "Images/Science/SW2.png"
   Points 15
+  LeadsTo "SW_Mk4"
   LeadsTo "AESA_RADAR"
+  
+[TECHNOLOGY] "SW_Mk4"
+  Name "SW_Mk4_NAME"
+  Description "SW_Mk4_DESC"
+  Image "Images/Science/SW3.png"
+  Points 15
   
 [TECHNOLOGY] "AESA_RADAR"
   Name "AESA_RADAR_NAME"
   Description "AESA_RADAR_DESC"
-  Image "Images/Science/SW_Mk3.png"
+  Image "Images/Science/AESA.png"
   Points 15 
   LeadsTo "4GEN2_REQ"
   //AIUpgradeTechHint Aircraft
@@ -731,14 +746,22 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "LW_Mk2"
   Name "LW_Mk2_NAME"
   Description "LW_Mk2_DESC"
-  Image "Images/Science/LW_Mk2.png"
+  Image "Images/Science/LW1.png"
   Points 15
   LeadsTo "LW_Mk3"
+  LeadsTo "Space_radar"
 
 [TECHNOLOGY] "LW_Mk3"
   Name "LW_Mk3_NAME"
   Description "LW_Mk3_DESC"
-  Image "Images/Science/LW_Mk3.png"
+  Image "Images/Science/LW2.png"
+  Points 15 
+  LeadsTo "LW_Mk4"
+  
+[TECHNOLOGY] "LW_Mk4"
+  Name "LW_Mk4_NAME"
+  Description "LW_Mk4_DESC"
+  Image "Images/Science/LW2.png"
   Points 15 
   
 // chain Overhorizon radar  Ovehorizon sea radar  Space radar
@@ -748,11 +771,16 @@ Description "U_Cavern_DESC"
   Description "Space_radar_DESC"
   Image "Images/Science/Space_radar.png"
   Points 13
-  LeadsTo "ASAT"
+  LeadsTo "ASAT_REQ"
   LeadsTo "R_Space_radar"
   LeadsTo "R_Space_radar_OTH"
   LeadsTo "U_Space_radar"
   LeadsTo "Over_horizon_radar"
+  
+[TECHNOLOGY] "ASAT_REQ"
+  Name "ASAT_REQ_NAME"
+  Description "ASAT_REQ_DESC"
+  LeadsTo "ASAT"
 
 [TECHNOLOGY] "R_Space_radar"
   Name "R_Space_radar_NAME"
@@ -791,9 +819,25 @@ Description "U_Cavern_DESC"
   Points 20
 //  LeadsTo "Space_radar" 
   
- 
-  
-  
+[TECHNOLOGY] "SONAR1"
+  Name "SONAR1_NAME"
+  Description "SONAR1_DESC"
+  Image "Images/Science/Over_horizon_radar.png"
+  Points 30
+  LeadsTo "SONAR2" 
+
+[TECHNOLOGY] "SONAR2"
+  Name "SONAR2_NAME"
+  Description "SONAR2_DESC"
+  Image "Images/Science/Over_horizon_radar.png"
+  Points 30
+  LeadsTo "SONAR3"
+
+[TECHNOLOGY] "SONAR3"
+  Name "SONAR3_NAME"
+  Description "SONAR3_DESC"
+  Image "Images/Science/Over_horizon_radar.png"
+  Points 30  
   
   
 // chain MRBM  ICBM          Heavy missiles
@@ -1240,6 +1284,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP60.png"
   Points 15
   LeadsTo "COMP2" 
+  LeadsTo "JAM1" 
   LeadsTo "Satellite_REQ"
   LeadsTo "AA1_REQ" 
   //AIUpgradeTechHint Science 
@@ -1439,6 +1484,36 @@ Description "U_Cavern_DESC"
   Description "Laser_weapon_REQ_DESC"  
   LeadsTo "Laser_weapon"
   
+[TECHNOLOGY] "JAM1"
+  Name "JAM1_NAME"
+  Description "JAM1_DESC"
+  Image "Images/Science/J1.png"
+  Points 15
+  LeadsTo "JAM2" 
+  
+[TECHNOLOGY] "JAM2"
+  Name "JAM2_NAME"
+  Description "JAM2_DESC"
+  Image "Images/Science/J2.png"
+  Points 15
+  LeadsTo "JAM3" 
+  
+[TECHNOLOGY] "JAM3"
+  Name "JAM3_NAME"
+  Description "JAM3_DESC"
+  Image "Images/Science/J3.png"
+  Points 15 
+  
+[TECHNOLOGY] "ARMY_TECH"
+  Name "ARMY_TECH_NAME"
+  Description "ARMY_TECH_DESC"
+  Image "Images/Science/PRACTICAL_LASER.png"
+  Points 15  
+  LeadsTo "ARMY"
+  
+[TECHNOLOGY] "ARMY"
+  Name "ARMY_NAME"
+  Description "ARMY_DESC"
   
 //BATTLESHIP STUFF
 
@@ -1482,10 +1557,6 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "U_NORAD"
   Name "U_NORAD_NAME"
   Description "U_NORAD_DESC" 
-  
-[TECHNOLOGY] "ARMY"
-  Name "ARMY_NAME"
-  Description "EXC_DESC"
 
 [TECHNOLOGY] "ARMY_WEP"
   Name "ARMY_WEP_NAME"

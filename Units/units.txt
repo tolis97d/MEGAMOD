@@ -161,10 +161,13 @@ Modifier options:
         ImprovedBy "4GEN2" 
             Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
             Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-  Config "Nuclear bomb"
-        Weapon "Low-power nuclear bomb" 1
+    Config "Electronic-Warfare" Default
+        ImprovedBy "JAM1"
+            Weapon "EW" 1 Launch 2 Time 90 AutoEngage 
+    Config "Nuclear bomb"
+        Weapon "Low-power nuclear bomb" 1 Principal
         Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-  Config "ALBM"
+     Config "ALBM"
         ImprovedBy "CRUISE4"
             Weapon "ASNM" 1 Principal 
             Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
@@ -331,6 +334,34 @@ Modifier options:
 
 //  ImprovedBy "S_FACTION_ID_3" Speed 3
 
+[UNIT] "ASW"
+  Tech "ASW"
+  Movie "Units/Images/Airborne/ASW1.vidx"
+  Icon "Units/Images/Airborne/ASW1_I.vidx"
+  DrawSize 20
+  LaunchMeSound 85
+  Size 0.075
+  Sound 143 Volume 0.4
+  Type Airborne
+  //AIVarietyHint CarrierStrike
+  NoAutoDeploy
+  Slave
+  AutoReturn Yes
+  Speed 350
+  TurnSpeed 3
+  Range 8000
+  CanPatrolPoint
+//  CanHangInTheAir
+  Power 1.5
+Config "Anti Submarine Warfare"
+  Weapon "Torpedo" 6 Launch 1 AutoEngage
+//  Weapon "EW" 1 DefaultOff
+  Radar "AWACS Sonar"
+  ProductionCost 4.3
+  Crash "big_bomb"
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+
 [UNIT] "AWACS"
   Tech "U_AWACS"
   Movie "Units/Images/Airborne/awacs.vidx"
@@ -369,14 +400,14 @@ Modifier options:
   TurnSpeed 5 // in angles per second
   Power 5
   Config "Hunter Killer" Default 
-        Weapon "Torpedo" 20000 Launch 2 Time 100 AutoEngage principal
+        Weapon "Torpedo" 20000 Launch 2 Time 150 AutoEngage principal
   Config "Conventional Cruise Missiles" Default 
     ImprovedBy "CRUISE3"
-        Weapon "Torpedo" 20000 Launch 2 AutoEngage
+        Weapon "Torpedo" 20000 Launch 2 Time 250 AutoEngage
         Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage principal
   Config "Nuclear Cruise Missiles"
     ImprovedBy "CRUISE3"
-        Weapon "Torpedo" 20000 Launch 2 AutoEngage
+        Weapon "Torpedo" 20000 Launch 2 Time 250 AutoEngage
         Weapon "NUKE_CRUISE" 20 Launch 2 Time 50 AutoEngage principal
   
   Radar "Sonar"
@@ -417,13 +448,12 @@ Modifier options:
   NoAutoAttack
   NoAutoAttackSub
   HiddenFromAllies
-  Modifier "Advanced_Sonar"
-//  Modifier "Advanced_MRBM"
+
   Modifier "Advanced_MRBM_MIRV"
   Modifier "ENGINE_SSBN1"
   Modifier "ENGINE_SSBN2"
   Modifier "ENGINE_SSBN3"
-//  ImprovedBy "SUB60" Set Speed 40
+
   ImprovedBy "SUB80" Set Speed 55
   ImprovedBy "SUB00" Set Speed 65
   
@@ -446,15 +476,23 @@ Modifier options:
   Speed 55
   TurnSpeed 5 // in angles per second
   Power 10
-  Weapon "Torpedo" 25000 Launch 2 AutoEngage
-  Weapon "SNAVALGUN" 20000 Launch 2 Time 70 AutoEngage
-  Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
-  Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
-  Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
-  Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
-  Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
-  Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
-  Weapon "ABM" 20000 Launch 1 Time 150 AutoEngage
+  Config "ASW" Default 
+     Weapon "Torpedo" 25000 Launch 2 AutoEngage principal
+     Weapon "SNAVALGUN" 20000 Launch 2 Time 70 AutoEngage
+     Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
+     Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
+     Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+     Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+     Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+     Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+  Config "Missile Defence" Default 
+    ImprovedBy "ABM1"
+         Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
+         Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+         Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+         Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "ABM" 20000 Launch 1 Time 150 AutoEngage principal
 
   Radar "STD Vision"
   Radar "Sonar"
@@ -498,15 +536,30 @@ Modifier options:
   Speed 40
   TurnSpeed 5 // in angles per second
   Power 20
-  Weapon "SNAVALGUN" 20000 Launch 3 Time 50 AutoEngage
-  Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
-  Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
-  Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
-  Weapon "SAM" 20000 Launch 2 Time 50 AutoEngage
-  Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
-  Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+  Config "Anti-Ship" Default 
+     Weapon "SNAVALGUN" 20000 Launch 2 Time 70 AutoEngage
+     Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
+     Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
+     Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+     Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+     Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+     Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+  Config "Naval Nuclear Strike" Default 
+    ImprovedBy "CRUISE1"
+         Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
+         Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+         Weapon "NUKE_CRUISE" 20 Launch 2 Time 300 AutoEngage
+         Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+  Config "Missile Defence" Default 
+    ImprovedBy "ABM1"
+         Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
+         Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+         Weapon "NUKE_CRUISE" 20 Launch 2 Time 300 AutoEngage
+         Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "ABM" 20000 Launch 1 Time 100 AutoEngage principal
   
-
   Radar "STD Vision"
   Radar "STD Short Wave"
   Radar "STD Long Wave"
@@ -545,13 +598,29 @@ Modifier options:
   Speed 40
   TurnSpeed 5 // in angles per second
   Power 20
-  Weapon "SNAVALGUN" 20000 Launch 2 Time 60 AutoEngage
-  Weapon "BIGGUNS" 20000 Launch 12 Time 360 AutoEngage
-  Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
-  Weapon "Torpedo" 20000 Launch 2 AutoEngage
-  Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
-  Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
-  Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+  
+  Config "Heavy Naval Artillery" Default 
+     Weapon "SNAVALGUN" 20000 Launch 2 Time 60 AutoEngage
+     Weapon "BIGGUNS" 20000 Launch 12 Time 360 AutoEngage
+     Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
+     Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
+     Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+     Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+     Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
+  Config "VLS Refit" Default 
+    ImprovedBy "CRUISE3"
+         Weapon "SAM" 20000 Launch 2 Time 50 AutoEngage
+         Weapon "SPSPM" 20000 Launch 2 Time 40 AutoEngage
+         Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage 
+  Config "Nuclear Missile Strike" Default 
+    ImprovedBy "CRUISE3"
+         Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
+         Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+         Weapon "NUKE_CRUISE" 40 Launch 2 Time 300 AutoEngage
+         Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
   
   ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/BC60.vidx" Icon "Units/Images/Naval/BC60_I.vidx"
   ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/BC80.vidx" Icon "Units/Images/Naval/BC80_I.vidx"
@@ -714,8 +783,8 @@ Modifier options:
   Radar "Fixed Short Wave"
   ProductionCost 5.5
   
-  ImprovedBy "LW_Mk2" Movie "Units/Images/Ground/RADAR0.midx"
-  ImprovedBy "LW_Mk3" Movie "Units/Images/Ground/RADAR0.midx"
+  ImprovedBy "LW_Mk2" Movie "Units/Images/Ground/RADAR1.midx"
+  ImprovedBy "LW_Mk3" Movie "Units/Images/Ground/RADAR1.midx"
  
 
 [UNIT] "Over_Horizon radar"
@@ -975,8 +1044,6 @@ Config "Anti Submarine Warfare"
   Crash "big_bomb"
 
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
-
-  ImprovedBy "Air_refuel" Range 1.5
   
 [UNIT] "Carrier"
   Tech "U_Carrier"
@@ -1026,6 +1093,29 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/CVN80.vidx" Icon "Units/Images/Naval/CVN80_I.vidx"
   ImprovedBy "NAVY00" Movie "Units/Images/NAVAL/CVN00.vidx" Icon "Units/Images/Naval/CVN00_I.vidx"
   ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/CVN30.vidx" Icon "Units/Images/Naval/CVN30_I.vidx"
+  
+[UNIT] "Airport3"
+  Tech "U_Airport3"
+  Movie "Units/Images/Ground/AIR3.midx"
+  DrawSize 34
+  DrawOrder 1
+  Size 1.5
+  Sound 138 Volume 0.5
+  Type Ground
+  //AIVarietyHint Airport
+  AttackerInPlanner
+  Power 20
+  Airway Launch 2 Time 180 // in seconds in 1x time
+  Airway Launch 1 Time 220 // in seconds in 1x time
+  CanHostAircrafts "CVN_FR" 6 Patrol 2
+  CanHostAircrafts "CVN_ATK" 6
+  CanHostAircrafts airway 1 "CVN_AWACS" 1
+  CanHostAircrafts airway 1 "ASW" 2
+  CanAccessGlobalStorage
+  Radar "STD Vision"
+  Radar "STD Long Wave"
+  ProductionCost 6
+  NoAutoAttack
   
 [UNIT] "ARMY"
   Tech "ARMY"

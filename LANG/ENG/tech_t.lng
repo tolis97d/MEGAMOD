@@ -185,4 +185,7 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "TAWACS_NAME" LANG "Airborne Early Warning"
 "TAWACS_DESC" LANG "Airborne early warning and command systems such as AWACS provide a mobile long-wave radar platform that provides commanders with a bird's eye view of the battlescape, tracking targets across a huge area to provide communications on enemy positions and transfer that information across data-links to the computer systems of weapon platforms such as aircraft."
 
+"ARMY_TECH_NAME" LANG "Enable Armies"
+"ARMY_TECH_DESC" LANG "This tech is used to prohibit its research and thus armies during a game."
+
 END

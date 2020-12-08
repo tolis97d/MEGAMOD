@@ -15,6 +15,8 @@ Modifier options:
 //  RadarColor 0.0 0.0 0.16 0.15
   GlobalShowType SW_RANGES
   GlobalShowType OVERHORIZONT_RANGES
+  
+  AffectedBy InRange "EW" Range 0.4
 
 [TYPE] "LongWave"
   PreciseTargeting No
@@ -156,7 +158,7 @@ Modifier options:
   AffectedBy Unit "5GEN" Range 0.75
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
   AffectedBy Unit "Underground" Range 0.5
-//  AffectedBy InRange "EW" Range 0.1
+  AffectedBy InRange "EW" Range 0.4
 
 [RADAR] "AWACS Long Wave"
   Tech "R_Long_wave_radar"
@@ -187,32 +189,39 @@ Modifier options:
 [RADAR] "Sonar"
   Tech "R_Sonar"
   Type "Sonar"
-  Range 400
+  Range 300
   Sector 360
   Precision 0.75
-  ImprovedBy Unit "Advanced_Sonar" Range 1.25 // 500 for subs
+  ImprovedBy "SONAR1" Set Range 400
+  ImprovedBy "SONAR2" Set Range 550
+  ImprovedBy "SONAR3" Set Range 650
+  
   AffectedBy Unit "ENGINE_SSN1" Range 0.75 // 300
   AffectedBy Unit "ENGINE_SSBN1" Range 0.875 // 350
   AffectedBy Unit "ENGINE_SSN2" Range 0.84 // 252
   AffectedBy Unit "ENGINE_SSBN2" Range 0.857 // 300
   AffectedBy Unit "ENGINE_SSN3" Range 0.8 // 200
   AffectedBy Unit "ENGINE_SSBN3" Range 0.84 // 250
-  AffectedBy Unit "NAVY60" Range 1.5
-  AffectedBy Unit "NAVY80" Range 0.67 // to compensate the influence of the "Powerful_Engine"
+
 //  AffectedBy InRange "EW" Range 0.1
 
 [RADAR] "AWACS Sonar"
   Tech "R_Sonar"
   Type "Sonar"
-  Range 550
+  Range 150
   Sector 360
   Precision 0.75
-  AffectedBy Unit "ENGINE_SSN1" Range 450
-  AffectedBy Unit "ENGINE_SSBN1" Set Range 500
-  AffectedBy Unit "ENGINE_SSN2" Set Range 400
-  AffectedBy Unit "ENGINE_SSBN2" Set Range 450
-  AffectedBy Unit "ENGINE_SSN3" Set Range 350
-  AffectedBy Unit "ENGINE_SSBN3" Set Range 400
+  
+  ImprovedBy "SONAR1" Set Range 250
+  ImprovedBy "SONAR2" Set Range 350
+  ImprovedBy "SONAR3" Set Range 500
+  
+  AffectedBy Unit "ENGINE_SSN1" Range 0.75 // 300
+  AffectedBy Unit "ENGINE_SSBN1" Range 0.875 // 350
+  AffectedBy Unit "ENGINE_SSN2" Range 0.84 // 252
+  AffectedBy Unit "ENGINE_SSBN2" Range 0.857 // 300
+  AffectedBy Unit "ENGINE_SSN3" Range 0.8 // 200
+  AffectedBy Unit "ENGINE_SSBN3" Range 0.84 // 250
 
 [RADAR] "Over_Horizon"
   Tech "R_Over_horizon_radar"
