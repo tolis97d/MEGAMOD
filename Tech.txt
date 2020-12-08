@@ -852,8 +852,6 @@ Description "U_Cavern_DESC"
   LeadsTo "Mobile_MRBM"
   LeadsTo "ICBM1"
   LeadsTo "SLBM"
-  LeadsTo "U_Nuclear_Submarine"
-  LeadsTo "Aircraft-launched_MRBM"
 
 [TECHNOLOGY] "M_MRBM"
   Name "M_MRBM_NAME"

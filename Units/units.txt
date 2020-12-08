@@ -325,7 +325,7 @@ Config "Anti Submarine Warfare"
   Power 8
   Config "Nuclear"
     Weapon "Torpedo" 20000 AutoEngage
-    Weapon "SUB_MRBM" 12 Launch 1  Time 300 Principal
+    Weapon "SUB_MRBM" 12 Launch 1  Time 200 Principal
   Radar "Sonar"
   ProductionCost 20
   NoAutoAttack

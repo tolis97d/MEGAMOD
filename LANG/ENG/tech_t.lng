@@ -82,6 +82,18 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "M_CIWS_NAME" LANG "CIWS"
 "M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
 
+"SUPER_HEAVY_MISSILES_NAME" LANG "Super Heavy ICBMs"
+"SUPER_HEAVY_MISSILES_DESC" LANG "Originally super heavy-lift launch vehicles these rockets were repurposed to deliver large warheads or multiple MIRVs to defeat even  the most extensive air defence systems."
+
+"M_ICBM_50M_NAME" LANG "50 Megaton ICBM"
+"M_ICBM_50M_DESC" LANG "Originally super heavy-lift launch vehicles these rockets were repurposed to deliver large warheads to devastate enemy population centers."
+
+"LASER_GUIDE_NAME" LANG "Laser guidance"
+"LASER_GUIDE_DESC" LANG "Laser guidance is used by military to guide a missile or other projectile or vehicle to a target by means of a laser beam.This technique is sometimes called SALH, for Semi-Active Laser Homing. With this technique, a laser is kept pointed at the target and the laser radiation bounces off the target and is scattered in all directions. The missile, bomb, etc. is launched or dropped somewhere near the target. When it is close enough for some of the reflected laser energy from the target to reach it, a laser seeker detects which direction this energy is coming from and adjusts the projectile trajectory towards the source."
+
+"LASER_PRACTICAL_NAME" LANG "Practical Laser Weapons"
+"LASER_PRACTICAL_DESC" LANG "With the advancements in laser power we are at a point where laser can be used to cause physical damage to enemy projectiles."
+
 "COMP1_NAME" LANG "1960s Electronincs"
 "COMP1_DESC" LANG "The invention of the integrated circuit and the silicon MOSFET revolutionized the electronics industry and opened a new field of radio,computing and telecommunications applications."
 
