@@ -822,21 +822,21 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "SONAR1"
   Name "SONAR1_NAME"
   Description "SONAR1_DESC"
-  Image "Images/Science/Over_horizon_radar.png"
+  Image "Images/Science/SONAR1.png"
   Points 30
   LeadsTo "SONAR2" 
 
 [TECHNOLOGY] "SONAR2"
   Name "SONAR2_NAME"
   Description "SONAR2_DESC"
-  Image "Images/Science/Over_horizon_radar.png"
+  Image "Images/Science/SONAR2.png"
   Points 30
   LeadsTo "SONAR3"
 
 [TECHNOLOGY] "SONAR3"
   Name "SONAR3_NAME"
   Description "SONAR3_DESC"
-  Image "Images/Science/Over_horizon_radar.png"
+  Image "Images/Science/SONAR3.png"
   Points 30  
   
   
@@ -846,12 +846,19 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "MRBM"
   Name "MRBM_NAME"
   Description "MRBM_DESC"
-  Image "Images/Science/MRBM.png"
+  Image "Images/Science/MRBM1.png"
   Points 50
   LeadsTo "M_MRBM"
   LeadsTo "Mobile_MRBM"
   LeadsTo "ICBM1"
   LeadsTo "SLBM"
+  LeadsTo "MRBM2"
+  
+[TECHNOLOGY] "MRBM2"
+  Name "MRBM2_NAME"
+  Description "MRBM2_DESC"
+  Image "Images/Science/MRBM2.png"
+  Points 20
 
 [TECHNOLOGY] "M_MRBM"
   Name "M_MRBM_NAME"
@@ -885,11 +892,11 @@ Description "U_Cavern_DESC"
   Image "Images/Science/HEAVY_ICBM.png"
   Points 85
   LeadsTo "M_ICBM_10M"
-  LeadsTo "Super_Heavy_Missiles"
+  LeadsTo "SUPER_HEAVY_MISSILES"
   
-[TECHNOLOGY] "Super_Heavy_Missiles"
-  Name "Super_Heavy_Missiles_NAME"
-  Description "Super_Heavy_Missiles_DESC"
+[TECHNOLOGY] "SUPER_HEAVY_MISSILES"
+  Name "SUPER_HEAVY_MISSILES_NAME"
+  Description "SUPER_HEAVY_MISSILES_DESC"
   Image "Images/Science/SHEAVY_ICBM.png"
   Points 85
   LeadsTo "M_ICBM_50M"
@@ -1250,16 +1257,16 @@ Description "U_Cavern_DESC"
   Description "ENG5_DESC"
   Image "Images/Science/ENG20.png"
   Points 15
-  LeadsTo "Super_Heavy_Missiles_REQ"
+  LeadsTo "SUPER_HEAVY_MISSILES_REQ"
   LeadsTo "NAVY30_REQ"
   LeadsTo "CRUISE6_REQ"
   LeadsTo "SUB30_REQ"
   //AIUpgradeTechHint Naval 
   
-[TECHNOLOGY] "Super_Heavy_Missiles_REQ"
-  Name "Super_Heavy_Missiles_REQ_NAME"
-  Description "Super_Heavy_Missiles_REQ_DESC" 
-  LeadsTo "Super_Heavy_Missiles"
+[TECHNOLOGY] "SUPER_HEAVY_MISSILES_REQ"
+  Name "SUPER_HEAVY_MISSILES_REQ_NAME"
+  Description "SUPER_HEAVY_MISSILES_REQ_DESC" 
+  LeadsTo "SUPER_HEAVY_MISSILES"
   
 [TECHNOLOGY] "NAVY30_REQ"
   Name "NAVY30_REQ_NAME"

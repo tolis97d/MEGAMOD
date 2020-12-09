@@ -16,6 +16,9 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "U_AIRPORT2_NAME" LANG "Tactical AirBase"
 "U_AIRPORT2_DESC" LANG "An airbase which hosts interceptors as well as fighter-bombers"
 
+"U_AIRPORT3_NAME" LANG "Naval Air Station"
+"U_AIRPORT3_DESC" LANG "A naval air station is a military air base, and consists of a permanent land-based operations locations for the military aviation division of the relevant branch of a navy. These bases are typically populated by squadrons, groups or wings, their various support commands, and other tenant commands."
+
 "ASM1_M_NAME" LANG "Air-to-surface missile"
 "ASM1_M_DESC" LANG "An air-to-surface missile is a missile designed to be launched from military aircraft at targets on land or sea.The two most common propulsion systems for air-to-surface missiles are rocket motors, usually with shorter range, and slower, longer-range jet engines. Some air-to-surface missiles are powered by ramjets, giving them both long range and high speed."
 
@@ -51,6 +54,18 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "NAVY30_NAME" LANG "Experimental Naval Designs"
 "NAVY30_DESC" LANG "Experimentation with littoral combat ships, drone-based systems, the first laser and railgun systems, fully integrated Command and Control systems, and stealth hulls define the near-future for warships. Many warships are once again growing in size but shrinking in number, equipped to handle a multitude of potential future threats and operating in a battlespace that includes both cyber warfare and space operations."
+
+"SUB60_NAME" LANG "1960s Submarine Designs"
+"SUB60_DESC" LANG "1960s Naval Designs"
+
+"SUB80_NAME" LANG "1980s Submarine Designs"
+"SUB80_DESC" LANG "1960s Naval Designs"
+
+"SUB00_NAME" LANG "2000s Submarine Designs"
+"SUB00_DESC" LANG "1960s Naval Designs"
+
+"SUB30_NAME" LANG "2030s Submarine Designs"
+"SUB30_DESC" LANG "1960s Naval Designs"
 
 "3GEN_NAME" LANG "3rd Generation Aircraft"
 "3GEN_DESC" LANG "With 3rd generation aircraft, air-to-air missiles became the standard method of dogfighting, with guns taking a backseat. The first generation of mainstream guided weapons would also be deployed on these aircraft, providing new ground attack capabilities that had previously required much more error to perform; further enhanced by the employment of analogue avionics over steam."
@@ -111,6 +126,39 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "SLBM_NAME" LANG "SLBM"
 "SLBM_DESC" LANG "A submarine-launched ballistic missile (SLBM) is a ballistic missile capable of being launched from submarines. Modern variants usually deliver multiple independently targetable reentry vehicles (MIRVs) each of which carries a nuclear warhead and allows a single launched missile to strike several targets. Submarine-launched ballistic missiles operate in a different way from submarine-launched cruise missiles."
+
+"ABM1_NAME" LANG "Early ABM systems"
+"ABM1_DESC" LANG "An anti-ballistic missile is a surface-to-air missile designed to counter ballistic missiles.Ballistic missiles are used to deliver nuclear, chemical, biological, or conventional warheads in a ballistic flight trajectory. The term anti-ballistic missile is a generic term conveying a system designed to intercept and destroy any type of ballistic threat; however, it is commonly used for systems specifically designed to counter intercontinental ballistic missiles."
+
+"ABM2_NAME" LANG "Improved ABM systems"
+"ABM2_DESC" LANG "Advancements in radar technology as well as the developments of more sophisticated computers allowed the tracking and interception of faster projectiles and longer ranges."
+
+"ABM3_NAME" LANG "Advanced ABM systems"
+"ABM3_DESC" LANG "With further developments in electronics and rocketry fields as well as material sciences led to more advanced interceptors capable of defeating even the most advanced ballistic missiles."
+
+"SONAR1_NAME" LANG "Improved Sonar System"
+"SONAR1_DESC" LANG "1960s Naval Designs"
+
+"SONAR2_NAME" LANG "Advanced Sonar System"
+"SONAR2_DESC" LANG "1960s Naval Designs"
+
+"SONAR3_NAME" LANG "Next-Gen Sonar System"
+"SONAR3_DESC" LANG "1960s Naval Designs"
+
+"TOR1_NAME" LANG "1960s Torpedoes"
+"TOR1_DESC" LANG "1960s Naval Designs"
+
+"TOR2_NAME" LANG "1980s Torpedoes"
+"TOR2_DESC" LANG "1960s Naval Designs"
+
+"TOR3_NAME" LANG "2000s Torpedoes"
+"TOR3_DESC" LANG "1960s Naval Designs"
+
+"TOR4_NAME" LANG "2020s Torpedoes"
+"TOR4_DESC" LANG "1960s Naval Designs"
+
+"MRBM2_NAME" LANG "Advaned MRBMs"
+"MRBM2_DESC" LANG "Designed to be used in theater level conflicts these missiles can maneuver during flight at different altitudes and trajectories and can turn at up to 20 to 30 G to evade anti-ballistic missiles"
 
 "COMP1_NAME" LANG "1960s Electronincs"
 "COMP1_DESC" LANG "The invention of the integrated circuit and the silicon MOSFET revolutionized the electronics industry and opened a new field of radio,computing and telecommunications applications."

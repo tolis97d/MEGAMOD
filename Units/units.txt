@@ -107,10 +107,10 @@ Modifier options:
 	        Weapon "Free fall bomb" 8 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
         ImprovedBy "4GEN" 
-	        Weapon "Free fall bomb" 12 Launch 2 Time 2 AutoEngage Principal 
+	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
         ImprovedBy "4GEN2" 
-	        Weapon "Free fall bomb" 16 Launch 2 Time 2 AutoEngage Principal 
+	        Weapon "Free fall bomb" 12 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
     Config "ASM" Default
         ImprovedBy "ASM1_M"
@@ -838,7 +838,7 @@ Config "Anti Submarine Warfare"
         ImprovedBy "4GEN"
 	        Weapon "AAM" 4 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
         ImprovedBy "4GEN2"
-	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time
+	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
     Weapon "AAM" 4 Launch 1 Time 60 AutoEngage
       Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal
         Config "Airlaunched Ballistic Missile"
@@ -902,10 +902,16 @@ Config "Anti Submarine Warfare"
         ImprovedBy "4GEN2"
 	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
   Config "Bombs" Default
-        Weapon "Free fall bomb" 4 Launch 1 Time 2 AutoEngage Principal
+        Weapon "Free fall bomb" 4 Launch 1 Time 2 AutoEngage
         Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
         ImprovedBy "3GEN" 
 	        Weapon "Free fall bomb" 8 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
+        ImprovedBy "4GEN" 
+	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
+        ImprovedBy "4GEN2" 
+	        Weapon "Free fall bomb" 12 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
     Config "ASM" Default
         ImprovedBy "ASM1_M"
@@ -1095,14 +1101,14 @@ Config "Anti Submarine Warfare"
   Tech "ARMY"
   Movie "Units/Images/Ground/ARMY.midx"
   IconIDX 17
-  DrawSize 28
-  Size 1
+  DrawSize 26
+  Size 10
   Sound 141 Volume 0.6
   Type Ground
   Speed 25 // in km per h
   Power 5000
   Weapon "SAM" 5000 Launch 2 Time 70 AutoEngage
-  Weapon "ARMY_WEP" 20 Time 180
+  Weapon "ARMY_WEP" 20000 Time 180
   ProductionCost 50
   Radar "STD Vision"
   Radar "STD Short Wave"

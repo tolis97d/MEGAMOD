@@ -91,6 +91,11 @@ Modifier options:
   CanBeUsedAgainst HighMissile
   Affects Missile
   
+[TYPE] "ARMY_TYPE"
+  RequiresPreciseTargeting Yes      
+  CanBeUsedAgainst Ground
+  Affects Missile
+  
 [TYPE] "NORAD_EFFECT"
   RequiresPreciseTargeting No
   CanBeUsedAgainst Ground
@@ -177,10 +182,10 @@ Modifier options:
   ImprovedBy "B2" Set Range 35 
   
   ImprovedBy "B3" Precision 0.01 
-  ImprovedBy "B3" Set Range 300 
+  ImprovedBy "B3" Set Range 350   
   
   ImprovedBy "B4" Precision 0.001 
-  ImprovedBy "B4" Set Range 400 
+  ImprovedBy "B4" Set Range 450 
   
   ImprovedBy "B1" Movie Image "Units/IMAGES/MISSILES/B1.png" 
   ImprovedBy "B2" Movie Image "Units/IMAGES/MISSILES/B2.png" 
@@ -307,7 +312,7 @@ Modifier options:
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.25
   LeadGuidance 1
-  AffectedBy "ABM2" CanBeIntercepted 0.9 
+  AffectedBy "ABM2" CanBeIntercepted 0.7 
   
   ImprovedBy "ASM2" Precision 0.5 
   ImprovedBy "ASM2" Set Range 125 
@@ -536,13 +541,13 @@ Modifier options:
   Icon "Units/Images/Missiles/TOR0.png"
   Sound 119
   Explosion "std_torpedo"
-  Range 500
+  Range 350
   Speed 200
   Precision 0.5
-  ImprovedBy "TOR1" Set Range 600
-  ImprovedBy "TOR2" Set Range 700
+  ImprovedBy "TOR1" Set Range 400
+  ImprovedBy "TOR2" Set Range 450
   ImprovedBy "TOR3" Set Range 800
-  ImprovedBy "TOR4" Set Range 900
+  ImprovedBy "TOR4" Set Range 850
   AffectedBy Unit "Antitorpedo" Precision 1.5
   
   ImprovedBy "TOR1" Movie Image "Units/Images/Missiles/TOR1.png"
@@ -584,22 +589,26 @@ Modifier options:
 [MISSILE] "MRBM MIRV warhead"
   Tech "M_500K_WARHEAD"
   Type "Nuke"
-  Icon "Units/Images/Missiles/warhead.png"
+  Icon "Units/Images/Missiles/MRBM1_MIRV.png"
   Sound 75 Volume 1.25
   DrawSize 5
   DrawNuke
   Explosion "nuke_500"
-  Range 5500
+  Range 400
   Speed 2200
   SingleAttack
   AutoSlowDown
   Precision 3.0
   CanBeIntercepted 0.4
   AffectedBy "ABM2" CanBeIntercepted 1.5
+  
+  ImprovedBy "MRBM2" Movie Image "Units/IMAGES/MISSILES/MRBM2_MIRV.png"
+  ImprovedBy "MRBM2" Set Range 6000
+  ImprovedBy "MRBM2" Set CanBeIntercepted 0.2
 
 [MISSILE] "MRBM"
   Tech "M_MRBM"
-  Icon "Units/Images/Missiles/SRBM.png"
+  Icon "Units/Images/Missiles/MRBM1.png"
   Sound 68 Volume 1.25
   DrawSize 12
   DrawNuke
@@ -620,6 +629,9 @@ Modifier options:
   AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType MRBM_RANGES
+
+  ImprovedBy "MRBM2" Movie Image "Units/IMAGES/MISSILES/MRBM2.png" 
+
 
 [MISSILE] "SUB_MRBM"
   Tech "M_SUB_MRBM"
@@ -885,17 +897,16 @@ Modifier options:
   
 [MISSILE] "ARMY_WEP"
   Tech "M_Surface_to_surface_missile"
-  Type "Default"
+  Type "ARMY_TYPE"
   Icon "Units/Images/Missiles/ARMY_WEP.png"
-  Sound 68 Volume 1.25
-  Explosion "big_bomb_old"
-//  Explosion "big_bomb"
-//  Explosion "big_bombV2"
-//  Explosion "big_bombV3"
-//  Explosion "big_bombV4"
+  Sound 555
+    MuteLength 1.25
+  Explosion "ARMY_EXP"
+  DrawLaser
+  Ballistic 
   Range 400
-  Speed 600
-  CanBeIntercepted 0.5
-  Precision 0.5
+  Speed 1400
+  Precision 0.05
+  Switchable ON
 
 [END]
