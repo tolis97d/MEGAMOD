@@ -85,9 +85,12 @@ Modifier options:
   ImprovedBy "SW_Mk2" Set MaxHeight 250
   ImprovedBy "SW_Mk3" Set Range 450
   ImprovedBy "SW_Mk3" Set MaxHeight 400
+  ImprovedBy "SW_Mk4" Set Range 500
+  ImprovedBy "SW_Mk4" Set MaxHeight 500
   AffectedBy Unit "5GEN" Range 0.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
   AffectedBy Unit "Underground" Range 0.5
+  AffectedBy InRange "EW" Range 0.4
 
 [RADAR] "Fixed Short Wave"
   Tech "R_Short_wave_radar"
@@ -99,9 +102,12 @@ Modifier options:
   ImprovedBy "SW_Mk2" Set MaxHeight 250
   ImprovedBy "SW_Mk3" Set Range 700
   ImprovedBy "SW_Mk3" Set MaxHeight 400
+  ImprovedBy "SW_Mk4" Set Range 800
+  ImprovedBy "SW_Mk4" Set MaxHeight 500
   AffectedBy Unit "5GEN" Range 0.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
   AffectedBy Unit "Underground" Range 0.5
+  AffectedBy InRange "EW" Range 0.6
 
 [RADAR] "AWACS Short Wave"
   Tech "R_Short_wave_radar"
@@ -144,17 +150,20 @@ Modifier options:
   AffectedBy Unit "5GEN" Range 0.75
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
   AffectedBy Unit "Underground" Range 0.5
+  AffectedBy InRange "EW" Range 0.8
 
 [RADAR] "Fixed Long Wave"
   Tech "R_Long_wave_radar"
   Type "LongWave"
-  Range 1000
+  Range 700
   Sector 360
   Precision 0
-  ImprovedBy "LW_Mk2" Set Range 1300
+  ImprovedBy "LW_Mk2" Set Range 900
   ImprovedBy "LW_Mk2" Set MaxHeight 250
-  ImprovedBy "LW_Mk3" Set Range 1600
+  ImprovedBy "LW_Mk3" Set Range 1200
   ImprovedBy "LW_Mk3" Set MaxHeight 400
+  ImprovedBy "LW_Mk4" Set Range 1400
+  ImprovedBy "LW_Mk4" Set MaxHeight 400
   AffectedBy Unit "5GEN" Range 0.75
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
   AffectedBy Unit "Underground" Range 0.5

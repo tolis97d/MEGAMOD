@@ -79,8 +79,14 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "CIWS_NAME" LANG "CIWS"
 "CIWS_DESC" LANG "Close-in Weapon Systems provide a last-line defense against missile attacks, tracking missiles at high speed and pumping them full of bullets before they can close the final distance with ships."
 
+"CIWS_LASER_NAME" LANG "Laser CIWS"
+"CIWS_LASER_DESC" LANG "With the developments in power output of directed energy in conjuction with ever increasing missile threats to high value assets led to the fielding of laser CIWS in order to defeat these advanced threat mainly hypersonic missiles and swarm strikes."
+
 "M_CIWS_NAME" LANG "CIWS"
 "M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
+
+"M_CIWS_LASER_NAME" LANG "Laser CIWS"
+"M_CIWS_LASER_DESC" LANG "With the developments in power output of directed energy in conjuction with ever increasing missile threats to high value assets led to the fielding of laser CIWS in order to defeat these advanced threat mainly hypersonic missiles and swarm strikes."
 
 "SUPER_HEAVY_MISSILES_NAME" LANG "Super Heavy ICBMs"
 "SUPER_HEAVY_MISSILES_DESC" LANG "Originally super heavy-lift launch vehicles these rockets were repurposed to deliver large warheads or multiple MIRVs to defeat even  the most extensive air defence systems."
@@ -93,6 +99,18 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "LASER_PRACTICAL_NAME" LANG "Practical Laser Weapons"
 "LASER_PRACTICAL_DESC" LANG "With the advancements in laser power we are at a point where laser can be used to cause physical damage to enemy projectiles."
+
+"AESA_RADAR_NAME" LANG "AESA"
+"AESA_RADAR_DESC" LANG "The AESA is a more advanced, sophisticated, second-generation of the original PESA phased array technology. PESAs can only emit a single beam of radio waves at a single frequency at a time. The AESA can radiate multiple beams of radio waves at multiple frequencies simultaneously. AESA radars can spread their signal emissions across a wider range of frequencies, which makes them more difficult to detect over background noise, allowing ships and aircraft to radiate powerful radar signals while still remaining stealthy, as well as being more resistant to jamming."
+
+"ICBM1_NAME" LANG "Early ICBMs"
+"ICBM1_DESC" LANG "Early ICBMs had limited precision, which made them suitable for use only against the largest targets, such as cities. They were seen as a basing option, one that would keep the deterrent force close to home where it would be difficult to attack. Attacks against military targets (especially hardened ones) still demanded the use of a more precise, manned bomber.These were repurposed launch vehicles from the escalating space race meaning their launch facilities were vulnerable."
+
+"ICBM2_NAME" LANG "Improved ICBMs"
+"ICBM2_DESC" LANG "Second and third-generation designs dramatically improved accuracy to the point where even the smallest point targets can be successfully attacked while also receiving specialised hardened silos in order to be better protected against enemy first strikes."
+
+"SLBM_NAME" LANG "SLBM"
+"SLBM_DESC" LANG "A submarine-launched ballistic missile (SLBM) is a ballistic missile capable of being launched from submarines. Modern variants usually deliver multiple independently targetable reentry vehicles (MIRVs) each of which carries a nuclear warhead and allows a single launched missile to strike several targets. Submarine-launched ballistic missiles operate in a different way from submarine-launched cruise missiles."
 
 "COMP1_NAME" LANG "1960s Electronincs"
 "COMP1_DESC" LANG "The invention of the integrated circuit and the silicon MOSFET revolutionized the electronics industry and opened a new field of radio,computing and telecommunications applications."

@@ -321,33 +321,6 @@ Modifier options:
   ImprovedBy "ASM2" Movie Image "Units/Images/Missiles/ASM2.png"
   ImprovedBy "ASM3" Movie Image "Units/Images/Missiles/ASM3.png"
   ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/ASM4.png"
-
-[MISSILE] "SSM"
-  Tech "M_Surface_to_surface_missile"
-  Type "Default"
-  Icon "Units/Images/Missiles/SSM.png"
-  Sound 113 or 114 Volume 0.5
-  Explosion "big_bomb_old"
-//  Explosion "big_bomb"
-//  Explosion "big_bombV2"
-//  Explosion "big_bombV3"
-//  Explosion "big_bombV4"
-  Range 1000
-  Speed 800
-  CanBeIntercepted 0.5
-  Precision 1.5
-  ImprovedBy "ASM3" Precision 0.33
-  ImprovedBy "ASM3" Movie Image "Units/Images/Missiles/Cruise.png"
-  ImprovedBy "ASM2" Set CanBeIntercepted 0.4
-  ImprovedBy "ASM2" Range 1.1
-  ImprovedBy "ASM2" Movie Image "Units/Images/Missiles/Maneur.png"
-  ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/hypersonic.png"
-  ImprovedBy "ASM4" Range 1.5
-  ImprovedBy "ASM4" Speed 3
-  ImprovedBy "ASM4" CanBeIntercepted 0.1
-  ImprovedBy "ASM4" Precision 0.9
-  ImprovedBy "ASM4" Damage 1.5
-  AffectedBy "ABM2" CanBeIntercepted 1.5
   
 [MISSILE] "SPSPM"
   Tech "M_SHIP_SHIP"
@@ -498,18 +471,21 @@ Modifier options:
   Explosion "std_bomb"
   Range 400
   Speed 2000
-  Precision 0.20
+  Precision 0.4
   AffectedBy Unit "5GEN" Precision 1.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Precision 1.25
   
   ImprovedBy "SAM60" Set Range 300
   ImprovedBy "SAM60" Set Speed 2500
+  ImprovedBy "SAM60" Set Precision 0.3
   
   ImprovedBy "SAM80" Set Range 500
   ImprovedBy "SAM80" Set Speed 2500
+  ImprovedBy "SAM60" Set Precision 0.2
   
   ImprovedBy "SAM10" Set Range 700
   ImprovedBy "SAM10" Set Speed 2500
+  ImprovedBy "SAM60" Set Precision 0.15
   
   ImprovedBy "SAM60" Movie Image "Units/Images/Missiles/SAMM60.png"
   ImprovedBy "SAM80" Movie Image "Units/Images/Missiles/SAMM80.png"
@@ -560,13 +536,13 @@ Modifier options:
   Icon "Units/Images/Missiles/TOR0.png"
   Sound 119
   Explosion "std_torpedo"
-  Range 350
+  Range 500
   Speed 200
   Precision 0.5
-  ImprovedBy "TOR1" Set Range 375
-  ImprovedBy "TOR2" Set Range 400
-  ImprovedBy "TOR3" Set Range 425
-  ImprovedBy "TOR4" Set Range 500
+  ImprovedBy "TOR1" Set Range 600
+  ImprovedBy "TOR2" Set Range 700
+  ImprovedBy "TOR3" Set Range 800
+  ImprovedBy "TOR4" Set Range 900
   AffectedBy Unit "Antitorpedo" Precision 1.5
   
   ImprovedBy "TOR1" Movie Image "Units/Images/Missiles/TOR1.png"
@@ -672,32 +648,6 @@ Modifier options:
   AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType MRBM_RANGES
-
-[MISSILE] "ASNM"
-  Tech "ASM3"
-  Icon "Units/Images/Missiles/AIR_MRBM.png"
-  Sound 68
-  DrawSize 10
-  DrawNuke
-  Type "Nuke"
-  Explosion "nuke_100"
-  Range 2000
-  SingleAttack
-  CanBeIntercepted 0.6
-  Speed 1000
-  Precision 1.0
-  ProductionCost 0.5
-  ProductionCostDegrades
-  MaxNumberToOrder 25
-  ImprovedBy "ASM4" Range 1.5
-  ImprovedBy "ASM4" Speed 3
-  ImprovedBy "ASM4" CanBeIntercepted 0.1
-  ImprovedBy "ASM4" Precision 0.9
-  ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/AIR_MRBM_Hyper.png"
-  AffectedBy "ABM2" CanBeIntercepted 1.5
-
-  GlobalShowType MRBM_RANGES
-
 
 [MISSILE] "ICBM (1M)"
   Tech "M_ICBM_1M"
@@ -873,7 +823,7 @@ Modifier options:
 [MISSILE] "EW"
   Tech "M_EW"
   RequiresPreciseTargeting No
-  Icon "Units/Images/Missiles/depth charge.png"
+  Icon "Units/Images/Missiles/J1.png"
   Sound 119
   DrawWave
   Explosion "std_torpedo"
@@ -884,6 +834,8 @@ Modifier options:
   
   ImprovedBy "JAM2" Set Range 600
   ImprovedBy "JAM3" Set Range 700
+  ImprovedBy "JAM2" Movie Image "Units/Images/Missiles/J2.png"
+  ImprovedBy "JAM3" Movie Image "Units/Images/Missiles/J3.png"
   
 [MISSILE] "CIWS"
   Tech "M_CIWS"
@@ -935,8 +887,7 @@ Modifier options:
   Tech "M_Surface_to_surface_missile"
   Type "Default"
   Icon "Units/Images/Missiles/ARMY_WEP.png"
-  Sound 120
-    MuteLength 1.25
+  Sound 68 Volume 1.25
   Explosion "big_bomb_old"
 //  Explosion "big_bomb"
 //  Explosion "big_bombV2"
