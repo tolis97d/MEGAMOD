@@ -202,15 +202,15 @@ Modifier options:
   Sector 360
   Precision 0.75
   ImprovedBy "SONAR1" Set Range 400
-  ImprovedBy "SONAR2" Set Range 550
-  ImprovedBy "SONAR3" Set Range 650
+  ImprovedBy "SONAR2" Set Range 500
+  ImprovedBy "SONAR3" Set Range 600
   
-  AffectedBy Unit "ENGINE_SSN1" Range 0.75 // 300
-  AffectedBy Unit "ENGINE_SSBN1" Range 0.875 // 350
-  AffectedBy Unit "ENGINE_SSN2" Range 0.84 // 252
-  AffectedBy Unit "ENGINE_SSBN2" Range 0.857 // 300
-  AffectedBy Unit "ENGINE_SSN3" Range 0.8 // 200
-  AffectedBy Unit "ENGINE_SSBN3" Range 0.84 // 250
+  AffectedBy Unit "ENGINE_SSN1" Range 0.7
+  AffectedBy Unit "ENGINE_SSBN1" Range 0.8
+  AffectedBy Unit "ENGINE_SSN2" Range 0.6
+  AffectedBy Unit "ENGINE_SSBN2" Range 0.7
+  AffectedBy Unit "ENGINE_SSN3" Range 0.5
+  AffectedBy Unit "ENGINE_SSBN3" Range 0.6
 
 //  AffectedBy InRange "EW" Range 0.1
 

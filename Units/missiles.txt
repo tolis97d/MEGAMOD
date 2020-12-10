@@ -173,24 +173,34 @@ Modifier options:
   Range 30
   Ballistic
   FreeFalling
-  Precision 1.0 // this is the potential deviation from the target
+  Precision 1.0 // this is the potential deviation from the target 
   
-  ImprovedBy "B1" Precision 0.2 
-  ImprovedBy "B1" Set Range 30 
+[MISSILE] "GBOMB"
+  Tech "GBOMB_M"
+  Type "Default"
+  Icon "Units/Images/Missiles/B1.png"
+  Explosion "big_bomb_old"
+  Range 100
+  Speed 400
+  AttackAngle 120
+  Ballistic 
+  CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
+  Precision 0.25
+  LeadGuidance 1
+  AffectedBy "ABM2" CanBeIntercepted 0.7 
   
-  ImprovedBy "B2" Precision 0.1 
-  ImprovedBy "B2" Set Range 35 
+  ImprovedBy "B2" Precision 0.5 
+  ImprovedBy "B2" Set Range 150 
   
-  ImprovedBy "B3" Precision 0.01 
-  ImprovedBy "B3" Set Range 350   
+  ImprovedBy "B3" Precision 0.1 
+  ImprovedBy "B3" Set Range 300 
   
-  ImprovedBy "B4" Precision 0.001 
+  ImprovedBy "B4" Precision 0.01 
   ImprovedBy "B4" Set Range 450 
   
-  ImprovedBy "B1" Movie Image "Units/IMAGES/MISSILES/B1.png" 
-  ImprovedBy "B2" Movie Image "Units/IMAGES/MISSILES/B2.png" 
-  ImprovedBy "B3" Movie Image "Units/IMAGES/MISSILES/B3.png" 
-  ImprovedBy "B4" Movie Image "Units/IMAGES/MISSILES/B4.png" 
+  ImprovedBy "B2" Movie Image "Units/Images/Missiles/B2.png"
+  ImprovedBy "B3" Movie Image "Units/Images/Missiles/B3.png"
+  ImprovedBy "B4" Movie Image "Units/Images/Missiles/B4.png"
 
 [MISSILE] "Low-power nuclear bomb"
   Tech "M_Nuclear_bomb"
@@ -315,13 +325,13 @@ Modifier options:
   AffectedBy "ABM2" CanBeIntercepted 0.7 
   
   ImprovedBy "ASM2" Precision 0.5 
-  ImprovedBy "ASM2" Set Range 125 
+  ImprovedBy "ASM2" Set Range 425 
   
   ImprovedBy "ASM3" Precision 0.1 
-  ImprovedBy "ASM3" Set Range 450 
+  ImprovedBy "ASM3" Set Range 650 
   
   ImprovedBy "ASM4" Precision 0.01 
-  ImprovedBy "ASM4" Set Range 550 
+  ImprovedBy "ASM4" Set Range 850 
   
   ImprovedBy "ASM2" Movie Image "Units/Images/Missiles/ASM2.png"
   ImprovedBy "ASM3" Movie Image "Units/Images/Missiles/ASM3.png"
@@ -547,7 +557,7 @@ Modifier options:
   ImprovedBy "TOR1" Set Range 400
   ImprovedBy "TOR2" Set Range 450
   ImprovedBy "TOR3" Set Range 800
-  ImprovedBy "TOR4" Set Range 850
+  ImprovedBy "TOR4" Set Range 900
   AffectedBy Unit "Antitorpedo" Precision 1.5
   
   ImprovedBy "TOR1" Movie Image "Units/Images/Missiles/TOR1.png"
@@ -899,7 +909,7 @@ Modifier options:
   Tech "M_Surface_to_surface_missile"
   Type "ARMY_TYPE"
   Icon "Units/Images/Missiles/ARMY_WEP.png"
-  Sound 555
+  Sound 207
     MuteLength 1.25
   Explosion "ARMY_EXP"
   DrawLaser

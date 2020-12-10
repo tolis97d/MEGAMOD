@@ -29,16 +29,17 @@ Modifier options:
   Range 4500 // in km
   Power 1
   Config "Combat Air Patrol" Default 
-    Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
+    Weapon "AAM" 2 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
         ImprovedBy "3GEN"
-	        Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
+	        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
         ImprovedBy "4GEN"
-	        Weapon "AAM" 4 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
+	        Weapon "AAM" 6 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
         ImprovedBy "4GEN2"
-	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-  Config "Air Launched Ballistic Missile"
+	        Weapon "AAM" 8 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+  Config "Cruise Missiles"
         ImprovedBy "CRUISE4"
-            Weapon "CONV_CRUISE" 1
+            Weapon "CONV_CRUISE" 1 Principal
+            Weapon "AAM" 2 Launch 2 Time 60 AutoEngage
   Radar "STD Vision"
   Radar "STD Short Wave"
   ProductionCost 2.2
@@ -76,6 +77,64 @@ Modifier options:
   ImprovedBy "4GEN2" Movie "Units/Images/Airborne/FR00.vidx" Icon "Units/Images/Airborne/FR00_I.vidx"    
   ImprovedBy "5GEN"  Movie "Units/Images/Airborne/FR10.vidx" Icon "Units/Images/Airborne/FR10_I.vidx"
 
+[UNIT] "CVN_FR"
+  Tech "CVN_FR"
+  Movie "Units/Images/Airborne/CVN_FR50.vidx"
+  Icon "Units/Images/Airborne/CVN_FR50_I.vidx"
+  DrawSize 16
+  LaunchMeSound 83
+  Size 0.04
+  Sound 134 Volume 0.3
+  Type Airborne
+  //AIVarietyHint CarrierFighter
+  NoAutoDeploy
+  Speed 800 // in km per h
+  TurnSpeed 8 // in angles per second
+  Range 4500 // in km
+  Power 1
+  Config "Combat Air Patrol" Default 
+    Weapon "AAM" 2 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+        ImprovedBy "3GEN"
+	        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+        ImprovedBy "4GEN"
+	        Weapon "AAM" 6 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+        ImprovedBy "4GEN2"
+	        Weapon "AAM" 8 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+  Config "Cruise Missiles"
+        ImprovedBy "CRUISE4"
+            Weapon "CONV_CRUISE" 1 Principal
+            Weapon "AAM" 2 Launch 2 Time 60 AutoEngage
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  ProductionCost 2.2
+  Crash "std_bomb"
+  
+  Modifier "5GEN"
+  
+  ImprovedBy "3GEN" Set Speed 820
+  ImprovedBy "3GEN" Set TurnSpeed 9
+  ImprovedBy "3GEN" Set Size 0.035
+  ImprovedBy "4GEN2" Set Range 5500
+  
+  ImprovedBy "4GEN" Set Speed 840
+  ImprovedBy "4GEN" Set TurnSpeed 12
+  ImprovedBy "4GEN" Set Size 0.03
+  ImprovedBy "4GEN2" Set Range 6000
+  ImprovedBy "5GEN" Set Power 1.5
+  
+  ImprovedBy "4GEN2" Set Speed 900
+  ImprovedBy "4GEN2" Set TurnSpeed 14
+  ImprovedBy "4GEN2" Set Size 0.015
+  ImprovedBy "4GEN2" Set Range 6500
+
+  ImprovedBy "5GEN" Set Speed 1000
+  ImprovedBy "5GEN" Set TurnSpeed 15
+  ImprovedBy "5GEN" Size 0.75
+
+  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"  Icon "Units/Images/Airborne/CVN_FR60_I.vidx"
+  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR70.vidx"  Icon "Units/Images/Airborne/CVN_FR70_I.vidx"
+  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_FR00.vidx"  Icon "Units/Images/Airborne/CVN_FR00_I.vidx"
+  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_FR10.vidx"  Icon "Units/Images/Airborne/CVN_FR10_I.vidx"
   
 [UNIT] "Attack"
   Tech "U_Attack"
@@ -93,48 +152,68 @@ Modifier options:
   Range 5000
   Power 1
   Config "Combat Air Patrol" Default 
-    Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
+    Weapon "AAM" 2 Launch 1 Time 100 AutoEngage // in seconds in 1x time 
         ImprovedBy "3GEN"
-	        Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
+	        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage // in seconds in 1x time 
         ImprovedBy "4GEN"
-	        Weapon "AAM" 4 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
+	        Weapon "AAM" 4 Launch 1 Time 100 AutoEngage // in seconds in 1x time 
         ImprovedBy "4GEN2"
-	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
+	        Weapon "AAM" 6 Launch 1 Time 100 AutoEngage // in seconds in 1x time 
   Config "Bombs" Default
         Weapon "Free fall bomb" 4 Launch 1 Time 2 AutoEngage
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
         ImprovedBy "3GEN" 
-	        Weapon "Free fall bomb" 8 Launch 2 Time 2 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
+	        Weapon "Free fall bomb" 6 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
         ImprovedBy "4GEN" 
-	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
+	        Weapon "Free fall bomb" 8 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
         ImprovedBy "4GEN2" 
-	        Weapon "Free fall bomb" 12 Launch 2 Time 2 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-    Config "ASM" Default
+	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "Guided Bombs" Default
+        ImprovedBy "GBOMB_M"
+        Weapon "GBOMB" 4 Launch 1 Time 2 AutoEngage
+        ImprovedBy "3GEN" 
+	        Weapon "GBOMB" 6 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN" 
+	        Weapon "GBOMB" 8 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN2" 
+	        Weapon "GBOMB" 12 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "ASM" Default
         ImprovedBy "ASM1_M"
         Weapon "ASM" 2 Launch 2 Time 90 AutoEngage 
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
         ImprovedBy "3GEN" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
+            Weapon "ASM" 4 Launch 2 Time 60 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
         ImprovedBy "4GEN" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
+            Weapon "ASM" 4 Launch 2 Time 60 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
         ImprovedBy "4GEN2" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-    Config "Electronic-Warfare" Default
+            Weapon "ASM" 6 Launch 2 Time 60 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "Electronic-Warfare" Default
         ImprovedBy "JAM1"
             Weapon "EW" 1 Launch 2 Time 90 AutoEngage 
-    Config "Nuclear bomb"
+  Config "Nuclear bomb"
         Weapon "Low-power nuclear bomb" 1 Principal
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-     Config "ALBM"
-        ImprovedBy "CRUISE4"
-            Weapon "CONV_CRUISE" 1 Principal 
-            Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
+        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "Cruise Missiles"
+        ImprovedBy "CRUISE4" 
+        Weapon "CONV_CRUISE" 1 Principal 
+        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN2" 
+            Weapon "CONV_CRUISE" 2 Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "Nuclear Cruise Missiles"
+        ImprovedBy "4GEN2" 
+        Weapon "NUKE_CRUISE" 1 Principal 
+        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "5GEN" 
+            Weapon "NUKE_CRUISE" 2 Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Radar "STD Vision"
   Radar "STD Short Wave"
   ProductionCost 2.2
@@ -169,6 +248,118 @@ Modifier options:
   ImprovedBy "4GEN2" Movie "Units/Images/Airborne/MULTI00.vidx" Icon "Units/Images/Airborne/MULTI00_I.vidx"
   ImprovedBy "5GEN" Movie "Units/Images/Airborne/MULTI10.vidx" Icon "Units/Images/Airborne/MULTI10_I.vidx"
 
+[UNIT] "CVN_ATK"
+  Tech "CVN_ATK"
+  Movie "Units/Images/Airborne/CVN_ATK50.vidx"
+  Icon "Units/Images/Airborne/CVN_ATK50_I.vidx"
+  DrawSize 16
+  LaunchMeSound 83
+  Size 0.045
+  Sound 134 Volume 0.3
+  Type Airborne
+  //AIVarietyHint CarrierStrike
+  NoAutoDeploy
+  Speed 600
+  TurnSpeed 6
+  Range 5000
+  Power 1
+  Config "Combat Air Patrol" Default 
+    Weapon "AAM" 2 Launch 1 Time 100 AutoEngage // in seconds in 1x time 
+        ImprovedBy "3GEN"
+	        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage // in seconds in 1x time 
+        ImprovedBy "4GEN"
+	        Weapon "AAM" 4 Launch 1 Time 100 AutoEngage // in seconds in 1x time 
+        ImprovedBy "4GEN2"
+	        Weapon "AAM" 6 Launch 1 Time 100 AutoEngage // in seconds in 1x time 
+  Config "Bombs" Default
+        Weapon "Free fall bomb" 4 Launch 1 Time 2 AutoEngage
+        ImprovedBy "3GEN" 
+	        Weapon "Free fall bomb" 6 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN" 
+	        Weapon "Free fall bomb" 8 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN2" 
+	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "Guided Bombs" Default
+        ImprovedBy "GBOMB_M"
+        Weapon "GBOMB" 4 Launch 1 Time 2 AutoEngage
+        ImprovedBy "3GEN" 
+	        Weapon "GBOMB" 6 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN" 
+	        Weapon "GBOMB" 8 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN2" 
+	        Weapon "GBOMB" 12 Launch 2 Time 2 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "ASM" Default
+        ImprovedBy "ASM1_M"
+        Weapon "ASM" 2 Launch 2 Time 90 AutoEngage 
+        ImprovedBy "3GEN" 
+            Weapon "ASM" 4 Launch 2 Time 60 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN" 
+            Weapon "ASM" 4 Launch 2 Time 60 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN2" 
+            Weapon "ASM" 6 Launch 2 Time 60 AutoEngage Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "Electronic-Warfare" Default
+        ImprovedBy "JAM1"
+            Weapon "EW" 1 Launch 2 Time 90 AutoEngage 
+  Config "Nuclear bomb"
+        Weapon "Low-power nuclear bomb" 1 Principal
+        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "Cruise Missiles"
+        ImprovedBy "CRUISE4" 
+        Weapon "CONV_CRUISE" 1 Principal 
+        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "4GEN2" 
+            Weapon "CONV_CRUISE" 2 Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Config "Nuclear Cruise Missiles"
+        ImprovedBy "4GEN2" 
+        Weapon "NUKE_CRUISE" 1 Principal 
+        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "5GEN" 
+            Weapon "NUKE_CRUISE" 2 Principal 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  ProductionCost 2.2
+  Crash "std_bomb"
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+
+  Modifier "5GEN"
+
+  ImprovedBy "3GEN" Set Speed 750
+  ImprovedBy "3GEN" Set TurnSpeed 8
+  ImprovedBy "3GEN" Set Size 0.045
+  ImprovedBy "4GEN2" Set Range 5500
+  
+  ImprovedBy "4GEN" Set Speed 800
+  ImprovedBy "4GEN" Set TurnSpeed 9
+  ImprovedBy "4GEN" Set Size 0.04
+  ImprovedBy "4GEN2" Set Range 6000
+  
+  ImprovedBy "4GEN2" Set Speed 850
+  ImprovedBy "4GEN2" Set TurnSpeed 10
+  ImprovedBy "4GEN2" Set Size 0.035
+  ImprovedBy "4GEN2" Set Range 6500
+
+  ImprovedBy "5GEN" Set Speed 900
+  ImprovedBy "5GEN" Set TurnSpeed 11
+  ImprovedBy "5GEN" Size 0.75
+
+  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_ATK60.vidx"  Icon "Units/Images/Airborne/CVN_ATK60_I.vidx"
+  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK70.vidx"  Icon "Units/Images/Airborne/CVN_ATK70_I.vidx"
+  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_ATK00.vidx"  Icon "Units/Images/Airborne/CVN_ATK00_I.vidx"
+  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_ATK10.vidx"  Icon "Units/Images/Airborne/CVN_ATK10_I.vidx"
+
+
 
 [UNIT] "Bomber"
   Tech "U_Bomber"
@@ -187,6 +378,8 @@ Modifier options:
   Power 1.5
   Config "Bombs" Default
     Weapon "Free fall bomb" 45 Launch 1 Time 1 AutoEngage 
+  Config "Guided Bombs" Default
+    Weapon "GBOMB" 30 Launch 1 Time 1 AutoEngage
   Config "Air to Surface Missile" Default 
     Weapon "ASM" 6 Launch 2 Time 90 AutoEngage 
     ImprovedBy "3GEN"
@@ -197,7 +390,11 @@ Modifier options:
     Weapon "Low-power nuclear bomb" 1
     ImprovedBy "3GEN"
         Weapon "Low-power nuclear bomb" 2
-  Config "Air Launched Ballistic Missile" 
+  Config "Cruise Missiles" 
+    Weapon "CONV_CRUISE" 2
+    ImprovedBy "4GEN"
+        Weapon "CONV_CRUISE" 4
+  Config "Nuclear Cruise Missiles" 
     Weapon "NUKE_CRUISE" 1
     ImprovedBy "4GEN"
         Weapon "NUKE_CRUISE" 2
@@ -306,6 +503,39 @@ Config "Anti Submarine Warfare"
   ImprovedBy "5GEN" Set Speed 550
   ImprovedBy "5GEN" Size 0.85
 
+[UNIT] "CVN_AWACS"
+  Tech "CVN_AWACS"
+  Movie "Units/Images/Airborne/CVN_AWACS.vidx"
+  DrawSize 24
+  LaunchMeSound 84
+  Size 0.075
+  Sound 136 Volume 0.4
+  Type Airborne
+  //AIVarietyHint CarrierAWACS
+  NoAutoDeploy
+  Slave
+  AutoReturn Yes
+  Speed 400
+  TurnSpeed 3
+  Range 7000
+  CanPatrolPoint
+  Power 1.5
+  Config "Electronic-Warfare" Default
+        ImprovedBy "JAM1"
+            Weapon "EW" 1 Launch 2 Time 90 AutoEngage 
+  Radar "AWACS Short Wave"
+  Radar "AWACS Long Wave"
+  ProductionCost 4.3
+  Crash "big_bomb"
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+  
+  ImprovedBy "4GEN2" Set Speed 500
+  ImprovedBy "4GEN2" Set TurnSpeed 4
+  ImprovedBy "4GEN2" Set Range 9000
+
+  ImprovedBy "5GEN" Set Speed 550
+  ImprovedBy "5GEN" Size 0.85
 
 [UNIT] "Submarine"
   Tech "U_Submarine"
@@ -751,26 +981,56 @@ Config "Anti Submarine Warfare"
   Sound 141 Volume 0.4
   Type Ground
   //AIVarietyHint SAM
+  Disassemble 0.15
+  VirtualSpeed 350
   Power 2
-  Weapon "SAM" 20000 Launch 4 Time 70 AutoEngage
-  Weapon "ABM" 20000 Launch 1 Time 150 AutoEngage
+  Config "Air-Defence" Default 
+  Weapon "SAM" 20000 Launch 1 Time 40 AutoEngage
     ImprovedBy "SAM60"
-      Weapon "SAM" 20000 Launch 4 Time 60 AutoEngage
-      Weapon "ABM" 20000 Launch 1 Time 150 AutoEngage
+      Weapon "SAM" 20000 Launch 1 Time 30 AutoEngage
     ImprovedBy "SAM80"
-      Weapon "SAM" 20000 Launch 4 Time 50 AutoEngage
-      Weapon "ABM" 20000 Launch 1 Time 50 AutoEngage
+      Weapon "SAM" 20000 Launch 1 Time 25 AutoEngage
     ImprovedBy "SAM10"
-      Weapon "SAM" 20000 Launch 4 Time 35 AutoEngage
-      Weapon "ABM" 20000 Launch 1 Time 50 AutoEngage
+      Weapon "SAM" 20000 Launch 1 Time 20 AutoEngage
+  Config "Air and Missile Defence" Default 
+    ImprovedBy "ABM1"
+      Weapon "SAM" 20000 Launch 1 Time 30 AutoEngage
+      Weapon "ABM" 20000 Launch 1 Time 150 AutoEngage
+    ImprovedBy "ABM2"
+         Weapon "SAM" 20000 Launch 1 Time 30 AutoEngage
+         Weapon "ABM" 20000 Launch 1 Time 140 AutoEngage principal
+    ImprovedBy "ABM3"
+         Weapon "SAM" 20000 Launch 1 Time 30 AutoEngage
+         Weapon "ABM" 20000 Launch 1 Time 120 AutoEngage principal
   Radar "STD Short Wave"
-  CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
   ProductionCost 7
+  
+  CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
+
   ImprovedBy "SAM80" Set Size 0.05
   
 	ImprovedBy "SAM60" Movie "Units/Images/GROUND/SAM60.vidx"
     ImprovedBy "SAM80" Movie "Units/Images/GROUND/SAM80.vidx"
     ImprovedBy "SAM10" Movie "Units/Images/GROUND/SAM10.vidx"
+	
+[UNIT] "ABM_site"
+  Tech "U_ABM_site"
+  Movie "Units/Images/Ground/ABM.midx"
+  DrawSize 20
+  Size 0.1
+  Sound 141 Volume 0.4
+  Type Ground
+  //AIVarietyHint SAM
+  Power 2
+  Weapon "ABM" 20000 Launch 1 Time 90 AutoEngage
+    ImprovedBy "ABM2"
+      Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
+    ImprovedBy "ABM3"
+      Weapon "ABM" 20000 Launch 1 Time 40 AutoEngage
+  Radar "STD Short Wave"
+  CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
+  ProductionCost 20
+  ImprovedBy "ABM2" Set Size 0.05
 
 [UNIT] "MOBILE_SAM"
   Tech "U_Mobile_SAM"
@@ -814,188 +1074,7 @@ Config "Anti Submarine Warfare"
   MaxElevation 10000
   Radar "Satellite Camera"
   ProductionCost 38
-  
-  
-[UNIT] "CVN_FR"
-  Tech "CVN_FR"
-  Movie "Units/Images/Airborne/CVN_FR50.vidx"
-  Icon "Units/Images/Airborne/CVN_FR50_I.vidx"
-  DrawSize 16
-  LaunchMeSound 83
-  Size 0.04
-  Sound 134 Volume 0.3
-  Type Airborne
-  //AIVarietyHint CarrierFighter
-  NoAutoDeploy
-  Speed 800 // in km per h
-  TurnSpeed 8 // in angles per second
-  Range 4500 // in km
-  Power 1
-  Config "Combat Air Patrol" Default 
-    Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "3GEN"
-	        Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN"
-	        Weapon "AAM" 4 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN2"
-	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-    Weapon "AAM" 4 Launch 1 Time 60 AutoEngage
-      Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal
-        Config "Airlaunched Ballistic Missile"
-      ImprovedBy "5GEN"
-        Weapon "ASM" 1 Principal
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage
-  Radar "STD Vision"
-  Radar "STD Short Wave"
-  ProductionCost 2.2
-  Crash "std_bomb"
-  
-  Modifier "5GEN"
-  
-  ImprovedBy "3GEN" Set Speed 820
-  ImprovedBy "3GEN" Set TurnSpeed 9
-  ImprovedBy "3GEN" Set Size 0.035
-  ImprovedBy "4GEN2" Set Range 5500
-  
-  ImprovedBy "4GEN" Set Speed 840
-  ImprovedBy "4GEN" Set TurnSpeed 12
-  ImprovedBy "4GEN" Set Size 0.03
-  ImprovedBy "4GEN2" Set Range 6000
-  ImprovedBy "5GEN" Set Power 1.5
-  
-  ImprovedBy "4GEN2" Set Speed 900
-  ImprovedBy "4GEN2" Set TurnSpeed 14
-  ImprovedBy "4GEN2" Set Size 0.015
-  ImprovedBy "4GEN2" Set Range 6500
-
-  ImprovedBy "5GEN" Set Speed 1000
-  ImprovedBy "5GEN" Set TurnSpeed 15
-  ImprovedBy "5GEN" Size 0.75
-
-  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"  Icon "Units/Images/Airborne/CVN_FR60_I.vidx"
-  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR70.vidx"  Icon "Units/Images/Airborne/CVN_FR70_I.vidx"
-  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_FR00.vidx"  Icon "Units/Images/Airborne/CVN_FR00_I.vidx"
-  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_FR10.vidx"  Icon "Units/Images/Airborne/CVN_FR10_I.vidx"
-
-  
-[UNIT] "CVN_ATK"
-  Tech "CVN_ATK"
-  Movie "Units/Images/Airborne/CVN_ATK50.vidx"
-  Icon "Units/Images/Airborne/CVN_ATK50_I.vidx"
-  DrawSize 16
-  LaunchMeSound 83
-  Size 0.045
-  Sound 134 Volume 0.3
-  Type Airborne
-  //AIVarietyHint CarrierStrike
-  NoAutoDeploy
-  Speed 600
-  TurnSpeed 6
-  Range 5000
-  Power 1
-  Config "Combat Air Patrol" Default 
-    Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "3GEN"
-	        Weapon "AAM" 2 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN"
-	        Weapon "AAM" 4 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN2"
-	        Weapon "AAM" 6 Launch 1 Time 90 AutoEngage // in seconds in 1x time 
-  Config "Bombs" Default
-        Weapon "Free fall bomb" 4 Launch 1 Time 2 AutoEngage
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "3GEN" 
-	        Weapon "Free fall bomb" 8 Launch 2 Time 2 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "4GEN" 
-	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "4GEN2" 
-	        Weapon "Free fall bomb" 12 Launch 2 Time 2 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-    Config "ASM" Default
-        ImprovedBy "ASM1_M"
-        Weapon "ASM" 2 Launch 2 Time 90 AutoEngage 
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "3GEN" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "4GEN" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-        ImprovedBy "4GEN2" 
-            Weapon "ASM" 2 Launch 2 Time 60 AutoEngage Principal 
-            Weapon "AAM" 4 Launch 1 Time 60 AutoEngage 
-  Config "Nuclear bomb"
-        Weapon "Low-power nuclear bomb" 1 Principal
-        Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-  Config "ALBM"
-        ImprovedBy "CRUISE4"
-            Weapon "CONV_CRUISE" 1 Principal 
-            Weapon "AAM" 2 Launch 1 Time 60 AutoEngage 
-  Radar "STD Vision"
-  Radar "STD Short Wave"
-  ProductionCost 2.2
-  Crash "std_bomb"
-
-  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
-
-  Modifier "5GEN"
-
-  ImprovedBy "3GEN" Set Speed 750
-  ImprovedBy "3GEN" Set TurnSpeed 8
-  ImprovedBy "3GEN" Set Size 0.045
-  ImprovedBy "4GEN2" Set Range 5500
-  
-  ImprovedBy "4GEN" Set Speed 800
-  ImprovedBy "4GEN" Set TurnSpeed 9
-  ImprovedBy "4GEN" Set Size 0.04
-  ImprovedBy "4GEN2" Set Range 6000
-  
-  ImprovedBy "4GEN2" Set Speed 850
-  ImprovedBy "4GEN2" Set TurnSpeed 10
-  ImprovedBy "4GEN2" Set Size 0.035
-  ImprovedBy "4GEN2" Set Range 6500
-
-  ImprovedBy "5GEN" Set Speed 900
-  ImprovedBy "5GEN" Set TurnSpeed 11
-  ImprovedBy "5GEN" Size 0.75
-
-  ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_ATK60.vidx"  Icon "Units/Images/Airborne/CVN_ATK60_I.vidx"
-  ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK70.vidx"  Icon "Units/Images/Airborne/CVN_ATK70_I.vidx"
-  ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_ATK00.vidx"  Icon "Units/Images/Airborne/CVN_ATK00_I.vidx"
-  ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_ATK10.vidx"  Icon "Units/Images/Airborne/CVN_ATK10_I.vidx"
-  
-[UNIT] "CVN_AWACS"
-  Tech "CVN_AWACS"
-  Movie "Units/Images/Airborne/CVN_AWACS.vidx"
-  DrawSize 24
-  LaunchMeSound 84
-  Size 0.075
-  Sound 136 Volume 0.4
-  Type Airborne
-  //AIVarietyHint CarrierAWACS
-  NoAutoDeploy
-  Slave
-  AutoReturn Yes
-  Speed 400
-  TurnSpeed 3
-  Range 7000
-  CanPatrolPoint
-  Power 1.5
-  Radar "AWACS Short Wave"
-  Radar "AWACS Long Wave"
-  ProductionCost 4.3
-  Crash "big_bomb"
-
-  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
-  
-  ImprovedBy "4GEN2" Set Speed 500
-  ImprovedBy "4GEN2" Set TurnSpeed 4
-  ImprovedBy "4GEN2" Set Range 9000
-
-  ImprovedBy "5GEN" Set Speed 550
-  ImprovedBy "5GEN" Size 0.85
+ 
   
 [UNIT] "CVN_ASW"
   Tech "CVN_ASW"

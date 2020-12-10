@@ -325,8 +325,13 @@ Description "U_Cavern_DESC"
   Description "B1_DESC"
   Image "Images/Science/B1.png"
   Points 15
+  LeadsTo "GBOMB_M"
   LeadsTo "B2"
   //AIUpgradeTechHint AirToSurface
+  
+[TECHNOLOGY] "GBOMB_M"
+  Name "GBOMB_M_NAME"
+  Description "GBOMB_M_DESC"
   
 [TECHNOLOGY] "B2"
   Name "B2_NAME"
@@ -438,7 +443,12 @@ Description "U_Cavern_DESC"
   LeadsTo "M_anti_ballistic_missile"
   LeadsTo "ABM2"
   LeadsTo "ASAT"
+  LeadsTo "U_ABM_site"
   //AIUpgradeTechHint Intercept
+  
+[TECHNOLOGY] "U_ABM_site"
+  Name "U_ABM_site_NAME"
+  Description "U_ABM_site_DESC"
   
 [TECHNOLOGY] "ABM2"
   Name "ABM2_NAME"

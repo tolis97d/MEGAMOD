@@ -1,6 +1,6 @@
 ICBM MOD "MEGA MOD"
 
-Version "0.7.0"
+Version "0.7.1"
 
 Description "Early dev phase of a light overhaul mod"
 
