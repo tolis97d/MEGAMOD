@@ -486,7 +486,7 @@ Config "Anti Submarine Warfare"
   AutoReturn Yes
   Speed 400
   TurnSpeed 3
-  Range 16000
+  Range 14000
   CanPatrolPoint
   Power 1.5
   Radar "AWACS Short Wave"
@@ -498,7 +498,70 @@ Config "Anti Submarine Warfare"
   
   ImprovedBy "4GEN2" Set Speed 500
   ImprovedBy "4GEN2" Set TurnSpeed 4
-  ImprovedBy "4GEN2" Set Range 10000
+  ImprovedBy "4GEN2" Set Range 17000
+
+  ImprovedBy "5GEN" Set Speed 550
+  ImprovedBy "5GEN" Size 0.85
+  
+[UNIT] "EWAIR"
+  Tech "U_EWAIR"
+  Movie "Units/Images/Airborne/EWAIR.vidx"
+  Icon "Units/Images/Airborne/EWAIR_I.vidx"
+  DrawSize 24
+  LaunchMeSound 84
+  Size 0.075
+  Sound 136 Volume 0.4
+  Type Airborne
+  //AIVarietyHint AWACS
+  NoAutoDeploy
+  Slave
+  AutoReturn Yes
+  Speed 400
+  TurnSpeed 3
+  Range 8000
+  Config "Hunter Killer" Default 
+        Weapon "EW" 1 Launch 2 Time 90 AutoEngage
+  CanPatrolPoint
+  Power 1.5
+  ProductionCost 4.3
+  Crash "big_bomb"
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+  
+  ImprovedBy "4GEN2" Set Speed 500
+  ImprovedBy "4GEN2" Set TurnSpeed 4
+  ImprovedBy "4GEN2" Set Range 14000
+
+  ImprovedBy "5GEN" Set Speed 550
+  ImprovedBy "5GEN" Size 0.85
+  
+[UNIT] "CVN_EWAIR"
+  Tech "U_CVN_EWAIR"
+  Movie "Units/Images/Airborne/awacs.vidx"
+  DrawSize 24
+  LaunchMeSound 84
+  Size 0.075
+  Sound 136 Volume 0.4
+  Type Airborne
+  //AIVarietyHint AWACS
+  NoAutoDeploy
+  Slave
+  AutoReturn Yes
+  Speed 400
+  TurnSpeed 3
+  Range 8000
+  Config "Hunter Killer" Default 
+        Weapon "EW" 1 Launch 2 Time 90 AutoEngage
+  CanPatrolPoint
+  Power 1.5
+  ProductionCost 4.3
+  Crash "big_bomb"
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+  
+  ImprovedBy "4GEN2" Set Speed 500
+  ImprovedBy "4GEN2" Set TurnSpeed 4
+  ImprovedBy "4GEN2" Set Range 14000
 
   ImprovedBy "5GEN" Set Speed 550
   ImprovedBy "5GEN" Size 0.85
@@ -520,9 +583,6 @@ Config "Anti Submarine Warfare"
   Range 7000
   CanPatrolPoint
   Power 1.5
-  Config "Electronic-Warfare" Default
-        ImprovedBy "JAM1"
-            Weapon "EW" 1 Launch 2 Time 90 AutoEngage 
   Radar "AWACS Short Wave"
   Radar "AWACS Long Wave"
   ProductionCost 4.3
@@ -695,7 +755,7 @@ Config "Anti Submarine Warfare"
      Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage
      Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
      Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
-  Config "Naval Nuclear Strike" Default 
+  Config "Nuclear Cruise Missiles" Default 
     ImprovedBy "CRUISE1"
          Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
          Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
@@ -768,11 +828,18 @@ Config "Anti Submarine Warfare"
          Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
          Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
          Weapon "CONV_CRUISE" 20000 Launch 2 Time 50 AutoEngage 
-  Config "Nuclear Missile Strike" Default 
+  Config "Nuclear Cruise Missiles" Default 
     ImprovedBy "CRUISE3"
          Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
          Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
          Weapon "NUKE_CRUISE" 40 Launch 2 Time 300 AutoEngage
+         Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+         Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
+  Config "Nuclear Ballistic Missiles" Default 
+    ImprovedBy "CRUISE3"
+         Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
+         Weapon "SPSPM" 20000 Launch 2 Time 50 AutoEngage
+         Weapon "MRBM" 40 Launch 1 Time 150 AutoEngage
          Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
          Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
   
@@ -849,6 +916,7 @@ Config "Anti Submarine Warfare"
   CanHostAircrafts "Fighter" 15 Patrol 2
   CanHostAircrafts airway 1 "Attack" 10
   CanHostAircrafts airway 1 "AWACS" 1
+  CanHostAircrafts airway 1 "EWAIR" 1
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
@@ -1013,8 +1081,8 @@ Config "Anti Submarine Warfare"
     ImprovedBy "SAM80" Movie "Units/Images/GROUND/SAM80.vidx"
     ImprovedBy "SAM10" Movie "Units/Images/GROUND/SAM10.vidx"
 	
-[UNIT] "ABM_site"
-  Tech "U_ABM_site"
+[UNIT] "ABM_SITE"
+  Tech "U_ABM_SITE"
   Movie "Units/Images/Ground/ABM.midx"
   DrawSize 20
   Size 0.1
@@ -1125,6 +1193,7 @@ Config "Anti Submarine Warfare"
   CanHostAircrafts "CVN_ATK" 10
   CanHostAircrafts airway 1 "CVN_AWACS" 1
   CanHostAircrafts airway 2 "CVN_ASW" 1 Patrol 1
+  CanHostAircrafts airway 1 "CVN_EWAIR" 1
   CanStoreMissiles "Low-power nuclear bomb" 20
   CanStoreMissiles "ASM" 20
   CanStoreMissiles "AAM" 50000

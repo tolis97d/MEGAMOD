@@ -40,6 +40,13 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "CVN_ASW_NAME" LANG "ASW Helicopter"
 "CVN_ASW_DESC" LANG "Anti-Submarine Warfare helicopters provide naval fleets with the ability to track down and eliminate otherwise hidden submarines before they can strike. Utilising a range of technologies such as torpedoes, dipping sonars, and sonobuoys, ASW are hunter-killers that keep the fleet safe by turning would-be predators in to prey."
 
+
+"U_CVN_EWAIR_NAME" LANG "Carrier Electronic-warfare aircraft"
+"U_CVN_EWAIR_DESC" LANG "An electronic-warfare aircraft is a military aircraft equipped for electronic warfare (EW), that is, degrading the effectiveness of enemy radar and radio systems by using radar jamming and deception methods."
+
+"U_EWAIR_NAME" LANG "Electronic-warfare aircraft"
+"U_EWAIR_DESC" LANG "An electronic-warfare aircraft is a military aircraft equipped for electronic warfare (EW), that is, degrading the effectiveness of enemy radar and radio systems by using radar jamming and deception methods."
+
 "CVN_ATK_NAME" LANG "Carrier-capable Attack Aircraft"
 "CVN_ATK_DESC" LANG "The most important element of a carrier's force projection is their attack aircraft. These aircraft are designed to strike both naval and ground targets, allowing a carrier to threaten a huge number of enemy assets, from nuclear infrastructure to surface fleets."
 
@@ -159,6 +166,15 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "MRBM2_NAME" LANG "Advaned MRBMs"
 "MRBM2_DESC" LANG "Designed to be used in theater level conflicts these missiles can maneuver during flight at different altitudes and trajectories and can turn at up to 20 to 30 G to evade anti-ballistic missiles"
+
+"U_ABM_SITE_NAME" LANG "ABM site"
+"U_ABM_SITE_DESC" LANG "Collection of hardened Anti Ballistic Missile silos"
+
+"GBOMB_M_NAME" LANG "Guided Bomb"
+"GBOMB_M_DESC" LANG "A guided bomb (also known as a smart bomb, guided bomb unit, or GBU) is a precision-guided munition designed to achieve a smaller circular error probable (CEP)."
+
+"M_EW_NAME" LANG "ECM pod"
+"M_EW_DESC" LANG "An electronic countermeasure (ECM) is an electrical or electronic device designed to trick or deceive radar, sonar or other detection systems, like infrared (IR) or lasers. It may be used both offensively and defensively to deny targeting information to an enemy."
 
 "COMP1_NAME" LANG "1960s Electronincs"
 "COMP1_DESC" LANG "The invention of the integrated circuit and the silicon MOSFET revolutionized the electronics industry and opened a new field of radio,computing and telecommunications applications."

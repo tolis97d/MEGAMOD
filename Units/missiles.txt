@@ -641,6 +641,7 @@ Modifier options:
   GlobalShowType MRBM_RANGES
 
   ImprovedBy "MRBM2" Movie Image "Units/IMAGES/MISSILES/MRBM2.png" 
+  ImprovedBy "MRBM2" Set CanBeIntercepted 0.2
 
 
 [MISSILE] "SUB_MRBM"
