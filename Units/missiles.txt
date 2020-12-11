@@ -350,24 +350,24 @@ Modifier options:
   Range 1000
   Speed 800
   CanBeIntercepted 0.5
-  Precision 1.5
+  Precision 0.8
   
   ImprovedBy "CRUISE2" Set Range 350
   ImprovedBy "CRUISE2" Set Speed 1000
-  ImprovedBy "CRUISE2" Set Precision 1.3
+  ImprovedBy "CRUISE2" Set Precision 0.6
   
   ImprovedBy "CRUISE3" Set Range 550
   ImprovedBy "CRUISE3" Set Speed 1500
-  ImprovedBy "CRUISE3" Set Precision 0.4
+  ImprovedBy "CRUISE3" Set Precision 0.3
   
   ImprovedBy "CRUISE4" Set Range 700
   ImprovedBy "CRUISE4" Set Speed 1700
-  ImprovedBy "CRUISE4" Set Precision 0.3
+  ImprovedBy "CRUISE4" Set Precision 0.1
   AffectedBy "CRUISE4" CanBeIntercepted 0.4
   
   ImprovedBy "CRUISE5" Set Range 800
   ImprovedBy "CRUISE5" Set Speed 2000
-  ImprovedBy "CRUISE5" Set Precision 0.05
+  ImprovedBy "CRUISE5" Set Precision 0.01
   AffectedBy "CRUISE4" CanBeIntercepted 0.3
   
   ImprovedBy "CRUISE6" Set Range 900
@@ -556,7 +556,9 @@ Modifier options:
   Precision 0.5
   ImprovedBy "TOR1" Set Range 400
   ImprovedBy "TOR2" Set Range 450
+  ImprovedBy "TOR2" Set Precision 0.1
   ImprovedBy "TOR3" Set Range 800
+  ImprovedBy "TOR3" Set Precision 0.01
   ImprovedBy "TOR4" Set Range 900
   AffectedBy Unit "Antitorpedo" Precision 1.5
   

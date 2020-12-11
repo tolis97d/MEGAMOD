@@ -1,9 +1,7 @@
-ICBM MOD "MEGA MOD"
+ICBM MOD "ARMS RACE"
 
-Version "0.7.1"
+Version "0.9.0 BETA"
 
-Description "Early dev phase of a light overhaul mod"
+Description "BETA VERSION"
 
 ChangeLog "Release"
-
-Incompatible "Naval Super MOD: Si Vis Pacem Parabellum"

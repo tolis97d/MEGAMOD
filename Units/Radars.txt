@@ -91,6 +91,23 @@ Modifier options:
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.4
+  
+[RADAR] "NAVAL SW"
+  Tech "NAVAL_SW"
+  Type "ShortWave"
+  Range 350
+  Sector 180
+  Precision 0
+  ImprovedBy "SW_Mk2" Set Range 400
+  ImprovedBy "SW_Mk2" Set MaxHeight 250
+  ImprovedBy "SW_Mk3" Set Range 500
+  ImprovedBy "SW_Mk3" Set MaxHeight 400
+  ImprovedBy "SW_Mk4" Set Range 550
+  ImprovedBy "SW_Mk4" Set MaxHeight 500
+  AffectedBy Unit "5GEN" Range 0.5
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "Underground" Range 0.5
+  AffectedBy InRange "EW" Range 0.4
 
 [RADAR] "Fixed Short Wave"
   Tech "R_Short_wave_radar"

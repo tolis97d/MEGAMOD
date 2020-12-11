@@ -1,6 +1,10 @@
 //Adding AIUpgradeTechHint <option> lets the AI know how to interpret a modded tech
 //Options are: Naval, Aircraft, Missiles (This is for ballistic missiles), Ssbn, TacticalNukes, AirToAir, AirToSurface, SurfaceToAir, ShipToShip, Intercept (ABMs), Cruise, Science, Satellite
 
+[TECHNOLOGY] "NAVAL_SW"
+  Name "NAVAL_SW_NAME"
+  Description "NAVAL_SW_DESC"
+
 [TECHNOLOGY] "U_City"
   Name "U_CITY_NAME"
   Description "U_CITY_DESC"
@@ -237,7 +241,7 @@ Description "U_Cavern_DESC"
   Name "3GEN_NAME"
   Description "3GEN_DESC"
   Image "Images/Science/3GEN.png"
-  Points 45
+  Points 15
   LeadsTo "4GEN"
   //AIUpgradeTechHint Aircraft
   
@@ -245,7 +249,7 @@ Description "U_Cavern_DESC"
   Name "4GEN_NAME"
   Description "4GEN_DESC"
   Image "Images/Science/4GEN.png"
-  Points 45
+  Points 15
   LeadsTo "4GEN2"
   LeadsTo "TAWACS"
   //AIUpgradeTechHint Aircraft
@@ -254,7 +258,7 @@ Description "U_Cavern_DESC"
   Name "TAWACS_NAME"
   Description "TAWACS_DESC"
   Image "Images/Science/AWACS.png"
-  Points 45
+  Points 15
   LeadsTo "CVN_AWACS"
   LeadsTo "U_AWACS"
   //AIUpgradeTechHint Aircraft
@@ -280,7 +284,8 @@ Description "U_Cavern_DESC"
   Name "4GEN2_NAME"
   Description "4GEN2_DESC"
   Image "Images/Science/4GEN2.png"
-  Points 45
+  Points 15
+  Points 15
   LeadsTo "5GEN"
   //AIUpgradeTechHint Aircraft
   
@@ -288,7 +293,7 @@ Description "U_Cavern_DESC"
   Name "5GEN_NAME"
   Description "5GEN_DESC"
   Image "Images/Science/5GEN.png"
-  Points 45
+  Points 30
   LeadsTo "Stealth_aircrafts_bombers"
   //AIUpgradeTechHint Aircraft
 
@@ -404,7 +409,7 @@ Description "U_Cavern_DESC"
   Name "SAM50_NAME"
   Description "SAM50_DESC"
   Image "Images/Science/SAM1.png"
-  Points 40
+  Points 30
   LeadsTo "SAM60"
   LeadsTo "M_Surface_to_air_missile"
   LeadsTo "U_SAM_site"
@@ -422,7 +427,7 @@ Description "U_Cavern_DESC"
   Name "SAM60_NAME"
   Description "SAM60_DESC"
   Image "Images/Science/SAM2.png"
-  Points 40
+  Points 15
   LeadsTo "SAM80"
   //AIUpgradeTechHint SurfaceToAir
   
@@ -430,7 +435,7 @@ Description "U_Cavern_DESC"
   Name "SAM80_NAME"
   Description "SAM80_DESC"
   Image "Images/Science/SAM3.png"
-  Points 40
+  Points 30
   LeadsTo "SAM10"
   //AIUpgradeTechHint SurfaceToAir  
   LeadsTo "ABM1"	
@@ -440,14 +445,14 @@ Description "U_Cavern_DESC"
   Name "SAM10_NAME"
   Description "SAM10_DESC"
   Image "Images/Science/SAM4.png"
-  Points 40
+  Points 15
   //AIUpgradeTechHint SurfaceToAir
   
 [TECHNOLOGY] "ABM1"
   Name "ABM1_NAME"
   Description "ABM1_DESC"
   Image "Images/Science/ABM1.png"
-  Points 30
+  Points 45
   LeadsTo "M_anti_ballistic_missile"
   LeadsTo "ABM2"
   LeadsTo "ASAT"
@@ -462,7 +467,7 @@ Description "U_Cavern_DESC"
   Name "ABM2_NAME"
   Description "ABM2_DESC"
   Image "Images/Science/ABM2.png"
-  Points 80
+  Points 30
   LeadsTo "ABM3"
   //AIUpgradeTechHint Intercept
   
@@ -470,7 +475,7 @@ Description "U_Cavern_DESC"
   Name "ABM3_NAME"
   Description "ABM3_DESC"
   Image "Images/Science/ABM3.png"
-  Points 80
+  Points 30
   //AIUpgradeTechHint Intercept
 
 [TECHNOLOGY] "M_anti_ballistic_missile"
@@ -481,7 +486,7 @@ Description "U_Cavern_DESC"
   Name "ASAT_NAME"
   Description "ASAT_DESC"
   Image "Images/Science/ASAT.png"
-  Points 55
+  Points 30
   LeadsTo "M_ASAT"
 
 [TECHNOLOGY] "M_ASAT"
@@ -493,7 +498,7 @@ Description "U_Cavern_DESC"
   Name "CRUISE1_NAME"
   Description "CRUISE1_DESC"
   Image "Images/Science/CRUISE60.png"
-  Points 55
+  Points 30
   LeadsTo "CRUISE2"
   LeadsTo "M_SHIP_SHIP"
   LeadsTo "M_NUKE_CRUISE"
@@ -503,7 +508,7 @@ Description "U_Cavern_DESC"
   Name "CRUISE2_NAME"
   Description "CRUISE2_DESC"
   Image "Images/Science/CRUISE70.png"
-  Points 55
+  Points 15
   LeadsTo "CRUISE3" 
   //AIUpgradeTechHint Cruise
   
@@ -511,7 +516,7 @@ Description "U_Cavern_DESC"
   Name "CRUISE3_NAME"
   Description "CRUISE3_DESC"
   Image "Images/Science/CRUISE80.png"
-  Points 55
+  Points 30
   LeadsTo "CRUISE4"
   LeadsTo "M_CONV_CRUISE"
   //AIUpgradeTechHint Cruise
@@ -520,7 +525,7 @@ Description "U_Cavern_DESC"
   Name "CRUISE4_NAME"
   Description "CRUISE4_DESC"
   Image "Images/Science/CRUISE00.png"
-  Points 55
+  Points 15
   LeadsTo "CRUISE5"
   //AIUpgradeTechHint Cruise
 
@@ -528,7 +533,7 @@ Description "U_Cavern_DESC"
   Name "CRUISE5_NAME"
   Description "CRUISE5_DESC"
   Image "Images/Science/CRUISE10.png"
-  Points 55
+  Points 15
   LeadsTo "CRUISE6"
   //AIUpgradeTechHint Cruise
 
@@ -536,7 +541,7 @@ Description "U_Cavern_DESC"
   Name "CRUISE6_NAME"
   Description "CRUISE6_DESC"
   Image "Images/Science/CRUISE30.png"
-  Points 55
+  Points 30
   //AIUpgradeTechHint Cruise
   
   
@@ -572,7 +577,7 @@ Description "U_Cavern_DESC"
   Name "CIWS_LASER_NAME"
   Description "CIWS_LASER_DESC"
   Image "Images/Science/CIWS2.png"
-  Points 15
+  Points 30
   LeadsTo "M_CIWS_LASER"
   //AIUpgradeTechHint ShipToShip
   //AIUpgradeTechHint Naval
@@ -589,7 +594,7 @@ Description "U_Cavern_DESC"
   Name "NAVY30_NAME"
   Description "NAVY30_DESC"
   Image "Images/Science/NAV30.png"
-  Points 15
+  Points 30
   //AIUpgradeTechHint Naval
   
 [TECHNOLOGY] "SUB60"
@@ -609,7 +614,7 @@ Description "U_Cavern_DESC"
   Name "NUCLEAR_SUBMARINE_NAME"
   Description "NUCLEAR_SUBMARINE_DESC"
   Image "Images/Science/SSBN.png"
-  Points 40
+  Points 30
   LeadsTo "U_Nuclear_Submarine"
 
 [TECHNOLOGY] "U_Nuclear_Submarine"
@@ -708,7 +713,7 @@ Description "U_Cavern_DESC"
   Name "TOR3_NAME"
   Description "TOR3_DESC"
   Image "Images/Science/TOR3.png"
-  Points 15
+  Points 30
   LeadsTo "TOR4" 
   //AIUpgradeTechHint Naval
   
@@ -737,27 +742,12 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SW2.png"
   Points 15
   LeadsTo "SW_Mk4"
-  LeadsTo "AESA_RADAR"
   
 [TECHNOLOGY] "SW_Mk4"
   Name "SW_Mk4_NAME"
   Description "SW_Mk4_DESC"
   Image "Images/Science/SW3.png"
   Points 15
-  
-[TECHNOLOGY] "AESA_RADAR"
-  Name "AESA_RADAR_NAME"
-  Description "AESA_RADAR_DESC"
-  Image "Images/Science/AESA.png"
-  Points 15 
-  LeadsTo "4GEN2_REQ"
-  //AIUpgradeTechHint Aircraft
-  //AIUpgradeTechHint SurfaceToAir
-  
-[TECHNOLOGY] "4GEN2_REQ"
-  Name "4GEN2_REQ_NAME"
-  Description "4GEN2_REQ_DESC"
-  LeadsTo "4GEN2"
 
 // chain LW Mk2  LW Mk3
 
@@ -788,7 +778,7 @@ Description "U_Cavern_DESC"
   Name "Space_radar_NAME"
   Description "Space_radar_DESC"
   Image "Images/Science/Space_radar.png"
-  Points 13
+  Points 15
   LeadsTo "ASAT_REQ"
   LeadsTo "R_Space_radar"
   LeadsTo "R_Space_radar_OTH"
@@ -834,28 +824,28 @@ Description "U_Cavern_DESC"
   Name "Over_horizon_radar_Mk2_NAME"
   Description "Over_horizon_radar_Mk2_DESC"
   Image "Images/Science/Over_horizon_radar_Mk2.png"
-  Points 20
+  Points 15
 //  LeadsTo "Space_radar" 
   
 [TECHNOLOGY] "SONAR1"
   Name "SONAR1_NAME"
   Description "SONAR1_DESC"
   Image "Images/Science/SONAR1.png"
-  Points 30
+  Points 15
   LeadsTo "SONAR2" 
 
 [TECHNOLOGY] "SONAR2"
   Name "SONAR2_NAME"
   Description "SONAR2_DESC"
   Image "Images/Science/SONAR2.png"
-  Points 30
+  Points 15
   LeadsTo "SONAR3"
 
 [TECHNOLOGY] "SONAR3"
   Name "SONAR3_NAME"
   Description "SONAR3_DESC"
   Image "Images/Science/SONAR3.png"
-  Points 30  
+  Points 15  
   
   
 // chain MRBM  ICBM          Heavy missiles
@@ -865,7 +855,7 @@ Description "U_Cavern_DESC"
   Name "MRBM_NAME"
   Description "MRBM_DESC"
   Image "Images/Science/MRBM1.png"
-  Points 50
+  Points 15
   LeadsTo "M_MRBM"
   LeadsTo "Mobile_MRBM"
   LeadsTo "ICBM1"
@@ -876,7 +866,7 @@ Description "U_Cavern_DESC"
   Name "MRBM2_NAME"
   Description "MRBM2_DESC"
   Image "Images/Science/MRBM2.png"
-  Points 20
+  Points 30
 
 [TECHNOLOGY] "M_MRBM"
   Name "M_MRBM_NAME"
@@ -890,7 +880,7 @@ Description "U_Cavern_DESC"
   Name "ICBM1_NAME"
   Description "ICBM1_DESC"
   Image "Images/Science/ICBM1.png"
-  Points 60
+  Points 30
   LeadsTo "ICBM2"
   LeadsTo "U_Missile_Silo"
   LeadsTo "M_ICBM_1M"
@@ -899,7 +889,7 @@ Description "U_Cavern_DESC"
   Name "ICBM2_NAME"
   Description "ICBM2_DESC"
   Image "Images/Science/ICBM2.png"
-  Points 60
+  Points 15
   LeadsTo "Heavy_Missiles"
   LeadsTo "Mobile_ICBM"
   LeadsTo "MIRV"
@@ -908,7 +898,7 @@ Description "U_Cavern_DESC"
   Name "Heavy_Missiles_NAME"
   Description "Heavy_Missiles_DESC"
   Image "Images/Science/HEAVY_ICBM.png"
-  Points 85
+  Points 30
   LeadsTo "M_ICBM_10M"
   LeadsTo "SUPER_HEAVY_MISSILES"
   
@@ -916,7 +906,7 @@ Description "U_Cavern_DESC"
   Name "SUPER_HEAVY_MISSILES_NAME"
   Description "SUPER_HEAVY_MISSILES_DESC"
   Image "Images/Science/SHEAVY_ICBM.png"
-  Points 85
+  Points 30
   LeadsTo "M_ICBM_50M"
   //AIUpgradeTechHint Missiles
   
@@ -924,7 +914,7 @@ Description "U_Cavern_DESC"
   Name "SLBM_NAME"
   Description "SLBM_DESC"
   Image "Images/Science/SLBM.png"
-  Points 60
+  Points 15
   LeadsTo "U_Nuclear_Submarine"
   LeadsTo "M_SUB_MRBM"
   
@@ -932,7 +922,7 @@ Description "U_Cavern_DESC"
   Name "MIRV_NAME"
   Description "MIRV_DESC"
   Image "Images/Science/MIRV.png"
-  Points 125
+  Points 30
   LeadsTo "False_warheads"
   LeadsTo "M_ICBM_MIRV"
   LeadsTo "Advanced_MRBM_MIRV"
@@ -941,7 +931,7 @@ Description "U_Cavern_DESC"
   Name "False_warheads_NAME"
   Description "False_warheads_DESC"
   Image "Images/Science/MIRV2.png"
-  Points 60
+  Points 30
   LeadsTo "M_ICBM_MIRV_FALSE"
 
 [TECHNOLOGY] "M_ICBM_1M"
@@ -1011,7 +1001,7 @@ Description "U_Cavern_DESC"
   Name "THERMONUCLEAR_BOMB_NAME"
   Description "THERMONUCLEAR_BOMB_DESC"
   Image "Images/Science/Thermonuclear_bomb.png"
-  Points 50
+  Points 30
   LeadsTo "Mega-warheads"
   LeadsTo "M_10M_thermonuclear_bomb"
   LeadsTo "Tactical_nukes"
@@ -1061,7 +1051,7 @@ Description "U_Cavern_DESC"
   Name "SATELLITE_NAME"
   Description "SATELLITE_DESC"
   Image "Images/Science/Satellite.png"
-  Points 50
+  Points 30
   LeadsTo "U_Satellite"
     LeadsTo "GPS"
 //  LeadsTo "Geostationary_satellites"
@@ -1082,14 +1072,14 @@ Description "U_Cavern_DESC"
   Name "Improved_optics_NAME"
   Description "Improved_optics_DESC"
   Image "Images/Science/Improved_optics.png"
-  Points 25
+  Points 15
   LeadsTo "Laser_weapon"
 
 [TECHNOLOGY] "GPS"
   Name "GPS_NAME"
   Description "GPS_DESC"
   Image "Images/Science/GPS.png"
-  Points 100
+  Points 30
   LeadsTo "B2_REQ"
   LeadsTo "ASM2_REQ"
   LeadsTo "CRUISE3_REQ2"  
@@ -1116,7 +1106,7 @@ Description "U_Cavern_DESC"
   Name "Laser_weapon_NAME"
   Description "Laser_weapon_DESC"
   Image "Images/Science/Laser_weapon.png"
-  Points 80
+  Points 15
   LeadsTo "M_Laser_weapon"
   //AIUpgradeTechHint Satellite
 
@@ -1128,7 +1118,7 @@ Description "U_Cavern_DESC"
   Name "ENG1_NAME"
   Description "ENG1_DESC"
   Image "Images/Science/ENG60.png"
-  Points 15
+  Points 30
   LeadsTo "ENG2"
   LeadsTo "ICBM1_REQ"
   LeadsTo "SLBM_REQ"
@@ -1178,7 +1168,7 @@ Description "U_Cavern_DESC"
   Name "ENG2_NAME"
   Description "ENG2_DESC"
   Image "Images/Science/ENG70.png"
-  Points 15
+  Points 30
   LeadsTo "ENG3"
   LeadsTo "ICBM2_REQ"
   LeadsTo "4GEN_REQ" 
@@ -1204,7 +1194,7 @@ Description "U_Cavern_DESC"
   Name "ENG3_NAME"
   Description "ENG3_DESC"
   Image "Images/Science/ENG80.png"
-  Points 15
+  Points 30
   LeadsTo "ENG4" 
   LeadsTo "MIRV_REQ"
   LeadsTo "NAVY80_REQ"
@@ -1242,7 +1232,7 @@ Description "U_Cavern_DESC"
   Name "ENG4_NAME"
   Description "ENG4_DESC"
   Image "Images/Science/ENG00.png"
-  Points 15
+  Points 30
   LeadsTo "ENG5" 
   LeadsTo "False_warheads_REQ"
   LeadsTo "Heavy_Missiles_REQ"
@@ -1286,7 +1276,7 @@ Description "U_Cavern_DESC"
   Name "ENG5_NAME"
   Description "ENG5_DESC"
   Image "Images/Science/ENG20.png"
-  Points 15
+  Points 30
   LeadsTo "SUPER_HEAVY_MISSILES_REQ"
   LeadsTo "NAVY30_REQ"
   LeadsTo "CRUISE6_REQ"
@@ -1317,7 +1307,7 @@ Description "U_Cavern_DESC"
   Name "COMP1_NAME"
   Description "COMP1_DESC"
   Image "Images/Science/COMP60.png"
-  Points 15
+  Points 30
   LeadsTo "COMP2" 
   LeadsTo "JAM1" 
   LeadsTo "Satellite_REQ"
@@ -1344,7 +1334,7 @@ Description "U_Cavern_DESC"
   Name "COMP2_NAME"
   Description "COMP2_DESC"
   Image "Images/Science/COMP70.png"
-  Points 15
+  Points 30
   LeadsTo "COMP3" 
   LeadsTo "LASER_GUIDE" 
   LeadsTo "JAM1_REQ"
@@ -1377,7 +1367,7 @@ Description "U_Cavern_DESC"
   Name "COMP3_NAME"
   Description "COMP3_DESC"
   Image "Images/Science/COMP80.png"
-  Points 15
+  Points 30
   LeadsTo "COMP4"
   LeadsTo "GPS_REQ"
   LeadsTo "ABM1_REQ" 
@@ -1415,7 +1405,7 @@ Description "U_Cavern_DESC"
   Name "COMP4_NAME"
   Description "COMP4_DESC"
   Image "Images/Science/COMP90.png"
-  Points 15
+  Points 30
   LeadsTo "COMP5"
   LeadsTo "ABM2_REQ"
   LeadsTo "LW_MK3_REQ"
@@ -1447,20 +1437,14 @@ Description "U_Cavern_DESC"
   Name "COMP5_NAME"
   Description "COMP5_DESC"
   Image "Images/Science/COMP00.png"
-  Points 15
+  Points 30
   LeadsTo "COMP6"
-  LeadsTo "AESA_REQ"
   LeadsTo "4GEN2_REQ3"
   LeadsTo "AA3_REQ"
   LeadsTo "Improved_optics_REQ"
   LeadsTo "TOR3_REQ"
   LeadsTo "JAM2_REQ"
   //AIUpgradeTechHint Science  
-  
-[TECHNOLOGY] "AESA_REQ"
-  Name "AESA_REQ_NAME"
-  Description "AESA_REQ_DESC"  
-  LeadsTo "ABM2"
   
 [TECHNOLOGY] "4GEN2_REQ3"
   Name "4GEN2_REQ3_NAME"
@@ -1492,7 +1476,7 @@ Description "U_Cavern_DESC"
   Name "COMP6_NAME"
   Description "COMP6_DESC"
   Image "Images/Science/COMP10.png"
-  Points 15 
+  Points 30
   LeadsTo "COMP7"
   LeadsTo "CIWS_LASER_REQ"
   LeadsTo "5GEN_REQ" 
@@ -1524,7 +1508,7 @@ Description "U_Cavern_DESC"
   Name "COMP7_NAME"
   Description "COMP7_DESC"
   Image "Images/Science/COMP10.png"
-  Points 15 
+  Points 30 
   LeadsTo "LASER_PRACTICAL_REQ" 
   LeadsTo "ABM3_REQ"
   LeadsTo "TOR4_REQ"
@@ -1593,7 +1577,7 @@ Description "U_Cavern_DESC"
   Name "LASER_PRACTICAL_NAME"
   Description "LASER_PRACTICAL_DESC"
   Image "Images/Science/PRACTICAL_LASER.png"
-  Points 15
+  Points 45
   LeadsTo "CIWS_LASER_REQ" 
   LeadsTo "Laser_weapon_REQ" 
   //AIUpgradeTechHint ShipToShip
@@ -1629,13 +1613,13 @@ Description "U_Cavern_DESC"
   Name "JAM3_NAME"
   Description "JAM3_DESC"
   Image "Images/Science/J3.png"
-  Points 15 
+  Points 30 
   
 [TECHNOLOGY] "ARMY_TECH"
   Name "ARMY_TECH_NAME"
   Description "ARMY_TECH_DESC"
   Image "Images/Science/PRACTICAL_LASER.png"
-  Points 15  
+  Points 1  
   LeadsTo "ARMY"
   
 [TECHNOLOGY] "ARMY"
