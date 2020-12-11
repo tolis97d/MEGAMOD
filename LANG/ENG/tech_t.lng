@@ -16,6 +16,9 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "U_AIRPORT2_NAME" LANG "Tactical AirBase"
 "U_AIRPORT2_DESC" LANG "An airbase which hosts interceptors as well as fighter-bombers"
 
+"U_AIRPORT3_NAME" LANG "Naval Air Station"
+"U_AIRPORT3_DESC" LANG "A naval air station is a military air base, and consists of a permanent land-based operations locations for the military aviation division of the relevant branch of a navy. These bases are typically populated by squadrons, groups or wings, their various support commands, and other tenant commands."
+
 "ASM1_M_NAME" LANG "Air-to-surface missile"
 "ASM1_M_DESC" LANG "An air-to-surface missile is a missile designed to be launched from military aircraft at targets on land or sea.The two most common propulsion systems for air-to-surface missiles are rocket motors, usually with shorter range, and slower, longer-range jet engines. Some air-to-surface missiles are powered by ramjets, giving them both long range and high speed."
 
@@ -37,6 +40,13 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "CVN_ASW_NAME" LANG "ASW Helicopter"
 "CVN_ASW_DESC" LANG "Anti-Submarine Warfare helicopters provide naval fleets with the ability to track down and eliminate otherwise hidden submarines before they can strike. Utilising a range of technologies such as torpedoes, dipping sonars, and sonobuoys, ASW are hunter-killers that keep the fleet safe by turning would-be predators in to prey."
 
+
+"U_CVN_EWAIR_NAME" LANG "Carrier Electronic-warfare aircraft"
+"U_CVN_EWAIR_DESC" LANG "An electronic-warfare aircraft is a military aircraft equipped for electronic warfare (EW), that is, degrading the effectiveness of enemy radar and radio systems by using radar jamming and deception methods."
+
+"U_EWAIR_NAME" LANG "Electronic-warfare aircraft"
+"U_EWAIR_DESC" LANG "An electronic-warfare aircraft is a military aircraft equipped for electronic warfare (EW), that is, degrading the effectiveness of enemy radar and radio systems by using radar jamming and deception methods."
+
 "CVN_ATK_NAME" LANG "Carrier-capable Attack Aircraft"
 "CVN_ATK_DESC" LANG "The most important element of a carrier's force projection is their attack aircraft. These aircraft are designed to strike both naval and ground targets, allowing a carrier to threaten a huge number of enemy assets, from nuclear infrastructure to surface fleets."
 
@@ -51,6 +61,18 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "NAVY30_NAME" LANG "Experimental Naval Designs"
 "NAVY30_DESC" LANG "Experimentation with littoral combat ships, drone-based systems, the first laser and railgun systems, fully integrated Command and Control systems, and stealth hulls define the near-future for warships. Many warships are once again growing in size but shrinking in number, equipped to handle a multitude of potential future threats and operating in a battlespace that includes both cyber warfare and space operations."
+
+"SUB60_NAME" LANG "1960s Submarine Designs"
+"SUB60_DESC" LANG "In the end of the 1950s, nuclear power partially replaced diesel-electric propulsion. The sailing of the first nuclear-powered submarine, the USN Nautilus in 1955 was soon followed by similar British, French and Russian boats. Equipment was also developed to extract oxygen from sea water. These two innovations, together with inertial navigation systems, gave submarines the ability to remain submerged for weeks or months, and enabled previously impossible voyages such as the crossing of the North Pole beneath the Arctic ice cap by the USS Nautilus in 1958. Most of the naval submarines built since that time in the United States and the Soviet Union and its successor state the Russian Federation have been powered by nuclear reactors. The limiting factors in submerged endurance for these vessels are food supply and crew morale in the space-limited submarine."
+
+"SUB80_NAME" LANG "1980s Submarine Designs"
+"SUB80_DESC" LANG "Towards the end of the 20th century, some submarines were fitted with pump-jet propulsors, instead of propellers. Although these are heavier, more expensive, and often less efficient than a propeller, they are significantly quieter, giving an important tactical advantage."
+
+"SUB00_NAME" LANG "2000s Submarine Designs"
+"SUB00_DESC" LANG "Advancements in noise reduction technologies further reduced the noise signature of submarine propulsion."
+
+"SUB30_NAME" LANG "2030s Submarine Designs"
+"SUB30_DESC" LANG "A possible propulsion system for submarines is the magnetohydrodynamic drive, or caterpillar drive, which has no moving parts. It was popularized in the movie version of The Hunt for Red October, written by Tom Clancy, which portrayed it as a virtually silent system. (In the book, a form of propulsor was used rather than an MHD.) Although some experimental surface ships have been built with this propulsion system, speeds have not been as high as hoped. In addition, the noise created by bubbles, and the higher power settings a submarine's reactor would need, mean that it is unlikely to be considered for any military purpose."
 
 "3GEN_NAME" LANG "3rd Generation Aircraft"
 "3GEN_DESC" LANG "With 3rd generation aircraft, air-to-air missiles became the standard method of dogfighting, with guns taking a backseat. The first generation of mainstream guided weapons would also be deployed on these aircraft, providing new ground attack capabilities that had previously required much more error to perform; further enhanced by the employment of analogue avionics over steam."
@@ -79,59 +101,143 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "CIWS_NAME" LANG "CIWS"
 "CIWS_DESC" LANG "Close-in Weapon Systems provide a last-line defense against missile attacks, tracking missiles at high speed and pumping them full of bullets before they can close the final distance with ships."
 
+"CIWS_LASER_NAME" LANG "Laser CIWS"
+"CIWS_LASER_DESC" LANG "With the developments in power output of directed energy in conjuction with ever increasing missile threats to high value assets led to the fielding of laser CIWS in order to defeat these advanced threat mainly hypersonic missiles and swarm strikes."
+
 "M_CIWS_NAME" LANG "CIWS"
 "M_CIWS_DESC" LANG "The Phalanx CIWS is a close-in weapon system for defense against incoming threats such as small boats, surface torpedoes, anti-ship missiles and helicopters."
+
+"M_CIWS_LASER_NAME" LANG "Laser CIWS"
+"M_CIWS_LASER_DESC" LANG "With the developments in power output of directed energy in conjuction with ever increasing missile threats to high value assets led to the fielding of laser CIWS in order to defeat these advanced threat mainly hypersonic missiles and swarm strikes."
+
+"SUPER_HEAVY_MISSILES_NAME" LANG "Super Heavy ICBMs"
+"SUPER_HEAVY_MISSILES_DESC" LANG "Originally super heavy-lift launch vehicles these rockets were repurposed to deliver large warheads or multiple MIRVs to defeat even  the most extensive air defence systems."
+
+"M_ICBM_50M_NAME" LANG "50 Megaton ICBM"
+"M_ICBM_50M_DESC" LANG "Originally super heavy-lift launch vehicles these rockets were repurposed to deliver large warheads to devastate enemy population centers."
+
+"LASER_GUIDE_NAME" LANG "Laser guidance"
+"LASER_GUIDE_DESC" LANG "Laser guidance is used by military to guide a missile or other projectile or vehicle to a target by means of a laser beam.This technique is sometimes called SALH, for Semi-Active Laser Homing. With this technique, a laser is kept pointed at the target and the laser radiation bounces off the target and is scattered in all directions. The missile, bomb, etc. is launched or dropped somewhere near the target. When it is close enough for some of the reflected laser energy from the target to reach it, a laser seeker detects which direction this energy is coming from and adjusts the projectile trajectory towards the source."
+
+"LASER_PRACTICAL_NAME" LANG "Practical Laser Weapons"
+"LASER_PRACTICAL_DESC" LANG "With the advancements in laser power we are at a point where laser can be used to cause physical damage to enemy projectiles."
+
+"SW_Mk4_NAME" LANG "AESA"
+"SW_Mk4_DESC" LANG "The AESA is a more advanced, sophisticated, second-generation of the original PESA phased array technology. PESAs can only emit a single beam of radio waves at a single frequency at a time. The AESA can radiate multiple beams of radio waves at multiple frequencies simultaneously. AESA radars can spread their signal emissions across a wider range of frequencies, which makes them more difficult to detect over background noise, allowing ships and aircraft to radiate powerful radar signals while still remaining stealthy, as well as being more resistant to jamming."
+
+"ICBM1_NAME" LANG "Early ICBMs"
+"ICBM1_DESC" LANG "Early ICBMs had limited precision, which made them suitable for use only against the largest targets, such as cities. They were seen as a basing option, one that would keep the deterrent force close to home where it would be difficult to attack. Attacks against military targets (especially hardened ones) still demanded the use of a more precise, manned bomber.These were repurposed launch vehicles from the escalating space race meaning their launch facilities were vulnerable."
+
+"ICBM2_NAME" LANG "Improved ICBMs"
+"ICBM2_DESC" LANG "Second and third-generation designs dramatically improved accuracy to the point where even the smallest point targets can be successfully attacked while also receiving specialised hardened silos in order to be better protected against enemy first strikes."
+
+"SLBM_NAME" LANG "SLBM"
+"SLBM_DESC" LANG "A submarine-launched ballistic missile (SLBM) is a ballistic missile capable of being launched from submarines. Modern variants usually deliver multiple independently targetable reentry vehicles (MIRVs) each of which carries a nuclear warhead and allows a single launched missile to strike several targets. Submarine-launched ballistic missiles operate in a different way from submarine-launched cruise missiles."
+
+"ABM1_NAME" LANG "Early ABM systems"
+"ABM1_DESC" LANG "An anti-ballistic missile is a surface-to-air missile designed to counter ballistic missiles.Ballistic missiles are used to deliver nuclear, chemical, biological, or conventional warheads in a ballistic flight trajectory. The term anti-ballistic missile is a generic term conveying a system designed to intercept and destroy any type of ballistic threat; however, it is commonly used for systems specifically designed to counter intercontinental ballistic missiles."
+
+"ABM2_NAME" LANG "Improved ABM systems"
+"ABM2_DESC" LANG "Advancements in radar technology as well as the developments of more sophisticated computers allowed the tracking and interception of faster projectiles and longer ranges."
+
+"ABM3_NAME" LANG "Advanced ABM systems"
+"ABM3_DESC" LANG "With further developments in electronics and rocketry fields as well as material sciences led to more advanced interceptors capable of defeating even the most advanced ballistic missiles."
+
+"SONAR1_NAME" LANG "Improved Sonar System"
+"SONAR1_DESC" LANG "1960s Naval Designs"
+
+"SONAR2_NAME" LANG "Advanced Sonar System"
+"SONAR2_DESC" LANG "1960s Naval Designs"
+
+"SONAR3_NAME" LANG "Next-Gen Sonar System"
+"SONAR3_DESC" LANG "1960s Naval Designs"
+
+"TOR1_NAME" LANG "1960s Torpedoes"
+"TOR1_DESC" LANG "Because of improved submarine strength and speed, torpedoes had to be given improved warheads and better motors. During the Cold War torpedoes were an important asset with the advent of nuclear-powered submarines, which did not have to surface often, particularly those carrying strategic nuclear missiles."
+
+"TOR2_NAME" LANG "1980s Torpedoes"
+"TOR2_DESC" LANG "The 80s saw the introduction of heavyweight submarine-launched torpedoes intended to sink deep-diving nuclear-powered submarines and high-performance surface ships."
+
+"TOR3_NAME" LANG "2000s Torpedoes"
+"TOR3_DESC" LANG "Datalink integration with other platforms led to longer engagement ranges with the torpedo being guided with data transmitted from other assets."
+
+"TOR4_NAME" LANG "2020s Torpedoes"
+"TOR4_DESC" LANG "Faster data tranfer rates led to better response time and thus improving engagement solutions."
+
+"JAM1_NAME" LANG "Early EW Systems"
+"JAM1_DESC" LANG "Electronic warfare (EW) is any action involving the use of the electromagnetic spectrum (EM spectrum) or directed energy to control the spectrum, attack an enemy, or impede enemy assaults. The purpose of electronic warfare is to deny the opponent the advantage of, and ensure friendly unimpeded access to, the EM spectrum. EW can be applied from air, sea, land, and/or space by manned and unmanned systems, and can target humans, communication, radar, or other assets.Ingame it reduces enemy LW and SW radar ranges."
+
+"JAM1_NAME" LANG "Improved EW Systems"
+"JAM1_DESC" LANG "More powerfull and sophisticated systems enable blinding of enemy radars from longers distances."
+
+"JAM1_NAME" LANG "Advanced EW Systems"
+"JAM1_DESC" LANG "More powerfull and sophisticated systems enable blinding of enemy radars from longers distances."
+
+"MRBM2_NAME" LANG "Advaned MRBMs"
+"MRBM2_DESC" LANG "Designed to be used in theater level conflicts these missiles can maneuver during flight at different altitudes and trajectories and can turn at up to 20 to 30 G to evade anti-ballistic missiles"
+
+"U_ABM_SITE_NAME" LANG "ABM site"
+"U_ABM_SITE_DESC" LANG "Collection of hardened Anti Ballistic Missile silos"
+
+"GBOMB_M_NAME" LANG "Guided Bomb"
+"GBOMB_M_DESC" LANG "A guided bomb (also known as a smart bomb, guided bomb unit, or GBU) is a precision-guided munition designed to achieve a smaller circular error probable (CEP)."
+
+"M_EW_NAME" LANG "ECM pod"
+"M_EW_DESC" LANG "An electronic countermeasure (ECM) is an electrical or electronic device designed to trick or deceive radar, sonar or other detection systems, like infrared (IR) or lasers. It may be used both offensively and defensively to deny targeting information to an enemy."
 
 "COMP1_NAME" LANG "1960s Electronincs"
 "COMP1_DESC" LANG "The invention of the integrated circuit and the silicon MOSFET revolutionized the electronics industry and opened a new field of radio,computing and telecommunications applications."
 
 "COMP2_NAME" LANG "1970s Electronincs"
-"COMP2_DESC" LANG "1960s Naval Designs"
+"COMP2_DESC" LANG "The earliest multi-chip microprocessors were the Four-Phase Systems AL-1 in 1969 and Garrett AiResearch MP944 in 1970, each using several MOS LSI chips.On November 15, 1971, Intel released the world's first single-chip microprocessor, the 4004, on a single MOS LSI chip. Its development was led by Federico Faggin, using silicon-gate MOS technology, along with Ted Hoff, Stanley Mazor and Masatoshi Shima."
 
 "COMP3_NAME" LANG "1980s Electronincs"
-"COMP3_DESC" LANG "1960s Naval Designs"
+"COMP3_DESC" LANG "The powerful supercomputers of the era were at the other end of the computing spectrum from the microcomputers, and they also used integrated circuit technology."
 
 "COMP4_NAME" LANG "1990s Electronincs"
-"COMP4_DESC" LANG "1960s Naval Designs"
+"COMP4_DESC" LANG "While the supercomputers of the 1980s used only a few processors, in the 1990s, machines with thousands of processors began to appear both in the United States and in Japan, setting new computational performance records."
 
 "COMP5_NAME" LANG "2000s Electronincs"
-"COMP5_DESC" LANG "1960s Naval Designs"
+"COMP5_DESC" LANG "Progress in the first decade of the 21st century was dramatic and supercomputers with over 60,000 processors appeared, reaching petaflop performance levels."
 
 "COMP6_NAME" LANG "2010s Electronincs"
-"COMP6_DESC" LANG "1960s Naval Designs"
+"COMP6_DESC" LANG "In July 2011, the 8.1 petaflop Japanese K computer became the fastest in the world using over 60,000 SPARC64 VIIIfx processors housed in over 600 cabinets. The fact that K computer is over 60 times faster than the Earth Simulator, and that the Earth Simulator ranks as the 68th system in the world seven years after holding the top spot demonstrates both the rapid increase in top performance and the widespread growth of supercomputing technology worldwide.By 2014, the Earth Simulator had dropped off the list and by 2018 K computer had dropped out of the top 10. By 2018, Summit had become the world's most powerful supercomputer, at 200 petaFLOPS."
+
+"COMP7_NAME" LANG "2020s Electronincs"
+"COMP7_DESC" LANG "Quantum computing is the use of quantum phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.Quantum computers are believed to be able to solve certain computational problems, such as integer factorization (which underlies RSA encryption), substantially faster than classical computers. The study of quantum computing is a subfield of quantum information science."
 
 "ENG1_NAME" LANG "1960s Engineering"
-"ENG1_DESC" LANG "1960s Naval Designs"
+"ENG1_DESC" LANG "Mechanical engineering is an engineering branch that combines engineering physics and mathematics principles with materials science to design, analyze, manufacture, and maintain mechanical systems.It is one of the oldest and broadest of the engineering branches."
 
 "ENG2_NAME" LANG "1970s Engineering"
-"ENG2_DESC" LANG "1960s Naval Designs"
+"ENG2_DESC" LANG "Advancements in material sciences allowed the development of mechanical solutions previously though impractical."
 
 "ENG3_NAME" LANG "1980s Engineering"
-"ENG3_DESC" LANG "1960s Naval Designs"
+"ENG3_DESC" LANG "Advancements in material sciences allowed the development of mechanical solutions previously though impractical."
 
-"ENG4_NAME" LANG "2000s Electronincs"
-"ENG4_DESC" LANG "1960s Naval Designs"
+"ENG4_NAME" LANG "2000s Engineering"
+"ENG4_DESC" LANG "A lot of modern tools are used for new manufacturing techniques. Analysis and designs in mechanical engineering are helped by various tools today. Indeed, mechanical engineers are using finite element analysis (FEA), computational fluid dynamics (CDF), computer-aided design (CAD), failure modes & effect analysis (FMEA). All of these tools are allowing mechanical engineers to work on the creation of 3D models. "
 
 "ENG5_NAME" LANG "2020s Engineering"
-"ENG5_DESC" LANG "1960s Naval Designs"
+"ENG5_DESC" LANG "CAD software and 3D printing are useful for mechanical designers and engineers in order to work on designs, prototypes and create as many iterations as they want.3D software is allowing to model, visualize, and simulate new projects, even the most complex ones."
 
 "CRUISE1_NAME" LANG "1960s Cruise Missiles"
-"CRUISE1_DESC" LANG "1960s Naval Designs"
+"CRUISE1_DESC" LANG "A cruise missile is a guided missile used against terrestrial targets, that remains in the atmosphere and flies the major portion of its flight path at approximately constant speed. Cruise missiles are designed to deliver a large warhead over long distances.In the Early years of the Cold War the lack of a precise guidance system meant that the only viable way to deliver a warhead was with radar guidance which could only be applied in an anti-ship role or with a nuclear warhead for land targets with a CEP of 500-1500m."
 
 "CRUISE2_NAME" LANG "1970s Cruise Missiles"
-"CRUISE2_DESC" LANG "1960s Naval Designs"
+"CRUISE2_DESC" LANG "Improvements in radar guidance slightly improved the precision of both conventional and nuclear cruise missiles and new developments in engines and aerodynamics further increased their range."
 
 "CRUISE3_NAME" LANG "1980s Cruise Missiles"
-"CRUISE3_DESC" LANG "1960s Naval Designs"
+"CRUISE3_DESC" LANG "The introduction of GPS made cruise missiles a viable weapon against land targets in extreme ranges while new ground radar avoidance systems made them considerably harder to shoot down."
 
 "CRUISE4_NAME" LANG "2000s Cruise Missiles"
-"CRUISE4_DESC" LANG "1960s Naval Designs"
+"CRUISE4_DESC" LANG "Further improvements in missile avoidance and terrain masking protected the missiles against increasingly advanced missile defence systems."
 
 "CRUISE5_NAME" LANG "2010s Cruise Missiles"
-"CRUISE5_DESC" LANG "1960s Naval Designs"
+"CRUISE5_DESC" LANG "By adopting stealth characteristics cruise missiles became more survivable in an ever increasingly anti-missile environment."
 
 "CRUISE6_NAME" LANG "2020S Cruise Missiles"
-"CRUISE6_DESC" LANG "1960s Naval Designs"
+"CRUISE6_DESC" LANG "Advanced in materials science allowed the fielding of hyper-sonic cruise missiles flying over 80000 feet during their cruise phase rendering all previous air defence systems nearly obsolete."
 
 "AA1_NAME" LANG "Early AAMs"
 "AA1_DESC" LANG "After World War 2, the major powers sought to equip planes with missiles capable of automatically locking on to enemy planes, greatly increasing the range at which enemy fighters and bombers could be destroyed. Guided AA missiles of this era, such as the AIM-9 Sidewinder, were so effective in changing warfare that they continue to be used to this day even by the world's leading militaries."
@@ -184,5 +290,8 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "TAWACS_NAME" LANG "Airborne Early Warning"
 "TAWACS_DESC" LANG "Airborne early warning and command systems such as AWACS provide a mobile long-wave radar platform that provides commanders with a bird's eye view of the battlescape, tracking targets across a huge area to provide communications on enemy positions and transfer that information across data-links to the computer systems of weapon platforms such as aircraft."
+
+"ARMY_TECH_NAME" LANG "Enable Armies"
+"ARMY_TECH_DESC" LANG "This tech is used to prohibit its research and thus armies during a game."
 
 END

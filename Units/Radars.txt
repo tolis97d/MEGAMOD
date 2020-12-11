@@ -15,6 +15,8 @@ Modifier options:
 //  RadarColor 0.0 0.0 0.16 0.15
   GlobalShowType SW_RANGES
   GlobalShowType OVERHORIZONT_RANGES
+  
+  AffectedBy InRange "EW" Range 0.4
 
 [TYPE] "LongWave"
   PreciseTargeting No
@@ -83,32 +85,55 @@ Modifier options:
   ImprovedBy "SW_Mk2" Set MaxHeight 250
   ImprovedBy "SW_Mk3" Set Range 450
   ImprovedBy "SW_Mk3" Set MaxHeight 400
+  ImprovedBy "SW_Mk4" Set Range 500
+  ImprovedBy "SW_Mk4" Set MaxHeight 500
   AffectedBy Unit "5GEN" Range 0.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
   AffectedBy Unit "Underground" Range 0.5
+  AffectedBy InRange "EW" Range 0.4
+  
+[RADAR] "NAVAL SW"
+  Tech "NAVAL_SW"
+  Type "ShortWave"
+  Range 350
+  Sector 180
+  Precision 0
+  ImprovedBy "SW_Mk2" Set Range 400
+  ImprovedBy "SW_Mk2" Set MaxHeight 250
+  ImprovedBy "SW_Mk3" Set Range 500
+  ImprovedBy "SW_Mk3" Set MaxHeight 400
+  ImprovedBy "SW_Mk4" Set Range 550
+  ImprovedBy "SW_Mk4" Set MaxHeight 500
+  AffectedBy Unit "5GEN" Range 0.5
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "Underground" Range 0.5
+  AffectedBy InRange "EW" Range 0.4
 
 [RADAR] "Fixed Short Wave"
   Tech "R_Short_wave_radar"
   Type "ShortWave"
-  Range 500
+  Range 300
   Sector 360
   Precision 0
-  ImprovedBy "SW_Mk2" Set Range 650
+  ImprovedBy "SW_Mk2" Set Range 500
   ImprovedBy "SW_Mk2" Set MaxHeight 250
-  ImprovedBy "SW_Mk3" Set Range 800
+  ImprovedBy "SW_Mk3" Set Range 700
   ImprovedBy "SW_Mk3" Set MaxHeight 400
+  ImprovedBy "SW_Mk4" Set Range 800
+  ImprovedBy "SW_Mk4" Set MaxHeight 500
   AffectedBy Unit "5GEN" Range 0.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
   AffectedBy Unit "Underground" Range 0.5
+  AffectedBy InRange "EW" Range 0.6
 
 [RADAR] "AWACS Short Wave"
   Tech "R_Short_wave_radar"
   Type "ShortWave"
-  Range 1000
+  Range 800
   Sector 360
   MaxHeight 1500 // the default value is 100
   Precision 0
-  ImprovedBy "SW_Mk2" Set Range 1250
+  ImprovedBy "SW_Mk2" Set Range 1100
   ImprovedBy "SW_Mk3" Set Range 1500
   AffectedBy Unit "5GEN" Range 0.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
@@ -142,21 +167,24 @@ Modifier options:
   AffectedBy Unit "5GEN" Range 0.75
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
   AffectedBy Unit "Underground" Range 0.5
+  AffectedBy InRange "EW" Range 0.8
 
 [RADAR] "Fixed Long Wave"
   Tech "R_Long_wave_radar"
   Type "LongWave"
-  Range 1000
+  Range 700
   Sector 360
   Precision 0
-  ImprovedBy "LW_Mk2" Set Range 1300
+  ImprovedBy "LW_Mk2" Set Range 900
   ImprovedBy "LW_Mk2" Set MaxHeight 250
-  ImprovedBy "LW_Mk3" Set Range 1600
+  ImprovedBy "LW_Mk3" Set Range 1200
   ImprovedBy "LW_Mk3" Set MaxHeight 400
+  ImprovedBy "LW_Mk4" Set Range 1400
+  ImprovedBy "LW_Mk4" Set MaxHeight 400
   AffectedBy Unit "5GEN" Range 0.75
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
   AffectedBy Unit "Underground" Range 0.5
-//  AffectedBy InRange "EW" Range 0.1
+  AffectedBy InRange "EW" Range 0.4
 
 [RADAR] "AWACS Long Wave"
   Tech "R_Long_wave_radar"
@@ -187,32 +215,39 @@ Modifier options:
 [RADAR] "Sonar"
   Tech "R_Sonar"
   Type "Sonar"
-  Range 400
+  Range 300
   Sector 360
   Precision 0.75
-  ImprovedBy Unit "Advanced_Sonar" Range 1.25 // 500 for subs
+  ImprovedBy "SONAR1" Set Range 350
+  ImprovedBy "SONAR2" Set Range 400
+  ImprovedBy "SONAR3" Set Range 450
+  
+  AffectedBy Unit "ENGINE_SSN1" Range 0.7
+  AffectedBy Unit "ENGINE_SSBN1" Range 0.8
+  AffectedBy Unit "ENGINE_SSN2" Range 0.6
+  AffectedBy Unit "ENGINE_SSBN2" Range 0.7
+  AffectedBy Unit "ENGINE_SSN3" Range 0.5
+  AffectedBy Unit "ENGINE_SSBN3" Range 0.6
+
+//  AffectedBy InRange "EW" Range 0.1
+
+[RADAR] "AWACS Sonar"
+  Tech "R_Sonar"
+  Type "Sonar"
+  Range 100
+  Sector 360
+  Precision 0.75
+  
+  ImprovedBy "SONAR1" Set Range 200
+  ImprovedBy "SONAR2" Set Range 300
+  ImprovedBy "SONAR3" Set Range 400
+  
   AffectedBy Unit "ENGINE_SSN1" Range 0.75 // 300
   AffectedBy Unit "ENGINE_SSBN1" Range 0.875 // 350
   AffectedBy Unit "ENGINE_SSN2" Range 0.84 // 252
   AffectedBy Unit "ENGINE_SSBN2" Range 0.857 // 300
   AffectedBy Unit "ENGINE_SSN3" Range 0.8 // 200
   AffectedBy Unit "ENGINE_SSBN3" Range 0.84 // 250
-  AffectedBy Unit "NAVY60" Range 1.5
-  AffectedBy Unit "NAVY80" Range 0.67 // to compensate the influence of the "Powerful_Engine"
-//  AffectedBy InRange "EW" Range 0.1
-
-[RADAR] "AWACS Sonar"
-  Tech "R_Sonar"
-  Type "Sonar"
-  Range 550
-  Sector 360
-  Precision 0.75
-  AffectedBy Unit "ENGINE_SSN1" Range 450
-  AffectedBy Unit "ENGINE_SSBN1" Set Range 500
-  AffectedBy Unit "ENGINE_SSN2" Set Range 400
-  AffectedBy Unit "ENGINE_SSBN2" Set Range 450
-  AffectedBy Unit "ENGINE_SSN3" Set Range 350
-  AffectedBy Unit "ENGINE_SSBN3" Set Range 400
 
 [RADAR] "Over_Horizon"
   Tech "R_Over_horizon_radar"
