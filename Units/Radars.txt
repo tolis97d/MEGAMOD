@@ -218,9 +218,9 @@ Modifier options:
   Range 300
   Sector 360
   Precision 0.75
-  ImprovedBy "SONAR1" Set Range 400
-  ImprovedBy "SONAR2" Set Range 500
-  ImprovedBy "SONAR3" Set Range 600
+  ImprovedBy "SONAR1" Set Range 350
+  ImprovedBy "SONAR2" Set Range 400
+  ImprovedBy "SONAR3" Set Range 450
   
   AffectedBy Unit "ENGINE_SSN1" Range 0.7
   AffectedBy Unit "ENGINE_SSBN1" Range 0.8
@@ -234,13 +234,13 @@ Modifier options:
 [RADAR] "AWACS Sonar"
   Tech "R_Sonar"
   Type "Sonar"
-  Range 150
+  Range 100
   Sector 360
   Precision 0.75
   
-  ImprovedBy "SONAR1" Set Range 250
-  ImprovedBy "SONAR2" Set Range 350
-  ImprovedBy "SONAR3" Set Range 500
+  ImprovedBy "SONAR1" Set Range 200
+  ImprovedBy "SONAR2" Set Range 300
+  ImprovedBy "SONAR3" Set Range 400
   
   AffectedBy Unit "ENGINE_SSN1" Range 0.75 // 300
   AffectedBy Unit "ENGINE_SSBN1" Range 0.875 // 350

@@ -51,6 +51,7 @@ Modifier options:
 [TYPE] "AntiAir2"
   RequiresPreciseTargeting Yes
   CanBeUsedAgainst Airborne
+  CanBeUsedAgainst HighMissile
 
 [TYPE] "AntiMissile"
   RequiresPreciseTargeting Yes
@@ -86,6 +87,11 @@ Modifier options:
   CanBeUsedAgainst Airborne
   
 [TYPE] "CIWS_TYPE"
+  RequiresPreciseTargeting Yes      
+  CanBeUsedAgainst Missile
+  Affects Missile
+  
+[TYPE] "CIWS_LASER_TYPE"
   RequiresPreciseTargeting Yes      
   CanBeUsedAgainst Missile
   CanBeUsedAgainst HighMissile
@@ -347,30 +353,30 @@ Modifier options:
 //  Explosion "big_bombV2"
 //  Explosion "big_bombV3"
 //  Explosion "big_bombV4"
-  Range 1000
+  Range 700
   Speed 800
   CanBeIntercepted 0.5
   Precision 0.8
   
-  ImprovedBy "CRUISE2" Set Range 350
+  ImprovedBy "CRUISE2" Set Range 750
   ImprovedBy "CRUISE2" Set Speed 1000
   ImprovedBy "CRUISE2" Set Precision 0.6
   
-  ImprovedBy "CRUISE3" Set Range 550
+  ImprovedBy "CRUISE3" Set Range 800
   ImprovedBy "CRUISE3" Set Speed 1500
   ImprovedBy "CRUISE3" Set Precision 0.3
   
-  ImprovedBy "CRUISE4" Set Range 700
+  ImprovedBy "CRUISE4" Set Range 900
   ImprovedBy "CRUISE4" Set Speed 1700
   ImprovedBy "CRUISE4" Set Precision 0.1
   AffectedBy "CRUISE4" CanBeIntercepted 0.4
   
-  ImprovedBy "CRUISE5" Set Range 800
+  ImprovedBy "CRUISE5" Set Range 1100
   ImprovedBy "CRUISE5" Set Speed 2000
   ImprovedBy "CRUISE5" Set Precision 0.01
   AffectedBy "CRUISE4" CanBeIntercepted 0.3
   
-  ImprovedBy "CRUISE6" Set Range 900
+  ImprovedBy "CRUISE6" Set Range 1200
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
   ImprovedBy "CRUISE6" Set Damage 1.5
@@ -480,17 +486,18 @@ Modifier options:
 
 [MISSILE] "SAM"
   Tech "M_Surface_to_air_missile"
-  Type "AntiAir"
+  Type "AntiAir2"
   Icon "Units/Images/Missiles/SAMM50.png"
   Sound 112 or 115 or 116 Volume 0.5
   Explosion "std_bomb"
   Range 400
   Speed 2000
   Precision 0.4
+  LeadGuidance 0.5
   AffectedBy Unit "5GEN" Precision 1.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Precision 1.25
   
-  ImprovedBy "SAM60" Set Range 300
+  ImprovedBy "SAM60" Set Range 450
   ImprovedBy "SAM60" Set Speed 2500
   ImprovedBy "SAM60" Set Precision 0.3
   
@@ -517,6 +524,7 @@ Modifier options:
   Range 600
   Speed 5000
   Precision 0.05
+  LeadGuidance 0.5
   
   ImprovedBy "ABM2" Set Range 800
   ImprovedBy "ABM2" Set Speed 6000
@@ -852,13 +860,13 @@ Modifier options:
   Sound 119
   DrawWave
   Explosion "std_torpedo"
-  Range 500
+  Range 560
   Speed 1
   Ballistic
   Switchable ON
   
-  ImprovedBy "JAM2" Set Range 600
-  ImprovedBy "JAM3" Set Range 700
+  ImprovedBy "JAM2" Set Range 700
+  ImprovedBy "JAM3" Set Range 800
   ImprovedBy "JAM2" Movie Image "Units/Images/Missiles/J2.png"
   ImprovedBy "JAM3" Movie Image "Units/Images/Missiles/J3.png"
   
@@ -886,7 +894,7 @@ Modifier options:
   Icon "Units/Images/Missiles/CIWS2.png"
   Sound 120
     MuteLength 1.25
-  Type "CIWS_TYPE"
+  Type "CIWS_LASER_TYPE"
   Explosion "LASER_EXP2"
   DrawLaser
   Ballistic 
