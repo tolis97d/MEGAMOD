@@ -1079,7 +1079,7 @@ Description "U_Cavern_DESC"
   Name "GPS_NAME"
   Description "GPS_DESC"
   Image "Images/Science/GPS.png"
-  Points 30
+  Points 15
   LeadsTo "B2_REQ"
   LeadsTo "ASM2_REQ"
   LeadsTo "CRUISE3_REQ2"  
