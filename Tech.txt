@@ -608,6 +608,7 @@ Description "U_Cavern_DESC"
   LeadsTo "Nuclear_Submarine"
   //AIUpgradeTechHint Naval
   //AIUpgradeTechHint Ssbn
+  //AIUpgradeTechHint Submarine
   
   
 [TECHNOLOGY] "Nuclear_Submarine"
@@ -641,6 +642,7 @@ Description "U_Cavern_DESC"
   LeadsTo "ENGINE_SSN2"
   //AIUpgradeTechHint Naval
   //AIUpgradeTechHint Ssbn
+  //AIUpgradeTechHint Submarine
   
 [TECHNOLOGY] "ENGINE_SSN2"
   Name "ENGINE_SSN2_NAME"
@@ -662,6 +664,7 @@ Description "U_Cavern_DESC"
   LeadsTo "ENGINE_SSN3"
   //AIUpgradeTechHint Ssbn
   //AIUpgradeTechHint Naval
+  //AIUpgradeTechHint Submarine
 
 [TECHNOLOGY] "ENGINE_SSBN3"
   Name "ENGINE_SSBN3_NAME"
@@ -681,7 +684,8 @@ Description "U_Cavern_DESC"
   LeadsTo "ENGINE_SSBN4"
   LeadsTo "ENGINE_SSN3"
   //AIUpgradeTechHint Naval
-  //AIUpgradeTechHint Ssbn  
+  //AIUpgradeTechHint Ssbn
+  //AIUpgradeTechHint Submarine  
 
 [TECHNOLOGY] "ENGINE_SSBN4"
   Name "ENGINE_SSBN4_NAME"
