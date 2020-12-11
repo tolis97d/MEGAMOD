@@ -1113,7 +1113,7 @@ Config "Anti Submarine Warfare"
   //AIVarietyHint SAM
   Disassemble 0.15
   VirtualSpeed 350
-  Power 2
+  Power 4
   Config "Air-Defence" Default 
       Weapon "SAM" 20000 Launch 2 Time 130 AutoEngage
   Config "Air and Missile Defence" Default 
