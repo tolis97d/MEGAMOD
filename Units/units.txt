@@ -746,10 +746,10 @@ Config "Anti Submarine Warfare"
   Modifier "NAVY00"
   ProductionCost 14
   
-  ImprovedBy "SUB60" Modify Weapon "Torpedo" Set Time 400
-  ImprovedBy "SUB80" Modify Weapon "Torpedo" Set Time 360
-  ImprovedBy "SUB00" Modify Weapon "Torpedo" Set Time 300
-  ImprovedBy "SUB30" Modify Weapon "Torpedo" Set Time 240 
+  ImprovedBy "NAVY60" Modify Weapon "Torpedo" Set Time 400
+  ImprovedBy "NAVY80" Modify Weapon "Torpedo" Set Time 360
+  ImprovedBy "NAVY00" Modify Weapon "Torpedo" Set Time 300
+  ImprovedBy "NAVY30" Modify Weapon "Torpedo" Set Time 240 
 
   ImprovedBy "NAVY60" Modify Weapon "SPSPM" Set Time 460
   ImprovedBy "NAVY80" Modify Weapon "SPSPM" Set Time 320
@@ -913,9 +913,9 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY00" Modify Weapon "SPSPM" Set Time 260
   ImprovedBy "NAVY30" Modify Weapon "SPSPM" Set Time 200  
   
-  ImprovedBy "SAM60" Modify Weapon "SAM" Set Time 120
-  ImprovedBy "SAM80" Modify Weapon "SAM" Set Time 80
-  ImprovedBy "SAM10" Modify Weapon "SAM" Set Time 40
+  ImprovedBy "NAVY60" Modify Weapon "SAM" Set Time 120
+  ImprovedBy "NAVY80" Modify Weapon "SAM" Set Time 80
+  ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 40
   
   ImprovedBy "NAVY00" Modify Weapon "CONV_CRUISE" Set Time 230
   ImprovedBy "NAVY30" Modify Weapon "CONV_CRUISE" Set Time 220

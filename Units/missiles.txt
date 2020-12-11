@@ -51,11 +51,10 @@ Modifier options:
 [TYPE] "AntiAir2"
   RequiresPreciseTargeting Yes
   CanBeUsedAgainst Airborne
-  CanBeUsedAgainst HighMissile
+  CanBeUsedAgainst Missile
 
 [TYPE] "AntiMissile"
   RequiresPreciseTargeting Yes
-  CanBeUsedAgainst Missile
   CanBeUsedAgainst HighMissile
 
 [TYPE] "Laser_Weapon"
@@ -190,19 +189,22 @@ Modifier options:
   Speed 400
   AttackAngle 120
   Ballistic 
-  CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
-  Precision 0.25
+  CanBeIntercepted 0.8 // 0 to 1, interception chance, the default is 0
+  Precision 0.1
   LeadGuidance 1
   AffectedBy "ABM2" CanBeIntercepted 0.7 
   
-  ImprovedBy "B2" Precision 0.5 
-  ImprovedBy "B2" Set Range 150 
-  
-  ImprovedBy "B3" Precision 0.1 
+  ImprovedBy "B2" Precision 0.1 
+  ImprovedBy "B2" Set Range 150
+  ImprovedBy "B2" Set CanBeIntercepted 0.7 
+ 
+  ImprovedBy "B3" Precision 0.05 
   ImprovedBy "B3" Set Range 300 
+  ImprovedBy "B3" Set CanBeIntercepted 0.6 
   
   ImprovedBy "B4" Precision 0.01 
   ImprovedBy "B4" Set Range 450 
+  ImprovedBy "B4" Set CanBeIntercepted 0.5 
   
   ImprovedBy "B2" Movie Image "Units/Images/Missiles/B2.png"
   ImprovedBy "B3" Movie Image "Units/Images/Missiles/B3.png"
@@ -360,27 +362,27 @@ Modifier options:
   
   ImprovedBy "CRUISE2" Set Range 750
   ImprovedBy "CRUISE2" Set Speed 1000
-  ImprovedBy "CRUISE2" Set Precision 0.6
+  ImprovedBy "CRUISE2" Set Precision 0.9
   
   ImprovedBy "CRUISE3" Set Range 800
   ImprovedBy "CRUISE3" Set Speed 1500
-  ImprovedBy "CRUISE3" Set Precision 0.3
+  ImprovedBy "CRUISE3" Set Precision 0.9
   
   ImprovedBy "CRUISE4" Set Range 900
   ImprovedBy "CRUISE4" Set Speed 1700
   ImprovedBy "CRUISE4" Set Precision 0.1
-  AffectedBy "CRUISE4" CanBeIntercepted 0.4
+  AffectedBy "CRUISE4" CanBeIntercepted 0.8
   
   ImprovedBy "CRUISE5" Set Range 1100
   ImprovedBy "CRUISE5" Set Speed 2000
   ImprovedBy "CRUISE5" Set Precision 0.01
-  AffectedBy "CRUISE4" CanBeIntercepted 0.3
+  AffectedBy "CRUISE5" CanBeIntercepted 0.7
   
   ImprovedBy "CRUISE6" Set Range 1200
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
   ImprovedBy "CRUISE6" Set Damage 1.5
-  AffectedBy "CRUISE4" CanBeIntercepted 0.2
+  AffectedBy "CRUISE6" CanBeIntercepted 0.6
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
@@ -409,18 +411,18 @@ Modifier options:
   ImprovedBy "CRUISE4" Set Range 1600
   ImprovedBy "CRUISE4" Set Speed 2000
   ImprovedBy "CRUISE4" Set Precision 0.3
-  AffectedBy "CRUISE4" CanBeIntercepted 0.4
+  ImprovedBy "CRUISE4" Set CanBeIntercepted 0.8
   
   ImprovedBy "CRUISE5" Set Range 2000
   ImprovedBy "CRUISE5" Set Speed 2500
   ImprovedBy "CRUISE5" Set Precision 0.05
-  AffectedBy "CRUISE4" CanBeIntercepted 0.3
+  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.7
   
-  ImprovedBy "CRUISE6" Set Range 3000
-  ImprovedBy "CRUISE6" Set Speed 3000
+  ImprovedBy "CRUISE6" Set Range 4000
+  ImprovedBy "CRUISE6" Set Speed 6000
   ImprovedBy "CRUISE6" Set Precision 0.01
   ImprovedBy "CRUISE6" Set Damage 1.5
-  AffectedBy "CRUISE4" CanBeIntercepted 0.2
+  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.4
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
@@ -459,18 +461,18 @@ Modifier options:
   ImprovedBy "CRUISE4" Set Range 2500
   ImprovedBy "CRUISE4" Set Speed 2000
   ImprovedBy "CRUISE4" Set Precision 0.3
-  AffectedBy "CRUISE4" CanBeIntercepted 0.4
+  ImprovedBy "CRUISE4" CanBeIntercepted 0.4
   
   ImprovedBy "CRUISE5" Set Range 3000
   ImprovedBy "CRUISE5" Set Speed 2500
   ImprovedBy "CRUISE5" Set Precision 0.05
-  AffectedBy "CRUISE4" CanBeIntercepted 0.3
+  ImprovedBy "CRUISE4" CanBeIntercepted 0.3
   
   ImprovedBy "CRUISE6" Set Range 3500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
   ImprovedBy "CRUISE6" Set Damage 1.5
-  AffectedBy "CRUISE4" CanBeIntercepted 0.2
+  ImprovedBy "CRUISE4" CanBeIntercepted 0.2
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
@@ -501,11 +503,11 @@ Modifier options:
   ImprovedBy "SAM60" Set Speed 2500
   ImprovedBy "SAM60" Set Precision 0.3
   
-  ImprovedBy "SAM80" Set Range 500
+  ImprovedBy "SAM80" Set Range 550
   ImprovedBy "SAM80" Set Speed 2500
   ImprovedBy "SAM60" Set Precision 0.2
   
-  ImprovedBy "SAM10" Set Range 700
+  ImprovedBy "SAM10" Set Range 750
   ImprovedBy "SAM10" Set Speed 2500
   ImprovedBy "SAM60" Set Precision 0.15
   
