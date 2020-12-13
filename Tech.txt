@@ -1022,16 +1022,11 @@ Description "U_Cavern_DESC"
   Name "Mega-warheads_NAME"
   Description "Mega-warheads_DESC"
   Image "Images/Science/Mega-warheads.png"
-  Points 85
+  Points 45
 //  LeadsTo "Tactical_nukes"
   LeadsTo "Heavy_Missiles"
   LeadsTo "M_50M_thermonuclear_bomb"
-  LeadsTo "CRUISE3_REQ3"
   
-[TECHNOLOGY] "CRUISE3_REQ3"
-  Name "CRUISE3_REQ3_NAME"
-  Description "CRUISE3_REQ3_DESC"
-  LeadsTo "CRUISE3"
 
 [TECHNOLOGY] "Tactical_nukes"
   Name "Tactical_nukes_NAME"
@@ -1040,6 +1035,12 @@ Description "U_Cavern_DESC"
   Points 15
   LeadsTo "M_SRBM"
   LeadsTo "M_Aircraft-launched_MRBM"
+  LeadsTo "CRUISE3_REQ3"
+  
+[TECHNOLOGY] "CRUISE3_REQ3"
+  Name "CRUISE3_REQ3_NAME"
+  Description "CRUISE3_REQ3_DESC"
+  LeadsTo "CRUISE3"
 
 [TECHNOLOGY] "M_SRBM"
   Name "M_SRBM_NAME"
@@ -1055,7 +1056,7 @@ Description "U_Cavern_DESC"
   Name "SATELLITE_NAME"
   Description "SATELLITE_DESC"
   Image "Images/Science/Satellite.png"
-  Points 30
+  Points 15
   LeadsTo "U_Satellite"
     LeadsTo "GPS"
 //  LeadsTo "Geostationary_satellites"
@@ -1622,7 +1623,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "ARMY_TECH"
   Name "ARMY_TECH_NAME"
   Description "ARMY_TECH_DESC"
-  Image "Images/Science/PRACTICAL_LASER.png"
+  Image "Images/Science/ARMY.png"
   Points 1  
   LeadsTo "ARMY"
   

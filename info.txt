@@ -1,7 +1,7 @@
-ICBM MOD "ARMS RACE:A total conversion Mod"
+ICBM MOD "DAWN AT MIDNIGHT:A total conversion Mod"
 
-Version "0.9.1 BETA"
+Version "1.0.0"
 
-Description "BETA VERSION"
+Description "[h1]Dawn at Midnight is a total conversion mod for icbm changing every aspect of the base game while also adding new mechanics such as electronic warfare,new units and weapons.At the same time it introduces faction unique icons for units and weapons.[/h1]"
 
 ChangeLog "Release"
