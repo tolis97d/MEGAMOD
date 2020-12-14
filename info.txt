@@ -1,7 +1,15 @@
 ICBM MOD "DAWN AT MIDNIGHT:A total conversion Mod"
 
-Version "1.0.0"
+Version "1.0.1"
 
-Description "[h1]Dawn at Midnight is a total conversion mod for icbm changing every aspect of the base game while also adding new mechanics such as electronic warfare,new units and weapons.At the same time it introduces faction unique icons for units and weapons.[/h1]"
+Description "[h1]Dawn at Midnight is a total conversion mod for icbm changing every aspect of the base game while also adding new mechanics such as electronic warfare,new units and weapons.At the same time it introduces faction unique icons for units and weapons all in a new massive tech tree.[/h1]
 
-ChangeLog "Release"
+Recommended to play with these maps for extra immersion:
+https://steamcommunity.com/sharedfiles/filedetails/?id=2292856774
+https://steamcommunity.com/sharedfiles/filedetails/?id=2298344212&searchtext=
+
+Special thanks to TAR5US for letting me integrate his ciws and naval artillery mod and Rushyo for his AI work and many tech names and descriptions.
+
+[h1]Please consider supporting my work [/h1] https://www.patreon.com/tolis97d"
+
+ChangeLog "1.0.1"

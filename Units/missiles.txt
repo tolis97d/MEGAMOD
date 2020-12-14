@@ -194,15 +194,15 @@ Modifier options:
   LeadGuidance 1
   AffectedBy "ABM2" CanBeIntercepted 0.7 
   
-  ImprovedBy "B2" Precision 0.1 
+  ImprovedBy "B2" Set Precision 0.1 
   ImprovedBy "B2" Set Range 150
   ImprovedBy "B2" Set CanBeIntercepted 0.7 
  
-  ImprovedBy "B3" Precision 0.05 
+  ImprovedBy "B3" Set Precision 0.05 
   ImprovedBy "B3" Set Range 300 
   ImprovedBy "B3" Set CanBeIntercepted 0.6 
   
-  ImprovedBy "B4" Precision 0.01 
+  ImprovedBy "B4" Set Precision 0.01 
   ImprovedBy "B4" Set Range 450 
   ImprovedBy "B4" Set CanBeIntercepted 0.5 
   
@@ -302,16 +302,16 @@ Modifier options:
   AffectedBy Unit "5GEN" Precision 1.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Precision 1.25
   
-  ImprovedBy "AA1" Precision 0.05 
+  ImprovedBy "AA1" Set Precision 0.05 
   ImprovedBy "AA1" Set Range 350
   
-  ImprovedBy "AA2" Precision 0.01 
+  ImprovedBy "AA2" Set Precision 0.01 
   ImprovedBy "AA2" Set Range 400 
   
-  ImprovedBy "AA3" Precision 0.005 
+  ImprovedBy "AA3" Set Precision 0.005 
   ImprovedBy "AA3" Set Range 450 
   
-  ImprovedBy "AA4" Precision 0.001 
+  ImprovedBy "AA4" Set Precision 0.001 
   ImprovedBy "AA4" Set Range 500 
   
   ImprovedBy "AA1" Movie Image "Units/Images/Missiles/AA1.vidx"
@@ -333,13 +333,13 @@ Modifier options:
   Precision 0.25
   AffectedBy "ABM2" CanBeIntercepted 0.7 
   
-  ImprovedBy "ASM2" Precision 0.5 
+  ImprovedBy "ASM2" Set Precision 0.5 
   ImprovedBy "ASM2" Set Range 425 
   
-  ImprovedBy "ASM3" Precision 0.1 
+  ImprovedBy "ASM3" Set Precision 0.1 
   ImprovedBy "ASM3" Set Range 650 
   
-  ImprovedBy "ASM4" Precision 0.01 
+  ImprovedBy "ASM4" Set Precision 0.01 
   ImprovedBy "ASM4" Set Range 850 
   
   ImprovedBy "ASM2" Movie Image "Units/Images/Missiles/ASM2.png"
@@ -372,20 +372,24 @@ Modifier options:
   ImprovedBy "CRUISE4" Set Range 850
   ImprovedBy "CRUISE4" Set Speed 1550
   ImprovedBy "CRUISE4" Set Precision 0.1
-  AffectedBy "CRUISE4" CanBeIntercepted 0.8
+  AffectedBy "CRUISE4" CanBeIntercepted 0.7
   
   ImprovedBy "CRUISE5" Set Range 900
   ImprovedBy "CRUISE5" Set Speed 1600
   ImprovedBy "CRUISE5" Set Precision 0.01
-  AffectedBy "CRUISE5" CanBeIntercepted 0.7
+  AffectedBy "CRUISE5" CanBeIntercepted 0.6
   
   ImprovedBy "CRUISE6" Set Range 1200
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  AffectedBy "CRUISE6" CanBeIntercepted 0.6
+  AffectedBy "CRUISE6" CanBeIntercepted 0.5
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
+  AffectedBy "SAM50" CanBeIntercepted 0.1
+  AffectedBy "SAM60" CanBeIntercepted 0.3
+  AffectedBy "SAM80" CanBeIntercepted 1.4
+  AffectedBy "SAM10" CanBeIntercepted 1.6
   
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/SM70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/SM80.png"
@@ -505,11 +509,11 @@ Modifier options:
   
   ImprovedBy "SAM80" Set Range 550
   ImprovedBy "SAM80" Set Speed 2500
-  ImprovedBy "SAM60" Set Precision 0.2
+  ImprovedBy "SAM80" Set Precision 0.2
   
   ImprovedBy "SAM10" Set Range 750
   ImprovedBy "SAM10" Set Speed 2500
-  ImprovedBy "SAM60" Set Precision 0.15
+  ImprovedBy "SAM10" Set Precision 0.15
   
   ImprovedBy "SAM60" Movie Image "Units/Images/Missiles/SAMM60.png"
   ImprovedBy "SAM80" Movie Image "Units/Images/Missiles/SAMM80.png"
@@ -526,7 +530,6 @@ Modifier options:
   Range 600
   Speed 5000
   Precision 0.05
-  ProductionCost 0.5
   
   ImprovedBy "ABM2" Set Range 800
   ImprovedBy "ABM2" Set Speed 6000

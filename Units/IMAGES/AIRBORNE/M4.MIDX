@@ -1,0 +1,4 @@
+AutoRotate
+Size 1
+"units/images/AIRBORNE/M4/M4.png"
+Overlay "units/images/AIRBORNE/M4/M4_N.png" x 0.5 y 0.5 sx 1 sy 1 speed 0
