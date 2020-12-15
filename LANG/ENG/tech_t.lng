@@ -167,11 +167,11 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "JAM1_NAME" LANG "Early EW Systems"
 "JAM1_DESC" LANG "Electronic warfare (EW) is any action involving the use of the electromagnetic spectrum (EM spectrum) or directed energy to control the spectrum, attack an enemy, or impede enemy assaults. The purpose of electronic warfare is to deny the opponent the advantage of, and ensure friendly unimpeded access to, the EM spectrum. EW can be applied from air, sea, land, and/or space by manned and unmanned systems, and can target humans, communication, radar, or other assets.Ingame it reduces enemy LW and SW radar ranges."
 
-"JAM1_NAME" LANG "Improved EW Systems"
-"JAM1_DESC" LANG "More powerfull and sophisticated systems enable blinding of enemy radars from longers distances."
+"JAM2_NAME" LANG "Improved EW Systems"
+"JAM2_DESC" LANG "More powerfull and sophisticated systems enable blinding of enemy radars from longers distances."
 
-"JAM1_NAME" LANG "Advanced EW Systems"
-"JAM1_DESC" LANG "More powerfull and sophisticated systems enable blinding of enemy radars from longers distances."
+"JAM3_NAME" LANG "Advanced EW Systems"
+"JAM3_DESC" LANG "More powerfull and sophisticated systems enable blinding of enemy radars from longers distances."
 
 "MRBM2_NAME" LANG "Advaned MRBMs"
 "MRBM2_DESC" LANG "Designed to be used in theater level conflicts these missiles can maneuver during flight at different altitudes and trajectories and can turn at up to 20 to 30 G to evade anti-ballistic missiles"

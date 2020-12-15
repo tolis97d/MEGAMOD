@@ -183,7 +183,7 @@ Modifier options:
 [MISSILE] "GBOMB"
   Tech "GBOMB_M"
   Type "Default"
-  Icon "Units/Images/Missiles/B1.png"
+  Icon "Units/Images/Missiles/B1.vidx"
   Explosion "big_bomb_old"
   Range 100
   Speed 400
@@ -194,21 +194,21 @@ Modifier options:
   LeadGuidance 1
   AffectedBy "ABM2" CanBeIntercepted 0.7 
   
-  ImprovedBy "B2" Precision 0.1 
+  ImprovedBy "B2" Set Precision 0.1 
   ImprovedBy "B2" Set Range 150
   ImprovedBy "B2" Set CanBeIntercepted 0.7 
  
-  ImprovedBy "B3" Precision 0.05 
+  ImprovedBy "B3" Set Precision 0.05 
   ImprovedBy "B3" Set Range 300 
   ImprovedBy "B3" Set CanBeIntercepted 0.6 
   
-  ImprovedBy "B4" Precision 0.01 
+  ImprovedBy "B4" Set Precision 0.01 
   ImprovedBy "B4" Set Range 450 
   ImprovedBy "B4" Set CanBeIntercepted 0.5 
   
-  ImprovedBy "B2" Movie Image "Units/Images/Missiles/B2.png"
-  ImprovedBy "B3" Movie Image "Units/Images/Missiles/B3.png"
-  ImprovedBy "B4" Movie Image "Units/Images/Missiles/B4.png"
+  ImprovedBy "B2" Movie Image "Units/Images/Missiles/B2.vidx"
+  ImprovedBy "B3" Movie Image "Units/Images/Missiles/B3.vidx"
+  ImprovedBy "B4" Movie Image "Units/Images/Missiles/B4.vidx"
 
 [MISSILE] "Low-power nuclear bomb"
   Tech "M_Nuclear_bomb"
@@ -228,6 +228,8 @@ Modifier options:
   ProductionCostDegrades
   MaxNumberToOrder 25
   AutoSlowDown
+  
+  ImprovedBy "Tactical_nukes" Movie Image "Units/Images/Missiles/BOMB_NUKE2.png"
 
 [MISSILE] "1M nuke"
   Tech "M_1M_nuclear_bomb"
@@ -289,7 +291,7 @@ Modifier options:
 [MISSILE] "AAM"
   Tech "M_Air_to_air_missile"
   Type "AntiAir"
-  Icon "Units/Images/Missiles/AA0.png"
+  Icon "Units/Images/Missiles/AA0.vidx"
   Sound 109 or 110 or 111 Volume 0.5
   Explosion "std_bomb"
   Range 300
@@ -300,22 +302,22 @@ Modifier options:
   AffectedBy Unit "5GEN" Precision 1.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Precision 1.25
   
-  ImprovedBy "AA1" Precision 0.05 
+  ImprovedBy "AA1" Set Precision 0.05 
   ImprovedBy "AA1" Set Range 350
   
-  ImprovedBy "AA2" Precision 0.01 
+  ImprovedBy "AA2" Set Precision 0.01 
   ImprovedBy "AA2" Set Range 400 
   
-  ImprovedBy "AA3" Precision 0.005 
+  ImprovedBy "AA3" Set Precision 0.005 
   ImprovedBy "AA3" Set Range 450 
   
-  ImprovedBy "AA4" Precision 0.001 
+  ImprovedBy "AA4" Set Precision 0.001 
   ImprovedBy "AA4" Set Range 500 
   
-  ImprovedBy "AA1" Movie Image "Units/Images/Missiles/AA1.png"
-  ImprovedBy "AA2" Movie Image "Units/Images/Missiles/AA2.png"
-  ImprovedBy "AA3" Movie Image "Units/Images/Missiles/AA3.png"
-  ImprovedBy "AA4" Movie Image "Units/Images/Missiles/AA4.png"
+  ImprovedBy "AA1" Movie Image "Units/Images/Missiles/AA1.vidx"
+  ImprovedBy "AA2" Movie Image "Units/Images/Missiles/AA2.vidx"
+  ImprovedBy "AA3" Movie Image "Units/Images/Missiles/AA3.vidx"
+  ImprovedBy "AA4" Movie Image "Units/Images/Missiles/AA4.vidx"
 
 [MISSILE] "ASM"
   Tech "ASM1_M"
@@ -331,13 +333,13 @@ Modifier options:
   Precision 0.25
   AffectedBy "ABM2" CanBeIntercepted 0.7 
   
-  ImprovedBy "ASM2" Precision 0.5 
+  ImprovedBy "ASM2" Set Precision 0.5 
   ImprovedBy "ASM2" Set Range 425 
   
-  ImprovedBy "ASM3" Precision 0.1 
+  ImprovedBy "ASM3" Set Precision 0.1 
   ImprovedBy "ASM3" Set Range 650 
   
-  ImprovedBy "ASM4" Precision 0.01 
+  ImprovedBy "ASM4" Set Precision 0.01 
   ImprovedBy "ASM4" Set Range 850 
   
   ImprovedBy "ASM2" Movie Image "Units/Images/Missiles/ASM2.png"
@@ -370,21 +372,24 @@ Modifier options:
   ImprovedBy "CRUISE4" Set Range 850
   ImprovedBy "CRUISE4" Set Speed 1550
   ImprovedBy "CRUISE4" Set Precision 0.1
-  AffectedBy "CRUISE4" CanBeIntercepted 0.8
+  AffectedBy "CRUISE4" CanBeIntercepted 0.7
   
   ImprovedBy "CRUISE5" Set Range 900
   ImprovedBy "CRUISE5" Set Speed 1600
   ImprovedBy "CRUISE5" Set Precision 0.01
-  AffectedBy "CRUISE5" CanBeIntercepted 0.7
+  AffectedBy "CRUISE5" CanBeIntercepted 0.6
   
   ImprovedBy "CRUISE6" Set Range 1200
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  ImprovedBy "CRUISE6" Set Damage 1.5
-  AffectedBy "CRUISE6" CanBeIntercepted 0.6
+  AffectedBy "CRUISE6" CanBeIntercepted 0.5
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
+  AffectedBy "SAM50" CanBeIntercepted 0.1
+  AffectedBy "SAM60" CanBeIntercepted 0.3
+  AffectedBy "SAM80" CanBeIntercepted 1.4
+  AffectedBy "SAM10" CanBeIntercepted 1.6
   
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/SM70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/SM80.png"
@@ -395,7 +400,7 @@ Modifier options:
 [MISSILE] "CONV_CRUISE"
   Tech "M_CONV_CRUISE"
   Type "CRUISE"
-  Icon "Units/Images/Missiles/CRUISE80.png"
+  Icon "Units/Images/Missiles/CRUISE80.vidx"
   Sound 113 or 114 Volume 0.5
   Explosion "big_bomb_old"
 //  Explosion "big_bomb"
@@ -421,16 +426,15 @@ Modifier options:
   ImprovedBy "CRUISE6" Set Range 2500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  ImprovedBy "CRUISE6" Set Damage 1.5
   ImprovedBy "CRUISE6" Set CanBeIntercepted 0.4
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
   AffectedBy "ABM3" CanBeIntercepted 1.9
   
-  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.png"
-  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.png"
-  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/CRUISE20.png"
+  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.vidx"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.vidx"
+  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/CRUISE20.vidx"
   
 [MISSILE] "NUKE_CRUISE"
   Tech "M_NUKE_CRUISE"
@@ -472,18 +476,17 @@ Modifier options:
   ImprovedBy "CRUISE6" Set Range 2500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  ImprovedBy "CRUISE6" Set Damage 1.5
   ImprovedBy "CRUISE6" Set CanBeIntercepted 0.4
   
   AffectedBy "ABM1" CanBeIntercepted 1.4
   AffectedBy "ABM2" CanBeIntercepted 1.7
   AffectedBy "ABM3" CanBeIntercepted 1.9
 
-  ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/CRUISE70.png"
-  ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/CRUISE80.png"  
-  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.png"
-  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.png"
-  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/CRUISE20.png"
+  ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/CRUISE70.vidx"
+  ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/CRUISE80.vidx"  
+  ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.vidx"
+  ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.vidx"
+  ImprovedBy "CRUISE6" Movie Image "Units/Images/Missiles/CRUISE20.vidx"
   
   
 
@@ -506,11 +509,11 @@ Modifier options:
   
   ImprovedBy "SAM80" Set Range 550
   ImprovedBy "SAM80" Set Speed 2500
-  ImprovedBy "SAM60" Set Precision 0.2
+  ImprovedBy "SAM80" Set Precision 0.2
   
   ImprovedBy "SAM10" Set Range 750
   ImprovedBy "SAM10" Set Speed 2500
-  ImprovedBy "SAM60" Set Precision 0.15
+  ImprovedBy "SAM10" Set Precision 0.15
   
   ImprovedBy "SAM60" Movie Image "Units/Images/Missiles/SAMM60.png"
   ImprovedBy "SAM80" Movie Image "Units/Images/Missiles/SAMM80.png"
@@ -862,13 +865,13 @@ Modifier options:
   Sound 119
   DrawWave
   Explosion "std_torpedo"
-  Range 700
+  Range 900
   Speed 1
   Ballistic
   Switchable ON
   
-  ImprovedBy "JAM2" Set Range 800
-  ImprovedBy "JAM3" Set Range 900
+  ImprovedBy "JAM2" Set Range 1000
+  ImprovedBy "JAM3" Set Range 1100
   ImprovedBy "JAM2" Movie Image "Units/Images/Missiles/J2.png"
   ImprovedBy "JAM3" Movie Image "Units/Images/Missiles/J3.png"
   
