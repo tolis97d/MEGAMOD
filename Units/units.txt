@@ -60,7 +60,7 @@ Modifier options:
   ImprovedBy "4GEN" Set Speed 840
   ImprovedBy "4GEN" Set TurnSpeed 12
   ImprovedBy "4GEN" Set Size 0.03
-  ImprovedBy "4GEN2" Set Range 6000
+  ImprovedBy "4GEN2" Set Range 6500
   ImprovedBy "5GEN" Set Power 1.5
   
   ImprovedBy "4GEN2" Set Speed 900
@@ -473,8 +473,13 @@ Modifier options:
   CanPatrolPoint
 //  CanHangInTheAir
   Power 1.5
-Config "Anti Submarine Warfare"
-  Weapon "Torpedo" 6 Launch 1 AutoEngage
+  Config "Anti Submarine Warfare"
+    Weapon "Torpedo" 6 Launch 1 AutoEngage
+  Config "Anti-Ship Missiles"
+        ImprovedBy "CRUISE3" 
+        Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage 
+        ImprovedBy "4GEN" 
+            Weapon "SPSPM" 8 Launch 2 Time 10 AutoEngage 
 //  Weapon "EW" 1 DefaultOff
   Radar "AWACS Sonar"
   ProductionCost 4.3
@@ -1110,11 +1115,8 @@ Config "Anti Submarine Warfare"
   Disassemble 0.15
   VirtualSpeed 350
   Power 3
-  Config "Air-Defence" Default 
-      Weapon "SAM" 20000 Launch 1 Time 130 AutoEngage
-      ImprovedBy "ABM2"
-        Weapon "SAM" 20000 Launch 1 Time 130 AutoEngage
-        Weapon "ABM" 20000 Launch 1 Time 400 AutoEngage
+  Weapon "SAM" 20000 Launch 1 Time 130 AutoEngage
+  Weapon "ABM" 20000 Launch 1 Time 800 AutoEngage
   Radar "STD Short Wave"
   ProductionCost 7
   
@@ -1125,7 +1127,7 @@ Config "Anti Submarine Warfare"
   ImprovedBy "SAM60" Modify Weapon "SAM" Set Time 100
   ImprovedBy "SAM80" Modify Weapon "SAM" Set Time 70
   ImprovedBy "SAM10" Modify Weapon "SAM" Set Time 30
-  
+    
   ImprovedBy "ABM2" Modify Weapon "ABM" Set Time 180
   ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 130   
   
@@ -1198,7 +1200,7 @@ Config "Anti Submarine Warfare"
   
 [UNIT] "CVN_ASW"
   Tech "CVN_ASW"
-  Movie "Units/Images/Airborne/CARRIER_AWACS.vidx"
+  Movie "Units/Images/Airborne/CVN_ASW1.vidx"
   DrawSize 20
   LaunchMeSound 85
   Size 0.075
@@ -1209,18 +1211,19 @@ Config "Anti Submarine Warfare"
   Slave
   AutoReturn Yes
   Speed 350
-  TurnSpeed 3
+  TurnSpeed 5
   Range 2000
   CanPatrolPoint
 //  CanHangInTheAir
   Power 1.5
 Config "Anti Submarine Warfare"
-  Weapon "DepthCharge" 25 Launch 2 AutoEngage
-  Weapon "Torpedo" 2 Launch 1 AutoEngage
+  Weapon "Torpedo" 4 Launch 1 AutoEngage
 //  Weapon "EW" 1 DefaultOff
   Radar "AWACS Sonar"
   ProductionCost 4.3
   Crash "big_bomb"
+ 
+  ImprovedBy "NAVY80" Movie "Units/Images/Airborne/CVN_ASW2.vidx" 
 
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
   

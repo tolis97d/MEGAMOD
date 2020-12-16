@@ -1,4 +1,218 @@
-USE PREVIOUS "Units/explosion.txt"
+[EXPLOSION] "std_bomb"
+  Movie "Images/Explosion/small_1.midx"
+  Sound 70
+    MuteLength 0.25
+  Damage 1
+  Range 0.05
+  FullEffectRange 0.01
+  DrawSize 4
+  TimeGrowing 0.5
+  TimeTotal 0.5
+
+[EXPLOSION] "big_bomb_old"
+  Movie "Images/Explosion/big_1.midx"
+  Sound 70
+    MuteLength 0.25
+  Damage 2
+  Range 0.1
+  FullEffectRange 0.02
+  DrawSize 7
+  TimeGrowing 0.5
+  TimeTotal 0.75
+  
+[EXPLOSION] "big_bomb_old2"
+  Movie "Images/Explosion/big_1.midx"
+  Sound 70
+    MuteLength 0.25
+  Damage 4
+  Range 0.1
+  FullEffectRange 0.02
+  DrawSize 7
+  TimeGrowing 0.5
+  TimeTotal 0.75
+
+[EXPLOSION] "big_bomb"
+  Movie "Images/Explosion/Nuke1.midx"
+//  Video "Images/Explosion/Nuke1.oidx"
+  Sound 70
+    MuteLength 0.25
+  Damage 2
+  Range 0.1
+  FullEffectRange 0.02
+  DrawSize 5
+  TimeGrowing 2.1
+  TimeTotal 2.1
+  DrawYShift 0.4
+
+[EXPLOSION] "nuke_10"
+  Movie "Images/Explosion/NukeV2.midx"
+  Sound 71 or 106
+        Priority 1
+        Volume 1.5
+        MuteLength 0.05
+  Kilotons 10
+  Damage 80
+  Range 20
+  FullEffectRange 0.5
+  DrawSize 10
+  TimeGrowing 2.25
+  TimeTotal 2.25
+  DrawYShift 0.5
+  PollutionSize 10
+
+[EXPLOSION] "nuke_100"
+  Emulated "Units/Emulated/100K.txt"
+  Sound 72 or 104 or 105
+        Priority 1
+        Volume 2
+        MuteLength 0.05
+  Kilotons 100
+  Damage 100
+  Range 50
+  FullEffectRange 5
+  DrawSize 9
+  TimeGrowing 3.0
+  TimeTotal 3.0
+  DrawYShift 0.55
+  PollutionSize 20
+
+  Variant Water
+    Emulated "Units/Emulated/Water_100K.txt"
+    DrawSize 27
+    TimeGrowing 3.0
+    TimeTotal 3.0
+    DrawYShift 0.55
+
+[EXPLOSION] "nuke_500"
+//  Movie "Images/Explosion/nuke_2_f.midx"
+  Emulated "Units/Emulated/500K.txt"
+  Sound 72 or 104 or 105
+        Priority 1
+        Volume 2
+        MuteLength 0.05
+  Kilotons 500
+  Damage 350
+  Range 100
+  FullEffectRange 12.5
+  DrawSize 11
+  TimeGrowing 3.25
+  TimeTotal 3.25
+  DrawYShift 0.55
+  PollutionSize 40
+
+  Variant Water
+    Emulated "Units/Emulated/Water_500K.txt"
+    DrawSize 33
+    TimeGrowing 3.25
+    TimeTotal 3.25
+    DrawYShift 0.55
+
+[EXPLOSION] "nuke_1000"
+  Emulated "Units/Emulated/1M.txt"
+  Sound 73 or 101 or 102 or 103
+        Priority 2
+        SoundSize 1.25
+        Volume 2
+        MuteLength 0.05
+  Kilotons 1000
+  Damage 625 // to equalize the damage, we need to take into account the FullEffectRange
+  Range 150
+  FullEffectRange 20
+  DrawSize 14
+  TimeGrowing 3.5
+  TimeTotal 3.5
+  DrawYShift 0.55
+  PollutionSize 220
+
+  Variant Water
+    Emulated "Units/Emulated/Water_1M.txt"
+    DrawSize 42
+    TimeGrowing 3.5
+    TimeTotal 3.5
+    DrawYShift 0.55
+
+
+[EXPLOSION] "nuke_1000_mod"
+  Emulated "Units/Emulated/1M.txt"
+  Sound 73 or 101 or 102 or 103
+        Priority 2
+        SoundSize 1.25
+        Volume 2
+        MuteLength 0.05
+  Kilotons 1000
+  Damage 500 // to equalize the damage, we need to take into account the FullEffectRange
+  Range 125
+  FullEffectRange 18
+  DrawSize 14
+  TimeGrowing 3.5
+  TimeTotal 3.5
+  DrawYShift 0.55
+  PollutionSize 170
+
+  Variant Water
+    Emulated "Units/Emulated/Water_1M.txt"
+    DrawSize 42
+    TimeGrowing 3.5
+    TimeTotal 3.5
+    DrawYShift 0.55
+
+[EXPLOSION] "nuke_10000"
+  Emulated "Units/Emulated/10M.txt"
+  Sound 73 or 101 or 102 or 103
+        Priority 3
+        SoundSize 1.5
+        Volume 2.5
+        MuteLength 0.05
+  Kilotons 10000
+  Damage 3000
+  Range 220
+  FullEffectRange 50
+  DrawSize 20
+  // TimeGrowing 6.78
+  TimeTotal 4 //7
+  DrawYShift 0.55
+  PollutionSize 280
+  
+  Variant Water
+    Emulated "Units/Emulated/Water_10M.txt"
+    DrawSize 50
+    // TimeGrowing 6.78
+    TimeTotal 4 //7
+    DrawYShift 0.0
+  
+[EXPLOSION] "nuke_50000"
+  Emulated "Units/Emulated/50M.txt"
+  Sound 74 or 101 or 102 or 103
+        Priority 4
+        SoundSize 2.0
+        Volume 2.5
+        MuteLength 0.05
+  Kilotons 50000
+  Damage 10000
+  Range 280
+  FullEffectRange 80
+  DrawSize 28
+  // TimeGrowing 6.78
+  TimeTotal 5 //7
+  DrawYShift 0.55
+  PollutionSize 380
+
+  Variant Water
+    Emulated "Units/Emulated/Water_50M.txt"
+    DrawSize 56
+    // TimeGrowing 6.78
+    TimeTotal 5 //7
+    DrawYShift 0.55
+
+[EXPLOSION] "std_torpedo"
+  Movie "Images/Explosion/small_1.midx"
+  Sound 70
+  Damage 3
+  Range 0.2
+  FullEffectRange 0.05
+  DrawSize 5
+  TimeGrowing 0.5
+  TimeTotal 0.5
 
 
 [EXPLOSION] "BIGGUNS_EXP"
