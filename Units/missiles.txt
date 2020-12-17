@@ -372,23 +372,20 @@ Modifier options:
   ImprovedBy "CRUISE4" Set Range 850
   ImprovedBy "CRUISE4" Set Speed 1550
   ImprovedBy "CRUISE4" Set Precision 0.1
-  AffectedBy "CRUISE4" CanBeIntercepted 0.7
+  AffectedBy "CRUISE4" Set CanBeIntercepted 0.4
   
   ImprovedBy "CRUISE5" Set Range 900
   ImprovedBy "CRUISE5" Set Speed 1600
   ImprovedBy "CRUISE5" Set Precision 0.01
-  AffectedBy "CRUISE5" CanBeIntercepted 0.6
+  AffectedBy "CRUISE5" Set CanBeIntercepted 0.35
   
   ImprovedBy "CRUISE6" Set Range 1200
   ImprovedBy "CRUISE6" Set Speed 3000
-  AffectedBy "CRUISE6" CanBeIntercepted 0.5
+  AffectedBy "CRUISE6" Set CanBeIntercepted 0.2
   
-  AffectedBy "ABM1" CanBeIntercepted 1.4
-  AffectedBy "ABM2" CanBeIntercepted 1.7
-  AffectedBy "SAM50" CanBeIntercepted 0.1
-  AffectedBy "SAM60" CanBeIntercepted 0.3
-  AffectedBy "SAM80" CanBeIntercepted 1.4
-  AffectedBy "SAM10" CanBeIntercepted 1.6
+  AffectedBy "SAM60" CanBeIntercepted 1.4
+  AffectedBy "SAM80" CanBeIntercepted 1.7
+  AffectedBy "SAM10" CanBeIntercepted 1.9
   
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/SM70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/SM80.vidx"
@@ -415,21 +412,21 @@ Modifier options:
   ImprovedBy "CRUISE4" Set Range 1600
   ImprovedBy "CRUISE4" Set Speed 1000
   ImprovedBy "CRUISE4" Set Precision 0.1
-  ImprovedBy "CRUISE4" Set CanBeIntercepted 0.8
+  ImprovedBy "CRUISE4" Set CanBeIntercepted 0.45
   
   ImprovedBy "CRUISE5" Set Range 1800
   ImprovedBy "CRUISE5" Set Speed 1100
   ImprovedBy "CRUISE5" Set Precision 0.05
-  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.7
+  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.4
   
   ImprovedBy "CRUISE6" Set Range 2500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.4
+  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.2
   
-  AffectedBy "ABM1" CanBeIntercepted 1.4
-  AffectedBy "ABM2" CanBeIntercepted 1.7
-  AffectedBy "ABM3" CanBeIntercepted 1.9
+  AffectedBy "SAM60" CanBeIntercepted 1.4
+  AffectedBy "SAM80" CanBeIntercepted 1.7
+  AffectedBy "SAM10" CanBeIntercepted 1.9
   
   ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.vidx"
   ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.vidx"
@@ -464,21 +461,21 @@ Modifier options:
   ImprovedBy "CRUISE4" Set Range 1600
   ImprovedBy "CRUISE4" Set Speed 1000
   ImprovedBy "CRUISE4" Set Precision 0.1
-  ImprovedBy "CRUISE4" Set CanBeIntercepted 0.8
+  ImprovedBy "CRUISE4" Set CanBeIntercepted 0.45
   
   ImprovedBy "CRUISE5" Set Range 1800
   ImprovedBy "CRUISE5" Set Speed 1100
   ImprovedBy "CRUISE5" Set Precision 0.05
-  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.7
+  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.4
   
   ImprovedBy "CRUISE6" Set Range 2500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.4
+  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.1
   
-  AffectedBy "ABM1" CanBeIntercepted 1.4
-  AffectedBy "ABM2" CanBeIntercepted 1.7
-  AffectedBy "ABM3" CanBeIntercepted 1.9
+  AffectedBy "SAM60" CanBeIntercepted 1.4
+  AffectedBy "SAM80" CanBeIntercepted 1.7
+  AffectedBy "SAM10" CanBeIntercepted 1.9
 
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/CRUISE70.vidx"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/CRUISE80.vidx"  
@@ -599,7 +596,7 @@ Modifier options:
   DrawSize 5
   DrawNuke
   Explosion "nuke_500"
-  Range 400
+  Range 5500
   Speed 2200
   SingleAttack
   AutoSlowDown
@@ -703,7 +700,7 @@ Modifier options:
   DrawNuke
   Type "Nuke"
   Explosion "nuke_10000"
-  Range 18000
+  Range 24000
   MinRange 3000
   Ballistic
   SingleAttack
@@ -727,7 +724,7 @@ Modifier options:
   DrawNuke
   Type "Nuke"
   Explosion "nuke_50000"
-  Range 18000
+  Range 28000
   MinRange 3000
   Ballistic
   SingleAttack
@@ -735,8 +732,8 @@ Modifier options:
   CanBeIntercepted 0.3
   Elevation 1000
   Speed 3000
-  Precision 5.0
-  ProductionCost 3.0
+  Precision 8.0
+  ProductionCost 6.5
   ProductionCostDegrades
   MaxNumberToOrder 0
   AffectedBy "ABM2" CanBeIntercepted 1.5
@@ -759,6 +756,8 @@ Modifier options:
   Precision 3.0
   CanBeIntercepted 0.3
   AffectedBy "ABM2" CanBeIntercepted 1.5
+  
+  
 
 [MISSILE] "Fake warhead"
   Tech "M_1M_WARHEAD_FALSE"
@@ -799,6 +798,30 @@ Modifier options:
   AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType ICBM_RANGES
+  
+[MISSILE] "HEAVY ICBM MIRV"
+  Tech "M_ICBM_10MMIRV"
+  Icon "Units/Images/Missiles/MIRV_HICBM.png"
+  Sound 69 Volume 1.25
+  DrawSize 14
+  DrawNuke
+  Type "Nuke"
+  Explosion "nuke_1000" Heads 10 "1M warhead"
+  Range 25000
+  MinRange 3000
+  Ballistic
+  SingleAttack
+  AutoSlowDown
+  CanBeIntercepted 0.3
+  Elevation 1000
+  Speed 3000
+  Precision 6.0
+  ProductionCost 5
+  ProductionCostDegrades
+  MaxNumberToOrder 0
+  AffectedBy "ABM2" CanBeIntercepted 1.5
+
+  GlobalShowType ICBM_RANGES
 
 [MISSILE] "ICBM MIRV+"
   Tech "M_ICBM_MIRV_FALSE"
@@ -824,6 +847,8 @@ Modifier options:
   AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType ICBM_RANGES
+  
+  
 
 [MISSILE] "ASAT"
   Tech "M_ASAT"

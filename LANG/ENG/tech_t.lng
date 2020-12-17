@@ -78,13 +78,13 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "SUB30_DESC" LANG "A possible propulsion system for submarines is the magnetohydrodynamic drive, or caterpillar drive, which has no moving parts. It was popularized in the movie version of The Hunt for Red October, written by Tom Clancy, which portrayed it as a virtually silent system. (In the book, a form of propulsor was used rather than an MHD.) Although some experimental surface ships have been built with this propulsion system, speeds have not been as high as hoped. In addition, the noise created by bubbles, and the higher power settings a submarine's reactor would need, mean that it is unlikely to be considered for any military purpose.\n\n\n+Increases submarines speed,reduces weapons cooldown and makes their engines stealthier."
 
 "3GEN_NAME" LANG "3rd Generation Aircraft"
-"3GEN_DESC" LANG "With 3rd generation aircraft, air-to-air missiles became the standard method of dogfighting, with guns taking a backseat. The first generation of mainstream guided weapons would also be deployed on these aircraft, providing new ground attack capabilities that had previously required much more error to perform; further enhanced by the employment of analogue avionics over steam. \n\n\n+Improves Range,Improves Turn Speed,Improves Speed,Payload capacity and is harder to intercept"
+"3GEN_DESC" LANG "With 3rd generation aircraft, air-to-air missiles became the standard method of dogfighting, with guns taking a backseat. The first generation of mainstream guided weapons would also be deployed on these aircraft, providing new ground attack capabilities that had previously required much more error to perform; further enhanced by the employment of analogue avionics over steam. \n\n\n+Improves Range,Improves Turn Speed,Improves Speed and is harder to intercept"
 
 "4GEN_NAME" LANG "4th Generation Aircraft"
-"4GEN_DESC" LANG "4th generation aircraft would be typified by fly-by wire flight control systems, digitisation of avionics, early stealth technology, and modern fire control systems. Air combat manoeuvring, rather than raw speed, was established as a key doctrinal requirement of most fighters. Many 4th generation aircraft are still in use across the world today and continue to enjoy a fantastic record when employed against older generation aircraft.\n\n\n+Improves Range,Improves Turn Speed,Improves Speed,Payload capacity and is harder to intercept"
+"4GEN_DESC" LANG "4th generation aircraft would be typified by fly-by wire flight control systems, digitisation of avionics, early stealth technology, and modern fire control systems. Air combat manoeuvring, rather than raw speed, was established as a key doctrinal requirement of most fighters. Many 4th generation aircraft are still in use across the world today and continue to enjoy a fantastic record when employed against older generation aircraft.\n\n\n+Improves Range,Improves Turn Speed,Improves Speed and is harder to intercept"
 
 "4GEN2_NAME" LANG "4.5 Generation Aircraft"
-"4GEN2_DESC" LANG "As fourth generation aircraft came to dominate the battlefield, but their technology and hardware started to age, the 4.5 generation of aircraft were defined by their upgrades; better radar, avionics, data links, and modernised weapon systems built upon the same principles as their earlier counterparts - often in the same airframe.\n\n\n+Improves Range,Improves Turn Speed,Improves Speed,Payload capacity and is harder to intercept"
+"4GEN2_DESC" LANG "As fourth generation aircraft came to dominate the battlefield, but their technology and hardware started to age, the 4.5 generation of aircraft were defined by their upgrades; better radar, avionics, data links, and modernised weapon systems built upon the same principles as their earlier counterparts - often in the same airframe.\n\n\n+Improves Range,Improves Turn Speed,Improves Speed and is harder to intercept"
 
 "5GEN_NAME" LANG "5th Generation Aircraft"
 "5GEN_DESC" LANG "The most advanced aircraft currently in service, 5th generation aircraft such as the F-22 or J-20 employ modern stealth construction, extremely capable electronic capabilities, next-generation networked digital systems, low-probability-of-intercept radars, and high-performance airframes capable of operating at extremes.\n\n\n+Improves Turn Speed,Improves Speed,much harder to intercept"
@@ -235,13 +235,13 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "CRUISE2_DESC" LANG "Improvements in radar guidance slightly improved the precision of both conventional and nuclear cruise missiles and new developments in engines and aerodynamics further increased their range.\n\n\n+Improves Range,Speed and Precision"
 
 "CRUISE3_NAME" LANG "1980s Cruise Missiles"
-"CRUISE3_DESC" LANG "The introduction of GPS made cruise missiles a viable weapon against land targets in extreme ranges while new ground radar avoidance systems made them considerably harder to shoot down.\n\n\n+Improves Range,Speed and Precision"
+"CRUISE3_DESC" LANG "The introduction of GPS made cruise missiles a viable weapon against land targets in extreme ranges while new ground radar avoidance systems made them considerably harder to shoot down.\n\n\n+Improves Range,Speed and Precision\n\n\n+Increases Payload capacity"
 
 "CRUISE4_NAME" LANG "2000s Cruise Missiles"
 "CRUISE4_DESC" LANG "Further improvements in missile avoidance and terrain masking protected the missiles against increasingly advanced missile defence systems.\n\n\n+Improves Range,Speed and Precision"
 
 "CRUISE5_NAME" LANG "2010s Cruise Missiles"
-"CRUISE5_DESC" LANG "By adopting stealth characteristics cruise missiles became more survivable in an ever increasingly anti-missile environment.\n\n\n+Improves Range,Speed and Precision"
+"CRUISE5_DESC" LANG "By adopting stealth characteristics cruise missiles became more survivable in an ever increasingly anti-missile environment.\n\n\n+Improves Range,Speed and Precision\n\n\n+Increases Payload capacity"
 
 "CRUISE6_NAME" LANG "2020S Cruise Missiles"
 "CRUISE6_DESC" LANG "Advanced in materials science allowed the fielding of hyper-sonic cruise missiles flying over 80000 feet during their cruise phase rendering all previous air defence systems nearly obsolete.\n\n\n+Improves Range,Precision and greatly improves Speed"
@@ -262,25 +262,25 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "ASM1_DESC" LANG "The cold war saw lots of development in air-to-surface missiles, allowing rocket-powered missiles to strike a variety of targets using new methologies such as on-board television guidance and infrared tracking. Weapons of this era continue to be among to deployed and used worldwide due to their effectiveness and versatility against land, sea, or air targets.\n\n\n+Air-Ground Weapon with improved range and speed compared to guided-bombs"
 
 "ASM2_NAME" LANG "Precision-guided Munitions"
-"ASM2_DESC" LANG "The addition of a GPS guidance kit enabled air-to-surface missiles to be deployed from greater distances with an IR/TV sensor guiding the missile during the terminal phase.\n\n\n+Improves precision,range and survivability"
+"ASM2_DESC" LANG "The addition of a GPS guidance kit enabled air-to-surface missiles to be deployed from greater distances with an IR/TV sensor guiding the missile during the terminal phase.\n\n\n+Improves precision,range and survivability\n\n\n+Increases Payload capacity"
 
 "ASM3_NAME" LANG "Stand-off Munitions"
-"ASM3_DESC" LANG "Satellite-guidance provided a major boon to air strike capabilities, enabling precise pinpointing of targets without a dependency on any specific external signature that could be fired from a greater range, leading to the development of 'stand-off' weapons.\n\n\n+Improves precision,range and survivability"
+"ASM3_DESC" LANG "Satellite-guidance provided a major boon to air strike capabilities, enabling precise pinpointing of targets without a dependency on any specific external signature that could be fired from a greater range, leading to the development of 'stand-off' weapons.\n\n\n+Improves precision,range and survivability\n\n\n+Increases Payload capacity"
 
 "ASM4_NAME" LANG "Hybrid-guidance Missiles"
-"ASM4_DESC" LANG "By combining multiple guidance systems such as radar, electro-optical, inertial navigation, GPS, and laser-guidance, modern ASMs can bypass jamming, be deployed at longer ranges, guarantee precision, and operate well even in unfavourable conditions.\n\n\n+Improves precision,range and survivability"
+"ASM4_DESC" LANG "By combining multiple guidance systems such as radar, electro-optical, inertial navigation, GPS, and laser-guidance, modern ASMs can bypass jamming, be deployed at longer ranges, guarantee precision, and operate well even in unfavourable conditions.\n\n\n+Improves precision,range and survivability\n\n\n+Increases Payload capacity"
 
 "B1_NAME" LANG "Laser Guided Bombs"
 "B1_DESC" LANG "A laser-guided bomb is a guided bomb that uses semi-active laser guidance to strike a designated target with greater accuracy than an unguided bomb. First developed by the United States during the Vietnam War, laser-guided bombs quickly proved their value in precision strikes of difficult point targets. These weapons use on-board electronics to track targets that are designated by laser, typically in the infrared spectrum, and adjust their glide path to accurately strike the target.\n\n\n+Heavy damage Air-Ground Weapon but with limited speed and range.Their large numbers can saturate enemy Air-Defences."
 
 "B2_NAME" LANG "GPS Guided Bombs"
-"B2_DESC" LANG "Lessons learned during the first Gulf War showed the value of precision munitions, yet they also highlighted the difficulties in employing them—specifically when visibility of the ground or target from the air was degraded.The problem of poor visibility does not affect satellite-guided weapons such as Joint Direct Attack Munition and Joint Stand-Off Weapon, which make use of the United States' GPS system for guidance. This weapon can be employed in all weather conditions, without any need for ground support. Because it is possible to jam GPS, the guidance package reverts to inertial navigation in the event of GPS signal loss.\n\n\n+Improves Precision and Range"
+"B2_DESC" LANG "Lessons learned during the first Gulf War showed the value of precision munitions, yet they also highlighted the difficulties in employing them—specifically when visibility of the ground or target from the air was degraded.The problem of poor visibility does not affect satellite-guided weapons such as Joint Direct Attack Munition and Joint Stand-Off Weapon, which make use of the United States' GPS system for guidance. This weapon can be employed in all weather conditions, without any need for ground support. Because it is possible to jam GPS, the guidance package reverts to inertial navigation in the event of GPS signal loss.\n\n\n+Improves Precision and Range\n\n\n+Increases Payload capacity"
 
 "B3_NAME" LANG "Stand-off Glide Bombs"
-"B3_DESC" LANG "A glide bomb or stand-off bomb is a standoff weapon with flight control surfaces to give it a flatter, gliding flight path than that of a conventional bomb without such surfaces. This allows it to be released at a distance from the target rather than right over it, allowing a successful attack without the aircraft needing to survive until reaching the target.\n\n\n+Improves Precision and Range"
+"B3_DESC" LANG "A glide bomb or stand-off bomb is a standoff weapon with flight control surfaces to give it a flatter, gliding flight path than that of a conventional bomb without such surfaces. This allows it to be released at a distance from the target rather than right over it, allowing a successful attack without the aircraft needing to survive until reaching the target.\n\n\n+Improves Precision and Range\n\n\n+Increases Payload capacity"
 
 "B4_NAME" LANG "Swarm Stand-off Glide Bombs"
-"B4_DESC" LANG "By deploying multiple independent less powerfull gliding munitions one can saturate advanced enemy air defences an neutralise multiple stationary and moving targets.\n\n\n+Improves Precision and Range"
+"B4_DESC" LANG "By deploying multiple independent less powerfull gliding munitions one can saturate advanced enemy air defences an neutralise multiple stationary and moving targets.\n\n\n+Improves Precision and Range\n\n\n+Increases Payload capacity"
 
 
 "SAM50_NAME" LANG "Early SAMs"
@@ -306,5 +306,8 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "ARMY_WEP_NAME" LANG "Ground Assets"
 "ARMY_WEP_DESC" LANG "Ground Assets"
+
+"M_ICBM_10MMIRV_NAME" LANG "Heavy MIRV ICBM"
+"M_ICBM_10MMIRV_DESC" LANG "A heavy ICBM containing 13 1Mt Warheads"
 
 END

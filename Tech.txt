@@ -902,9 +902,10 @@ Description "U_Cavern_DESC"
   Name "Heavy_Missiles_NAME"
   Description "Heavy_Missiles_DESC"
   Image "Images/Science/HEAVY_ICBM.png"
-  Points 30
+  Points 45
   LeadsTo "M_ICBM_10M"
   LeadsTo "SUPER_HEAVY_MISSILES"
+  LeadsTo "M_ICBM_10MMIRV"
   
 [TECHNOLOGY] "SUPER_HEAVY_MISSILES"
   Name "SUPER_HEAVY_MISSILES_NAME"
@@ -929,6 +930,7 @@ Description "U_Cavern_DESC"
   Points 30
   LeadsTo "False_warheads"
   LeadsTo "M_ICBM_MIRV"
+  LeadsTo "M_ICBM_10MMIRV"
   LeadsTo "Advanced_MRBM_MIRV"
 
 [TECHNOLOGY] "False_warheads"
@@ -945,6 +947,10 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_ICBM_10M"
   Name "M_ICBM_10M_NAME"
   Description "M_ICBM_10M_DESC"
+  
+[TECHNOLOGY] "M_ICBM_10MMIRV"
+  Name "M_ICBM_10MMIRV_NAME"
+  Description "M_ICBM_10MMIRV_DESC"
   
 [TECHNOLOGY] "M_ICBM_50M"
   Name "M_ICBM_50M_NAME"
