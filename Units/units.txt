@@ -1337,8 +1337,69 @@ Config "Anti Submarine Warfare"
   Power 5000
   Weapon "SAM" 5000 Launch 2 Time 70 AutoEngage
   Weapon "ARMY_WEP" 20000 Time 180
-  ProductionCost 100
+  ProductionCost 70
   Radar "STD Vision"
   Radar "STD Short Wave"
+  
+[UNIT] "AIR_TRANS"
+  Tech "U_AIR_TRANS"
+  Movie "Units/Images/Airborne/C17.midx"
+  Icon "Units/Images/Airborne/BOMBER50_I.vidx"
+  DrawSize 24
+  LaunchMeSound 84
+  Size 0.06
+  Sound 135 Volume 0.3
+  Type Airborne
+  //AIVarietyHint Bomber
+  NoAutoDeploy
+  Speed 400
+  TurnSpeed 3
+  Range 15000
+  Power 1.5
+  Config "Cruise Missiles"
+    Airway Launch 1 Time 120 // in seconds in 1x time
+    CanHostAircrafts "ARMY" 1
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  ProductionCost 4.3
+  Crash "big_bomb"
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+  
+  ImprovedBy "3GEN" Set Speed 700
+  ImprovedBy "3GEN" Set TurnSpeed 5
+  ImprovedBy "3GEN" Set Size 0.055
+  ImprovedBy "3GEN" Set Power 2.5
+  ImprovedBy "3GEN" Set Range 17000
+  
+  ImprovedBy "4GEN" Set Speed 720
+  ImprovedBy "4GEN" Set Size 0.05
+  ImprovedBy "4GEN" Set Range 19000
+  
+  ImprovedBy "4GEN2" Set Speed 750
+  ImprovedBy "4GEN2" Set Range 22000
+  
+[UNIT] "Airport4"
+  Tech "U_Airport4"
+  Movie "Units/Images/Ground/AIR2.midx"
+//  Icon "Units/Images/Ground/airport_img.png"
+  DrawSize 34
+  DrawOrder 1
+  Size 1.5
+  Sound 138 Volume 0.5
+  Type Ground
+  //AIVarietyHint Airport
+  AttackerInPlanner
+  Power 20
+  Airway Launch 2 Time 180 // in seconds in 1x time
+  Airway Launch 2 Time 220 // in seconds in 1x time
+  CanHostAircrafts "AIR_TRANS" 1
+  CanHostAircrafts airway 1 "Bomber" 5
+  CanAccessGlobalStorage
+  Radar "STD Vision"
+  Radar "STD Long Wave"
+  ProductionCost 12
+  NoAutoAttack
+
   
 [END]
