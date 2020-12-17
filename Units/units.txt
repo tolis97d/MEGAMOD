@@ -29,13 +29,13 @@ Modifier options:
   Range 4500 // in km
   Power 1
   Config "Combat Air Patrol" Default 
-    Weapon "AAM" 2 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+    Weapon "AAM" 4 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
         ImprovedBy "3GEN"
-	        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN"
 	        Weapon "AAM" 6 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN2"
+        ImprovedBy "4GEN"
 	        Weapon "AAM" 8 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+        ImprovedBy "4GEN2"
+	        Weapon "AAM" 10 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
   Config "Cruise Missiles"
         ImprovedBy "CRUISE4"
             Weapon "CONV_CRUISE" 1 Principal
@@ -60,13 +60,13 @@ Modifier options:
   ImprovedBy "4GEN" Set Speed 840
   ImprovedBy "4GEN" Set TurnSpeed 12
   ImprovedBy "4GEN" Set Size 0.03
-  ImprovedBy "4GEN2" Set Range 6000
+  ImprovedBy "4GEN2" Set Range 6500
   ImprovedBy "5GEN" Set Power 1.5
   
   ImprovedBy "4GEN2" Set Speed 900
   ImprovedBy "4GEN2" Set TurnSpeed 14
-  ImprovedBy "4GEN2" Set Size 0.015
-  ImprovedBy "4GEN2" Set Range 6500
+  ImprovedBy "4GEN2" Set Size 0.02
+  ImprovedBy "4GEN2" Set Range 6800
 
   ImprovedBy "5GEN" Set Speed 1000
   ImprovedBy "5GEN" Set TurnSpeed 15
@@ -93,13 +93,13 @@ Modifier options:
   Range 4500 // in km
   Power 1
   Config "Combat Air Patrol" Default 
-    Weapon "AAM" 2 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+    Weapon "AAM" 4 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
         ImprovedBy "3GEN"
-	        Weapon "AAM" 4 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN"
 	        Weapon "AAM" 6 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
-        ImprovedBy "4GEN2"
+        ImprovedBy "4GEN"
 	        Weapon "AAM" 8 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+        ImprovedBy "4GEN2"
+	        Weapon "AAM" 10 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
   Config "Cruise Missiles"
         ImprovedBy "CRUISE4"
             Weapon "CONV_CRUISE" 1 Principal
@@ -119,17 +119,17 @@ Modifier options:
   ImprovedBy "4GEN" Set Speed 840
   ImprovedBy "4GEN" Set TurnSpeed 12
   ImprovedBy "4GEN" Set Size 0.03
-  ImprovedBy "4GEN2" Set Range 6000
+  ImprovedBy "4GEN2" Set Range 6500
   ImprovedBy "5GEN" Set Power 1.5
   
   ImprovedBy "4GEN2" Set Speed 900
   ImprovedBy "4GEN2" Set TurnSpeed 14
-  ImprovedBy "4GEN2" Set Size 0.015
-  ImprovedBy "4GEN2" Set Range 6500
+  ImprovedBy "4GEN2" Set Size 0.02
+  ImprovedBy "4GEN2" Set Range 6800
 
   ImprovedBy "5GEN" Set Speed 1000
   ImprovedBy "5GEN" Set TurnSpeed 15
-  ImprovedBy "5GEN" Size 0.75
+  ImprovedBy "5GEN" Set Size 0.01
 
   ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"  Icon "Units/Images/Airborne/CVN_FR60_I.vidx"
   ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR70.vidx"  Icon "Units/Images/Airborne/CVN_FR70_I.vidx"
@@ -171,37 +171,41 @@ Modifier options:
 	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Guided Bombs" Default
-        Weapon "GBOMB" 2 Launch 1 Time 2 AutoEngage
-        ImprovedBy "3GEN" 
+        ImprovedBy "B1" 
+            Weapon "GBOMB" 2 Launch 1 Time 2 AutoEngage
+            Weapon "AAM" 1 Launch 1 Time 100 AutoEngage
+        ImprovedBy "B2" 
 	        Weapon "GBOMB" 4 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN" 
+        ImprovedBy "B3" 
 	        Weapon "GBOMB" 6 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN2" 
+        ImprovedBy "B4" 
 	        Weapon "GBOMB" 8 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "ASM" Default
-        Weapon "ASM" 2 Launch 2 Time 90 AutoEngage 
-        ImprovedBy "3GEN" 
+        ImprovedBy "ASM1" 
+            Weapon "ASM" 2 Launch 2 Time 90 AutoEngage
+            Weapon "AAM" 1 Launch 1 Time 100 AutoEngage			
+        ImprovedBy "ASM2" 
             Weapon "ASM" 4 Launch 2 Time 60 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN" 
+        ImprovedBy "ASM3" 
             Weapon "ASM" 4 Launch 2 Time 60 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN2" 
+        ImprovedBy "ASM4" 
             Weapon "ASM" 6 Launch 2 Time 60 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Anti-Ship Missiles"
         ImprovedBy "CRUISE3" 
-        Weapon "SPSPM" 2 Launch 2 Time 10 AutoEngage 
-        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN2" 
+            Weapon "SPSPM" 2 Launch 2 Time 10 AutoEngage 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "CRUISE5" 
             Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Electronic-Warfare" Default
         ImprovedBy "JAM1"
-            Weapon "EW" 1 Launch 2 Time 90 AutoEngage 
+            Weapon "EW" 1 Launch 1 Time 90 AutoEngage 
   Config "Nuclear bomb"
         Weapon "Low-power nuclear bomb" 1 Principal
         Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
@@ -209,16 +213,16 @@ Modifier options:
         ImprovedBy "CRUISE4" 
         Weapon "CONV_CRUISE" 1 Principal 
         Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN2" 
+        ImprovedBy "CRUISE5" 
             Weapon "CONV_CRUISE" 2 Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Nuclear Cruise Missiles"
-        ImprovedBy "4GEN2" 
+        ImprovedBy "CRUISE4" 
         Weapon "NUKE_CRUISE" 1 Principal 
         Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "5GEN" 
+        ImprovedBy "CRUISE5" 
             Weapon "NUKE_CRUISE" 2 Principal 
-            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage
   Radar "STD Vision"
   Radar "STD Short Wave"
   ProductionCost 2.2
@@ -241,12 +245,12 @@ Modifier options:
   
   ImprovedBy "4GEN2" Set Speed 850
   ImprovedBy "4GEN2" Set TurnSpeed 10
-  ImprovedBy "4GEN2" Set Size 0.035
+  ImprovedBy "4GEN2" Set Size 0.03
   ImprovedBy "4GEN2" Set Range 6500
 
   ImprovedBy "5GEN" Set Speed 900
   ImprovedBy "5GEN" Set TurnSpeed 11
-  ImprovedBy "5GEN" Size 0.75
+  ImprovedBy "5GEN" Set Size 0.02
   
   ImprovedBy "3GEN" Movie "Units/Images/Airborne/MULTI60.vidx" Icon "Units/Images/Airborne/MULTI60_I.vidx"
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/MULTI70.vidx" Icon "Units/Images/Airborne/MULTI70_I.vidx"
@@ -288,37 +292,41 @@ Modifier options:
 	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Guided Bombs" Default
-        Weapon "GBOMB" 2 Launch 1 Time 2 AutoEngage
-        ImprovedBy "3GEN" 
+        ImprovedBy "B1" 
+            Weapon "GBOMB" 2 Launch 1 Time 2 AutoEngage
+            Weapon "AAM" 1 Launch 1 Time 100 AutoEngage
+        ImprovedBy "B2" 
 	        Weapon "GBOMB" 4 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN" 
+        ImprovedBy "B3" 
 	        Weapon "GBOMB" 6 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN2" 
+        ImprovedBy "B4" 
 	        Weapon "GBOMB" 8 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "ASM" Default
-        Weapon "ASM" 2 Launch 2 Time 90 AutoEngage 
-        ImprovedBy "3GEN" 
+        ImprovedBy "ASM1" 
+            Weapon "ASM" 2 Launch 2 Time 90 AutoEngage
+            Weapon "AAM" 1 Launch 1 Time 100 AutoEngage			
+        ImprovedBy "ASM2" 
             Weapon "ASM" 4 Launch 2 Time 60 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN" 
+        ImprovedBy "ASM3" 
             Weapon "ASM" 4 Launch 2 Time 60 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN2" 
+        ImprovedBy "ASM4" 
             Weapon "ASM" 6 Launch 2 Time 60 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Anti-Ship Missiles"
         ImprovedBy "CRUISE3" 
-        Weapon "SPSPM" 2 Launch 2 Time 10 AutoEngage 
-        Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN2" 
+            Weapon "SPSPM" 2 Launch 2 Time 10 AutoEngage 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+        ImprovedBy "CRUISE5" 
             Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Electronic-Warfare" Default
         ImprovedBy "JAM1"
-            Weapon "EW" 1 Launch 2 Time 90 AutoEngage 
+            Weapon "EW" 1 Launch 1 Time 90 AutoEngage 
   Config "Nuclear bomb"
         Weapon "Low-power nuclear bomb" 1 Principal
         Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
@@ -326,16 +334,16 @@ Modifier options:
         ImprovedBy "CRUISE4" 
         Weapon "CONV_CRUISE" 1 Principal 
         Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "4GEN2" 
+        ImprovedBy "CRUISE5" 
             Weapon "CONV_CRUISE" 2 Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Nuclear Cruise Missiles"
-        ImprovedBy "4GEN2" 
+        ImprovedBy "CRUISE4" 
         Weapon "NUKE_CRUISE" 1 Principal 
         Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "5GEN" 
+        ImprovedBy "CRUISE5" 
             Weapon "NUKE_CRUISE" 2 Principal 
-            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
+            Weapon "AAM" 2 Launch 1 Time 100 AutoEngage
   Radar "STD Vision"
   Radar "STD Short Wave"
   ProductionCost 2.2
@@ -357,12 +365,12 @@ Modifier options:
   
   ImprovedBy "4GEN2" Set Speed 850
   ImprovedBy "4GEN2" Set TurnSpeed 10
-  ImprovedBy "4GEN2" Set Size 0.035
+  ImprovedBy "4GEN2" Set Size 0.03
   ImprovedBy "4GEN2" Set Range 6500
 
   ImprovedBy "5GEN" Set Speed 900
   ImprovedBy "5GEN" Set TurnSpeed 11
-  ImprovedBy "5GEN" Size 0.75
+  ImprovedBy "5GEN" Set Size 0.02
 
   ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_ATK60.vidx"  Icon "Units/Images/Airborne/CVN_ATK60_I.vidx"
   ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK70.vidx"  Icon "Units/Images/Airborne/CVN_ATK70_I.vidx"
@@ -389,33 +397,50 @@ Modifier options:
   Config "Bombs" Default
     Weapon "Free fall bomb" 45 Launch 1 Time 1 AutoEngage 
   Config "Guided Bombs" Default
+    ImprovedBy "B1"
     Weapon "GBOMB" 30 Launch 1 Time 1 AutoEngage
+    ImprovedBy "B2"
+    Weapon "GBOMB" 35 Launch 1 Time 1 AutoEngage
+    ImprovedBy "B3"
+    Weapon "GBOMB" 40 Launch 1 Time 1 AutoEngage
+    ImprovedBy "B4"
+    Weapon "GBOMB" 45 Launch 1 Time 1 AutoEngage
   Config "Air to Surface Missile" Default 
-    Weapon "ASM" 6 Launch 2 Time 90 AutoEngage 
-    ImprovedBy "3GEN"
-        Weapon "ASM" 18 Launch 4 Time 90 AutoEngage 
-        ImprovedBy "4GEN" 
-            Weapon "ASM" 8 Launch 1 Time 60 AutoEngage 
+    ImprovedBy "ASM1"
+        Weapon "ASM" 4 Launch 2 Time 90 AutoEngage 
+    ImprovedBy "ASM2"
+        Weapon "ASM" 8 Launch 4 Time 90 AutoEngage 
+    ImprovedBy "ASM3"
+        Weapon "ASM" 12 Launch 4 Time 90 AutoEngage
+    ImprovedBy "ASM4"
+        Weapon "ASM" 16 Launch 4 Time 90 AutoEngage
   Config "Nuclear"
     Weapon "Low-power nuclear bomb" 1
     ImprovedBy "3GEN"
         Weapon "Low-power nuclear bomb" 2
   Config "Cruise Missiles" 
-    Weapon "CONV_CRUISE" 2 Launch 2 Time 90 AutoEngage 
-    ImprovedBy "4GEN"
+    ImprovedBy "CRUISE1"
+        Weapon "CONV_CRUISE" 1
+    ImprovedBy "CRUISE3"
+        Weapon "CONV_CRUISE" 2 Launch 2 Time 90 AutoEngage 
+    ImprovedBy "CRUISE5"
         Weapon "CONV_CRUISE" 4 Launch 2 Time 90 AutoEngage 
   Config "Nuclear Cruise Missiles" 
-    Weapon "NUKE_CRUISE" 1
-    ImprovedBy "4GEN"
+    ImprovedBy "CRUISE1"
+        Weapon "NUKE_CRUISE" 1
+    ImprovedBy "CRUISE3"
         Weapon "NUKE_CRUISE" 2 Launch 2 Time 90 AutoEngage 
+    ImprovedBy "CRUISE5"
+        Weapon "NUKE_CRUISE" 4 Launch 2 Time 90 AutoEngage 
   Config "Anti-ship" 
-    Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage 
-    ImprovedBy "3GEN"
-        Weapon "SPSPM" 4 Launch 2 Time 8 AutoEngage
-    ImprovedBy "4GEN"
-        Weapon "SPSPM" 6 Launch 2 Time 6 AutoEngage 
-    ImprovedBy "4GEN2"
-        Weapon "SPSPM" 8 Launch 2 Time 4 AutoEngage 		
+    ImprovedBy "CRUISE1"
+        Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage 
+    ImprovedBy "CRUISE2"
+        Weapon "SPSPM" 6 Launch 2 Time 8 AutoEngage
+    ImprovedBy "CRUISE3"
+        Weapon "SPSPM" 8 Launch 2 Time 6 AutoEngage 
+    ImprovedBy "CRUISE4"
+        Weapon "SPSPM" 10 Launch 2 Time 4 AutoEngage 		
   Config "Megaton"
     Weapon "1M nuke" 1
   Config "10 Megaton"
@@ -435,14 +460,14 @@ Modifier options:
   ImprovedBy "3GEN" Set TurnSpeed 5
   ImprovedBy "3GEN" Set Size 0.055
   ImprovedBy "3GEN" Set Power 2.5
-  ImprovedBy "3GEN" Set Range 18000
+  ImprovedBy "3GEN" Set Range 17000
   
   ImprovedBy "4GEN" Set Speed 720
   ImprovedBy "4GEN" Set Size 0.05
-  ImprovedBy "4GEN" Set Range 16000
+  ImprovedBy "4GEN" Set Range 19000
   
   ImprovedBy "4GEN2" Set Speed 750
-  ImprovedBy "4GEN2" Set Range 18000
+  ImprovedBy "4GEN2" Set Range 22000
 
   ImprovedBy "5GEN" Set Power 3
   ImprovedBy "5GEN" Set Size 0.04
@@ -473,8 +498,13 @@ Modifier options:
   CanPatrolPoint
 //  CanHangInTheAir
   Power 1.5
-Config "Anti Submarine Warfare"
-  Weapon "Torpedo" 6 Launch 1 AutoEngage
+  Config "Anti Submarine Warfare"
+    Weapon "Torpedo" 6 Launch 1 AutoEngage
+  Config "Anti-Ship Missiles"
+        ImprovedBy "CRUISE3" 
+        Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage 
+        ImprovedBy "4GEN" 
+            Weapon "SPSPM" 8 Launch 2 Time 10 AutoEngage 
 //  Weapon "EW" 1 DefaultOff
   Radar "AWACS Sonar"
   ProductionCost 4.3
@@ -757,7 +787,7 @@ Config "Anti Submarine Warfare"
   
   ImprovedBy "NAVY60" Modify Weapon "SAM" Set Time 120
   ImprovedBy "NAVY80" Modify Weapon "SAM" Set Time 80
-  ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 40
+  ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 50
 
   ImprovedBy "ABM2" Modify Weapon "ABM" Set Time 120
   ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 80   
@@ -796,6 +826,7 @@ Config "Anti Submarine Warfare"
      Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
      Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage
      Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage principal
+     Weapon "ASAT" 1
   Config "Nuclear Cruise Missiles"
     ImprovedBy "CRUISE1"
          Weapon "SAM" 20000 Launch 2 Time 70 AutoEngage
@@ -827,7 +858,7 @@ Config "Anti Submarine Warfare"
   
   ImprovedBy "NAVY60" Modify Weapon "SAM" Set Time 120
   ImprovedBy "NAVY80" Modify Weapon "SAM" Set Time 80
-  ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 40
+  ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 50
   
   ImprovedBy "ABM2" Modify Weapon "ABM" Set Time 120
   ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 80  
@@ -906,7 +937,7 @@ Config "Anti Submarine Warfare"
   
   ImprovedBy "NAVY60" Modify Weapon "SAM" Set Time 120
   ImprovedBy "NAVY80" Modify Weapon "SAM" Set Time 80
-  ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 40
+  ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 50
   
   ImprovedBy "NAVY00" Modify Weapon "CONV_CRUISE" Set Time 230
   ImprovedBy "NAVY30" Modify Weapon "CONV_CRUISE" Set Time 220
@@ -919,10 +950,6 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY00" Set Speed 60
   ImprovedBy "NAVY30" Set Speed 70
   ImprovedBy "NAVY30" Set Size 0.3
-  
-  ImprovedBy "NAVY60" Modify Weapon "SAM" Set Time 120
-  ImprovedBy "NAVY80" Modify Weapon "SAM" Set Time 80
-  ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 40
   
   ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/BC60.vidx" Icon "Units/Images/Naval/BC60_I.vidx"
   ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/BC80.vidx" Icon "Units/Images/Naval/BC80_I.vidx"
@@ -1039,6 +1066,8 @@ Config "Anti Submarine Warfare"
     Weapon "ICBM MIRV+" 3 Launch 1 Time 1480
   Config "ICBM (50M)"
     Weapon "ICBM (50M)" 3 Launch 1 Time 1480
+  Config "HEAVY ICBM MIRV"
+    Weapon "HEAVY ICBM MIRV" 3 Launch 1 Time 1480
   Config "ASAT"
     Weapon "ASAT" 1
   ProductionCost 40
@@ -1051,6 +1080,7 @@ Config "Anti Submarine Warfare"
   ImprovedBy "ICBM2" Modify Weapon "ICBM (10M)" Set Launch 3
   ImprovedBy "ICBM2" Modify Weapon "ICBM MIRV" Set Launch 3
   ImprovedBy "ICBM2" Modify Weapon "ICBM MIRV+" Set Launch 3
+  ImprovedBy "ICBM2" Modify Weapon "HEAVY ICBM MIRV" Set Launch 3
 
   ImprovedBy "ICBM2" Movie "Units/Images/Ground/Silo.midx"
 
@@ -1109,12 +1139,9 @@ Config "Anti Submarine Warfare"
   //AIVarietyHint SAM
   Disassemble 0.15
   VirtualSpeed 350
-  Power 3
-  Config "Air-Defence" Default 
-      Weapon "SAM" 20000 Launch 1 Time 130 AutoEngage
-      ImprovedBy "ABM2"
-        Weapon "SAM" 20000 Launch 1 Time 130 AutoEngage
-        Weapon "ABM" 20000 Launch 1 Time 400 AutoEngage
+  Power 5
+  Weapon "SAM" 20000 Launch 1 Time 130 AutoEngage
+  Weapon "ABM" 20000 Launch 1 Time 800 AutoEngage
   Radar "STD Short Wave"
   ProductionCost 7
   
@@ -1122,10 +1149,10 @@ Config "Anti Submarine Warfare"
 
   ImprovedBy "SAM80" Set Size 0.05
   
-  ImprovedBy "SAM60" Modify Weapon "SAM" Set Time 100
-  ImprovedBy "SAM80" Modify Weapon "SAM" Set Time 70
-  ImprovedBy "SAM10" Modify Weapon "SAM" Set Time 30
-  
+  ImprovedBy "SAM60" Modify Weapon "SAM" Set Time 120
+  ImprovedBy "SAM80" Modify Weapon "SAM" Set Time 80
+  ImprovedBy "SAM10" Modify Weapon "SAM" Set Time 50
+    
   ImprovedBy "ABM2" Modify Weapon "ABM" Set Time 180
   ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 130   
   
@@ -1198,7 +1225,7 @@ Config "Anti Submarine Warfare"
   
 [UNIT] "CVN_ASW"
   Tech "CVN_ASW"
-  Movie "Units/Images/Airborne/CARRIER_AWACS.vidx"
+  Movie "Units/Images/Airborne/CVN_ASW1.vidx"
   DrawSize 20
   LaunchMeSound 85
   Size 0.075
@@ -1209,18 +1236,19 @@ Config "Anti Submarine Warfare"
   Slave
   AutoReturn Yes
   Speed 350
-  TurnSpeed 3
-  Range 2000
+  TurnSpeed 5
+  Range 4000
   CanPatrolPoint
 //  CanHangInTheAir
   Power 1.5
 Config "Anti Submarine Warfare"
-  Weapon "DepthCharge" 25 Launch 2 AutoEngage
-  Weapon "Torpedo" 2 Launch 1 AutoEngage
+  Weapon "Torpedo" 4 Launch 1 AutoEngage
 //  Weapon "EW" 1 DefaultOff
   Radar "AWACS Sonar"
   ProductionCost 4.3
   Crash "big_bomb"
+ 
+  ImprovedBy "NAVY80" Movie "Units/Images/Airborne/CVN_ASW2.vidx" 
 
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
   

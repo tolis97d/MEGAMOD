@@ -902,9 +902,10 @@ Description "U_Cavern_DESC"
   Name "Heavy_Missiles_NAME"
   Description "Heavy_Missiles_DESC"
   Image "Images/Science/HEAVY_ICBM.png"
-  Points 30
+  Points 45
   LeadsTo "M_ICBM_10M"
   LeadsTo "SUPER_HEAVY_MISSILES"
+  LeadsTo "M_ICBM_10MMIRV"
   
 [TECHNOLOGY] "SUPER_HEAVY_MISSILES"
   Name "SUPER_HEAVY_MISSILES_NAME"
@@ -929,6 +930,7 @@ Description "U_Cavern_DESC"
   Points 30
   LeadsTo "False_warheads"
   LeadsTo "M_ICBM_MIRV"
+  LeadsTo "M_ICBM_10MMIRV"
   LeadsTo "Advanced_MRBM_MIRV"
 
 [TECHNOLOGY] "False_warheads"
@@ -945,6 +947,10 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_ICBM_10M"
   Name "M_ICBM_10M_NAME"
   Description "M_ICBM_10M_DESC"
+  
+[TECHNOLOGY] "M_ICBM_10MMIRV"
+  Name "M_ICBM_10MMIRV_NAME"
+  Description "M_ICBM_10MMIRV_DESC"
   
 [TECHNOLOGY] "M_ICBM_50M"
   Name "M_ICBM_50M_NAME"
@@ -1033,7 +1039,6 @@ Description "U_Cavern_DESC"
   Description "Tactical_nukes_DESC"
   Image "Images/Science/Tactical_nukes.png"
   Points 15
-  LeadsTo "M_SRBM"
   LeadsTo "M_Aircraft-launched_MRBM"
   LeadsTo "CRUISE3_REQ3"
   
@@ -1041,10 +1046,6 @@ Description "U_Cavern_DESC"
   Name "CRUISE3_REQ3_NAME"
   Description "CRUISE3_REQ3_DESC"
   LeadsTo "CRUISE3"
-
-[TECHNOLOGY] "M_SRBM"
-  Name "M_SRBM_NAME"
-  Description "M_SRBM_DESC"
   
   
   
@@ -1323,7 +1324,9 @@ Description "U_Cavern_DESC"
   LeadsTo "JAM1" 
   LeadsTo "Satellite_REQ"
   LeadsTo "AA1_REQ"  
-  LeadsTo "SAM60_REQ"  
+  LeadsTo "SAM60_REQ" 
+  LeadsTo "B1_REQ"
+  LeadsTo "ASM1_REQ"  
   //AIUpgradeTechHint Science 
 
 [TECHNOLOGY] "Satellite_REQ"
@@ -1347,7 +1350,6 @@ Description "U_Cavern_DESC"
   Image "Images/Science/COMP70.png"
   Points 15
   LeadsTo "COMP3" 
-  LeadsTo "LASER_GUIDE" 
   LeadsTo "JAM1_REQ"
   LeadsTo "LW_MK2_REQ"
   LeadsTo "SW_MK2_REQ"
@@ -1493,6 +1495,7 @@ Description "U_Cavern_DESC"
   LeadsTo "5GEN_REQ" 
   LeadsTo "AA4_REQ"
   LeadsTo "SAM10_REQ"
+  LeadsTo "LASER_PRACTICAL" 
   //AIUpgradeTechHint Science 
 
 [TECHNOLOGY] "CIWS_LASER_REQ"
@@ -1520,19 +1523,13 @@ Description "U_Cavern_DESC"
   Description "COMP7_DESC"
   Image "Images/Science/COMP10.png"
   Points 15 
-  LeadsTo "LASER_PRACTICAL_REQ" 
   LeadsTo "ABM3_REQ"
   LeadsTo "TOR4_REQ"
   LeadsTo "JAM3_REQ"
   LeadsTo "SONAR3_REQ"
   LeadsTo "LW_MK4_REQ"
-  LeadsTo "SW_MK4_REQ"
+  LeadsTo "SW_MK4_REQ"  
   //AIUpgradeTechHint Science 
-  
-[TECHNOLOGY] "LASER_PRACTICAL_REQ"
-  Name "LASER_PRACTICAL_REQ_NAME"
-  Description "LASER_PRACTICAL_REQ_DESC"  
-  LeadsTo "LASER_PRACTICAL"  
   
 [TECHNOLOGY] "ABM3_REQ"
   Name "ABM3_REQ_NAME"
@@ -1563,16 +1560,6 @@ Description "U_Cavern_DESC"
   Name "SW_MK4_REQ_NAME"
   Description "SW_MK4_REQ_DESC" 
   LeadsTo "SW_MK4"
-  
-[TECHNOLOGY] "LASER_GUIDE"
-  Name "LASER_GUIDE_NAME"
-  Description "LASER_GUIDE_DESC"
-  Image "Images/Science/LASER_TARGET.png"
-  Points 15
-  LeadsTo "LASER_PRACTICAL"  
-  LeadsTo "B1_REQ"
-  LeadsTo "ASM1_REQ"
-  //AIUpgradeTechHint ShipToShip  
   
 [TECHNOLOGY] "B1_REQ"
   Name "B1_REQ_NAME"
