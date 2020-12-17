@@ -1,5 +1,5 @@
 //Adding AIUpgradeTechHint <option> lets the AI know how to interpret a modded tech
-//Options are: Naval, Aircraft, Missiles (This is for ballistic missiles), Ssbn, TacticalNukes, AirToAir, AirToSurface, SurfaceToAir, ShipToShip, Intercept (ABMs), Cruise, Science, Satellite
+//Options are: Naval, Aircraft, Missiles (This is for ballistic missiles), Ssbn, TacticalNukes, AirToAir, AirToSurface, SurfaceToAir, ShipToShip, Intercept (ABMs), Cruise, Science, Satellite, Core (Fundamental techs the AI absolutely must consider to stay relevant), Land (Not yet used)
 
 [TECHNOLOGY] "NAVAL_SW"
   Name "NAVAL_SW_NAME"
@@ -1133,7 +1133,9 @@ Description "U_Cavern_DESC"
   LeadsTo "CRUISE1_REQ"
   LeadsTo "TOR1_REQ"   
   LeadsTo "SUB60_REQ"    
-  //AIUpgradeTechHint Naval 
+  //AIUpgradeTechHint Naval
+  //AIUpgradeTechHint Science
+  //AIUpgradeTechHint Core  
 
 [TECHNOLOGY] "ICBM1_REQ"
   Name "ICBM1_REQ_NAME"
@@ -1180,6 +1182,7 @@ Description "U_Cavern_DESC"
   LeadsTo "4GEN_REQ" 
   LeadsTo "CRUISE2_REQ"  
   //AIUpgradeTechHint Naval
+  //AIUpgradeTechHint Science
 
 [TECHNOLOGY] "ICBM2_REQ"
   Name "ICBM2_REQ_NAME"
@@ -1207,7 +1210,8 @@ Description "U_Cavern_DESC"
   LeadsTo "CRUISE3_REQ"
   LeadsTo "TOR3_REQ"
   LeadsTo "SUB80_REQ"
-  //AIUpgradeTechHint Naval 
+  //AIUpgradeTechHint Naval
+  //AIUpgradeTechHint Science  
   
 [TECHNOLOGY] "MIRV_REQ"
   Name "MIRV_REQ_NAME"
@@ -1246,7 +1250,8 @@ Description "U_Cavern_DESC"
   LeadsTo "NAVY00_REQ"
   LeadsTo "SUB00_REQ"
   LeadsTo "CRUISE4_REQ"
-  //AIUpgradeTechHint Naval 
+  //AIUpgradeTechHint Naval
+  //AIUpgradeTechHint Science
   
 [TECHNOLOGY] "False_warheads_REQ"
   Name "False_warheads_REQ_NAME"
@@ -1287,7 +1292,8 @@ Description "U_Cavern_DESC"
   LeadsTo "NAVY30_REQ"
   LeadsTo "CRUISE6_REQ"
   LeadsTo "SUB30_REQ"
-  //AIUpgradeTechHint Naval 
+  //AIUpgradeTechHint Naval
+  //AIUpgradeTechHint Science
   
 [TECHNOLOGY] "SUPER_HEAVY_MISSILES_REQ"
   Name "SUPER_HEAVY_MISSILES_REQ_NAME"
@@ -1593,19 +1599,25 @@ Description "U_Cavern_DESC"
   LeadsTo "M_EW" 
   LeadsTo "U_EWAIR"
   LeadsTo "U_CVN_EWAIR"
+  //AIUpgradeTechHint AirToSurface
+  //AIUpgradeTechHint Science
   
 [TECHNOLOGY] "JAM2"
   Name "JAM2_NAME"
   Description "JAM2_DESC"
   Image "Images/Science/J2.png"
   Points 15
-  LeadsTo "JAM3" 
+  LeadsTo "JAM3"
+  //AIUpgradeTechHint AirToSurface
+  //AIUpgradeTechHint Science  
   
 [TECHNOLOGY] "JAM3"
   Name "JAM3_NAME"
   Description "JAM3_DESC"
   Image "Images/Science/J3.png"
-  Points 30 
+  Points 30
+  //AIUpgradeTechHint AirToSurface
+  //AIUpgradeTechHint Science
   
 [TECHNOLOGY] "ARMY_TECH"
   Name "ARMY_TECH_NAME"
@@ -1613,6 +1625,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/ARMY.png"
   Points 1  
   LeadsTo "ARMY"
+  //AIUpgradeTechHint Land
   
 [TECHNOLOGY] "ARMY"
   Name "ARMY_NAME"
