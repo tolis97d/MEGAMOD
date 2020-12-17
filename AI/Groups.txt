@@ -39,7 +39,7 @@ Group Space_radar_Balanced
 
 Group Carrier_Balanced_Rush
   PlacementType NavalBase self
-  PatrolType CarrierAttack distant
+  PatrolType SubmarineAttack self distant
   "Carrier" leader
   "Destroyer"
   "Destroyer"
@@ -157,7 +157,7 @@ Group Airport3_Balanced
 
 Group Submarine_Balanced_Rush
   PlacementType NavalBase self
-  PatrolType CarrierAttack self distant
+  PatrolType SubmarineHide self distant
   "Submarine" leader
   "Submarine"
   "Submarine" optional
@@ -311,7 +311,6 @@ Group Battlecruiser_SAG_Balanced_TacNuke
 Group Cruiser_SAG_Balanced
   PlacementType NavalBase self
   PatrolType SubmarineHide self distant
-  PatrolType CarrierAttack self
   "Cruiser" leader
   "Destroyer"
   "Destroyer"
@@ -332,7 +331,6 @@ Group Cruiser_SAG_Balanced
 Group Battlecruiser_SAG_Balanced
   PlacementType NavalBase self
   PatrolType SubmarineHide self distant
-  PatrolType CarrierAttack self
   "Battlecruiser" leader
   "Destroyer"
   "Destroyer"
@@ -352,7 +350,7 @@ Group Battlecruiser_SAG_Balanced
 
 Group Carrier_Aggressive_Rush
   PlacementType NavalBase self
-  PatrolType CarrierAttack distant
+  PatrolType SubmarineAttack self distant
   "Carrier" leader
   "Destroyer"
   "Destroyer"
@@ -470,7 +468,7 @@ Group Airport3_Aggressive
 
 Group Submarine_Aggressive_Rush
   PlacementType NavalBase self
-  PatrolType CarrierAttack self distant
+  PatrolType SubmarineHide self distant
   "Submarine" leader
   "Submarine"
   "Submarine" optional
@@ -624,7 +622,6 @@ Group Battlecruiser_SAG_Aggressive_TacNuke
 Group Cruiser_SAG_Aggressive
   PlacementType NavalBase self
   PatrolType SubmarineHide self distant
-  PatrolType CarrierAttack self
   "Cruiser" leader
   "Destroyer"
   "Destroyer"
@@ -645,7 +642,6 @@ Group Cruiser_SAG_Aggressive
 Group Battlecruiser_SAG_Aggressive
   PlacementType NavalBase self
   PatrolType SubmarineHide self distant
-  PatrolType CarrierAttack self
   "Battlecruiser" leader
   "Destroyer"
   "Destroyer"
@@ -665,7 +661,7 @@ Group Battlecruiser_SAG_Aggressive
 
 Group Carrier_Cautious_Rush
   PlacementType NavalBase self
-  PatrolType CarrierAttack distant
+  PatrolType SubmarineAttack self distant
   "Carrier" leader
   "Destroyer"
   "Destroyer"
@@ -783,7 +779,7 @@ Group Airport3_Cautious
 
 Group Submarine_Cautious_Rush
   PlacementType NavalBase self
-  PatrolType CarrierAttack self distant
+  PatrolType SubmarineHide self distant
   "Submarine" leader
   "Submarine"
   "Submarine" optional
@@ -937,7 +933,6 @@ Group Battlecruiser_SAG_Cautious_TacNuke
 Group Cruiser_SAG_Cautious
   PlacementType NavalBase self
   PatrolType SubmarineHide self distant
-  PatrolType CarrierAttack self
   "Cruiser" leader
   "Destroyer"
   "Destroyer"
@@ -958,7 +953,6 @@ Group Cruiser_SAG_Cautious
 Group Battlecruiser_SAG_Cautious
   PlacementType NavalBase self
   PatrolType SubmarineHide self distant
-  PatrolType CarrierAttack self
   "Battlecruiser" leader
   "Destroyer"
   "Destroyer"
@@ -974,37 +968,6 @@ Group Battlecruiser_SAG_Cautious
   Target "Carrier" Immediate Priority 1000
   Target "Airport3" Immediate Priority 1000
   Avoid City
-
-
-Group Plugin_Helicopter_Carrier
-  PlacementType NavalBase self
-  AttackType CarrierAttack
-  WaitType SubmarineHide
-  "Carrier" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "MOBILE_SAM" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
 
 
 Group FixedLWradar_Aggressive
