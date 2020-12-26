@@ -23,6 +23,11 @@ Modifier options:
   CanBeUsedAgainst Ground
   CanBeUsedAgainst City
   CanBeUsedAgainst AbstractPosition
+  
+[TYPE] "CONV_CRUISE"
+  RequiresPreciseTargeting No
+  CanBeUsedAgainst Ground
+  CanBeUsedAgainst City
 
 [TYPE] "Nuke"
   RequiresPreciseTargeting No
@@ -377,15 +382,17 @@ Modifier options:
   ImprovedBy "CRUISE5" Set Range 900
   ImprovedBy "CRUISE5" Set Speed 1600
   ImprovedBy "CRUISE5" Set Precision 0.01
-  AffectedBy "CRUISE5" Set CanBeIntercepted 0.35
+  AffectedBy "CRUISE5" Set CanBeIntercepted 0.25
   
   ImprovedBy "CRUISE6" Set Range 1200
   ImprovedBy "CRUISE6" Set Speed 3000
-  AffectedBy "CRUISE6" Set CanBeIntercepted 0.2
+  AffectedBy "CRUISE6" Set CanBeIntercepted 0.1
   
   AffectedBy "SAM60" CanBeIntercepted 1.4
   AffectedBy "SAM80" CanBeIntercepted 1.7
   AffectedBy "SAM10" CanBeIntercepted 1.9
+  
+  AffectedBy InRange "EW" Precision 2.0
   
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/SM70.png"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/SM80.vidx"
@@ -395,7 +402,7 @@ Modifier options:
   
 [MISSILE] "CONV_CRUISE"
   Tech "M_CONV_CRUISE"
-  Type "CRUISE"
+  Type "CONV_CRUISE"
   Icon "Units/Images/Missiles/CRUISE80.vidx"
   Sound 113 or 114 Volume 0.5
   Explosion "big_bomb_old"
@@ -417,16 +424,18 @@ Modifier options:
   ImprovedBy "CRUISE5" Set Range 1800
   ImprovedBy "CRUISE5" Set Speed 1100
   ImprovedBy "CRUISE5" Set Precision 0.05
-  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.4
+  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.2
   
   ImprovedBy "CRUISE6" Set Range 2500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.2
+  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.05
   
   AffectedBy "SAM60" CanBeIntercepted 1.4
   AffectedBy "SAM80" CanBeIntercepted 1.7
   AffectedBy "SAM10" CanBeIntercepted 1.9
+  
+  AffectedBy InRange "EW" Precision 2.0
   
   ImprovedBy "CRUISE4" Movie Image "Units/Images/Missiles/CRUISE00.vidx"
   ImprovedBy "CRUISE5" Movie Image "Units/Images/Missiles/CRUISE10.vidx"
@@ -466,16 +475,18 @@ Modifier options:
   ImprovedBy "CRUISE5" Set Range 1800
   ImprovedBy "CRUISE5" Set Speed 1100
   ImprovedBy "CRUISE5" Set Precision 0.05
-  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.4
+  ImprovedBy "CRUISE5" Set CanBeIntercepted 0.2
   
   ImprovedBy "CRUISE6" Set Range 2500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.1
+  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.05
   
   AffectedBy "SAM60" CanBeIntercepted 1.4
   AffectedBy "SAM80" CanBeIntercepted 1.7
   AffectedBy "SAM10" CanBeIntercepted 1.9
+  
+  AffectedBy InRange "EW" Precision 2.0
 
   ImprovedBy "CRUISE2" Movie Image "Units/Images/Missiles/CRUISE70.vidx"
   ImprovedBy "CRUISE3" Movie Image "Units/Images/Missiles/CRUISE80.vidx"  
@@ -510,6 +521,8 @@ Modifier options:
   ImprovedBy "SAM10" Set Speed 2500
   ImprovedBy "SAM10" Set Precision 0.09
   
+  AffectedBy InRange "EW" Precision 2.0
+  
   ImprovedBy "SAM60" Movie Image "Units/Images/Missiles/SAMM60.png"
   ImprovedBy "SAM80" Movie Image "Units/Images/Missiles/SAMM80.png"
   ImprovedBy "SAM10" Movie Image "Units/Images/Missiles/SAMM10.png"
@@ -536,6 +549,35 @@ Modifier options:
   ImprovedBy "ABM3" Movie Image "Units/Images/Missiles/ABM3.png"
 
   GlobalShowType ABM_RANGES
+  
+[MISSILE] "ABM_NUKE"
+  Tech "M_ABM_NUKE"
+  Type "AntiMissile"
+  Icon "Units/Images/Missiles/NUKE_ABM.png"
+  Sound 208 Volume 0.3
+    MuteLength 2
+  DrawSize 12
+  DrawNuke
+  Explosion "ABM_NUKE"
+  Range 600
+  Speed 5000
+  Precision 0.05
+  ProductionCost 0.5
+  ProductionCostDegrades
+  LeadGuidance 1
+  
+  ImprovedBy "ABM2" Set Range 800
+  ImprovedBy "ABM2" Set Speed 6000
+  ImprovedBy "ABM2" Set Precision 0.03
+  
+  ImprovedBy "ABM3" Set Range 1000
+  ImprovedBy "ABM3" Set Speed 7000
+  ImprovedBy "ABM3" Set Precision 0.02
+  ImprovedBy "ABM3" Movie Image "Units/Images/Missiles/ABM3.png"
+
+  GlobalShowType ABM_RANGES
+  
+  
 
 [MISSILE] "Laser"
   Tech "M_Laser_weapon"
@@ -603,10 +645,6 @@ Modifier options:
   Precision 3.0
   CanBeIntercepted 0.4
   AffectedBy "ABM2" CanBeIntercepted 1.5
-  
-  ImprovedBy "MRBM2" Movie Image "Units/IMAGES/MISSILES/MRBM2_MIRV.png"
-  ImprovedBy "MRBM2" Set Range 6000
-  ImprovedBy "MRBM2" Set CanBeIntercepted 0.2
 
 [MISSILE] "MRBM"
   Tech "M_MRBM"
@@ -614,7 +652,7 @@ Modifier options:
   Sound 68 Volume 1.25
   DrawSize 12
   DrawNuke
-  Type "Nuke"
+  Type "CRUISE"
   Explosion "nuke_500"
   Range 3500
   MinRange 400
@@ -634,6 +672,55 @@ Modifier options:
 
   ImprovedBy "MRBM2" Movie Image "Units/IMAGES/MISSILES/MRBM2.png" 
   ImprovedBy "MRBM2" CanBeIntercepted 0.3
+  
+[MISSILE] "ASBM"
+  Tech "M_ASBM"
+  Icon "Units/Images/Missiles/ASNM.png"
+  Sound 68 Volume 1.25
+  DrawSize 12
+  Type "AntiShip"
+  Explosion "MRBM_EXP"
+  Range 3500
+  MinRange 400
+  Ballistic
+  SingleAttack
+  CanBeIntercepted 0.3
+  Elevation 600
+  Speed 1500
+  Precision 0.001
+  ProductionCostDegrades
+  MaxNumberToOrder 25
+  AutoSlowDown
+  LeadGuidance 1
+  AffectedBy "ABM2" CanBeIntercepted 1.5
+
+  GlobalShowType MRBM_RANGES
+  
+[MISSILE] "CONV_MRBM"
+  Tech "M_CONV_MRBM"
+  Icon "Units/Images/Missiles/MRBM1.png"
+  Sound 68 Volume 1.25
+  DrawSize 12
+  Type "CRUISE"
+  Explosion "big_bomb_old2"
+  Range 3500
+  MinRange 400
+  Ballistic
+  SingleAttack
+  CanBeIntercepted 0.6
+  Elevation 300
+  Speed 1500
+  Precision 0.6
+  ProductionCostDegrades
+  MaxNumberToOrder 25
+  AutoSlowDown
+  AffectedBy "ABM2" CanBeIntercepted 1.5
+
+  GlobalShowType MRBM_RANGES
+
+  ImprovedBy "MRBM2" Movie Image "Units/IMAGES/MISSILES/MRBM2.png" 
+  ImprovedBy "MRBM2" CanBeIntercepted 0.3
+  ImprovedBy "MRBM2" Set Precision 0.01
 
 
 [MISSILE] "SUB_MRBM"
@@ -642,7 +729,7 @@ Modifier options:
   Sound 68 Volume 1.25
   DrawSize 12
   DrawNuke
-  Type "Nuke"
+  Type "CRUISE"
   Explosion "nuke_500"
   Heads 0 "MRBM MIRV warhead"
   Range 6000
@@ -927,10 +1014,11 @@ Modifier options:
   Switchable ON
   
 [MISSILE] "ARMY_WEP"
-  Tech "M_Surface_to_surface_missile"
+  Tech "ARMY_WEP"
   Type "Default"
   Icon "Units/Images/Missiles/ARMY_WEP.png"
-  Sound 67 or 107 or 108 Volume 0.5
+  Sound 207 Volume 0.3
+    MuteLength 2
   Explosion "big_bomb_old"
   Range 250
   Speed 800

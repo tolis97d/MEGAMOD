@@ -30,6 +30,17 @@
   DrawSize 7
   TimeGrowing 0.5
   TimeTotal 0.75
+  
+[EXPLOSION] "MRBM_EXP"
+  Movie "Images/Explosion/big_1.midx"
+  Sound 70
+    MuteLength 0.25
+  Damage 10
+  Range 0.1
+  FullEffectRange 0.02
+  DrawSize 7
+  TimeGrowing 0.5
+  TimeTotal 0.75
 
 [EXPLOSION] "big_bomb"
   Movie "Images/Explosion/Nuke1.midx"
@@ -59,6 +70,17 @@
   TimeTotal 2.25
   DrawYShift 0.5
   PollutionSize 10
+  
+[EXPLOSION] "ABM_NUKE"
+  Movie "Images/Explosion/ABM_NUKE.midx"
+  Sound 208 Volume 2
+  Kilotons 500
+  Damage 350
+  Range 100
+  FullEffectRange 12.5
+  DrawSize 7
+  TimeGrowing 0.5
+  TimeTotal 0.75
 
 [EXPLOSION] "nuke_100"
   Emulated "Units/Emulated/100K.txt"

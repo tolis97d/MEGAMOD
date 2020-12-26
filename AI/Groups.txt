@@ -12,12 +12,6 @@ Group SAM_site_Balanced
   Avoid City
 
 
-Group MOBILE_SAM_Balanced
-  PlacementType ObjectDefence self
-  "MOBILE_SAM"
-  Avoid City
-
-
 Group Satellite_Balanced
   PlacementType Orbit self
   "Satellite"
@@ -57,7 +51,6 @@ Group Carrier_Balanced_Rush
   Target "Space_radar" Priority 100
   Target "SAM_site" Priority 3000
   Target "ABM_SITE" Priority 3000
-  Target "MOBILE_SAM" Priority 3000
   Target "Carrier" Priority 100 Conventional Nuclear
   Target "Airport3" Priority 100 Conventional Nuclear
   Avoid "Submarine"
@@ -88,7 +81,6 @@ Group Carrier_Balanced
   Target "Space_radar" Priority 100
   Target "SAM_site" Priority 3000
   Target "ABM_SITE" Priority 3000
-  Target "MOBILE_SAM" Priority 3000
   Target "Carrier" Priority 100 Conventional Nuclear
   Target "Airport3" Priority 100 Conventional Nuclear
   Avoid "Submarine"
@@ -112,7 +104,6 @@ Group Airport_Balanced
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -131,7 +122,6 @@ Group Airport2_Balanced
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -150,7 +140,6 @@ Group Airport3_Balanced
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -368,7 +357,6 @@ Group Carrier_Aggressive_Rush
   Target "Space_radar" Priority 100
   Target "SAM_site" Priority 3000
   Target "ABM_SITE" Priority 3000
-  Target "MOBILE_SAM" Priority 3000
   Target "Carrier" Priority 100 Conventional Nuclear
   Target "Airport3" Priority 100 Conventional Nuclear
   Avoid "Submarine"
@@ -399,7 +387,6 @@ Group Carrier_Aggressive
   Target "Space_radar" Priority 100
   Target "SAM_site" Priority 3000
   Target "ABM_SITE" Priority 3000
-  Target "MOBILE_SAM" Priority 3000
   Target "Carrier" Priority 100 Conventional Nuclear
   Target "Airport3" Priority 100 Conventional Nuclear
   Avoid "Submarine"
@@ -423,7 +410,6 @@ Group Airport_Aggressive
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -442,7 +428,6 @@ Group Airport2_Aggressive
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -461,7 +446,6 @@ Group Airport3_Aggressive
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -679,7 +663,6 @@ Group Carrier_Cautious_Rush
   Target "Space_radar" Priority 100
   Target "SAM_site" Priority 3000
   Target "ABM_SITE" Priority 3000
-  Target "MOBILE_SAM" Priority 3000
   Target "Carrier" Priority 100 Conventional Nuclear
   Target "Airport3" Priority 100 Conventional Nuclear
   Avoid "Submarine"
@@ -710,7 +693,6 @@ Group Carrier_Cautious
   Target "Space_radar" Priority 100
   Target "SAM_site" Priority 3000
   Target "ABM_SITE" Priority 3000
-  Target "MOBILE_SAM" Priority 3000
   Target "Carrier" Priority 100 Conventional Nuclear
   Target "Airport3" Priority 100 Conventional Nuclear
   Avoid "Submarine"
@@ -734,7 +716,6 @@ Group Airport_Cautious
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -753,7 +734,6 @@ Group Airport2_Cautious
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -772,7 +752,6 @@ Group Airport3_Cautious
   Avoid "Destroyer"
   Avoid "Cruiser"
   Avoid "SAM_site"
-  Avoid "MOBILE_SAM"
   Avoid "Carrier"
   MaxTargets 3
 
@@ -982,11 +961,6 @@ Group SAM_site_Aggressive
   Avoid City
 
 
-Group MOBILE_SAM_Aggressive
-  PlacementType ObjectDefence self
-  "MOBILE_SAM"
-  Avoid City
-
 
 Group Satellite_Aggressive
   PlacementType Orbit self
@@ -1016,11 +990,6 @@ Group SAM_site_Cautious
   "SAM_site"
   Avoid City
 
-
-Group MOBILE_SAM_Cautious
-  PlacementType ObjectDefence self
-  "MOBILE_SAM"
-  Avoid City
 
 
 Group Satellite_Cautious

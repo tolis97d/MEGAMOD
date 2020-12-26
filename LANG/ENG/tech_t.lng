@@ -19,6 +19,9 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "U_AIRPORT3_NAME" LANG "Naval Air Station"
 "U_AIRPORT3_DESC" LANG "A naval air station is a military air base, and consists of a permanent land-based operations locations for the military aviation division of the relevant branch of a navy. These bases are typically populated by squadrons, groups or wings, their various support commands, and other tenant commands."
 
+"U_LHA_NAME" LANG "Landing helicopter assault"
+"U_LHA_DESC" LANG "Landing helicopter assault (LHA) is the United States Navy's hull classification symbol for the general purpose helicopter-carrying amphibious assault ships of the Tarawa and America classes."
+
 "ASM1_M_NAME" LANG "Air-to-surface missile"
 "ASM1_M_DESC" LANG "An air-to-surface missile is a missile designed to be launched from military aircraft at targets on land or sea.The two most common propulsion systems for air-to-surface missiles are rocket motors, usually with shorter range, and slower, longer-range jet engines. Some air-to-surface missiles are powered by ramjets, giving them both long range and high speed."
 
@@ -183,8 +186,20 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "MRBM2_NAME" LANG "Advaned MRBMs"
 "MRBM2_DESC" LANG "Designed to be used in theater level conflicts these missiles can maneuver during flight at different altitudes and trajectories and can turn at up to 20 to 30 G to evade anti-ballistic missiles.\n\n\n+Makes it much harder to intercept"
 
+"MRBM3_NAME" LANG "ASBM"
+"MRBM3_DESC" LANG "An anti-ship ballistic missile (ASBM) is a military ballistic missile system designed to hit a warship at sea.Due to the often hypersonic flight speed of ballistic missiles, the ASBM's kinetic energy alone may be sufficient to cripple or outright destroy a supercarrier with a single conventional warhead impact. However, unlike a nuclear warhead, this will require a direct hit to be effective, thus unlike a typical ballistic missile, which follows a ballistic flight path after the relatively brief initial phase of powered flight, an ASBM would require a precise and high-performance terminal guidance system, with advanced sensors and in-flight calibrations in order to successfully hit a moving target.\n\n\n+Effective Against Large Vessels like cruiser and carriers"
+
+"M_ABM_NUKE_NAME" LANG "Nuclear ABM Missile"
+"M_ABM_NUKE_DESC" LANG "Nuclear ABM Missile"
+
 "U_ABM_SITE_NAME" LANG "ABM site"
 "U_ABM_SITE_DESC" LANG "Collection of hardened Anti Ballistic Missile silos"
+
+"M_ASBM_NAME" LANG "ASBM"
+"M_ASBM_DESC" LANG "An anti-ship ballistic missile (ASBM) is a military ballistic missile system designed to hit a warship at sea."
+
+"M_CONV_MRBM_NAME" LANG "Conventional Ballistic Missile"
+"M_CONV_MRBM_DESC" LANG "A ballistic missile follows a ballistic trajectory to deliver a warhead on a predetermined target."
 
 "GBOMB_M_NAME" LANG "Guided Bomb"
 "GBOMB_M_DESC" LANG "A guided bomb (also known as a smart bomb, guided bomb unit, or GBU) is a precision-guided munition designed to achieve a smaller circular error probable (CEP)."
