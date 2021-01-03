@@ -144,6 +144,12 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "SLBM_NAME" LANG "SLBM"
 "SLBM_DESC" LANG "A submarine-launched ballistic missile (SLBM) is a ballistic missile capable of being launched from submarines. Modern variants usually deliver multiple independently targetable reentry vehicles (MIRVs) each of which carries a nuclear warhead and allows a single launched missile to strike several targets. Submarine-launched ballistic missiles operate in a different way from submarine-launched cruise missiles."
 
+"ABM0_NAME" LANG "Nuclear ABM systems"
+"ABM0_DESC" LANG "During the early period of the cold war the lack of precise targeting systems meant that the only viable way to intercept enemy ballistic missiles was to use nuclear warheads."
+
+"ABM02_NAME" LANG "Heavy Nuclear ABM Systems"
+"ABM02_DESC" LANG "The introduction of MIRVs as well as more advanced midflight evasion manoeuvring greatly reduced the effectiveness of conventional ABM systems.Thus fielding high yield nuclear warheads as ABMs could defeat multiple MIRVs."
+
 "ABM1_NAME" LANG "Early ABM systems"
 "ABM1_DESC" LANG "An anti-ballistic missile is a surface-to-air missile designed to counter ballistic missiles.Ballistic missiles are used to deliver nuclear, chemical, biological, or conventional warheads in a ballistic flight trajectory. The term anti-ballistic missile is a generic term conveying a system designed to intercept and destroy any type of ballistic threat; however, it is commonly used for systems specifically designed to counter intercontinental ballistic missiles.\n\n\n+Allows ABMs to be used by Phased Array Tracking SAMs(High Cooldown)"
 
@@ -189,8 +195,11 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "MRBM3_NAME" LANG "ASBM"
 "MRBM3_DESC" LANG "An anti-ship ballistic missile (ASBM) is a military ballistic missile system designed to hit a warship at sea.Due to the often hypersonic flight speed of ballistic missiles, the ASBM's kinetic energy alone may be sufficient to cripple or outright destroy a supercarrier with a single conventional warhead impact. However, unlike a nuclear warhead, this will require a direct hit to be effective, thus unlike a typical ballistic missile, which follows a ballistic flight path after the relatively brief initial phase of powered flight, an ASBM would require a precise and high-performance terminal guidance system, with advanced sensors and in-flight calibrations in order to successfully hit a moving target.\n\n\n+Effective Against Large Vessels like cruiser and carriers"
 
-"M_ABM_NUKE_NAME" LANG "Nuclear ABM Missile"
-"M_ABM_NUKE_DESC" LANG "Nuclear ABM Missile"
+"M_ABM_NUKE_NAME" LANG "1Mt Nuclear ABM Missile"
+"M_ABM_NUKE_DESC" LANG "1Mt Nuclear ABM Missile"
+
+"M_ABM_NUKE2_NAME" LANG "50Mt Nuclear ABM Missile"
+"M_ABM_NUKE2_DESC" LANG "50Mt Nuclear ABM Missile"
 
 "U_ABM_SITE_NAME" LANG "ABM site"
 "U_ABM_SITE_DESC" LANG "Collection of hardened Anti Ballistic Missile silos"

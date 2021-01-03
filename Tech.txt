@@ -428,7 +428,17 @@ Description "U_Cavern_DESC"
   Description "ABM0_DESC"
   Image "Images/Science/NUKE_ABM.png"
   Points 30
-  LeadsTo "ABM1"	 
+  LeadsTo "ABM1"
+  LeadsTo "ABM02" 
+  LeadsTo "M_ABM_NUKE"  
+  LeadsTo "U_ABM_SITE"
+  
+[TECHNOLOGY] "ABM02"
+  Name "ABM02_NAME"
+  Description "ABM02_DESC"
+  Image "Images/Science/NUKE_ABM.png"
+  Points 30
+  LeadsTo "M_ABM_NUKE2"
   
 [TECHNOLOGY] "SAM80"
   Name "SAM80_NAME"
@@ -453,7 +463,6 @@ Description "U_Cavern_DESC"
   LeadsTo "M_anti_ballistic_missile"
   LeadsTo "ABM2"
   LeadsTo "ASAT"
-  LeadsTo "U_ABM_SITE"
   //AIUpgradeTechHint Intercept
   
 [TECHNOLOGY] "U_ABM_SITE"
@@ -911,7 +920,7 @@ Description "U_Cavern_DESC"
   Name "Heavy_Missiles_NAME"
   Description "Heavy_Missiles_DESC"
   Image "Images/Science/HEAVY_ICBM.png"
-  Points 45
+  Points 50
   LeadsTo "M_ICBM_10M"
   LeadsTo "SUPER_HEAVY_MISSILES"
   LeadsTo "M_ICBM_10MMIRV"
@@ -1024,6 +1033,11 @@ Description "U_Cavern_DESC"
   LeadsTo "Mega-warheads"
   LeadsTo "M_10M_thermonuclear_bomb"
   LeadsTo "Tactical_nukes"
+  LeadsTo "ABM0_REQ"
+  
+[TECHNOLOGY] "ABM0_REQ"
+  Name "ABM0_REQ_NAME"
+  Description "ABM0_REQ_DESC"
 
 [TECHNOLOGY] "M_10M_thermonuclear_bomb"
   Name "M_10M_THERMONUCLEAR_BOMB_NAME"
@@ -1041,6 +1055,11 @@ Description "U_Cavern_DESC"
 //  LeadsTo "Tactical_nukes"
   LeadsTo "Heavy_Missiles"
   LeadsTo "M_50M_thermonuclear_bomb"
+  LeadsTo "ABM02_REQ"
+  
+[TECHNOLOGY] "ABM02_REQ"
+  Name "ABM02_REQ_NAME"
+  Description "ABM02_REQ_DESC"
   
 
 [TECHNOLOGY] "Tactical_nukes"
@@ -1603,7 +1622,7 @@ Description "U_Cavern_DESC"
   Name "JAM1_NAME"
   Description "JAM1_DESC"
   Image "Images/Science/J1.png"
-  Points 15
+  Points 5
   LeadsTo "JAM2" 
   LeadsTo "M_EW" 
   LeadsTo "U_EWAIR"
@@ -1615,7 +1634,7 @@ Description "U_Cavern_DESC"
   Name "JAM2_NAME"
   Description "JAM2_DESC"
   Image "Images/Science/J2.png"
-  Points 15
+  Points 10
   LeadsTo "JAM3"
   //AIUpgradeTechHint AirToSurface
   //AIUpgradeTechHint Science  
@@ -1624,7 +1643,7 @@ Description "U_Cavern_DESC"
   Name "JAM3_NAME"
   Description "JAM3_DESC"
   Image "Images/Science/J3.png"
-  Points 30
+  Points 10
   //AIUpgradeTechHint AirToSurface
   //AIUpgradeTechHint Science
   
@@ -1706,5 +1725,9 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_ABM_NUKE"
   Name "M_ABM_NUKE_NAME"
   Description "M_ABM_NUKE_DESC"
+  
+[TECHNOLOGY] "M_ABM_NUKE2"
+  Name "M_ABM_NUKE2_NAME"
+  Description "M_ABM_NUKE2_DESC"
 
 [END]

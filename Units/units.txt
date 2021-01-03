@@ -973,6 +973,7 @@ Modifier options:
   CanHostAircrafts "Fighter" 15 Patrol 2
   CanHostAircrafts airway 1 "Bomber" 5
   CanHostAircrafts airway 1 "AWACS" 1
+  CanHostAircrafts airway 1 "EWAIR" 1
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
@@ -1000,7 +1001,7 @@ Modifier options:
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
-  ProductionCost 8
+  ProductionCost 7
   NoAutoAttack
 
 [UNIT] "Mobile_MRBM"
@@ -1176,7 +1177,7 @@ Modifier options:
   Type Ground
   //AIVarietyHint SAM
   Power 2
-  Config "ABM" Default
+  Config "ABM"
     Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
         ImprovedBy "ABM2"
             Weapon "ABM" 20000 Launch 1 Time 120 AutoEngage
@@ -1184,6 +1185,8 @@ Modifier options:
             Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
   Config "Nuclear ABM" Default
     Weapon "ABM_NUKE" 5 Launch 1 Time 180 AutoEngage
+  Config "Heavy Nuclear ABM" Default
+    Weapon "ABM_NUKE2" 5 Launch 1 Time 180 AutoEngage
   Radar "STD Short Wave"
   CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
   ProductionCost 10
@@ -1305,6 +1308,29 @@ Config "Anti Submarine Warfare"
   Radar "STD Vision"
   Radar "STD Long Wave"
   ProductionCost 6
+  NoAutoAttack
+  
+[UNIT] "Airport4"
+  Tech "U_Airport4"
+  Movie "Units/Images/Ground/AIR3.midx"
+  DrawSize 34
+  DrawOrder 1
+  Size 1.5
+  Sound 138 Volume 0.5
+  Type Ground
+  //AIVarietyHint Airport
+  AttackerInPlanner
+  Power 20
+  Airway Launch 2 Time 180 // in seconds in 1x time
+  Airway Launch 2 Time 220 // in seconds in 1x time
+  CanHostAircrafts "CVN_FR" 6 Patrol 2
+  CanHostAircrafts "CVN_ATK" 6
+  CanHostAircrafts airway 1 "CVN_AWACS" 1
+  CanHostAircrafts airway 1 "ASW" 2
+  CanAccessGlobalStorage
+  Radar "STD Vision"
+  Radar "STD Long Wave"
+  ProductionCost 7
   NoAutoAttack
   
 [UNIT] "ARMY"

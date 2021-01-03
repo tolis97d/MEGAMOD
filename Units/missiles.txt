@@ -554,8 +554,7 @@ Modifier options:
   Tech "M_ABM_NUKE"
   Type "AntiMissile"
   Icon "Units/Images/Missiles/NUKE_ABM.png"
-  Sound 208 Volume 0.3
-    MuteLength 2
+  Sound 69 Volume 1.25
   DrawSize 12
   DrawNuke
   Explosion "ABM_NUKE"
@@ -577,6 +576,31 @@ Modifier options:
 
   GlobalShowType ABM_RANGES
   
+[MISSILE] "ABM_NUKE2"
+  Tech "M_ABM_NUKE2"
+  Type "AntiMissile"
+  Icon "Units/Images/Missiles/NUKE_ABM.png"
+  Sound 69 Volume 1.25
+  DrawSize 12
+  DrawNuke
+  Explosion "ABM_NUKE2"
+  Range 600
+  Speed 5000
+  Precision 0.05
+  ProductionCost 3
+  ProductionCostDegrades
+  LeadGuidance 1
+  
+  ImprovedBy "ABM2" Set Range 800
+  ImprovedBy "ABM2" Set Speed 6000
+  ImprovedBy "ABM2" Set Precision 0.03
+  
+  ImprovedBy "ABM3" Set Range 1000
+  ImprovedBy "ABM3" Set Speed 7000
+  ImprovedBy "ABM3" Set Precision 0.02
+  ImprovedBy "ABM3" Movie Image "Units/Images/Missiles/ABM3.png"
+
+  GlobalShowType ABM_RANGES
   
 
 [MISSILE] "Laser"
@@ -703,7 +727,7 @@ Modifier options:
   DrawSize 12
   Type "CRUISE"
   Explosion "big_bomb_old2"
-  Range 3500
+  Range 1400
   MinRange 400
   Ballistic
   SingleAttack
@@ -721,6 +745,7 @@ Modifier options:
   ImprovedBy "MRBM2" Movie Image "Units/IMAGES/MISSILES/MRBM2.png" 
   ImprovedBy "MRBM2" CanBeIntercepted 0.3
   ImprovedBy "MRBM2" Set Precision 0.01
+  ImprovedBy "MRBM2" Set Range 1900
 
 
 [MISSILE] "SUB_MRBM"
@@ -820,7 +845,7 @@ Modifier options:
   Elevation 1000
   Speed 3000
   Precision 8.0
-  ProductionCost 6.5
+  ProductionCost 9
   ProductionCostDegrades
   MaxNumberToOrder 0
   AffectedBy "ABM2" CanBeIntercepted 1.5
@@ -902,7 +927,7 @@ Modifier options:
   CanBeIntercepted 0.3
   Elevation 1000
   Speed 3000
-  Precision 6.0
+  Precision 8.0
   ProductionCost 5
   ProductionCostDegrades
   MaxNumberToOrder 0
@@ -962,8 +987,8 @@ Modifier options:
   Ballistic
   Switchable ON
   
-  ImprovedBy "JAM2" Set Range 1000
-  ImprovedBy "JAM3" Set Range 1100
+  ImprovedBy "JAM2" Set Range 1100
+  ImprovedBy "JAM3" Set Range 1700
   ImprovedBy "JAM2" Movie Image "Units/Images/Missiles/J2.png"
   ImprovedBy "JAM3" Movie Image "Units/Images/Missiles/J3.png"
   
@@ -1017,7 +1042,7 @@ Modifier options:
   Tech "ARMY_WEP"
   Type "Default"
   Icon "Units/Images/Missiles/ARMY_WEP.png"
-  Sound 207 Volume 0.3
+  Sound 207 Volume 0.2
     MuteLength 2
   Explosion "big_bomb_old"
   Range 250

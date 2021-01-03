@@ -73,14 +73,31 @@
   
 [EXPLOSION] "ABM_NUKE"
   Movie "Images/Explosion/ABM_NUKE.midx"
-  Sound 208 Volume 2
+  Sound 200
+        Priority 1
+        Volume 10
+        MuteLength 0.05
   Kilotons 500
   Damage 350
   Range 100
   FullEffectRange 12.5
   DrawSize 7
   TimeGrowing 0.5
-  TimeTotal 0.75
+  TimeTotal 1
+  
+[EXPLOSION] "ABM_NUKE2"
+  Movie "Images/Explosion/ABM_NUKE.midx"
+  Sound 200
+        Priority 1
+        Volume 10
+        MuteLength 0.05
+  Kilotons 500
+  Damage 350
+  Range 100
+  FullEffectRange 12.5
+  DrawSize 15
+  TimeGrowing 0.5
+  TimeTotal 1
 
 [EXPLOSION] "nuke_100"
   Emulated "Units/Emulated/100K.txt"
