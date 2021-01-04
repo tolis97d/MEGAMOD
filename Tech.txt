@@ -1706,9 +1706,17 @@ Description "U_Cavern_DESC"
   Name "ARMY_WEP_NAME"
   Description "ARMY_WEP_DESC"
 
-[TECHNOLOGY] "U_AIR_TRANS"
-  Name "U_AIR_TRANS_NAME"
-  Description "U_AIR_TRANS_DESC"
+[TECHNOLOGY] "U_AIRTRANS"
+  Name "U_AIRTRANS_NAME"
+  Description "U_AIRTRANS_DESC"
+  
+[TECHNOLOGY] "U_PARA"
+  Name "U_PARA_NAME"
+  Description "U_PARA_DESC"
+  
+[TECHNOLOGY] "U_MARINES"
+  Name "U_MARINES_NAME"
+  Description "U_MARINES_DESC"
 
 [TECHNOLOGY] "U_Airport4"
   Name "U_Airport4_NAME"

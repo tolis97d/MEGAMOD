@@ -1310,34 +1310,11 @@ Config "Anti Submarine Warfare"
   ProductionCost 6
   NoAutoAttack
   
-[UNIT] "Airport4"
-  Tech "U_Airport4"
-  Movie "Units/Images/Ground/AIR3.midx"
-  DrawSize 34
-  DrawOrder 1
-  Size 1.5
-  Sound 138 Volume 0.5
-  Type Ground
-  //AIVarietyHint Airport
-  AttackerInPlanner
-  Power 20
-  Airway Launch 2 Time 180 // in seconds in 1x time
-  Airway Launch 2 Time 220 // in seconds in 1x time
-  CanHostAircrafts "CVN_FR" 6 Patrol 2
-  CanHostAircrafts "CVN_ATK" 6
-  CanHostAircrafts airway 1 "CVN_AWACS" 1
-  CanHostAircrafts airway 1 "ASW" 2
-  CanAccessGlobalStorage
-  Radar "STD Vision"
-  Radar "STD Long Wave"
-  ProductionCost 7
-  NoAutoAttack
-  
 [UNIT] "ARMY"
   Tech "ARMY"
   Movie "Units/Images/Ground/ARMY.midx"
   IconIDX 17
-  DrawSize 23
+  DrawSize 22
   Size 10
   Sound 141 Volume 0.6
   Type Ground
@@ -1349,10 +1326,69 @@ Config "Anti Submarine Warfare"
   Radar "STD Vision"
   Radar "STD Short Wave"
   
+[UNIT] "PARA"
+  Tech "U_PARA"
+  Movie "Units/Images/Ground/PARA.midx"
+  IconIDX 17
+  DrawSize 18
+  Size 10
+  Sound 141 Volume 0.6
+  Type Ground
+  Speed 30 // in km per h
+  Power 3000
+  Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
+  Weapon "ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
+  ProductionCost 70
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  
+[UNIT] "MARINES"
+  Tech "U_MARINES"
+  Movie "Units/Images/Ground/MARINES.midx"
+  IconIDX 17
+  DrawSize 18
+  Size 10
+  Sound 141 Volume 0.6
+  Type Ground
+  Speed 30 // in km per h
+  Power 3000
+  Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
+  Weapon "ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
+  ProductionCost 70
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  
+[UNIT] "AIRTRANS"
+  Tech "U_AIRTRANS"
+  Movie "Units/Images/AIRBORNE/AIRTRANS50.vidx"
+  Icon "Units/Images/AIRBORNE/AIRTRANS50_I.vidx"
+  DrawSize 24
+  LaunchMeSound 84
+  Size 0.06
+  Sound 135 Volume 0.3
+  Type Airborne
+  NoAutoDeploy
+  Speed 400
+  TurnSpeed 5
+  Range 10000
+  Power 1.5
+  ProductionCost 50
+  Crash "big_bomb"
+  Airway Launch 1 Time 120 // in seconds in 1x time
+  CanHostAircrafts "PARA" 1
+  CanStoreMissiles "ARMY_WEP" 50000
+  CanStoreMissiles "SAM" 50000
+	  
+  Radar "STD Vision"
+  Radar "STD Long Wave"
+  
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+
+  
 [UNIT] "LHA"
   Tech "U_LHA"
-  Movie "Units/Images/Naval/CVN50.vidx"
-  Icon "Units/Images/Naval/UI/ESSEX.png"
+  Movie "Units/Images/Naval/AMERICA.midx"
+  Icon "Units/Images/Naval/UI/AMERICA.png"
   DrawSize 38.25
   FollowRadius 39//34
   Size 0.4
@@ -1366,7 +1402,7 @@ Config "Anti Submarine Warfare"
   Airway Launch 3 Time 120 // in seconds in 1x time
   Airway Launch 3 Time 120 // in seconds in 1x time
   Airway Launch 1 Time 180 // in seconds in 1x time
-  CanHostAircrafts "ARMY" 1
+  CanHostAircrafts "MARINES" 1
   CanHostAircrafts airway 1 "CVN_EWAIR" 1
   CanStoreMissiles "Low-power nuclear bomb" 20
   CanStoreMissiles "ASM" 20
@@ -1389,5 +1425,24 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY60" Set Speed 45
   ImprovedBy "NAVY80" Set Speed 55
   ImprovedBy "NAVY00" Set Speed 65
+  
+[UNIT] "Airport4"
+  Tech "U_Airport4"
+  Movie "Units/Images/Ground/AIR3.midx"
+  DrawSize 34
+  DrawOrder 1
+  Size 1.5
+  Sound 138 Volume 0.5
+  Type Ground
+  //AIVarietyHint Airport
+  AttackerInPlanner
+  Power 20
+  Airway Launch 2 Time 180 // in seconds in 1x time
+  CanHostAircrafts "AIRTRANS" 5 
+  CanAccessGlobalStorage
+  Radar "STD Vision"
+  Radar "STD Long Wave"
+  ProductionCost 7
+  NoAutoAttack
   
 [END]

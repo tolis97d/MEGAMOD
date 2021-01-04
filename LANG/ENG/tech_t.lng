@@ -328,6 +328,15 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "ARMY_NAME" LANG "Army Group"
 "ARMY_DESC" LANG "An army group is a military organization consisting of several field armies, which is self-sufficient for indefinite periods. It is usually responsible for a particular geographic area. An army group is the largest field organization handled by a single commander—usually a full general or field marshal—and it generally includes between 400,000 and 1,000,000 soldiers."
 
+"U_PARA_NAME" LANG "Airborne Division"
+"U_PARA_DESC" LANG "An Airborne Division is a light infantry division specializing in air assault operations."
+
+"U_MARINES_NAME" LANG "Marine Division"
+"U_MARINES_DESC" LANG "The division is employed as the ground combat element of a Marine Expeditionary Force and may provide task-organized forces for assault operations. A Marine Division is able to provide the ground amphibious forcible entry capability to the naval expeditionary force and to conduct subsequent land operations in any operational environment."
+
+"U_AIRTRANS_NAME" LANG "Strategic Transport"
+"U_AIRTRANS_DESC" LANG "Aircrafts capable of airlifting troops and military equipment to support military operations."
+
 "ARMY_WEP_NAME" LANG "Ground Assets"
 "ARMY_WEP_DESC" LANG "Ground Assets"
 
