@@ -1,0 +1,4 @@
+AutoRotate
+Size 1
+"units/images/AIRBORNE/AN22/AN22.png"
+Overlay "units/images/AIRBORNE/AN22/AN22_N.png" x 0.5 y 0.5 sx 1 sy 1 speed 0

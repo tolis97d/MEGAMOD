@@ -479,6 +479,39 @@ Modifier options:
 
 //  ImprovedBy "S_FACTION_ID_3" Speed 3
 
+[UNIT] "SPY_PLANE"
+  Tech "U_SPY_PLANE"
+  Movie "Units/Images/Airborne/SPY60.vidx"
+  Icon "Units/Images/Airborne/SPY60_I.vidx"
+  DrawSize 24
+  LaunchMeSound 84
+  Size 0.06
+  Sound 135 Volume 0.3
+  Type Airborne
+  //AIVarietyHint Bomber
+  NoAutoDeploy
+  Speed 400
+  TurnSpeed 3
+  Range 15000
+  Power 1.5
+  ProductionCost 4.0
+  Radar "AIR_CAMERA"
+  Crash "big_bomb"
+  MaxElevation 15
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+  
+  ImprovedBy "4GEN" Set Speed 720
+  ImprovedBy "4GEN" Set Size 0.05
+  ImprovedBy "4GEN" Set Range 19000
+  ImprovedBy "4GEN" Set MaxElevation 18
+
+  ImprovedBy "5GEN" Set Power 3
+  ImprovedBy "5GEN" Set Size 0.04
+  
+  ImprovedBy "4GEN" Movie "Units/Images/Airborne/SPY70.vidx"  Icon "Units/Images/Airborne/SPY70_I.vidx"
+  ImprovedBy "5GEN" Movie "Units/Images/Airborne/BOMBER10.vidx"  Icon "Units/Images/Airborne/BOMBER10_I.vidx"
+
 [UNIT] "ASW"
   Tech "ASW"
   Movie "Units/Images/Airborne/ASW1.vidx"
@@ -1426,8 +1459,8 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY80" Set Speed 55
   ImprovedBy "NAVY00" Set Speed 65
   
-[UNIT] "Airport4"
-  Tech "U_Airport4"
+[UNIT] "AIRPORT4"
+  Tech "U_AIRPORT4"
   Movie "Units/Images/Ground/AIR3.midx"
   DrawSize 34
   DrawOrder 1
@@ -1439,10 +1472,10 @@ Config "Anti Submarine Warfare"
   Power 20
   Airway Launch 2 Time 180 // in seconds in 1x time
   CanHostAircrafts "AIRTRANS" 5 
+  CanHostAircrafts "SPY_PLANE" 5 
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
   ProductionCost 7
   NoAutoAttack
-  
 [END]

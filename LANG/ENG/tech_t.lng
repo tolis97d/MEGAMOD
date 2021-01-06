@@ -13,11 +13,14 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "U_AIRPORT_NAME" LANG "Strategic Airbase"
 "U_AIRPORT_DESC" LANG "An airbase which host strategic bombers and interceptors"
 
-"U_AIRPORT2_NAME" LANG "Tactical AirBase"
+"U_AIRPORT2_NAME" LANG "Tactical Airbase"
 "U_AIRPORT2_DESC" LANG "An airbase which hosts interceptors as well as fighter-bombers"
 
 "U_AIRPORT3_NAME" LANG "Naval Air Station"
 "U_AIRPORT3_DESC" LANG "A naval air station is a military air base, and consists of a permanent land-based operations locations for the military aviation division of the relevant branch of a navy. These bases are typically populated by squadrons, groups or wings, their various support commands, and other tenant commands."
+
+"U_AIRPORT4_NAME" LANG "Special Operations Airbase"
+"U_AIRPORT4_DESC" LANG "An airbase which hosts strategic transports and Reconnaissance aircraft."
 
 "U_LHA_NAME" LANG "Landing helicopter assault"
 "U_LHA_DESC" LANG "Landing helicopter assault (LHA) is the United States Navy's hull classification symbol for the general purpose helicopter-carrying amphibious assault ships of the Tarawa and America classes."
@@ -339,6 +342,18 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "ARMY_WEP_NAME" LANG "Ground Assets"
 "ARMY_WEP_DESC" LANG "Ground Assets"
+
+"R_CAMERA_NAME" LANG "Reconnaissance Camera"
+"R_CAMERA_DESC" LANG "Reconnaissance Camera"
+
+"U_SPY_PLANE_NAME" LANG "Reconnaissance aircraft"
+"U_SPY_PLANE_DESC" LANG "A reconnaissance aircraft is a military aircraft designed or adapted to perform aerial reconnaissance with roles including collection of imagery intelligence(including using photography), signals intelligence, as well as measurement and signature intelligence."
+
+"SPYPLANE_NAME" LANG "Reconnaissance aircraft"
+"SPYPLANE_DESC" LANG "A reconnaissance aircraft is a military aircraft designed or adapted to perform aerial reconnaissance with roles including collection of imagery intelligence(including using photography), signals intelligence, as well as measurement and signature intelligence."
+
+"SPYSAT_NAME" LANG "Reconnaissance satellite"
+"SPYSAT_DESC" LANG "A reconnaissance satellite or intelligence satellite (commonly, although unofficially, referred to as a spy satellite) is an Earth observation satellite or communications satellite deployed for military or intelligence applications."
 
 "M_ICBM_10MMIRV_NAME" LANG "Heavy MIRV ICBM"
 "M_ICBM_10MMIRV_DESC" LANG "A heavy ICBM containing 13 1Mt Warheads"

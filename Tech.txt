@@ -227,7 +227,6 @@
 Name "U_Cavern_NAME"
 Description "U_Cavern_DESC"
   
-  
 [TECHNOLOGY] "3GEN"
   Name "3GEN_NAME"
   Description "3GEN_DESC"
@@ -236,6 +235,23 @@ Description "U_Cavern_DESC"
   LeadsTo "4GEN"
   //AIUpgradeTechHint Aircraft
   
+[TECHNOLOGY] "SPYPLANE"
+  Name "SPYPLANE_NAME"
+  Description "SPYPLANE_DESC"
+  Image "Images/Science/SPY.png"
+  Points 15
+  LeadsTo "U_SPY_PLANE"
+  LeadsTo "R_CAMERA"
+  //AIUpgradeTechHint Aircraft
+
+[TECHNOLOGY] "U_SPY_PLANE"
+  Name "U_SPY_PLANE_NAME"
+  Description "U_SPY_PLANE_DESC"
+  
+[TECHNOLOGY] "R_CAMERA"
+  Name "R_CAMERA_NAME"
+  Description "R_CAMERA_DESC"
+
 [TECHNOLOGY] "4GEN"
   Name "4GEN_NAME"
   Description "4GEN_DESC"
@@ -279,7 +295,7 @@ Description "U_Cavern_DESC"
   Points 15
   LeadsTo "5GEN"
   //AIUpgradeTechHint Aircraft
-  
+
 [TECHNOLOGY] "5GEN"
   Name "5GEN_NAME"
   Description "5GEN_DESC"
@@ -1086,9 +1102,16 @@ Description "U_Cavern_DESC"
   Description "SATELLITE_DESC"
   Image "Images/Science/Satellite.png"
   Points 15
-  LeadsTo "U_Satellite"
+  LeadsTo "SPYSAT"
     LeadsTo "GPS"
 //  LeadsTo "Geostationary_satellites"
+  
+[TECHNOLOGY] "SPYSAT"
+  Name "SPYSAT_NAME"
+  Description "SPYSAT_DESC"
+  Image "Images/Science/SPYSAT.png"
+  Points 15
+  LeadsTo "U_Satellite"
   LeadsTo "Improved_optics"
 
 [TECHNOLOGY] "U_Satellite"
@@ -1718,9 +1741,9 @@ Description "U_Cavern_DESC"
   Name "U_MARINES_NAME"
   Description "U_MARINES_DESC"
 
-[TECHNOLOGY] "U_Airport4"
-  Name "U_Airport4_NAME"
-  Description "U_Airport4_DESC"
+[TECHNOLOGY] "U_AIRPORT4"
+  Name "U_AIRPORT4_NAME"
+  Description "U_AIRPORT4_DESC"
   
 [TECHNOLOGY] "U_LHA"
   Name "U_LHA_NAME"

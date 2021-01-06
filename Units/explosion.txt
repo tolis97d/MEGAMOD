@@ -79,8 +79,8 @@
         MuteLength 0.05
   Kilotons 500
   Damage 350
-  Range 100
-  FullEffectRange 12.5
+  Range 600
+  FullEffectRange 600
   DrawSize 7
   TimeGrowing 0.5
   TimeTotal 1
@@ -93,8 +93,8 @@
         MuteLength 0.05
   Kilotons 500
   Damage 350
-  Range 100
-  FullEffectRange 12.5
+  Range 600
+  FullEffectRange 600
   DrawSize 15
   TimeGrowing 0.5
   TimeTotal 1
