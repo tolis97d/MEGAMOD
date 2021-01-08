@@ -106,15 +106,6 @@
   Name "Air_refuel_NAME"
   Description "Air_refuel_DESC"
   
-  
-[TECHNOLOGY] "U_Mobile_SAM"
-  Name "U_Mobile_SAM_NAME"
-  Description "U_Mobile_SAM_DESC"
-  
-[TECHNOLOGY] "Mobile_SAM"
-  Name "Mobile_SAM_NAME"
-  Description "Mobile_SAM_DESC"
-  
 [TECHNOLOGY] "Surface_to_air_missile"
   Name "Surface_to_air_missile_NAME"
   Description "Surface_to_air_missile_DESC"
@@ -236,7 +227,6 @@
 Name "U_Cavern_NAME"
 Description "U_Cavern_DESC"
   
-  
 [TECHNOLOGY] "3GEN"
   Name "3GEN_NAME"
   Description "3GEN_DESC"
@@ -245,6 +235,23 @@ Description "U_Cavern_DESC"
   LeadsTo "4GEN"
   //AIUpgradeTechHint Aircraft
   
+[TECHNOLOGY] "SPYPLANE"
+  Name "SPYPLANE_NAME"
+  Description "SPYPLANE_DESC"
+  Image "Images/Science/SPY.png"
+  Points 15
+  LeadsTo "U_SPY_PLANE"
+  LeadsTo "R_CAMERA"
+  //AIUpgradeTechHint Aircraft
+
+[TECHNOLOGY] "U_SPY_PLANE"
+  Name "U_SPY_PLANE_NAME"
+  Description "U_SPY_PLANE_DESC"
+  
+[TECHNOLOGY] "R_CAMERA"
+  Name "R_CAMERA_NAME"
+  Description "R_CAMERA_DESC"
+
 [TECHNOLOGY] "4GEN"
   Name "4GEN_NAME"
   Description "4GEN_DESC"
@@ -288,7 +295,7 @@ Description "U_Cavern_DESC"
   Points 15
   LeadsTo "5GEN"
   //AIUpgradeTechHint Aircraft
-  
+
 [TECHNOLOGY] "5GEN"
   Name "5GEN_NAME"
   Description "5GEN_DESC"
@@ -429,7 +436,25 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SAM2.png"
   Points 15
   LeadsTo "SAM80"
+  LeadsTo "ABM0"
   //AIUpgradeTechHint SurfaceToAir
+  
+[TECHNOLOGY] "ABM0"
+  Name "ABM0_NAME"
+  Description "ABM0_DESC"
+  Image "Images/Science/NUKE_ABM.png"
+  Points 30
+  LeadsTo "ABM1"
+  LeadsTo "ABM02" 
+  LeadsTo "M_ABM_NUKE"  
+  LeadsTo "U_ABM_SITE"
+  
+[TECHNOLOGY] "ABM02"
+  Name "ABM02_NAME"
+  Description "ABM02_DESC"
+  Image "Images/Science/NUKE_ABM.png"
+  Points 30
+  LeadsTo "M_ABM_NUKE2"
   
 [TECHNOLOGY] "SAM80"
   Name "SAM80_NAME"
@@ -437,9 +462,7 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SAM3.png"
   Points 30
   LeadsTo "SAM10"
-  //AIUpgradeTechHint SurfaceToAir  
-  LeadsTo "ABM1"	
-  LeadsTo "U_Mobile_SAM"  
+  //AIUpgradeTechHint SurfaceToAir    
   
 [TECHNOLOGY] "SAM10"
   Name "SAM10_NAME"
@@ -452,11 +475,10 @@ Description "U_Cavern_DESC"
   Name "ABM1_NAME"
   Description "ABM1_DESC"
   Image "Images/Science/ABM1.png"
-  Points 45
+  Points 30
   LeadsTo "M_anti_ballistic_missile"
   LeadsTo "ABM2"
   LeadsTo "ASAT"
-  LeadsTo "U_ABM_SITE"
   //AIUpgradeTechHint Intercept
   
 [TECHNOLOGY] "U_ABM_SITE"
@@ -467,7 +489,7 @@ Description "U_Cavern_DESC"
   Name "ABM2_NAME"
   Description "ABM2_DESC"
   Image "Images/Science/ABM2.png"
-  Points 30
+  Points 15
   LeadsTo "ABM3"
   //AIUpgradeTechHint Intercept
   
@@ -475,7 +497,7 @@ Description "U_Cavern_DESC"
   Name "ABM3_NAME"
   Description "ABM3_DESC"
   Image "Images/Science/ABM3.png"
-  Points 30
+  Points 15
   //AIUpgradeTechHint Intercept
 
 [TECHNOLOGY] "M_anti_ballistic_missile"
@@ -871,6 +893,18 @@ Description "U_Cavern_DESC"
   Description "MRBM2_DESC"
   Image "Images/Science/MRBM2.png"
   Points 30
+  LeadsTo "MRBM3"
+  
+[TECHNOLOGY] "MRBM3"
+  Name "MRBM3_NAME"
+  Description "MRBM3_DESC"
+  Image "Images/Science/MRBM3.png"
+  Points 15
+  LeadsTo "M_ASBM"
+  
+[TECHNOLOGY] "M_ASBM"
+  Name "M_ASBM_NAME"
+  Description "M_ASBM_DESC"
 
 [TECHNOLOGY] "M_MRBM"
   Name "M_MRBM_NAME"
@@ -902,7 +936,7 @@ Description "U_Cavern_DESC"
   Name "Heavy_Missiles_NAME"
   Description "Heavy_Missiles_DESC"
   Image "Images/Science/HEAVY_ICBM.png"
-  Points 45
+  Points 50
   LeadsTo "M_ICBM_10M"
   LeadsTo "SUPER_HEAVY_MISSILES"
   LeadsTo "M_ICBM_10MMIRV"
@@ -1015,6 +1049,11 @@ Description "U_Cavern_DESC"
   LeadsTo "Mega-warheads"
   LeadsTo "M_10M_thermonuclear_bomb"
   LeadsTo "Tactical_nukes"
+  LeadsTo "ABM0_REQ"
+  
+[TECHNOLOGY] "ABM0_REQ"
+  Name "ABM0_REQ_NAME"
+  Description "ABM0_REQ_DESC"
 
 [TECHNOLOGY] "M_10M_thermonuclear_bomb"
   Name "M_10M_THERMONUCLEAR_BOMB_NAME"
@@ -1032,6 +1071,11 @@ Description "U_Cavern_DESC"
 //  LeadsTo "Tactical_nukes"
   LeadsTo "Heavy_Missiles"
   LeadsTo "M_50M_thermonuclear_bomb"
+  LeadsTo "ABM02_REQ"
+  
+[TECHNOLOGY] "ABM02_REQ"
+  Name "ABM02_REQ_NAME"
+  Description "ABM02_REQ_DESC"
   
 
 [TECHNOLOGY] "Tactical_nukes"
@@ -1058,9 +1102,16 @@ Description "U_Cavern_DESC"
   Description "SATELLITE_DESC"
   Image "Images/Science/Satellite.png"
   Points 15
-  LeadsTo "U_Satellite"
+  LeadsTo "SPYSAT"
     LeadsTo "GPS"
 //  LeadsTo "Geostationary_satellites"
+  
+[TECHNOLOGY] "SPYSAT"
+  Name "SPYSAT_NAME"
+  Description "SPYSAT_DESC"
+  Image "Images/Science/SPYSAT.png"
+  Points 15
+  LeadsTo "U_Satellite"
   LeadsTo "Improved_optics"
 
 [TECHNOLOGY] "U_Satellite"
@@ -1594,7 +1645,7 @@ Description "U_Cavern_DESC"
   Name "JAM1_NAME"
   Description "JAM1_DESC"
   Image "Images/Science/J1.png"
-  Points 15
+  Points 5
   LeadsTo "JAM2" 
   LeadsTo "M_EW" 
   LeadsTo "U_EWAIR"
@@ -1606,7 +1657,7 @@ Description "U_Cavern_DESC"
   Name "JAM2_NAME"
   Description "JAM2_DESC"
   Image "Images/Science/J2.png"
-  Points 15
+  Points 10
   LeadsTo "JAM3"
   //AIUpgradeTechHint AirToSurface
   //AIUpgradeTechHint Science  
@@ -1615,7 +1666,7 @@ Description "U_Cavern_DESC"
   Name "JAM3_NAME"
   Description "JAM3_DESC"
   Image "Images/Science/J3.png"
-  Points 30
+  Points 10
   //AIUpgradeTechHint AirToSurface
   //AIUpgradeTechHint Science
   
@@ -1678,12 +1729,36 @@ Description "U_Cavern_DESC"
   Name "ARMY_WEP_NAME"
   Description "ARMY_WEP_DESC"
 
-[TECHNOLOGY] "U_AIR_TRANS"
-  Name "U_AIR_TRANS_NAME"
-  Description "U_AIR_TRANS_DESC"
+[TECHNOLOGY] "U_AIRTRANS"
+  Name "U_AIRTRANS_NAME"
+  Description "U_AIRTRANS_DESC"
+  
+[TECHNOLOGY] "U_PARA"
+  Name "U_PARA_NAME"
+  Description "U_PARA_DESC"
+  
+[TECHNOLOGY] "U_MARINES"
+  Name "U_MARINES_NAME"
+  Description "U_MARINES_DESC"
 
-[TECHNOLOGY] "U_Airport4"
-  Name "U_Airport4_NAME"
-  Description "U_Airport4_DESC"
+[TECHNOLOGY] "U_AIRPORT4"
+  Name "U_AIRPORT4_NAME"
+  Description "U_AIRPORT4_DESC"
+  
+[TECHNOLOGY] "U_LHA"
+  Name "U_LHA_NAME"
+  Description "U_LHA_DESC"
+  
+[TECHNOLOGY] "M_CONV_MRBM"
+  Name "M_CONV_MRBM_NAME"
+  Description "M_CONV_MRBM_DESC"
+  
+[TECHNOLOGY] "M_ABM_NUKE"
+  Name "M_ABM_NUKE_NAME"
+  Description "M_ABM_NUKE_DESC"
+  
+[TECHNOLOGY] "M_ABM_NUKE2"
+  Name "M_ABM_NUKE2_NAME"
+  Description "M_ABM_NUKE2_DESC"
 
 [END]

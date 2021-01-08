@@ -203,7 +203,7 @@ Modifier options:
         ImprovedBy "CRUISE5" 
             Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-  Config "Electronic-Warfare" Default
+  Config "Electronic-Warfare"
         ImprovedBy "JAM1"
             Weapon "EW" 1 Launch 1 Time 90 AutoEngage 
   Config "Nuclear bomb"
@@ -324,7 +324,7 @@ Modifier options:
         ImprovedBy "CRUISE5" 
             Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-  Config "Electronic-Warfare" Default
+  Config "Electronic-Warfare"
         ImprovedBy "JAM1"
             Weapon "EW" 1 Launch 1 Time 90 AutoEngage 
   Config "Nuclear bomb"
@@ -478,6 +478,39 @@ Modifier options:
   ImprovedBy "5GEN" Movie "Units/Images/Airborne/BOMBER10.vidx"  Icon "Units/Images/Airborne/BOMBER10_I.vidx"
 
 //  ImprovedBy "S_FACTION_ID_3" Speed 3
+
+[UNIT] "SPY_PLANE"
+  Tech "U_SPY_PLANE"
+  Movie "Units/Images/Airborne/SPY60.vidx"
+  Icon "Units/Images/Airborne/SPY60_I.vidx"
+  DrawSize 24
+  LaunchMeSound 84
+  Size 0.06
+  Sound 135 Volume 0.3
+  Type Airborne
+  //AIVarietyHint Bomber
+  NoAutoDeploy
+  Speed 400
+  TurnSpeed 3
+  Range 15000
+  Power 1.5
+  ProductionCost 4.0
+  Radar "AIR_CAMERA"
+  Crash "big_bomb"
+  MaxElevation 15
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+  
+  ImprovedBy "4GEN" Set Speed 720
+  ImprovedBy "4GEN" Set Size 0.05
+  ImprovedBy "4GEN" Set Range 19000
+  ImprovedBy "4GEN" Set MaxElevation 18
+
+  ImprovedBy "5GEN" Set Power 3
+  ImprovedBy "5GEN" Set Size 0.04
+  
+  ImprovedBy "4GEN" Movie "Units/Images/Airborne/SPY70.vidx"  Icon "Units/Images/Airborne/SPY70_I.vidx"
+  ImprovedBy "5GEN" Movie "Units/Images/Airborne/BOMBER10.vidx"  Icon "Units/Images/Airborne/BOMBER10_I.vidx"
 
 [UNIT] "ASW"
   Tech "ASW"
@@ -973,6 +1006,7 @@ Modifier options:
   CanHostAircrafts "Fighter" 15 Patrol 2
   CanHostAircrafts airway 1 "Bomber" 5
   CanHostAircrafts airway 1 "AWACS" 1
+  CanHostAircrafts airway 1 "EWAIR" 1
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
@@ -1000,7 +1034,7 @@ Modifier options:
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
-  ProductionCost 8
+  ProductionCost 7
   NoAutoAttack
 
 [UNIT] "Mobile_MRBM"
@@ -1017,7 +1051,14 @@ Modifier options:
   Disassemble 0.35
   VirtualSpeed 650
   Power 1
-  Weapon "MRBM" 1  Time 960
+  Config "Nuclear MRBM" Default
+    Weapon "MRBM" 1  Time 960
+  Config "Conventional MRBM"
+    Weapon "CONV_MRBM" 20000  Time 960
+  Config "Anti-Ship"
+    Weapon "SPSPM" 20000 Launch 2 Time 150 AutoEngage
+  Config "Anti-Ship ballistic missile"
+    Weapon "ASBM" 20000 Time 300 AutoEngage
   Radar "STD Vision"
 //  Radar "STD Long Wave"
   ProductionCost 10
@@ -1169,43 +1210,20 @@ Modifier options:
   Type Ground
   //AIVarietyHint SAM
   Power 2
-  Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
-    ImprovedBy "ABM2"
-      Weapon "ABM" 20000 Launch 1 Time 120 AutoEngage
-    ImprovedBy "ABM3"
-      Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
+  Config "ABM"
+    Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
+        ImprovedBy "ABM2"
+            Weapon "ABM" 20000 Launch 1 Time 120 AutoEngage
+        ImprovedBy "ABM3"
+            Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
+  Config "Nuclear ABM" Default
+    Weapon "ABM_NUKE" 5 Launch 1 Time 180 AutoEngage
+  Config "Heavy Nuclear ABM" Default
+    Weapon "ABM_NUKE2" 5 Launch 1 Time 180 AutoEngage
   Radar "STD Short Wave"
   CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
   ProductionCost 10
   ImprovedBy "ABM2" Set Size 0.05
-
-[UNIT] "MOBILE_SAM"
-  Tech "U_Mobile_SAM"
-  Movie "Units/Images/Ground/mobileSAM.vidx"
-  IconIDX 17
-  DrawSize 28
-  Size 0.05
-  Sound 141 Volume 0.6
-  Type Ground
-  //AIVarietyHint SAM
-  Disassemble 0.15
-  VirtualSpeed 750
-  Power 2
-  Weapon "SAM" 20000 Launch 4 Time 70 AutoEngage
-  Weapon "ABM" 10 Launch 1 Time 150 AutoEngage
-    ImprovedBy "SAM60"
-      Weapon "SAM" 20000 Launch 4 Time 45 AutoEngage
-      Weapon "ABM" 10 Launch 1 Time 150 AutoEngage
-    ImprovedBy "ABM2"
-      Weapon "SAM" 20000 Launch 4 Time 70 AutoEngage
-      Weapon "ABM" 10 Launch 1 Time 50 AutoEngage
-    ImprovedBy "ABM2"
-      Weapon "SAM" 20000 Launch 4 Time 45 AutoEngage
-      Weapon "ABM" 10 Launch 1 Time 50 AutoEngage
-  Radar "STD Short Wave"
-  CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
-
-  ProductionCost 8
 
 [UNIT] "Satellite"
   Tech "U_Satellite"
@@ -1329,60 +1347,121 @@ Config "Anti Submarine Warfare"
   Tech "ARMY"
   Movie "Units/Images/Ground/ARMY.midx"
   IconIDX 17
-  DrawSize 26
+  DrawSize 22
   Size 10
   Sound 141 Volume 0.6
   Type Ground
   Speed 25 // in km per h
   Power 5000
-  Weapon "SAM" 5000 Launch 2 Time 70 AutoEngage
-  Weapon "ARMY_WEP" 20000 Time 180
+  Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
+  Weapon "ARMY_WEP" 20000 Launch 2 Time 180 AutoEngage
   ProductionCost 70
   Radar "STD Vision"
   Radar "STD Short Wave"
   
-[UNIT] "AIR_TRANS"
-  Tech "U_AIR_TRANS"
-  Movie "Units/Images/Airborne/C17.midx"
-  Icon "Units/Images/Airborne/BOMBER50_I.vidx"
+[UNIT] "PARA"
+  Tech "U_PARA"
+  Movie "Units/Images/Ground/PARA.midx"
+  IconIDX 17
+  DrawSize 18
+  Size 10
+  Sound 141 Volume 0.6
+  Type Ground
+  Speed 30 // in km per h
+  Power 3000
+  Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
+  Weapon "ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
+  ProductionCost 70
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  
+[UNIT] "MARINES"
+  Tech "U_MARINES"
+  Movie "Units/Images/Ground/MARINES.midx"
+  IconIDX 17
+  DrawSize 18
+  Size 10
+  Sound 141 Volume 0.6
+  Type Ground
+  Speed 30 // in km per h
+  Power 3000
+  Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
+  Weapon "ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
+  ProductionCost 70
+  Radar "STD Vision"
+  Radar "STD Short Wave"
+  
+[UNIT] "AIRTRANS"
+  Tech "U_AIRTRANS"
+  Movie "Units/Images/AIRBORNE/AIRTRANS50.vidx"
+  Icon "Units/Images/AIRBORNE/AIRTRANS50_I.vidx"
   DrawSize 24
   LaunchMeSound 84
   Size 0.06
   Sound 135 Volume 0.3
   Type Airborne
-  //AIVarietyHint Bomber
   NoAutoDeploy
   Speed 400
-  TurnSpeed 3
-  Range 15000
+  TurnSpeed 5
+  Range 10000
   Power 1.5
-  Config "Cruise Missiles"
-    Airway Launch 1 Time 120 // in seconds in 1x time
-    CanHostAircrafts "ARMY" 1
-  Radar "STD Vision"
-  Radar "STD Short Wave"
-  ProductionCost 4.3
+  ProductionCost 50
   Crash "big_bomb"
-
+  Airway Launch 1 Time 120 // in seconds in 1x time
+  CanHostAircrafts "PARA" 1
+  CanStoreMissiles "ARMY_WEP" 50000
+  CanStoreMissiles "SAM" 50000
+	  
+  Radar "STD Vision"
+  Radar "STD Long Wave"
+  
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+
   
-  ImprovedBy "3GEN" Set Speed 700
-  ImprovedBy "3GEN" Set TurnSpeed 5
-  ImprovedBy "3GEN" Set Size 0.055
-  ImprovedBy "3GEN" Set Power 2.5
-  ImprovedBy "3GEN" Set Range 17000
+[UNIT] "LHA"
+  Tech "U_LHA"
+  Movie "Units/Images/Naval/AMERICA.midx"
+  Icon "Units/Images/Naval/UI/AMERICA.png"
+  DrawSize 38.25
+  FollowRadius 39//34
+  Size 0.4
+  Sound 132 Volume 0.9
+  Type Naval
+  //AIVarietyHint Carrier
+  AttackerInPlanner
+  Speed 35
+  TurnSpeed 5 // in angles per second
+  Power 30
+  Airway Launch 3 Time 120 // in seconds in 1x time
+  Airway Launch 3 Time 120 // in seconds in 1x time
+  Airway Launch 1 Time 180 // in seconds in 1x time
+  CanHostAircrafts "MARINES" 1
+  CanHostAircrafts airway 1 "CVN_EWAIR" 1
+  CanStoreMissiles "Low-power nuclear bomb" 20
+  CanStoreMissiles "ASM" 20
+  CanStoreMissiles "AAM" 50000
+  CanStoreMissiles "ASM" 50000
+  CanStoreMissiles "Torpedo" 50000
+  CanStoreMissiles "Free fall bomb" 50000
+  CanStoreMissiles "DepthCharge" 20000
   
-  ImprovedBy "4GEN" Set Speed 720
-  ImprovedBy "4GEN" Set Size 0.05
-  ImprovedBy "4GEN" Set Range 19000
+  Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
+  Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage
+  Weapon "CIWS_LASER" 200000 Launch 1 Time 2 AutoEngage 
+	  
+  Radar "STD Vision"
+  Radar "STD Long Wave"
+  Modifier "NAVY60"
+  Modifier "NAVY80"
+  Modifier "NAVY00"
+  ProductionCost 15
+  ImprovedBy "NAVY60" Set Speed 45
+  ImprovedBy "NAVY80" Set Speed 55
+  ImprovedBy "NAVY00" Set Speed 65
   
-  ImprovedBy "4GEN2" Set Speed 750
-  ImprovedBy "4GEN2" Set Range 22000
-  
-[UNIT] "Airport4"
-  Tech "U_Airport4"
-  Movie "Units/Images/Ground/AIR2.midx"
-//  Icon "Units/Images/Ground/airport_img.png"
+[UNIT] "AIRPORT4"
+  Tech "U_AIRPORT4"
+  Movie "Units/Images/Ground/AIR3.midx"
   DrawSize 34
   DrawOrder 1
   Size 1.5
@@ -1392,14 +1471,11 @@ Config "Anti Submarine Warfare"
   AttackerInPlanner
   Power 20
   Airway Launch 2 Time 180 // in seconds in 1x time
-  Airway Launch 2 Time 220 // in seconds in 1x time
-  CanHostAircrafts "AIR_TRANS" 1
-  CanHostAircrafts airway 1 "Bomber" 5
+  CanHostAircrafts "AIRTRANS" 5 
+  CanHostAircrafts "SPY_PLANE" 5 
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
-  ProductionCost 12
+  ProductionCost 7
   NoAutoAttack
-
-  
 [END]

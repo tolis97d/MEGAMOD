@@ -26,6 +26,12 @@ Modifier options:
   CanDetect Missile
   CanDetect HighMissile
   GlobalShowType LW_RANGES
+  
+[TYPE] "T_SPYPLANE"
+  PreciseTargeting No
+  CanDetect Ground
+  CanDetect Naval
+  GlobalShowType LW_RANGES
 
 [TYPE] "OverHorizon"
   PreciseTargeting Yes
@@ -168,6 +174,14 @@ Modifier options:
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.8
+  
+[RADAR] "AIR_CAMERA"
+  Tech "R_CAMERA"
+  Type "T_SPYPLANE"
+  Range 300
+  Sector 180
+  Precision 0
+  AffectedBy Unit "Underground" Range 0.2
 
 [RADAR] "Fixed Long Wave"
   Tech "R_Long_wave_radar"

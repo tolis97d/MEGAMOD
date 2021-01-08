@@ -13,11 +13,17 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "U_AIRPORT_NAME" LANG "Strategic Airbase"
 "U_AIRPORT_DESC" LANG "An airbase which host strategic bombers and interceptors"
 
-"U_AIRPORT2_NAME" LANG "Tactical AirBase"
+"U_AIRPORT2_NAME" LANG "Tactical Airbase"
 "U_AIRPORT2_DESC" LANG "An airbase which hosts interceptors as well as fighter-bombers"
 
 "U_AIRPORT3_NAME" LANG "Naval Air Station"
 "U_AIRPORT3_DESC" LANG "A naval air station is a military air base, and consists of a permanent land-based operations locations for the military aviation division of the relevant branch of a navy. These bases are typically populated by squadrons, groups or wings, their various support commands, and other tenant commands."
+
+"U_AIRPORT4_NAME" LANG "Special Operations Airbase"
+"U_AIRPORT4_DESC" LANG "An airbase which hosts strategic transports and Reconnaissance aircraft."
+
+"U_LHA_NAME" LANG "Landing helicopter assault"
+"U_LHA_DESC" LANG "Landing helicopter assault (LHA) is the United States Navy's hull classification symbol for the general purpose helicopter-carrying amphibious assault ships of the Tarawa and America classes."
 
 "ASM1_M_NAME" LANG "Air-to-surface missile"
 "ASM1_M_DESC" LANG "An air-to-surface missile is a missile designed to be launched from military aircraft at targets on land or sea.The two most common propulsion systems for air-to-surface missiles are rocket motors, usually with shorter range, and slower, longer-range jet engines. Some air-to-surface missiles are powered by ramjets, giving them both long range and high speed."
@@ -141,6 +147,12 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "SLBM_NAME" LANG "SLBM"
 "SLBM_DESC" LANG "A submarine-launched ballistic missile (SLBM) is a ballistic missile capable of being launched from submarines. Modern variants usually deliver multiple independently targetable reentry vehicles (MIRVs) each of which carries a nuclear warhead and allows a single launched missile to strike several targets. Submarine-launched ballistic missiles operate in a different way from submarine-launched cruise missiles."
 
+"ABM0_NAME" LANG "Nuclear ABM systems"
+"ABM0_DESC" LANG "During the early period of the cold war the lack of precise targeting systems meant that the only viable way to intercept enemy ballistic missiles was to use nuclear warheads."
+
+"ABM02_NAME" LANG "Heavy Nuclear ABM Systems"
+"ABM02_DESC" LANG "The introduction of MIRVs as well as more advanced midflight evasion manoeuvring greatly reduced the effectiveness of conventional ABM systems.Thus fielding high yield nuclear warheads as ABMs could defeat multiple MIRVs."
+
 "ABM1_NAME" LANG "Early ABM systems"
 "ABM1_DESC" LANG "An anti-ballistic missile is a surface-to-air missile designed to counter ballistic missiles.Ballistic missiles are used to deliver nuclear, chemical, biological, or conventional warheads in a ballistic flight trajectory. The term anti-ballistic missile is a generic term conveying a system designed to intercept and destroy any type of ballistic threat; however, it is commonly used for systems specifically designed to counter intercontinental ballistic missiles.\n\n\n+Allows ABMs to be used by Phased Array Tracking SAMs(High Cooldown)"
 
@@ -183,8 +195,23 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "MRBM2_NAME" LANG "Advaned MRBMs"
 "MRBM2_DESC" LANG "Designed to be used in theater level conflicts these missiles can maneuver during flight at different altitudes and trajectories and can turn at up to 20 to 30 G to evade anti-ballistic missiles.\n\n\n+Makes it much harder to intercept"
 
+"MRBM3_NAME" LANG "ASBM"
+"MRBM3_DESC" LANG "An anti-ship ballistic missile (ASBM) is a military ballistic missile system designed to hit a warship at sea.Due to the often hypersonic flight speed of ballistic missiles, the ASBM's kinetic energy alone may be sufficient to cripple or outright destroy a supercarrier with a single conventional warhead impact. However, unlike a nuclear warhead, this will require a direct hit to be effective, thus unlike a typical ballistic missile, which follows a ballistic flight path after the relatively brief initial phase of powered flight, an ASBM would require a precise and high-performance terminal guidance system, with advanced sensors and in-flight calibrations in order to successfully hit a moving target.\n\n\n+Effective Against Large Vessels like cruiser and carriers"
+
+"M_ABM_NUKE_NAME" LANG "1Mt Nuclear ABM Missile"
+"M_ABM_NUKE_DESC" LANG "1Mt Nuclear ABM Missile"
+
+"M_ABM_NUKE2_NAME" LANG "50Mt Nuclear ABM Missile"
+"M_ABM_NUKE2_DESC" LANG "50Mt Nuclear ABM Missile"
+
 "U_ABM_SITE_NAME" LANG "ABM site"
 "U_ABM_SITE_DESC" LANG "Collection of hardened Anti Ballistic Missile silos"
+
+"M_ASBM_NAME" LANG "ASBM"
+"M_ASBM_DESC" LANG "An anti-ship ballistic missile (ASBM) is a military ballistic missile system designed to hit a warship at sea."
+
+"M_CONV_MRBM_NAME" LANG "Conventional Ballistic Missile"
+"M_CONV_MRBM_DESC" LANG "A ballistic missile follows a ballistic trajectory to deliver a warhead on a predetermined target."
 
 "GBOMB_M_NAME" LANG "Guided Bomb"
 "GBOMB_M_DESC" LANG "A guided bomb (also known as a smart bomb, guided bomb unit, or GBU) is a precision-guided munition designed to achieve a smaller circular error probable (CEP)."
@@ -304,8 +331,29 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "ARMY_NAME" LANG "Army Group"
 "ARMY_DESC" LANG "An army group is a military organization consisting of several field armies, which is self-sufficient for indefinite periods. It is usually responsible for a particular geographic area. An army group is the largest field organization handled by a single commander—usually a full general or field marshal—and it generally includes between 400,000 and 1,000,000 soldiers."
 
+"U_PARA_NAME" LANG "Airborne Division"
+"U_PARA_DESC" LANG "An Airborne Division is a light infantry division specializing in air assault operations."
+
+"U_MARINES_NAME" LANG "Marine Division"
+"U_MARINES_DESC" LANG "The division is employed as the ground combat element of a Marine Expeditionary Force and may provide task-organized forces for assault operations. A Marine Division is able to provide the ground amphibious forcible entry capability to the naval expeditionary force and to conduct subsequent land operations in any operational environment."
+
+"U_AIRTRANS_NAME" LANG "Strategic Transport"
+"U_AIRTRANS_DESC" LANG "Aircrafts capable of airlifting troops and military equipment to support military operations."
+
 "ARMY_WEP_NAME" LANG "Ground Assets"
 "ARMY_WEP_DESC" LANG "Ground Assets"
+
+"R_CAMERA_NAME" LANG "Reconnaissance Camera"
+"R_CAMERA_DESC" LANG "Reconnaissance Camera"
+
+"U_SPY_PLANE_NAME" LANG "Reconnaissance aircraft"
+"U_SPY_PLANE_DESC" LANG "A reconnaissance aircraft is a military aircraft designed or adapted to perform aerial reconnaissance with roles including collection of imagery intelligence(including using photography), signals intelligence, as well as measurement and signature intelligence."
+
+"SPYPLANE_NAME" LANG "Reconnaissance aircraft"
+"SPYPLANE_DESC" LANG "A reconnaissance aircraft is a military aircraft designed or adapted to perform aerial reconnaissance with roles including collection of imagery intelligence(including using photography), signals intelligence, as well as measurement and signature intelligence."
+
+"SPYSAT_NAME" LANG "Reconnaissance satellite"
+"SPYSAT_DESC" LANG "A reconnaissance satellite or intelligence satellite (commonly, although unofficially, referred to as a spy satellite) is an Earth observation satellite or communications satellite deployed for military or intelligence applications."
 
 "M_ICBM_10MMIRV_NAME" LANG "Heavy MIRV ICBM"
 "M_ICBM_10MMIRV_DESC" LANG "A heavy ICBM containing 13 1Mt Warheads"
