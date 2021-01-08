@@ -193,7 +193,7 @@ Modifier options:
   Tech "GBOMB_M"
   Type "Default"
   Icon "Units/Images/Missiles/B1.vidx"
-  Explosion "big_bomb_old2"
+  Explosion "big_bomb_old"
   Range 100
   Speed 400
   AttackAngle 120
@@ -201,6 +201,7 @@ Modifier options:
   CanBeIntercepted 0.8 // 0 to 1, interception chance, the default is 0
   Precision 0.1
   LeadGuidance 1
+  AffectedBy Unit "ARMY" Damage 3
   AffectedBy "ABM2" CanBeIntercepted 1.4 
   
   ImprovedBy "B2" Set Precision 0.1 
@@ -346,6 +347,7 @@ Modifier options:
   Ballistic 
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.2
+  AffectedBy Unit "ARMY" Damage 3
   AffectedBy "ABM2" CanBeIntercepted 1.4 
   
   ImprovedBy "ASM2" Set Precision 0.1 
@@ -524,7 +526,7 @@ Modifier options:
   ImprovedBy "SAM60" Set Speed 2500
   ImprovedBy "SAM60" Set Precision 0.15
   ImprovedBy "SAM60" Set Precision 0.15
-  ImprovedBy "SAM60" Set MaxElevation 15
+  ImprovedBy "SAM60" Set MaxElevation 10
   
   ImprovedBy "SAM80" Set Range 550
   ImprovedBy "SAM80" Set Speed 2500
@@ -577,7 +579,7 @@ Modifier options:
   Range 600
   Speed 5000
   Precision 0.05
-  ProductionCost 0.5
+  ProductionCost 2.5
   ProductionCostDegrades
   RequiresPreciseTargeting No
   LeadGuidance 1
@@ -597,7 +599,7 @@ Modifier options:
 [MISSILE] "ABM_NUKE2"
   Tech "M_ABM_NUKE2"
   Type "AntiMissile2"
-  Icon "Units/Images/Missiles/NUKE_ABM.png"
+  Icon "Units/Images/Missiles/NUKE_ABM2.png"
   Sound 69 Volume 1.25
   DrawSize 12
   DrawNuke
@@ -605,7 +607,7 @@ Modifier options:
   Range 600
   Speed 5000
   Precision 0.05
-  ProductionCost 3
+  ProductionCost 7
   ProductionCostDegrades
   LeadGuidance 1
   MaxElevation 2000
@@ -957,7 +959,6 @@ Modifier options:
 [MISSILE] "ICBM MIRV+"
   Tech "M_ICBM_MIRV_FALSE"
   Icon "Units/Images/Missiles/ICBM_MIRVF.png"
-  RoundIcon "Units/Images/Missiles/MIRV_FW_round.png"
   Sound 69 Volume 1.25
   DrawSize 14
   DrawNuke
@@ -1025,7 +1026,7 @@ Modifier options:
   Range 350
   Speed 1400
 //  Elevation 200
-  Precision 0.6
+  Precision 0.1
   Switchable ON
   
   DisablingTech "M_CIWS_LASER"
@@ -1039,10 +1040,11 @@ Modifier options:
   Explosion "LASER_EXP2"
   DrawLaser
   Ballistic 
-  Range 400
-  Speed 1400
+  Range 500
+  Speed 7000
   Precision 0.05
   Switchable ON
+  MaxElevation 50
   
 [MISSILE] "NORAD_EFFECT"
   Tech "NORAD_EFFECT"
@@ -1060,7 +1062,7 @@ Modifier options:
 [MISSILE] "ARMY_WEP"
   Tech "ARMY_WEP"
   Type "Default"
-  Icon "Units/Images/Missiles/ARMY_WEP.png"
+  Icon "Units/Images/Missiles/ARMY50.vidx"
   Sound 207 Volume 0.2
     MuteLength 2
   Explosion "big_bomb_old"
@@ -1071,5 +1073,49 @@ Modifier options:
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.25
   Switchable ON
+  
+  ImprovedBy "ARMY60" Movie Image "Units/Images/Missiles/ARMY60.vidx"
+  ImprovedBy "ARMY70" Movie Image "Units/Images/Missiles/ARMY70.vidx"
+  ImprovedBy "ARMY80" Movie Image "Units/Images/Missiles/ARMY80.vidx"
+  ImprovedBy "ARMY90" Movie Image "Units/Images/Missiles/ARMY90.vidx"
+  ImprovedBy "ARMY10" Movie Image "Units/Images/Missiles/ARMY10.vidx"
+  ImprovedBy "ARMY20" Movie Image "Units/Images/Missiles/ARMY20.vidx"
+  
+[MISSILE] "M_ARMY_WEP"
+  Tech "M_ARMY_WEP"
+  Type "Default"
+  Icon "Units/Images/Missiles/MARINES50.vidx"
+  Sound 207 Volume 0.2
+    MuteLength 2
+  Explosion "big_bomb_old"
+  Range 250
+  Speed 800
+  AttackAngle 120
+  Ballistic 
+  CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
+  Precision 0.25
+  Switchable ON
+  
+
+  ImprovedBy "ARMY70" Movie Image "Units/Images/Missiles/MARINES70.vidx"
+  ImprovedBy "ARMY10" Movie Image "Units/Images/Missiles/MARINES10.vidx"
+  
+[MISSILE] "P_ARMY_WEP"
+  Tech "P_ARMY_WEP"
+  Type "Default"
+  Icon "Units/Images/Missiles/PARA50.vidx"
+  Sound 207 Volume 0.2
+    MuteLength 2
+  Explosion "big_bomb_old"
+  Range 250
+  Speed 800
+  AttackAngle 120
+  Ballistic 
+  CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
+  Precision 0.25
+  Switchable ON
+  
+  ImprovedBy "ARMY70" Movie Image "Units/Images/Missiles/PARA70.vidx"
+  ImprovedBy "ARMY10" Movie Image "Units/Images/Missiles/PARA10.vidx"
 
 [END]
