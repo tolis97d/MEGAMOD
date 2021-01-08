@@ -22,8 +22,8 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "U_AIRPORT4_NAME" LANG "Special Operations Airbase"
 "U_AIRPORT4_DESC" LANG "An airbase which hosts strategic transports and Reconnaissance aircraft."
 
-"U_LHA_NAME" LANG "Landing helicopter assault"
-"U_LHA_DESC" LANG "Landing helicopter assault (LHA) is the United States Navy's hull classification symbol for the general purpose helicopter-carrying amphibious assault ships of the Tarawa and America classes."
+"U_LHA_NAME" LANG "Amphibious Assault Ship"
+"U_LHA_DESC" LANG "An amphibious assault ship is a type of amphibious warfare ship employed to land and support ground forces on enemy territory by an amphibious assault. Modern ships support amphibious landing craft, with most designs including a well deck. Coming full circle, some amphibious assault ships also support V/STOL fixed-wing aircraft, now having a secondary role as aircraft carriers."
 
 "ASM1_M_NAME" LANG "Air-to-surface missile"
 "ASM1_M_DESC" LANG "An air-to-surface missile is a missile designed to be launched from military aircraft at targets on land or sea.The two most common propulsion systems for air-to-surface missiles are rocket motors, usually with shorter range, and slower, longer-range jet engines. Some air-to-surface missiles are powered by ramjets, giving them both long range and high speed."
@@ -343,6 +343,12 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "ARMY_WEP_NAME" LANG "Ground Assets"
 "ARMY_WEP_DESC" LANG "Ground Assets"
 
+"M_ARMY_WEP_NAME" LANG "Marine Ground Assets"
+"M_ARMY_WEP_DESC" LANG "Marine Ground Assets"
+
+"P_ARMY_WEP_NAME" LANG "Airborne Ground Assets"
+"P_ARMY_WEP_DESC" LANG "Airborne Ground Assets"
+
 "R_CAMERA_NAME" LANG "Reconnaissance Camera"
 "R_CAMERA_DESC" LANG "Reconnaissance Camera"
 
@@ -357,5 +363,23 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "M_ICBM_10MMIRV_NAME" LANG "Heavy MIRV ICBM"
 "M_ICBM_10MMIRV_DESC" LANG "A heavy ICBM containing 13 1Mt Warheads"
+
+"ARMY60_NAME" LANG "Ground Forces 60s"
+"ARMY60_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
+
+"ARMY70_NAME" LANG "Ground Forces 70s"
+"ARMY70_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
+
+"ARMY80_NAME" LANG "Ground Forces 80s"
+"ARMY80_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
+
+"ARMY90_NAME" LANG "Ground Forces 90s"
+"ARMY90_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
+
+"ARMY10_NAME" LANG "Ground Forces 10s"
+"ARMY10_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
+
+"ARMY20_NAME" LANG "Ground Forces 20s"
+"ARMY20_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
 
 END

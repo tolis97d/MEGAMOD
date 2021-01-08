@@ -443,7 +443,7 @@ Description "U_Cavern_DESC"
   Name "ABM0_NAME"
   Description "ABM0_DESC"
   Image "Images/Science/NUKE_ABM.png"
-  Points 30
+  Points 20
   LeadsTo "ABM1"
   LeadsTo "ABM02" 
   LeadsTo "M_ABM_NUKE"  
@@ -452,7 +452,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "ABM02"
   Name "ABM02_NAME"
   Description "ABM02_DESC"
-  Image "Images/Science/NUKE_ABM.png"
+  Image "Images/Science/NUKE_ABM2.png"
   Points 30
   LeadsTo "M_ABM_NUKE2"
   
@@ -1228,6 +1228,7 @@ Description "U_Cavern_DESC"
   Description "ENG2_DESC"
   Image "Images/Science/ENG70.png"
   Points 15
+//  AvailableFrom 108000
   LeadsTo "ENG3"
   LeadsTo "ICBM2_REQ"
   LeadsTo "4GEN_REQ" 
@@ -1255,6 +1256,7 @@ Description "U_Cavern_DESC"
   Description "ENG3_DESC"
   Image "Images/Science/ENG80.png"
   Points 15
+//  AvailableFrom 216000
   LeadsTo "ENG4" 
   LeadsTo "MIRV_REQ"
   LeadsTo "NAVY80_REQ"
@@ -1294,6 +1296,7 @@ Description "U_Cavern_DESC"
   Description "ENG4_DESC"
   Image "Images/Science/ENG00.png"
   Points 15
+//  AvailableFrom 432000
   LeadsTo "ENG5" 
   LeadsTo "False_warheads_REQ"
   LeadsTo "Heavy_Missiles_REQ"
@@ -1301,8 +1304,16 @@ Description "U_Cavern_DESC"
   LeadsTo "NAVY00_REQ"
   LeadsTo "SUB00_REQ"
   LeadsTo "CRUISE4_REQ"
+  LeadsTo "MRBM2_REQ"
+  LeadsTo "B3_REQ"
+  LeadsTo "ASM3_REQ"
   //AIUpgradeTechHint Naval
   //AIUpgradeTechHint Science
+  
+[TECHNOLOGY] "MRBM2_REQ"
+  Name "MRBM2_REQ_NAME"
+  Description "MRBM2_REQ_DESC" 
+  LeadsTo "MRBM2"  
   
 [TECHNOLOGY] "False_warheads_REQ"
   Name "False_warheads_REQ_NAME"
@@ -1333,6 +1344,16 @@ Description "U_Cavern_DESC"
   Name "CRUISE4_REQ_NAME"
   Description "CRUISE4_REQ_DESC" 
   LeadsTo "CRUISE4"
+  
+[TECHNOLOGY] "ASM3_REQ"
+  Name "ASM3_REQ_NAME"
+  Description "ASM3_REQ_DESC" 
+  LeadsTo "ASM3"
+  
+[TECHNOLOGY] "B3_REQ"
+  Name "B3_REQ_NAME"
+  Description "B3_REQ_DESC" 
+  LeadsTo "B3"
   
 [TECHNOLOGY] "ENG5"
   Name "ENG5_NAME"
@@ -1400,8 +1421,10 @@ Description "U_Cavern_DESC"
   Description "COMP2_DESC"
   Image "Images/Science/COMP70.png"
   Points 15
+//  AvailableFrom 108000
   LeadsTo "COMP3" 
   LeadsTo "JAM1_REQ"
+  LeadsTo "SPYSAT_REQ"
   LeadsTo "LW_MK2_REQ"
   LeadsTo "SW_MK2_REQ"
   LeadsTo "SONAR1_REQ" 
@@ -1411,6 +1434,11 @@ Description "U_Cavern_DESC"
   Name "JAM1_REQ_NAME"
   Description "JAM1_REQ_DESC" 
   LeadsTo "JAM1"
+  
+[TECHNOLOGY] "SPYSAT_REQ"
+  Name "SPYSAT_REQ_NAME"
+  Description "SPYSAT_REQ_DESC" 
+  LeadsTo "SPYSAT"
   
 [TECHNOLOGY] "LW_MK2_REQ"
   Name "LW_MK2_REQ_NAME"
@@ -1432,6 +1460,7 @@ Description "U_Cavern_DESC"
   Description "COMP3_DESC"
   Image "Images/Science/COMP80.png"
   Points 15
+//  AvailableFrom 216000
   LeadsTo "COMP4"
   LeadsTo "GPS_REQ"
   LeadsTo "ABM1_REQ" 
@@ -1470,6 +1499,7 @@ Description "U_Cavern_DESC"
   Description "COMP4_DESC"
   Image "Images/Science/COMP90.png"
   Points 15
+//  AvailableFrom 324000
   LeadsTo "COMP5"
   LeadsTo "ABM2_REQ"
   LeadsTo "LW_MK3_REQ"
@@ -1502,6 +1532,7 @@ Description "U_Cavern_DESC"
   Description "COMP5_DESC"
   Image "Images/Science/COMP00.png"
   Points 15
+//  AvailableFrom 432000
   LeadsTo "COMP6"
   LeadsTo "4GEN2_REQ3"
   LeadsTo "AA3_REQ"
@@ -1541,14 +1572,21 @@ Description "U_Cavern_DESC"
   Description "COMP6_DESC"
   Image "Images/Science/COMP10.png"
   Points 15
+//  AvailableFrom 564000
   LeadsTo "COMP7"
   LeadsTo "CIWS_LASER_REQ"
-  LeadsTo "5GEN_REQ" 
+  LeadsTo "5GEN_REQ"
   LeadsTo "AA4_REQ"
   LeadsTo "SAM10_REQ"
+  LeadsTo "MRBM3_REQ"
   LeadsTo "LASER_PRACTICAL" 
   //AIUpgradeTechHint Science 
 
+[TECHNOLOGY] "MRBM3_REQ"
+  Name "MRBM3_REQ_NAME"
+  Description "MRBM3_REQ_DESC"  
+  LeadsTo "MRBM3"
+  
 [TECHNOLOGY] "CIWS_LASER_REQ"
   Name "CIWS_LASER_REQ_NAME"
   Description "CIWS_LASER_REQ_DESC"  
@@ -1626,7 +1664,7 @@ Description "U_Cavern_DESC"
   Name "LASER_PRACTICAL_NAME"
   Description "LASER_PRACTICAL_DESC"
   Image "Images/Science/PRACTICAL_LASER.png"
-  Points 45
+  Points 30
   LeadsTo "CIWS_LASER_REQ" 
   LeadsTo "Laser_weapon_REQ" 
   //AIUpgradeTechHint ShipToShip
@@ -1657,7 +1695,7 @@ Description "U_Cavern_DESC"
   Name "JAM2_NAME"
   Description "JAM2_DESC"
   Image "Images/Science/J2.png"
-  Points 10
+  Points 5
   LeadsTo "JAM3"
   //AIUpgradeTechHint AirToSurface
   //AIUpgradeTechHint Science  
@@ -1666,7 +1704,7 @@ Description "U_Cavern_DESC"
   Name "JAM3_NAME"
   Description "JAM3_DESC"
   Image "Images/Science/J3.png"
-  Points 10
+  Points 5
   //AIUpgradeTechHint AirToSurface
   //AIUpgradeTechHint Science
   
@@ -1674,9 +1712,53 @@ Description "U_Cavern_DESC"
   Name "ARMY_TECH_NAME"
   Description "ARMY_TECH_DESC"
   Image "Images/Science/ARMY.png"
-  Points 1  
+  Points 1
   LeadsTo "ARMY"
+  LeadsTo "U_PARA"
+  LeadsTo "U_MARINES"
+  LeadsTo "ARMY60"
   //AIUpgradeTechHint Land
+  
+[TECHNOLOGY] "ARMY60"
+  Name "ARMY60_NAME"
+  Description "ARMY60_DESC"
+  Image "Images/Science/ARMY60.png"
+  Points 5
+  LeadsTo "ARMY70"
+  
+[TECHNOLOGY] "ARMY70"
+  Name "ARMY70_NAME"
+  Description "ARMY70_DESC"
+  Image "Images/Science/ARMY70.png"
+  Points 5
+  LeadsTo "ARMY80"
+  
+[TECHNOLOGY] "ARMY80"
+  Name "ARMY80_NAME"
+  Description "ARMY80_DESC"
+  Image "Images/Science/ARMY80.png"
+  Points 5
+  LeadsTo "ARMY90"
+  
+[TECHNOLOGY] "ARMY90"
+  Name "ARMY90_NAME"
+  Description "ARMY90_DESC"
+  Image "Images/Science/ARMY90.png"
+  Points 5
+  LeadsTo "ARMY10"
+  
+[TECHNOLOGY] "ARMY10"
+  Name "ARMY10_NAME"
+  Description "ARMY10_DESC"
+  Image "Images/Science/ARMY10.png"
+  Points 5
+  LeadsTo "ARMY20"
+  
+[TECHNOLOGY] "ARMY20"
+  Name "ARMY20_NAME"
+  Description "ARMY20_DESC"
+  Image "Images/Science/ARMY20.png"
+  Points 5
   
 [TECHNOLOGY] "ARMY"
   Name "ARMY_NAME"
@@ -1728,6 +1810,14 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "ARMY_WEP"
   Name "ARMY_WEP_NAME"
   Description "ARMY_WEP_DESC"
+  
+[TECHNOLOGY] "M_ARMY_WEP"
+  Name "M_ARMY_WEP_NAME"
+  Description "M_ARMY_WEP_DESC"
+  
+[TECHNOLOGY] "P_ARMY_WEP"
+  Name "P_ARMY_WEP_NAME"
+  Description "P_ARMY_WEP_DESC"
 
 [TECHNOLOGY] "U_AIRTRANS"
   Name "U_AIRTRANS_NAME"

@@ -394,6 +394,7 @@ Modifier options:
   TurnSpeed 3
   Range 15000
   Power 1.5
+
   Config "Bombs" Default
     Weapon "Free fall bomb" 45 Launch 1 Time 1 AutoEngage 
   Config "Guided Bombs" Default
@@ -409,11 +410,11 @@ Modifier options:
     ImprovedBy "ASM1"
         Weapon "ASM" 4 Launch 2 Time 90 AutoEngage 
     ImprovedBy "ASM2"
-        Weapon "ASM" 8 Launch 4 Time 90 AutoEngage 
+        Weapon "ASM" 6 Launch 4 Time 90 AutoEngage 
     ImprovedBy "ASM3"
-        Weapon "ASM" 12 Launch 4 Time 90 AutoEngage
+        Weapon "ASM" 8 Launch 4 Time 90 AutoEngage
     ImprovedBy "ASM4"
-        Weapon "ASM" 16 Launch 4 Time 90 AutoEngage
+        Weapon "ASM" 12 Launch 4 Time 90 AutoEngage
   Config "Nuclear"
     Weapon "Low-power nuclear bomb" 1
     ImprovedBy "3GEN"
@@ -434,13 +435,13 @@ Modifier options:
         Weapon "NUKE_CRUISE" 4 Launch 2 Time 90 AutoEngage 
   Config "Anti-ship" 
     ImprovedBy "CRUISE1"
-        Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage 
+        Weapon "SPSPM" 2 Launch 2 Time 10 AutoEngage 
     ImprovedBy "CRUISE2"
-        Weapon "SPSPM" 6 Launch 2 Time 8 AutoEngage
+        Weapon "SPSPM" 4 Launch 2 Time 8 AutoEngage
     ImprovedBy "CRUISE3"
-        Weapon "SPSPM" 8 Launch 2 Time 6 AutoEngage 
+        Weapon "SPSPM" 6 Launch 2 Time 6 AutoEngage 
     ImprovedBy "CRUISE4"
-        Weapon "SPSPM" 10 Launch 2 Time 4 AutoEngage 		
+        Weapon "SPSPM" 8 Launch 2 Time 4 AutoEngage 		
   Config "Megaton"
     Weapon "1M nuke" 1
   Config "10 Megaton"
@@ -490,27 +491,30 @@ Modifier options:
   Type Airborne
   //AIVarietyHint Bomber
   NoAutoDeploy
+  Slave
+  AutoReturn Yes
   Speed 400
   TurnSpeed 3
-  Range 15000
+  Range 20000
   Power 1.5
   ProductionCost 4.0
   Radar "AIR_CAMERA"
   Crash "big_bomb"
+  CanPatrolPoint
   MaxElevation 15
 
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
   
   ImprovedBy "4GEN" Set Speed 720
   ImprovedBy "4GEN" Set Size 0.05
-  ImprovedBy "4GEN" Set Range 19000
+  ImprovedBy "4GEN" Set Range 26000
   ImprovedBy "4GEN" Set MaxElevation 18
 
   ImprovedBy "5GEN" Set Power 3
-  ImprovedBy "5GEN" Set Size 0.04
+  ImprovedBy "5GEN" Set Size 0.01
+  ImprovedBy "5GEN" Set Range 35000
   
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/SPY70.vidx"  Icon "Units/Images/Airborne/SPY70_I.vidx"
-  ImprovedBy "5GEN" Movie "Units/Images/Airborne/BOMBER10.vidx"  Icon "Units/Images/Airborne/BOMBER10_I.vidx"
 
 [UNIT] "ASW"
   Tech "ASW"
@@ -537,7 +541,7 @@ Modifier options:
         ImprovedBy "CRUISE3" 
         Weapon "SPSPM" 4 Launch 2 Time 10 AutoEngage 
         ImprovedBy "4GEN" 
-            Weapon "SPSPM" 8 Launch 2 Time 10 AutoEngage 
+            Weapon "SPSPM" 6 Launch 2 Time 10 AutoEngage 
 //  Weapon "EW" 1 DefaultOff
   Radar "AWACS Sonar"
   ProductionCost 4.3
@@ -1056,9 +1060,9 @@ Modifier options:
   Config "Conventional MRBM"
     Weapon "CONV_MRBM" 20000  Time 960
   Config "Anti-Ship"
-    Weapon "SPSPM" 20000 Launch 2 Time 150 AutoEngage
+    Weapon "SPSPM" 20000 Launch 2 Time 100 AutoEngage
   Config "Anti-Ship ballistic missile"
-    Weapon "ASBM" 20000 Time 300 AutoEngage
+    Weapon "ASBM" 20000 Time 200 AutoEngage
   Radar "STD Vision"
 //  Radar "STD Long Wave"
   ProductionCost 10
@@ -1351,13 +1355,21 @@ Config "Anti Submarine Warfare"
   Size 10
   Sound 141 Volume 0.6
   Type Ground
-  Speed 25 // in km per h
+  Speed 15 // in km per h
   Power 5000
   Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
   Weapon "ARMY_WEP" 20000 Launch 2 Time 180 AutoEngage
   ProductionCost 70
   Radar "STD Vision"
   Radar "STD Short Wave"
+  Modifier "ARMY"
+  
+  ImprovedBy "ARMY60" Set Speed 20
+  ImprovedBy "ARMY70" Set Speed 22
+  ImprovedBy "ARMY80" Set Speed 25
+  ImprovedBy "ARMY90" Set Speed 30
+  ImprovedBy "ARMY10" Set Speed 40
+  ImprovedBy "ARMY20" Set Speed 45
   
 [UNIT] "PARA"
   Tech "U_PARA"
@@ -1367,13 +1379,21 @@ Config "Anti Submarine Warfare"
   Size 10
   Sound 141 Volume 0.6
   Type Ground
-  Speed 30 // in km per h
-  Power 3000
+  Speed 18 // in km per h
+  Power 1500
   Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
-  Weapon "ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
+  Weapon "P_ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
   ProductionCost 70
   Radar "STD Vision"
   Radar "STD Short Wave"
+  Modifier "ARMY"
+  
+  ImprovedBy "ARMY60" Set Speed 23
+  ImprovedBy "ARMY70" Set Speed 25
+  ImprovedBy "ARMY80" Set Speed 28
+  ImprovedBy "ARMY90" Set Speed 33
+  ImprovedBy "ARMY10" Set Speed 43
+  ImprovedBy "ARMY20" Set Speed 48
   
 [UNIT] "MARINES"
   Tech "U_MARINES"
@@ -1383,13 +1403,21 @@ Config "Anti Submarine Warfare"
   Size 10
   Sound 141 Volume 0.6
   Type Ground
-  Speed 30 // in km per h
-  Power 3000
+  Speed 18 // in km per h
+  Power 1500
   Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
-  Weapon "ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
+  Weapon "M_ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
   ProductionCost 70
   Radar "STD Vision"
   Radar "STD Short Wave"
+  Modifier "ARMY"
+  
+  ImprovedBy "ARMY60" Set Speed 23
+  ImprovedBy "ARMY70" Set Speed 25
+  ImprovedBy "ARMY80" Set Speed 28
+  ImprovedBy "ARMY90" Set Speed 33
+  ImprovedBy "ARMY10" Set Speed 43
+  ImprovedBy "ARMY20" Set Speed 48
   
 [UNIT] "AIRTRANS"
   Tech "U_AIRTRANS"
@@ -1416,11 +1444,15 @@ Config "Anti Submarine Warfare"
   Radar "STD Long Wave"
   
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+  
+  ImprovedBy "4GEN" Movie "Units/Images/Airborne/AIRTRANS70.vidx"  Icon "Units/Images/Airborne/AIRTRANS70_I.vidx"
+  ImprovedBy "4GEN2" Movie "Units/Images/Airborne/AIRTRANS00.vidx"  Icon "Units/Images/Airborne/AIRTRANS00_I.vidx"
+
 
   
 [UNIT] "LHA"
   Tech "U_LHA"
-  Movie "Units/Images/Naval/AMERICA.midx"
+  Movie "Units/Images/Naval/TRANS50.vidx"
   Icon "Units/Images/Naval/UI/AMERICA.png"
   DrawSize 38.25
   FollowRadius 39//34
@@ -1459,9 +1491,14 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY80" Set Speed 55
   ImprovedBy "NAVY00" Set Speed 65
   
+  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/TRANS80.vidx"  Icon "Units/Images/Airborne/AIRTRANS70_I.vidx"
+  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/TRANS30.vidx"  Icon "Units/Images/Airborne/AIRTRANS00_I.vidx"
+  
+
+  
 [UNIT] "AIRPORT4"
   Tech "U_AIRPORT4"
-  Movie "Units/Images/Ground/AIR3.midx"
+  Movie "Units/Images/Ground/AIR4.midx"
   DrawSize 34
   DrawOrder 1
   Size 1.5
