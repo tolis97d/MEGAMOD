@@ -1110,7 +1110,7 @@ Description "U_Cavern_DESC"
   Name "SPYSAT_NAME"
   Description "SPYSAT_DESC"
   Image "Images/Science/SPYSAT.png"
-  Points 15
+  Points 30
   LeadsTo "U_Satellite"
   LeadsTo "Improved_optics"
 
@@ -1716,6 +1716,8 @@ Description "U_Cavern_DESC"
   LeadsTo "ARMY"
   LeadsTo "U_PARA"
   LeadsTo "U_MARINES"
+  LeadsTo "U_LHA"
+  LeadsTo "U_AIRTRANS"
   LeadsTo "ARMY60"
   //AIUpgradeTechHint Land
   

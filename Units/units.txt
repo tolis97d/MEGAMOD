@@ -497,7 +497,7 @@ Modifier options:
   TurnSpeed 3
   Range 20000
   Power 1.5
-  ProductionCost 4.0
+  ProductionCost 4
   Radar "AIR_CAMERA"
   Crash "big_bomb"
   CanPatrolPoint
@@ -1214,16 +1214,16 @@ Modifier options:
   Type Ground
   //AIVarietyHint SAM
   Power 2
-  Config "ABM"
+  Config "ABM" Default
     Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
         ImprovedBy "ABM2"
             Weapon "ABM" 20000 Launch 1 Time 120 AutoEngage
         ImprovedBy "ABM3"
             Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
-  Config "Nuclear ABM" Default
-    Weapon "ABM_NUKE" 5 Launch 1 Time 180 AutoEngage
-  Config "Heavy Nuclear ABM" Default
-    Weapon "ABM_NUKE2" 5 Launch 1 Time 180 AutoEngage
+  Config "Nuclear ABM"
+    Weapon "ABM_NUKE" 1 Launch 1 Time 180 AutoEngage
+  Config "Heavy Nuclear ABM"
+    Weapon "ABM_NUKE2" 1 Launch 1 Time 180 AutoEngage
   Radar "STD Short Wave"
   CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
   ProductionCost 10
@@ -1508,11 +1508,10 @@ Config "Anti Submarine Warfare"
   AttackerInPlanner
   Power 20
   Airway Launch 2 Time 180 // in seconds in 1x time
-  CanHostAircrafts "AIRTRANS" 5 
-  CanHostAircrafts "SPY_PLANE" 5 
+  CanHostAircrafts "SPY_PLANE" 2 
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
-  ProductionCost 7
+  ProductionCost 6
   NoAutoAttack
 [END]

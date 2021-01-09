@@ -69,7 +69,7 @@
   TimeGrowing 2.25
   TimeTotal 2.25
   DrawYShift 0.5
-  PollutionSize 10
+  PollutionSize 5
   
 [EXPLOSION] "ABM_NUKE"
   Movie "Images/Explosion/ABM_NUKE.midx"
@@ -113,7 +113,7 @@
   TimeGrowing 3.0
   TimeTotal 3.0
   DrawYShift 0.55
-  PollutionSize 20
+  PollutionSize 10
 
   Variant Water
     Emulated "Units/Emulated/Water_100K.txt"
@@ -137,7 +137,7 @@
   TimeGrowing 3.25
   TimeTotal 3.25
   DrawYShift 0.55
-  PollutionSize 40
+  PollutionSize 20
 
   Variant Water
     Emulated "Units/Emulated/Water_500K.txt"
@@ -161,7 +161,7 @@
   TimeGrowing 3.5
   TimeTotal 3.5
   DrawYShift 0.55
-  PollutionSize 220
+  PollutionSize 100
 
   Variant Water
     Emulated "Units/Emulated/Water_1M.txt"
@@ -186,7 +186,7 @@
   TimeGrowing 3.5
   TimeTotal 3.5
   DrawYShift 0.55
-  PollutionSize 170
+  PollutionSize 90
 
   Variant Water
     Emulated "Units/Emulated/Water_1M.txt"
@@ -210,7 +210,7 @@
   // TimeGrowing 6.78
   TimeTotal 4 //7
   DrawYShift 0.55
-  PollutionSize 280
+  PollutionSize 200
   
   Variant Water
     Emulated "Units/Emulated/Water_10M.txt"
@@ -234,7 +234,7 @@
   // TimeGrowing 6.78
   TimeTotal 5 //7
   DrawYShift 0.55
-  PollutionSize 380
+  PollutionSize 300
 
   Variant Water
     Emulated "Units/Emulated/Water_50M.txt"
