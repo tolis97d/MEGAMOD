@@ -70,7 +70,8 @@ Modifier options:
 
   ImprovedBy "5GEN" Set Speed 1000
   ImprovedBy "5GEN" Set TurnSpeed 15
-  ImprovedBy "5GEN" Set Size 0.01
+  ImprovedBy "5GEN" Set Size 0.005
+  ImprovedBy "4GEN2" Set Range 7500
  
   ImprovedBy "3GEN" Movie "Units/Images/Airborne/FR60.vidx" Icon "Units/Images/Airborne/FR60_I.vidx"  
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/FR70.vidx" Icon "Units/Images/Airborne/FR70_I.vidx"
@@ -129,7 +130,8 @@ Modifier options:
 
   ImprovedBy "5GEN" Set Speed 1000
   ImprovedBy "5GEN" Set TurnSpeed 15
-  ImprovedBy "5GEN" Set Size 0.01
+  ImprovedBy "5GEN" Set Size 0.005
+  ImprovedBy "4GEN2" Set Range 7500
 
   ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_FR60.vidx"  Icon "Units/Images/Airborne/CVN_FR60_I.vidx"
   ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR70.vidx"  Icon "Units/Images/Airborne/CVN_FR70_I.vidx"
@@ -250,7 +252,8 @@ Modifier options:
 
   ImprovedBy "5GEN" Set Speed 900
   ImprovedBy "5GEN" Set TurnSpeed 11
-  ImprovedBy "5GEN" Set Size 0.02
+  ImprovedBy "5GEN" Set Size 0.007
+  ImprovedBy "4GEN2" Set Range 7500
   
   ImprovedBy "3GEN" Movie "Units/Images/Airborne/MULTI60.vidx" Icon "Units/Images/Airborne/MULTI60_I.vidx"
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/MULTI70.vidx" Icon "Units/Images/Airborne/MULTI70_I.vidx"
@@ -370,7 +373,8 @@ Modifier options:
 
   ImprovedBy "5GEN" Set Speed 900
   ImprovedBy "5GEN" Set TurnSpeed 11
-  ImprovedBy "5GEN" Set Size 0.02
+  ImprovedBy "5GEN" Set Size 0.007
+  ImprovedBy "4GEN2" Set Range 7500
 
   ImprovedBy "3GEN"  Movie "Units/Images/Airborne/CVN_ATK60.vidx"  Icon "Units/Images/Airborne/CVN_ATK60_I.vidx"
   ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK70.vidx"  Icon "Units/Images/Airborne/CVN_ATK70_I.vidx"

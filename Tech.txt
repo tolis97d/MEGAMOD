@@ -1183,10 +1183,16 @@ Description "U_Cavern_DESC"
   LeadsTo "NAVY60_REQ"
   LeadsTo "CRUISE1_REQ"
   LeadsTo "TOR1_REQ"   
-  LeadsTo "SUB60_REQ"    
+  LeadsTo "SUB60_REQ"
+  LeadsTo "ARMY60_REQ"   
   //AIUpgradeTechHint Naval
   //AIUpgradeTechHint Science
   //AIUpgradeTechHint Core  
+  
+[TECHNOLOGY] "ARMY60_REQ"
+  Name "ARMY60_REQ_NAME"
+  Description "ARMY60_REQ_DESC" 
+  LeadsTo "ARMY60"
 
 [TECHNOLOGY] "ICBM1_REQ"
   Name "ICBM1_REQ_NAME"
@@ -1233,8 +1239,14 @@ Description "U_Cavern_DESC"
   LeadsTo "ICBM2_REQ"
   LeadsTo "4GEN_REQ" 
   LeadsTo "CRUISE2_REQ"  
+  LeadsTo "ARMY70_REQ"  
   //AIUpgradeTechHint Naval
   //AIUpgradeTechHint Science
+  
+[TECHNOLOGY] "ARMY70_REQ"
+  Name "ARMY70_REQ_NAME"
+  Description "ARMY70_REQ_DESC" 
+  LeadsTo "ARMY70"
 
 [TECHNOLOGY] "ICBM2_REQ"
   Name "ICBM2_REQ_NAME"
@@ -1364,8 +1376,20 @@ Description "U_Cavern_DESC"
   LeadsTo "NAVY30_REQ"
   LeadsTo "CRUISE6_REQ"
   LeadsTo "SUB30_REQ"
+  LeadsTo "B4_REQ"
+  LeadsTo "ASM4_REQ"
   //AIUpgradeTechHint Naval
   //AIUpgradeTechHint Science
+  
+[TECHNOLOGY] "B4_REQ"
+  Name "B4_REQ_NAME"
+  Description "B4_REQ_DESC" 
+  LeadsTo "B4"
+  
+[TECHNOLOGY] "ASM4_REQ"
+  Name "ASM4_REQ_NAME"
+  Description "ASM4_REQ_DESC" 
+  LeadsTo "ASM4"
   
 [TECHNOLOGY] "SUPER_HEAVY_MISSILES_REQ"
   Name "SUPER_HEAVY_MISSILES_REQ_NAME"
@@ -1467,7 +1491,13 @@ Description "U_Cavern_DESC"
   LeadsTo "AA2_REQ" 
   LeadsTo "TOR2_REQ2"   
   LeadsTo "SAM80_REQ" 
+  LeadsTo "ARMY80_REQ" 
   //AIUpgradeTechHint Science 
+  
+[TECHNOLOGY] "ARMY80_REQ"
+  Name "ARMY80_REQ_NAME"
+  Description "ARMY80_REQ_DESC" 
+  LeadsTo "ARMY80"
 
 [TECHNOLOGY] "GPS_REQ"
   Name "GPS_REQ_NAME"
@@ -1505,7 +1535,13 @@ Description "U_Cavern_DESC"
   LeadsTo "LW_MK3_REQ"
   LeadsTo "SW_MK3_REQ"
   LeadsTo "SONAR2_REQ" 
+  LeadsTo "ARMY90_REQ" 
   //AIUpgradeTechHint Science
+  
+[TECHNOLOGY] "ARMY90_REQ"
+  Name "ARMY90_REQ_NAME"
+  Description "ARMY90_REQ_DESC" 
+  LeadsTo "ARMY90"
 
 [TECHNOLOGY] "ABM2_REQ"
   Name "ABM2_REQ_NAME"
@@ -1580,7 +1616,13 @@ Description "U_Cavern_DESC"
   LeadsTo "SAM10_REQ"
   LeadsTo "MRBM3_REQ"
   LeadsTo "LASER_PRACTICAL" 
+  LeadsTo "ARMY10_REQ"
   //AIUpgradeTechHint Science 
+ 
+[TECHNOLOGY] "ARMY10_REQ"
+  Name "ARMY10_REQ_NAME"
+  Description "ARMY10_REQ_DESC" 
+  LeadsTo "ARMY10"
 
 [TECHNOLOGY] "MRBM3_REQ"
   Name "MRBM3_REQ_NAME"
@@ -1618,7 +1660,13 @@ Description "U_Cavern_DESC"
   LeadsTo "SONAR3_REQ"
   LeadsTo "LW_MK4_REQ"
   LeadsTo "SW_MK4_REQ"  
+  LeadsTo "ARMY20_REQ" 
   //AIUpgradeTechHint Science 
+  
+[TECHNOLOGY] "ARMY20_REQ"
+  Name "ARMY20_REQ_NAME"
+  Description "ARMY20_REQ_DESC" 
+  LeadsTo "ARMY20"
   
 [TECHNOLOGY] "ABM3_REQ"
   Name "ABM3_REQ_NAME"
