@@ -1,6 +1,302 @@
 //Adding AIUpgradeTechHint <option> lets the AI know how to interpret a modded tech
 //Options are: Naval, Aircraft, Missiles (This is for ballistic missiles), Ssbn, TacticalNukes, AirToAir, AirToSurface, SurfaceToAir, ShipToShip, Intercept (ABMs), Cruise, Science, Satellite, Core (Fundamental techs the AI absolutely must consider to stay relevant), Land (Not yet used)
 
+// chain Satellite	Geostationary satellites
+//	                Improved optics	          Laser weapon
+//	                GPS
+
+[TECHNOLOGY] "Satellite"
+  Name "SATELLITE_NAME"
+  Description "SATELLITE_DESC"
+  Image "Images/Science/Satellite.png"
+  Points 15
+  LeadsTo "SPYSAT"
+    LeadsTo "GPS"
+//  LeadsTo "Geostationary_satellites"
+  
+[TECHNOLOGY] "SPYSAT"
+  Name "SPYSAT_NAME"
+  Description "SPYSAT_DESC"
+  Image "Images/Science/SPYSAT.png"
+  Points 30
+  LeadsTo "U_Satellite"
+  LeadsTo "Improved_optics"
+
+[TECHNOLOGY] "U_Satellite"
+  Name "U_Satellite_NAME"
+  Description "U_Satellite_DESC"
+
+/*
+[TECHNOLOGY] "Geostationary_satellites"
+  Name "Geostationary_satellites_NAME"
+  Description "Geostationary_satellites_DESC"
+  Points 100
+*/
+
+[TECHNOLOGY] "Improved_optics"
+  Name "Improved_optics_NAME"
+  Description "Improved_optics_DESC"
+  Image "Images/Science/Improved_optics.png"
+  Points 15
+  LeadsTo "Laser_weapon"
+
+[TECHNOLOGY] "GPS"
+  Name "GPS_NAME"
+  Description "GPS_DESC"
+  Image "Images/Science/GPS.png"
+  Points 15
+  LeadsTo "B2_REQ"
+  LeadsTo "ASM2_REQ"
+  LeadsTo "CRUISE3_REQ2"  
+  //AIUpgradeTechHint Science
+  
+[TECHNOLOGY] "B2_REQ"
+  Name "B2_REQ_NAME"
+  Description "B2_REQ_DESC"
+  LeadsTo "B2"
+  
+  
+[TECHNOLOGY] "ASM2_REQ"
+  Name "ASM2_REQ_NAME"
+  Description "ASM2_REQ_DESC"
+  LeadsTo "ASM2"
+  
+[TECHNOLOGY] "CRUISE3_REQ2"
+  Name "CRUISE3_REQ2_NAME"
+  Description "CRUISE3_REQ2_DESC"
+  LeadsTo "CRUISE3"
+  
+  
+[TECHNOLOGY] "Laser_weapon"
+  Name "Laser_weapon_NAME"
+  Description "Laser_weapon_DESC"
+  Image "Images/Science/Laser_weapon.png"
+  Points 15
+  LeadsTo "M_Laser_weapon"
+  //AIUpgradeTechHint Satellite
+
+[TECHNOLOGY] "M_Laser_weapon"
+  Name "M_Laser_weapon_NAME"
+  Description "M_Laser_weapon_DESC"
+
+
+// chain MRBM  ICBM          Heavy missiles
+//             Mobile MRBM   Mobile ICBM
+
+[TECHNOLOGY] "MRBM"
+  Name "MRBM_NAME"
+  Description "MRBM_DESC"
+  Image "Images/Science/MRBM1.png"
+  Points 15
+  LeadsTo "M_MRBM"
+  LeadsTo "Mobile_MRBM"
+  LeadsTo "ICBM1"
+  LeadsTo "SLBM"
+  LeadsTo "MRBM2"
+  
+[TECHNOLOGY] "MRBM2"
+  Name "MRBM2_NAME"
+  Description "MRBM2_DESC"
+  Image "Images/Science/MRBM2.png"
+  Points 30
+  LeadsTo "MRBM3"
+  
+[TECHNOLOGY] "MRBM3"
+  Name "MRBM3_NAME"
+  Description "MRBM3_DESC"
+  Image "Images/Science/MRBM3.png"
+  Points 15
+  LeadsTo "M_ASBM"
+  
+[TECHNOLOGY] "M_ASBM"
+  Name "M_ASBM_NAME"
+  Description "M_ASBM_DESC"
+
+[TECHNOLOGY] "M_MRBM"
+  Name "M_MRBM_NAME"
+  Description "M_MRBM_DESC"
+
+[TECHNOLOGY] "M_SUB_MRBM"
+  Name "M_SUB_MRBM_NAME"
+  Description "M_SUB_MRBM_DESC"
+
+[TECHNOLOGY] "ICBM1"
+  Name "ICBM1_NAME"
+  Description "ICBM1_DESC"
+  Image "Images/Science/ICBM1.png"
+  Points 30
+  LeadsTo "ICBM2"
+  LeadsTo "U_Missile_Silo"
+  LeadsTo "M_ICBM_1M"
+  
+[TECHNOLOGY] "ICBM2"
+  Name "ICBM2_NAME"
+  Description "ICBM2_DESC"
+  Image "Images/Science/ICBM2.png"
+  Points 15
+  LeadsTo "Heavy_Missiles"
+  LeadsTo "Mobile_ICBM"
+  LeadsTo "MIRV"
+  
+[TECHNOLOGY] "Heavy_Missiles"
+  Name "Heavy_Missiles_NAME"
+  Description "Heavy_Missiles_DESC"
+  Image "Images/Science/HEAVY_ICBM.png"
+  Points 50
+  LeadsTo "M_ICBM_10M"
+  LeadsTo "SUPER_HEAVY_MISSILES"
+  LeadsTo "M_ICBM_10MMIRV"
+  
+[TECHNOLOGY] "SUPER_HEAVY_MISSILES"
+  Name "SUPER_HEAVY_MISSILES_NAME"
+  Description "SUPER_HEAVY_MISSILES_DESC"
+  Image "Images/Science/SHEAVY_ICBM.png"
+  Points 30
+  LeadsTo "M_ICBM_50M"
+  //AIUpgradeTechHint Missiles
+  
+[TECHNOLOGY] "SLBM"
+  Name "SLBM_NAME"
+  Description "SLBM_DESC"
+  Image "Images/Science/SLBM.png"
+  Points 15
+  LeadsTo "U_Nuclear_Submarine"
+  LeadsTo "M_SUB_MRBM"
+  
+[TECHNOLOGY] "MIRV"
+  Name "MIRV_NAME"
+  Description "MIRV_DESC"
+  Image "Images/Science/MIRV.png"
+  Points 30
+  LeadsTo "False_warheads"
+  LeadsTo "M_ICBM_MIRV"
+  LeadsTo "M_ICBM_10MMIRV"
+  LeadsTo "Advanced_MRBM_MIRV"
+
+[TECHNOLOGY] "False_warheads"
+  Name "False_warheads_NAME"
+  Description "False_warheads_DESC"
+  Image "Images/Science/MIRV2.png"
+  Points 30
+  LeadsTo "M_ICBM_MIRV_FALSE"
+
+[TECHNOLOGY] "M_ICBM_1M"
+  Name "M_ICBM_1M_NAME"
+  Description "M_ICBM_1M_DESC"
+
+[TECHNOLOGY] "M_ICBM_10M"
+  Name "M_ICBM_10M_NAME"
+  Description "M_ICBM_10M_DESC"
+  
+[TECHNOLOGY] "M_ICBM_10MMIRV"
+  Name "M_ICBM_10MMIRV_NAME"
+  Description "M_ICBM_10MMIRV_DESC"
+  
+[TECHNOLOGY] "M_ICBM_50M"
+  Name "M_ICBM_50M_NAME"
+  Description "M_ICBM_50M_DESC"
+
+[TECHNOLOGY] "M_ICBM_MIRV"
+  Name "M_ICBM_MIRV_NAME"
+  Description "M_ICBM_MIRV_DESC"
+
+[TECHNOLOGY] "M_1M_WARHEAD"
+  Name "M_1M_WARHEAD_NAME"
+  Description "M_1M_WARHEAD_DESC"
+
+[TECHNOLOGY] "M_500K_WARHEAD"
+  Name "M_500K_WARHEAD_NAME"
+  Description "M_500K_WARHEAD_DESC"
+
+[TECHNOLOGY] "M_ICBM_MIRV_FALSE"
+  Name "M_ICBM_MIRV_FALSE_NAME"
+  Description "M_ICBM_MIRV_FALSE_DESC"
+
+[TECHNOLOGY] "M_1M_WARHEAD_FALSE"
+  Name "M_1M_WARHEAD_FALSE_NAME"
+  Description "M_1M_WARHEAD_FALSE_DESC"
+
+[TECHNOLOGY] "U_Missile_Silo"
+  Name "U_Missile_Silo_NAME"
+  Description "U_Missile_Silo_DESC"
+
+[TECHNOLOGY] "Mobile_MRBM"
+  Name "MOBILE_MRBM_NAME"
+  Description "MOBILE_MRBM_DESC"
+  Image "Images/Science/Mobile_MRBM.png"
+  Points 20
+  LeadsTo "U_Mobile_MRBM"
+  LeadsTo "Mobile_ICBM"
+
+[TECHNOLOGY] "U_Mobile_MRBM"
+  Name "U_Mobile_MRBM_NAME"
+  Description "U_Mobile_MRBM_DESC"
+
+[TECHNOLOGY] "Mobile_ICBM"
+  Name "MOBILE_ICBM_NAME"
+  Description "MOBILE_ICBM_DESC"
+  Image "Images/Science/Mobile_ICBM.png"
+  Points 30
+  LeadsTo "U_Mobile_ICBM"
+
+[TECHNOLOGY] "U_Mobile_ICBM"
+  Name "U_Mobile_ICBM_NAME"
+  Description "U_Mobile_ICBM_DESC"
+
+
+// chain Thermonuclear explosion  Mega-warheads  Tactical nukes
+//                                MIRV  False warheads
+
+[TECHNOLOGY] "Thermonuclear_bomb"
+  Name "THERMONUCLEAR_BOMB_NAME"
+  Description "THERMONUCLEAR_BOMB_DESC"
+  Image "Images/Science/Thermonuclear_bomb.png"
+  Points 30
+  LeadsTo "Mega-warheads"
+  LeadsTo "M_10M_thermonuclear_bomb"
+  LeadsTo "Tactical_nukes"
+  LeadsTo "ABM0_REQ"
+  
+[TECHNOLOGY] "ABM0_REQ"
+  Name "ABM0_REQ_NAME"
+  Description "ABM0_REQ_DESC"
+
+[TECHNOLOGY] "M_10M_thermonuclear_bomb"
+  Name "M_10M_THERMONUCLEAR_BOMB_NAME"
+  Description "M_10M_THERMONUCLEAR_BOMB_DESC"
+
+[TECHNOLOGY] "M_50M_thermonuclear_bomb"
+  Name "M_50M_THERMONUCLEAR_BOMB_NAME"
+  Description "M_50M_THERMONUCLEAR_BOMB_DESC"
+
+[TECHNOLOGY] "Mega-warheads"
+  Name "Mega-warheads_NAME"
+  Description "Mega-warheads_DESC"
+  Image "Images/Science/Mega-warheads.png"
+  Points 45
+//  LeadsTo "Tactical_nukes"
+  LeadsTo "Heavy_Missiles"
+  LeadsTo "M_50M_thermonuclear_bomb"
+  LeadsTo "ABM02_REQ"
+  
+[TECHNOLOGY] "ABM02_REQ"
+  Name "ABM02_REQ_NAME"
+  Description "ABM02_REQ_DESC"
+  
+
+[TECHNOLOGY] "Tactical_nukes"
+  Name "Tactical_nukes_NAME"
+  Description "Tactical_nukes_DESC"
+  Image "Images/Science/Tactical_nukes.png"
+  Points 15
+  LeadsTo "M_Aircraft-launched_MRBM"
+  LeadsTo "CRUISE3_REQ3"
+  
+[TECHNOLOGY] "CRUISE3_REQ3"
+  Name "CRUISE3_REQ3_NAME"
+  Description "CRUISE3_REQ3_DESC"
+  LeadsTo "CRUISE3"
+
 [TECHNOLOGY] "NAVAL_SW"
   Name "NAVAL_SW_NAME"
   Description "NAVAL_SW_DESC"
@@ -203,8 +499,6 @@
   Description "Advanced_MRBM_DESC"
   //AIUpgradeTechHint Ssbn
   //AIUpgradeTechHint Missiles
-
-
 
 
 [TECHNOLOGY] "CVN_FR"
@@ -873,303 +1167,59 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SONAR3.png"
   Points 15  
   
+[TECHNOLOGY] "ARMY_TECH"
+  Name "ARMY_TECH_NAME"
+  Description "ARMY_TECH_DESC"
+  Image "Images/Science/ARMY.png"
+  Points 1
+  LeadsTo "ARMY"
+  LeadsTo "U_PARA"
+  LeadsTo "U_MARINES"
+  LeadsTo "U_LHA"
+  LeadsTo "U_AIRTRANS"
+  LeadsTo "ARMY60"
+  //AIUpgradeTechHint Land
   
-// chain MRBM  ICBM          Heavy missiles
-//             Mobile MRBM   Mobile ICBM
-
-[TECHNOLOGY] "MRBM"
-  Name "MRBM_NAME"
-  Description "MRBM_DESC"
-  Image "Images/Science/MRBM1.png"
-  Points 15
-  LeadsTo "M_MRBM"
-  LeadsTo "Mobile_MRBM"
-  LeadsTo "ICBM1"
-  LeadsTo "SLBM"
-  LeadsTo "MRBM2"
+[TECHNOLOGY] "ARMY60"
+  Name "ARMY60_NAME"
+  Description "ARMY60_DESC"
+  Image "Images/Science/ARMY60.png"
+  Points 5
+  LeadsTo "ARMY70"
   
-[TECHNOLOGY] "MRBM2"
-  Name "MRBM2_NAME"
-  Description "MRBM2_DESC"
-  Image "Images/Science/MRBM2.png"
-  Points 30
-  LeadsTo "MRBM3"
+[TECHNOLOGY] "ARMY70"
+  Name "ARMY70_NAME"
+  Description "ARMY70_DESC"
+  Image "Images/Science/ARMY70.png"
+  Points 5
+  LeadsTo "ARMY80"
   
-[TECHNOLOGY] "MRBM3"
-  Name "MRBM3_NAME"
-  Description "MRBM3_DESC"
-  Image "Images/Science/MRBM3.png"
-  Points 15
-  LeadsTo "M_ASBM"
+[TECHNOLOGY] "ARMY80"
+  Name "ARMY80_NAME"
+  Description "ARMY80_DESC"
+  Image "Images/Science/ARMY80.png"
+  Points 5
+  LeadsTo "ARMY90"
   
-[TECHNOLOGY] "M_ASBM"
-  Name "M_ASBM_NAME"
-  Description "M_ASBM_DESC"
-
-[TECHNOLOGY] "M_MRBM"
-  Name "M_MRBM_NAME"
-  Description "M_MRBM_DESC"
-
-[TECHNOLOGY] "M_SUB_MRBM"
-  Name "M_SUB_MRBM_NAME"
-  Description "M_SUB_MRBM_DESC"
-
-[TECHNOLOGY] "ICBM1"
-  Name "ICBM1_NAME"
-  Description "ICBM1_DESC"
-  Image "Images/Science/ICBM1.png"
-  Points 30
-  LeadsTo "ICBM2"
-  LeadsTo "U_Missile_Silo"
-  LeadsTo "M_ICBM_1M"
+[TECHNOLOGY] "ARMY90"
+  Name "ARMY90_NAME"
+  Description "ARMY90_DESC"
+  Image "Images/Science/ARMY90.png"
+  Points 5
+  LeadsTo "ARMY10"
   
-[TECHNOLOGY] "ICBM2"
-  Name "ICBM2_NAME"
-  Description "ICBM2_DESC"
-  Image "Images/Science/ICBM2.png"
-  Points 15
-  LeadsTo "Heavy_Missiles"
-  LeadsTo "Mobile_ICBM"
-  LeadsTo "MIRV"
+[TECHNOLOGY] "ARMY10"
+  Name "ARMY10_NAME"
+  Description "ARMY10_DESC"
+  Image "Images/Science/ARMY10.png"
+  Points 5
+  LeadsTo "ARMY20"
   
-[TECHNOLOGY] "Heavy_Missiles"
-  Name "Heavy_Missiles_NAME"
-  Description "Heavy_Missiles_DESC"
-  Image "Images/Science/HEAVY_ICBM.png"
-  Points 50
-  LeadsTo "M_ICBM_10M"
-  LeadsTo "SUPER_HEAVY_MISSILES"
-  LeadsTo "M_ICBM_10MMIRV"
-  
-[TECHNOLOGY] "SUPER_HEAVY_MISSILES"
-  Name "SUPER_HEAVY_MISSILES_NAME"
-  Description "SUPER_HEAVY_MISSILES_DESC"
-  Image "Images/Science/SHEAVY_ICBM.png"
-  Points 30
-  LeadsTo "M_ICBM_50M"
-  //AIUpgradeTechHint Missiles
-  
-[TECHNOLOGY] "SLBM"
-  Name "SLBM_NAME"
-  Description "SLBM_DESC"
-  Image "Images/Science/SLBM.png"
-  Points 15
-  LeadsTo "U_Nuclear_Submarine"
-  LeadsTo "M_SUB_MRBM"
-  
-[TECHNOLOGY] "MIRV"
-  Name "MIRV_NAME"
-  Description "MIRV_DESC"
-  Image "Images/Science/MIRV.png"
-  Points 30
-  LeadsTo "False_warheads"
-  LeadsTo "M_ICBM_MIRV"
-  LeadsTo "M_ICBM_10MMIRV"
-  LeadsTo "Advanced_MRBM_MIRV"
-
-[TECHNOLOGY] "False_warheads"
-  Name "False_warheads_NAME"
-  Description "False_warheads_DESC"
-  Image "Images/Science/MIRV2.png"
-  Points 30
-  LeadsTo "M_ICBM_MIRV_FALSE"
-
-[TECHNOLOGY] "M_ICBM_1M"
-  Name "M_ICBM_1M_NAME"
-  Description "M_ICBM_1M_DESC"
-
-[TECHNOLOGY] "M_ICBM_10M"
-  Name "M_ICBM_10M_NAME"
-  Description "M_ICBM_10M_DESC"
-  
-[TECHNOLOGY] "M_ICBM_10MMIRV"
-  Name "M_ICBM_10MMIRV_NAME"
-  Description "M_ICBM_10MMIRV_DESC"
-  
-[TECHNOLOGY] "M_ICBM_50M"
-  Name "M_ICBM_50M_NAME"
-  Description "M_ICBM_50M_DESC"
-
-[TECHNOLOGY] "M_ICBM_MIRV"
-  Name "M_ICBM_MIRV_NAME"
-  Description "M_ICBM_MIRV_DESC"
-
-[TECHNOLOGY] "M_1M_WARHEAD"
-  Name "M_1M_WARHEAD_NAME"
-  Description "M_1M_WARHEAD_DESC"
-
-[TECHNOLOGY] "M_500K_WARHEAD"
-  Name "M_500K_WARHEAD_NAME"
-  Description "M_500K_WARHEAD_DESC"
-
-[TECHNOLOGY] "M_ICBM_MIRV_FALSE"
-  Name "M_ICBM_MIRV_FALSE_NAME"
-  Description "M_ICBM_MIRV_FALSE_DESC"
-
-[TECHNOLOGY] "M_1M_WARHEAD_FALSE"
-  Name "M_1M_WARHEAD_FALSE_NAME"
-  Description "M_1M_WARHEAD_FALSE_DESC"
-
-[TECHNOLOGY] "U_Missile_Silo"
-  Name "U_Missile_Silo_NAME"
-  Description "U_Missile_Silo_DESC"
-
-[TECHNOLOGY] "Mobile_MRBM"
-  Name "MOBILE_MRBM_NAME"
-  Description "MOBILE_MRBM_DESC"
-  Image "Images/Science/Mobile_MRBM.png"
-  Points 25
-  LeadsTo "U_Mobile_MRBM"
-  LeadsTo "Mobile_ICBM"
-
-[TECHNOLOGY] "U_Mobile_MRBM"
-  Name "U_Mobile_MRBM_NAME"
-  Description "U_Mobile_MRBM_DESC"
-
-[TECHNOLOGY] "Mobile_ICBM"
-  Name "MOBILE_ICBM_NAME"
-  Description "MOBILE_ICBM_DESC"
-  Image "Images/Science/Mobile_ICBM.png"
-  Points 25
-  LeadsTo "U_Mobile_ICBM"
-
-[TECHNOLOGY] "U_Mobile_ICBM"
-  Name "U_Mobile_ICBM_NAME"
-  Description "U_Mobile_ICBM_DESC"
-
-
-// chain Thermonuclear explosion  Mega-warheads  Tactical nukes
-//                                MIRV  False warheads
-
-[TECHNOLOGY] "Thermonuclear_bomb"
-  Name "THERMONUCLEAR_BOMB_NAME"
-  Description "THERMONUCLEAR_BOMB_DESC"
-  Image "Images/Science/Thermonuclear_bomb.png"
-  Points 30
-  LeadsTo "Mega-warheads"
-  LeadsTo "M_10M_thermonuclear_bomb"
-  LeadsTo "Tactical_nukes"
-  LeadsTo "ABM0_REQ"
-  
-[TECHNOLOGY] "ABM0_REQ"
-  Name "ABM0_REQ_NAME"
-  Description "ABM0_REQ_DESC"
-
-[TECHNOLOGY] "M_10M_thermonuclear_bomb"
-  Name "M_10M_THERMONUCLEAR_BOMB_NAME"
-  Description "M_10M_THERMONUCLEAR_BOMB_DESC"
-
-[TECHNOLOGY] "M_50M_thermonuclear_bomb"
-  Name "M_50M_THERMONUCLEAR_BOMB_NAME"
-  Description "M_50M_THERMONUCLEAR_BOMB_DESC"
-
-[TECHNOLOGY] "Mega-warheads"
-  Name "Mega-warheads_NAME"
-  Description "Mega-warheads_DESC"
-  Image "Images/Science/Mega-warheads.png"
-  Points 45
-//  LeadsTo "Tactical_nukes"
-  LeadsTo "Heavy_Missiles"
-  LeadsTo "M_50M_thermonuclear_bomb"
-  LeadsTo "ABM02_REQ"
-  
-[TECHNOLOGY] "ABM02_REQ"
-  Name "ABM02_REQ_NAME"
-  Description "ABM02_REQ_DESC"
-  
-
-[TECHNOLOGY] "Tactical_nukes"
-  Name "Tactical_nukes_NAME"
-  Description "Tactical_nukes_DESC"
-  Image "Images/Science/Tactical_nukes.png"
-  Points 15
-  LeadsTo "M_Aircraft-launched_MRBM"
-  LeadsTo "CRUISE3_REQ3"
-  
-[TECHNOLOGY] "CRUISE3_REQ3"
-  Name "CRUISE3_REQ3_NAME"
-  Description "CRUISE3_REQ3_DESC"
-  LeadsTo "CRUISE3"
-  
-  
-  
-// chain Satellite	Geostationary satellites
-//	                Improved optics	          Laser weapon
-//	                GPS
-
-[TECHNOLOGY] "Satellite"
-  Name "SATELLITE_NAME"
-  Description "SATELLITE_DESC"
-  Image "Images/Science/Satellite.png"
-  Points 15
-  LeadsTo "SPYSAT"
-    LeadsTo "GPS"
-//  LeadsTo "Geostationary_satellites"
-  
-[TECHNOLOGY] "SPYSAT"
-  Name "SPYSAT_NAME"
-  Description "SPYSAT_DESC"
-  Image "Images/Science/SPYSAT.png"
-  Points 30
-  LeadsTo "U_Satellite"
-  LeadsTo "Improved_optics"
-
-[TECHNOLOGY] "U_Satellite"
-  Name "U_Satellite_NAME"
-  Description "U_Satellite_DESC"
-
-/*
-[TECHNOLOGY] "Geostationary_satellites"
-  Name "Geostationary_satellites_NAME"
-  Description "Geostationary_satellites_DESC"
-  Points 100
-*/
-
-[TECHNOLOGY] "Improved_optics"
-  Name "Improved_optics_NAME"
-  Description "Improved_optics_DESC"
-  Image "Images/Science/Improved_optics.png"
-  Points 15
-  LeadsTo "Laser_weapon"
-
-[TECHNOLOGY] "GPS"
-  Name "GPS_NAME"
-  Description "GPS_DESC"
-  Image "Images/Science/GPS.png"
-  Points 15
-  LeadsTo "B2_REQ"
-  LeadsTo "ASM2_REQ"
-  LeadsTo "CRUISE3_REQ2"  
-  //AIUpgradeTechHint Science
-  
-[TECHNOLOGY] "B2_REQ"
-  Name "B2_REQ_NAME"
-  Description "B2_REQ_DESC"
-  LeadsTo "B2"
-  
-  
-[TECHNOLOGY] "ASM2_REQ"
-  Name "ASM2_REQ_NAME"
-  Description "ASM2_REQ_DESC"
-  LeadsTo "ASM2"
-  
-[TECHNOLOGY] "CRUISE3_REQ2"
-  Name "CRUISE3_REQ2_NAME"
-  Description "CRUISE3_REQ2_DESC"
-  LeadsTo "CRUISE3"
-  
-  
-[TECHNOLOGY] "Laser_weapon"
-  Name "Laser_weapon_NAME"
-  Description "Laser_weapon_DESC"
-  Image "Images/Science/Laser_weapon.png"
-  Points 15
-  LeadsTo "M_Laser_weapon"
-  //AIUpgradeTechHint Satellite
-
-[TECHNOLOGY] "M_Laser_weapon"
-  Name "M_Laser_weapon_NAME"
-  Description "M_Laser_weapon_DESC"
+[TECHNOLOGY] "ARMY20"
+  Name "ARMY20_NAME"
+  Description "ARMY20_DESC"
+  Image "Images/Science/ARMY20.png"
+  Points 5
   
 [TECHNOLOGY] "ENG1"
   Name "ENG1_NAME"
@@ -1372,6 +1422,7 @@ Description "U_Cavern_DESC"
   Description "ENG5_DESC"
   Image "Images/Science/ENG20.png"
   Points 15
+//  AvailableFrom 672000 
   LeadsTo "SUPER_HEAVY_MISSILES_REQ"
   LeadsTo "NAVY30_REQ"
   LeadsTo "CRUISE6_REQ"
@@ -1660,7 +1711,8 @@ Description "U_Cavern_DESC"
   LeadsTo "SONAR3_REQ"
   LeadsTo "LW_MK4_REQ"
   LeadsTo "SW_MK4_REQ"  
-  LeadsTo "ARMY20_REQ" 
+  LeadsTo "ARMY20_REQ"
+//  AvailableFrom 672000  
   //AIUpgradeTechHint Science 
   
 [TECHNOLOGY] "ARMY20_REQ"
@@ -1755,60 +1807,6 @@ Description "U_Cavern_DESC"
   Points 5
   //AIUpgradeTechHint AirToSurface
   //AIUpgradeTechHint Science
-  
-[TECHNOLOGY] "ARMY_TECH"
-  Name "ARMY_TECH_NAME"
-  Description "ARMY_TECH_DESC"
-  Image "Images/Science/ARMY.png"
-  Points 1
-  LeadsTo "ARMY"
-  LeadsTo "U_PARA"
-  LeadsTo "U_MARINES"
-  LeadsTo "U_LHA"
-  LeadsTo "U_AIRTRANS"
-  LeadsTo "ARMY60"
-  //AIUpgradeTechHint Land
-  
-[TECHNOLOGY] "ARMY60"
-  Name "ARMY60_NAME"
-  Description "ARMY60_DESC"
-  Image "Images/Science/ARMY60.png"
-  Points 5
-  LeadsTo "ARMY70"
-  
-[TECHNOLOGY] "ARMY70"
-  Name "ARMY70_NAME"
-  Description "ARMY70_DESC"
-  Image "Images/Science/ARMY70.png"
-  Points 5
-  LeadsTo "ARMY80"
-  
-[TECHNOLOGY] "ARMY80"
-  Name "ARMY80_NAME"
-  Description "ARMY80_DESC"
-  Image "Images/Science/ARMY80.png"
-  Points 5
-  LeadsTo "ARMY90"
-  
-[TECHNOLOGY] "ARMY90"
-  Name "ARMY90_NAME"
-  Description "ARMY90_DESC"
-  Image "Images/Science/ARMY90.png"
-  Points 5
-  LeadsTo "ARMY10"
-  
-[TECHNOLOGY] "ARMY10"
-  Name "ARMY10_NAME"
-  Description "ARMY10_DESC"
-  Image "Images/Science/ARMY10.png"
-  Points 5
-  LeadsTo "ARMY20"
-  
-[TECHNOLOGY] "ARMY20"
-  Name "ARMY20_NAME"
-  Description "ARMY20_DESC"
-  Image "Images/Science/ARMY20.png"
-  Points 5
   
 [TECHNOLOGY] "ARMY"
   Name "ARMY_NAME"

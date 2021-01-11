@@ -93,8 +93,8 @@ Modifier options:
   ImprovedBy "SW_Mk3" Set MaxHeight 400
   ImprovedBy "SW_Mk4" Set Range 500
   ImprovedBy "SW_Mk4" Set MaxHeight 500
-  AffectedBy Unit "5GEN" Range 0.5
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "5GEN" Range 0.4
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.4
   
@@ -110,8 +110,8 @@ Modifier options:
   ImprovedBy "SW_Mk3" Set MaxHeight 400
   ImprovedBy "SW_Mk4" Set Range 550
   ImprovedBy "SW_Mk4" Set MaxHeight 500
-  AffectedBy Unit "5GEN" Range 0.5
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "5GEN" Range 0.4
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.4
 
@@ -127,8 +127,8 @@ Modifier options:
   ImprovedBy "SW_Mk3" Set MaxHeight 400
   ImprovedBy "SW_Mk4" Set Range 800
   ImprovedBy "SW_Mk4" Set MaxHeight 500
-  AffectedBy Unit "5GEN" Range 0.5
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "5GEN" Range 0.4
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.6
 
@@ -141,8 +141,8 @@ Modifier options:
   Precision 0
   ImprovedBy "SW_Mk2" Set Range 1100
   ImprovedBy "SW_Mk3" Set Range 1500
-  AffectedBy Unit "5GEN" Range 0.5
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "5GEN" Range 0.4
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   GlobalShowType OVERHORIZONT_RANGES
 
@@ -155,8 +155,8 @@ Modifier options:
   Precision 0
   ImprovedBy "SW_Mk2" Set Range 1000
   ImprovedBy "SW_Mk3" Set Range 1200
-  AffectedBy Unit "5GEN" Range 0.5
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.65
+  AffectedBy Unit "5GEN" Range 0.4
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   GlobalShowType OVERHORIZONT_RANGES
 
@@ -170,8 +170,8 @@ Modifier options:
   ImprovedBy "LW_Mk2" Set MaxHeight 250
   ImprovedBy "LW_Mk3" Set Range 1000
   ImprovedBy "LW_Mk3" Set MaxHeight 400
-  AffectedBy Unit "5GEN" Range 0.75
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
+  AffectedBy Unit "5GEN" Range 0.5
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.8
   
@@ -195,8 +195,8 @@ Modifier options:
   ImprovedBy "LW_Mk3" Set MaxHeight 400
   ImprovedBy "LW_Mk4" Set Range 1400
   ImprovedBy "LW_Mk4" Set MaxHeight 400
-  AffectedBy Unit "5GEN" Range 0.75
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
+  AffectedBy Unit "5GEN" Range 0.6
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.7
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.4
 
@@ -209,8 +209,8 @@ Modifier options:
   Precision 0
   ImprovedBy "LW_Mk2" Set Range 1750
   ImprovedBy "LW_Mk3" Set Range 2000
-  AffectedBy Unit "5GEN" Range 0.75
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
+  AffectedBy Unit "5GEN" Range 0.6
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.7
   AffectedBy Unit "Underground" Range 0.5
 
 [RADAR] "Naval AWACS Long Wave"
@@ -222,8 +222,8 @@ Modifier options:
   Precision 0
   ImprovedBy "LW_Mk2" Set Range 1550
   ImprovedBy "LW_Mk3" Set Range 1800
-  AffectedBy Unit "5GEN" Range 0.75
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.75
+  AffectedBy Unit "5GEN" Range 0.6
+  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.7
   AffectedBy Unit "Underground" Range 0.5
 
 [RADAR] "Sonar"
