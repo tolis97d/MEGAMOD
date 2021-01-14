@@ -1065,7 +1065,7 @@ Modifier options:
   Tech "ARMY_WEP"
   Type "Default"
   Icon "Units/Images/Missiles/ARMY50.vidx"
-  Sound 207 Volume 0.2
+  Sound 207 Volume 0.5
     MuteLength 2
   Explosion "big_bomb_old"
   Range 250
@@ -1075,6 +1075,7 @@ Modifier options:
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.25
   Switchable ON
+  AffectedBy Unit "ARMY" Damage 10
   
   ImprovedBy "ARMY60" Movie Image "Units/Images/Missiles/ARMY60.vidx"
   ImprovedBy "ARMY70" Movie Image "Units/Images/Missiles/ARMY70.vidx"
@@ -1087,7 +1088,7 @@ Modifier options:
   Tech "M_ARMY_WEP"
   Type "Default"
   Icon "Units/Images/Missiles/MARINES50.vidx"
-  Sound 207 Volume 0.2
+  Sound 207 Volume 0.5
     MuteLength 2
   Explosion "big_bomb_old"
   Range 250
@@ -1097,6 +1098,7 @@ Modifier options:
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.25
   Switchable ON
+  AffectedBy Unit "ARMY" Damage 5
   
 
   ImprovedBy "ARMY70" Movie Image "Units/Images/Missiles/MARINES70.vidx"
@@ -1106,7 +1108,7 @@ Modifier options:
   Tech "P_ARMY_WEP"
   Type "Default"
   Icon "Units/Images/Missiles/PARA50.vidx"
-  Sound 207 Volume 0.2
+  Sound 207 Volume 0.5
     MuteLength 2
   Explosion "big_bomb_old"
   Range 250
@@ -1116,6 +1118,7 @@ Modifier options:
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.25
   Switchable ON
+  AffectedBy Unit "ARMY" Damage 5
   
   ImprovedBy "ARMY70" Movie Image "Units/Images/Missiles/PARA70.vidx"
   ImprovedBy "ARMY10" Movie Image "Units/Images/Missiles/PARA10.vidx"
