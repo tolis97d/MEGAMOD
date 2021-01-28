@@ -174,14 +174,6 @@ Modifier options:
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.8
-  
-[RADAR] "AIR_CAMERA"
-  Tech "R_CAMERA"
-  Type "T_SPYPLANE"
-  Range 300
-  Sector 180
-  Precision 0
-  AffectedBy Unit "Underground" Range 0.2
 
 [RADAR] "Fixed Long Wave"
   Tech "R_Long_wave_radar"
@@ -308,7 +300,7 @@ Modifier options:
   MaxHeight 50000 // the default value is 100
 
 [RADAR] "Satellite Camera"
-  Tech "R_Camera"
+  Tech "SAT_Camera"
   Type "Optical" // copy the settings of this type. however these setting strings can be used here as well
   CanCalculateLaunchPosition Yes
   Range 1000
@@ -316,6 +308,14 @@ Modifier options:
   MaxHeight 3000
   AffectedBy Unit "Underground" Range 0.25
   ImprovedBy "Improved_optics" Range 1.5
+  
+[RADAR] "AIR_CAMERA"
+  Tech "AIR_CAMERA"
+  Type "T_SPYPLANE"
+  Range 300
+  Sector 180
+  Precision 0
+  AffectedBy Unit "Underground" Range 0.2
 
 [END]
 

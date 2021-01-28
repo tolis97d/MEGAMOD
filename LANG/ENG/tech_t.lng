@@ -95,6 +95,9 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "5GEN_NAME" LANG "5th Generation Aircraft"
 "5GEN_DESC" LANG "The most advanced aircraft currently in service, 5th generation aircraft such as the F-22 or J-20 employ modern stealth construction, extremely capable electronic capabilities, next-generation networked digital systems, low-probability-of-intercept radars, and high-performance airframes capable of operating at extremes.\n\n\n+Improves Turn Speed,Improves Speed,much harder to intercept"
 
+"6GEN_NAME" LANG "6th Generation Aircraft"
+"6GEN_DESC" LANG "Sixth-generation aircrafts is a conceptualized class of aircraft design more advanced than the fifth-generation jets that are currently in service and development.Typical design characteristics anticipated to include advanced digital capabilities including high-capacity networking, AI, data fusion, cyber warfare, D2D and battlefield command, control and communications (C3) capabilities,optionally manned, with the same airframe capable of conducting piloted, remote controlled or onboard-AI controlled missions,advanced variable-cycle engines able to cruise economically but still deliver high thrust when required.\n\n\n+Improves Turn Speed,Improves Speed,much harder to intercept"
+
 "M_SNAVALGUN_NAME" LANG "Light Naval Guns"
 "M_SNAVALGUN_DESC" LANG "Light Naval Artillery is found on escort and cruisers and used mainly against enemy escorts while causing minimal damage to Battleships."
 
@@ -161,6 +164,10 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "ABM3_NAME" LANG "Advanced ABM systems"
 "ABM3_DESC" LANG "With further developments in electronics and rocketry fields as well as material sciences led to more advanced interceptors capable of defeating even the most advanced ballistic missiles.\n\n\n+Increases ABM range,precision and speed\n\n\n+Reduces ABM cooldown"
+
+"ABM4_NAME" LANG "Ηybrid ABM systems"
+"ABM4_DESC" LANG "Allows the fielding of Anti Ballistic Lasers in conjunction with advanced kinetic interceptors.\n\n\n+Increases ABM range,precision and speed\n\n\n+Reduces ABM cooldown"
+
 
 "SONAR1_NAME" LANG "Improved Sonar System"
 "SONAR1_DESC" LANG "Sonar (sound navigation ranging) is a technique that uses sound propagation (usually underwater, as in submarine navigation) to navigate, communicate with or detect objects on or under the surface of the water, such as other vessels.\n\n\n+Improves range"
@@ -276,39 +283,39 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "AA1_NAME" LANG "Early AAMs"
 "AA1_DESC" LANG "After World War 2, the major powers sought to equip planes with missiles capable of automatically locking on to enemy planes, greatly increasing the range at which enemy fighters and bombers could be destroyed. Guided AA missiles of this era, such as the AIM-9 Sidewinder, were so effective in changing warfare that they continue to be used to this day even by the world's leading militaries.\n\n\n+Improves Precision and Range"
 
-"AA2_NAME" LANG "Cold War AAMs"
-"AA2_DESC" LANG "The cold war saw the development of many new missile types, including beyond-visual range missiles that could reach out 100nm and new technologies like infrared homing guidance that removed the dependence on radar tracking.\n\n\n+Improves Precision and Range"
+"AA2_NAME" LANG "Semi-active radar AAMs"
+"AA2_DESC" LANG "Semi-active radar homing is a common type of missile guidance system, perhaps the most common type for longer-range air-to-air and surface-to-air missile systems. The name refers to the fact that the missile itself is only a passive detector of a radar signal – provided by an external source — as it reflects off the target(in contrast to active radar homing, which uses an active radar).\n\n\n+Improves Precision and Range"
 
-"AA3_NAME" LANG "All-aspect AAMs"
-"AA3_DESC" LANG "All-aspect missiles capable of maintaining a lock on a plane at any angle, combined with ever increasing beyond-visual range capabilities, typify modern anti-air missiles. Active missiles also now come with on-board 'home on jam' capabilities, reducing the relevance of simple jamming technologies.\n\n\n+Improves Precision and Range"
+"AA3_NAME" LANG "Active radar AAMs"
+"AA3_DESC" LANG "Active radar homing is a missile guidance method in which a missile contains a radar transceiver (in contrast to semi-active radar homing, which uses only a receiver) and the electronics necessary for it to find and track its target autonomously. NATO brevity code for an air-to-air active radar homing missile launch is Fox Three.\n\n\n+Improves Precision and Range"
 
-"AA4_NAME" LANG "Electro-optical AAMs"
-"AA4_DESC" LANG "Electro-optical enhancements allow the latest missile technologies to operate independently of both heat-signatures and radar, as well as enabling precise targeting of specific weak points on vehicles.\n\n\n+Improves Precision and Range"
+"AA4_NAME" LANG "Ramjet AAMs"
+"AA4_DESC" LANG "A solid-fueled ramjet motor allows the missile to cruise at a speed of over Mach 4 and provides the missile with thrust and mid-way acceleration to target intercept.A two-way datalink enables the launch aircraft to provide mid-course target updates or retargeting if required, including data from off-board third parties. The datalink is capable of transmitting missile information such as functional and kinematic status, information about multiple targets, and notification of target acquisition by the seeker.\n\n\n+Improves Precision and Range"
 
-"ASM1_NAME" LANG "Early ASMs"
-"ASM1_DESC" LANG "The cold war saw lots of development in air-to-surface missiles, allowing rocket-powered missiles to strike a variety of targets using new methologies such as on-board television guidance and infrared tracking. Weapons of this era continue to be among to deployed and used worldwide due to their effectiveness and versatility against land, sea, or air targets.\n\n\n+Air-Ground Weapon with improved range and speed compared to guided-bombs"
+"AA5_NAME" LANG "Advanced Ramjet AAms"
+"AA5_DESC" LANG "New developments in materiel sciences and propulsion drastically increase the range and cruising speed of the AAMs.\n\n\n+Improves Precision and Range"
 
-"ASM2_NAME" LANG "Precision-guided Munitions"
-"ASM2_DESC" LANG "The addition of a GPS guidance kit enabled air-to-surface missiles to be deployed from greater distances with an IR/TV sensor guiding the missile during the terminal phase.\n\n\n+Improves precision,range and survivability\n\n\n+Increases Payload capacity"
+"FR_CIWS_NAME" LANG "Defensive Laser Pods"
+"FR_CIWS_DESC" LANG "Defensive Laser Pods are a megawatt-class chemical oxygen iodine laser mounted inside an external hardpoint.It is primarily designed as a missile defense system to destroy enemy AAMs.\n\n\n+Can be mounted with the AA loadouts of fighters and Multiroles"
+
+"ABM_LASER_NAME" LANG "Anti-Ballistic Laser"
+"ABM_LASER_DESC" LANG "High powered Laser capable of intercepting high altidute projectiles."
+
+"SAM_LASER_NAME" LANG "Air Defence Laser"
+"SAM_LASER_DESC" LANG "Mobile version of naval lasers capable of intercepting small projectiles such as missiles at low and medium altidutes."
+
+
+"ASM1_NAME" LANG "Laser Guided Munitions"
+"ASM1_DESC" LANG "Laser-guided munitions use semi-active laser guidance to strike a designated target with greater accuracy than unguided weapons. First developed by the United States during the Vietnam War, laser-guided weapons quickly proved their value in precision strikes of difficult point targets. These weapons use on-board electronics to track targets that are designated by laser, typically in the infrared spectrum, and adjust their glide path to accurately strike the target.\n\n\n+Heavy damage Air-Ground Weapon but with limited speed and range.Their large numbers can saturate enemy Air-Defences.\n\n\n+Air-Ground Weapons(excluding cruise missiles) damage against armies is multiplied making them very effective"
+
+"ASM2_NAME" LANG "GPS Guided Munitions"
+"ASM2_DESC" LANG "Lessons learned during the first Gulf War showed the value of precision munitions, yet they also highlighted the difficulties in employing them—specifically when visibility of the ground or target from the air was degraded.The problem of poor visibility does not affect satellite-guided weapons such as Joint Direct Attack Munition and Joint Stand-Off Weapon, which make use GPS systems for guidance. This weapon can be employed in all weather conditions, without any need for ground support. Because it is possible to jam GPS, the guidance package reverts to inertial navigation in the event of GPS signal loss.\n\n\n+Improves Precision and Range\n\n\n+Increases Payload capacity"
 
 "ASM3_NAME" LANG "Stand-off Munitions"
-"ASM3_DESC" LANG "Satellite-guidance provided a major boon to air strike capabilities, enabling precise pinpointing of targets without a dependency on any specific external signature that could be fired from a greater range, leading to the development of 'stand-off' weapons.\n\n\n+Improves precision,range and survivability\n\n\n+Increases Payload capacity"
+"ASM3_DESC" LANG "Satellite-guidance provided a major boon to air strike capabilities, enabling precise pinpointing of targets without a dependency on any specific external signature that could be fired from a greater range, leading to the development of 'stand-off' weapons.In comparison to earlier GPS munitons these weapons in the case of gliding bombs have wings significally increasing their range and in the case of missiles new seakers and datalink systems significally increase the range of transmition and quality of the image during the terminal phase.\n\n\n+Improves precision,range and survivability\n\n\n+Increases Payload capacity"
 
 "ASM4_NAME" LANG "Hybrid-guidance Missiles"
-"ASM4_DESC" LANG "By combining multiple guidance systems such as radar, electro-optical, inertial navigation, GPS, and laser-guidance, modern ASMs can bypass jamming, be deployed at longer ranges, guarantee precision, and operate well even in unfavourable conditions.\n\n\n+Improves precision,range and survivability\n\n\n+Increases Payload capacity"
-
-"B1_NAME" LANG "Laser Guided Bombs"
-"B1_DESC" LANG "A laser-guided bomb is a guided bomb that uses semi-active laser guidance to strike a designated target with greater accuracy than an unguided bomb. First developed by the United States during the Vietnam War, laser-guided bombs quickly proved their value in precision strikes of difficult point targets. These weapons use on-board electronics to track targets that are designated by laser, typically in the infrared spectrum, and adjust their glide path to accurately strike the target.\n\n\n+Heavy damage Air-Ground Weapon but with limited speed and range.Their large numbers can saturate enemy Air-Defences."
-
-"B2_NAME" LANG "GPS Guided Bombs"
-"B2_DESC" LANG "Lessons learned during the first Gulf War showed the value of precision munitions, yet they also highlighted the difficulties in employing them—specifically when visibility of the ground or target from the air was degraded.The problem of poor visibility does not affect satellite-guided weapons such as Joint Direct Attack Munition and Joint Stand-Off Weapon, which make use of the United States' GPS system for guidance. This weapon can be employed in all weather conditions, without any need for ground support. Because it is possible to jam GPS, the guidance package reverts to inertial navigation in the event of GPS signal loss.\n\n\n+Improves Precision and Range\n\n\n+Increases Payload capacity"
-
-"B3_NAME" LANG "Stand-off Glide Bombs"
-"B3_DESC" LANG "A glide bomb or stand-off bomb is a standoff weapon with flight control surfaces to give it a flatter, gliding flight path than that of a conventional bomb without such surfaces. This allows it to be released at a distance from the target rather than right over it, allowing a successful attack without the aircraft needing to survive until reaching the target.\n\n\n+Improves Precision and Range\n\n\n+Increases Payload capacity"
-
-"B4_NAME" LANG "Swarm Stand-off Glide Bombs"
-"B4_DESC" LANG "By deploying multiple independent less powerfull gliding munitions one can saturate advanced enemy air defences an neutralise multiple stationary and moving targets.\n\n\n+Improves Precision and Range\n\n\n+Increases Payload capacity"
-
+"ASM4_DESC" LANG "By combining multiple guidance systems such as radar, electro-optical, inertial navigation, GPS, and laser-guidance, modern ASMs can bypass jamming, be deployed at longer ranges, guarantee precision, and operate well even in unfavourable conditions.In adition gliding weapons bacame smaller in order to load more of them on aircrafts and as such be able to saturate enemy defences with swarm tactics.\n\n\n+Improves precision,range and survivability\n\n\n+Increases Payload capacity"
 
 "SAM50_NAME" LANG "Early SAMs"
 "SAM50_DESC" LANG "Existing anti-aircraft guns proved highly ineffective against new jet-propelled aircraft. Although there was competition, the idea of a rocket fired from the ground to independently track and chase an aircraft using radar proved the most reliable solution and the US deployed them at to protect all their critical nuclear assets."
@@ -321,6 +328,9 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "SAM10_NAME" LANG "Modern SAMs"
 "SAM10_DESC" LANG "Modern SAM networks utilise distributed computer and radar networks with high redundancy against both kinetic and cyber attacks, and can be expected to operate even in hostile environments with the threat of radiation missiles and significant electronic countermeasures. Laser illumination can also now be utilised as an alternative to radar.\n\n\n+Improves SAM missile range,precision and speed\n\n\n+Reduces SAM site cooldown\n\n\n+Allows the SAM site to also equip ABM missiles(Require Improved ABM systems)"
+
+"SAM30_NAME" LANG "Avanced Ηybrid SAMs"
+"SAM30_DESC" LANG "Advanced SAM networks utilise both new high-tech kinetic interceptors.\n\n\n+Improves SAM missile range,precision and speed\n\n\n+Reduces SAM site cooldown\n\n\n+Allows the SAM site to also equip laser systems"
 
 "TAWACS_NAME" LANG "Airborne Early Warning"
 "TAWACS_DESC" LANG "Airborne early warning and command systems such as AWACS provide a mobile long-wave radar platform that provides commanders with a bird's eye view of the battlescape, tracking targets across a huge area to provide communications on enemy positions and transfer that information across data-links to the computer systems of weapon platforms such as aircraft."
@@ -349,8 +359,11 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "P_ARMY_WEP_NAME" LANG "Airborne Ground Assets"
 "P_ARMY_WEP_DESC" LANG "Airborne Ground Assets"
 
-"R_CAMERA_NAME" LANG "Reconnaissance Camera"
-"R_CAMERA_DESC" LANG "Reconnaissance Camera"
+"SAT_CAMERA_NAME" LANG "Optical imaging system"
+"SAT_CAMERA_DESC" LANG "Optical imaging system"
+
+"AIR_CAMERA_NAME" LANG "Reconnaissance Camera"
+"AIR_CAMERA_DESC" LANG "Reconnaissance Camera"
 
 "U_SPY_PLANE_NAME" LANG "Reconnaissance aircraft"
 "U_SPY_PLANE_DESC" LANG "A reconnaissance aircraft is a military aircraft designed or adapted to perform aerial reconnaissance with roles including collection of imagery intelligence(including using photography), signals intelligence, as well as measurement and signature intelligence."

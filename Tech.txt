@@ -20,6 +20,7 @@
   Image "Images/Science/SPYSAT.png"
   Points 30
   LeadsTo "U_Satellite"
+  LeadsTo "SAT_CAMERA"
   LeadsTo "Improved_optics"
 
 [TECHNOLOGY] "U_Satellite"
@@ -449,9 +450,13 @@
   Name "Cruise_missiles_NAME"
   Description "Cruise_missiles_DESC"
 
-[TECHNOLOGY] "R_Camera"
-  Name "R_CAMERA_NAME"
-  Description "R_CAMERA_DESC"
+[TECHNOLOGY] "SAT_Camera"
+  Name "SAT_CAMERA_NAME"
+  Description "SAT_CAMERA_DESC"
+  
+[TECHNOLOGY] "AIR_Camera"
+  Name "AIR_CAMERA_NAME"
+  Description "AIR_CAMERA_DESC"
 
 [TECHNOLOGY] "R_Short_wave_radar"
   Name "R_SHORT_WAVE_RADAR_NAME"
@@ -535,16 +540,12 @@ Description "U_Cavern_DESC"
   Image "Images/Science/SPY.png"
   Points 15
   LeadsTo "U_SPY_PLANE"
-  LeadsTo "R_CAMERA"
+  LeadsTo "AIR_CAMERA"
   //AIUpgradeTechHint Aircraft
 
 [TECHNOLOGY] "U_SPY_PLANE"
   Name "U_SPY_PLANE_NAME"
   Description "U_SPY_PLANE_DESC"
-  
-[TECHNOLOGY] "R_CAMERA"
-  Name "R_CAMERA_NAME"
-  Description "R_CAMERA_DESC"
 
 [TECHNOLOGY] "4GEN"
   Name "4GEN_NAME"
@@ -595,12 +596,29 @@ Description "U_Cavern_DESC"
   Description "5GEN_DESC"
   Image "Images/Science/5GEN.png"
   Points 30
+  LeadsTo "6GEN"
+  LeadsTo "FR_CIWS"
   LeadsTo "Stealth_aircrafts_bombers"
   //AIUpgradeTechHint Aircraft
 
 [TECHNOLOGY] "Stealth_aircrafts_bombers"
   Name "Stealth_aircrafts_bombers_NAME"
   Description "Stealth_aircrafts_bombers_DESC"
+  //AIUpgradeTechHint Aircraft
+  
+[TECHNOLOGY] "6GEN"
+  Name "6GEN_NAME"
+  Description "6GEN_DESC"
+  Image "Images/Science/6GEN.png"
+  Points 30
+  //AIUpgradeTechHint Aircraft
+  
+[TECHNOLOGY] "FR_CIWS"
+  Name "FR_CIWS_NAME"
+  Description "FR_CIWS_DESC"
+  Image "Images/Science/FR_CIWS.png"
+  Points 20
+  LeadsTo "M_LASER_POD"
   //AIUpgradeTechHint Aircraft
   
 [TECHNOLOGY] "AA1"
@@ -632,50 +650,27 @@ Description "U_Cavern_DESC"
   Description "AA4_DESC"
   Image "Images/Science/AA4.png"
   Points 15
+  LeadsTo "AA5"
   //AIUpgradeTechHint AirToAir
   
-[TECHNOLOGY] "B1"
-  Name "B1_NAME"
-  Description "B1_DESC"
-  Image "Images/Science/B1.png"
+[TECHNOLOGY] "AA5"
+  Name "AA5_NAME"
+  Description "AA5_DESC"
+  Image "Images/Science/AA5.png"
   Points 15
-  LeadsTo "GBOMB_M"
-  LeadsTo "B2"
-  //AIUpgradeTechHint AirToSurface
+  //AIUpgradeTechHint AirToAir
   
 [TECHNOLOGY] "GBOMB_M"
   Name "GBOMB_M_NAME"
   Description "GBOMB_M_DESC"
   
-[TECHNOLOGY] "B2"
-  Name "B2_NAME"
-  Description "B2_DESC"
-  Image "Images/Science/B2.png"
-  Points 15
-  LeadsTo "B3"
-  //AIUpgradeTechHint AirToSurface
-  
-[TECHNOLOGY] "B3"
-  Name "B3_NAME"
-  Description "B3_DESC"
-  Image "Images/Science/B3.png"
-  Points 15
-  LeadsTo "B4"
-  //AIUpgradeTechHint AirToSurface
-  
-[TECHNOLOGY] "B4"
-  Name "B4_NAME"
-  Description "B4_DESC"
-  Image "Images/Science/B4.png"
-  Points 15
-  //AIUpgradeTechHint AirToSurface
-  
 [TECHNOLOGY] "ASM1"
   Name "ASM1_NAME"
   Description "ASM1_DESC"
-  Image "Images/Science/ASM1.png"
+  Image "Images/Science/AG1.png"
   Points 15
   LeadsTo "ASM2"
+  LeadsTo "GBOMB_M"
   LeadsTo "ASM1_M"
   //AIUpgradeTechHint AirToSurface
   
@@ -686,7 +681,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "ASM2"
   Name "ASM2_NAME"
   Description "ASM2_DESC"
-  Image "Images/Science/ASM2.png"
+  Image "Images/Science/AG2.png"
   Points 15
   LeadsTo "ASM3"
   //AIUpgradeTechHint AirToSurface
@@ -694,7 +689,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "ASM3"
   Name "ASM3_NAME"
   Description "ASM3_DESC"
-  Image "Images/Science/ASM3.png"
+  Image "Images/Science/AG3.png"
   Points 15
   LeadsTo "ASM4"
   //AIUpgradeTechHint AirToSurface
@@ -702,7 +697,7 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "ASM4"
   Name "ASM4_NAME"
   Description "ASM4_DESC"
-  Image "Images/Science/ASM4.png"
+  Image "Images/Science/AG4.png"
   Points 15
   //AIUpgradeTechHint AirToSurface
   
@@ -763,7 +758,14 @@ Description "U_Cavern_DESC"
   Description "SAM10_DESC"
   Image "Images/Science/SAM4.png"
   Points 15
+  LeadsTo "SAM30"
   //AIUpgradeTechHint SurfaceToAir
+  
+[TECHNOLOGY] "SAM30"
+  Name "SAM30_NAME"
+  Description "SAM30_DESC"
+  Image "Images/Science/SAM5.png"
+  Points 15
   
 [TECHNOLOGY] "ABM1"
   Name "ABM1_NAME"
@@ -791,6 +793,14 @@ Description "U_Cavern_DESC"
   Name "ABM3_NAME"
   Description "ABM3_DESC"
   Image "Images/Science/ABM3.png"
+  Points 15
+  LeadsTo "ABM4"
+  //AIUpgradeTechHint Intercept
+  
+[TECHNOLOGY] "ABM4"
+  Name "ABM4_NAME"
+  Description "ABM4_DESC"
+  Image "Images/Science/ABM4.png"
   Points 15
   //AIUpgradeTechHint Intercept
 
@@ -1429,8 +1439,14 @@ Description "U_Cavern_DESC"
   LeadsTo "SUB30_REQ"
   LeadsTo "B4_REQ"
   LeadsTo "ASM4_REQ"
+  LeadsTo "6GEN_REQ2"
   //AIUpgradeTechHint Naval
   //AIUpgradeTechHint Science
+  
+[TECHNOLOGY] "6GEN_REQ2"
+  Name "6GEN_REQ2_NAME"
+  Description "6GEN_REQ2_DESC"  
+  LeadsTo "6GEN"  
   
 [TECHNOLOGY] "B4_REQ"
   Name "B4_REQ_NAME"
@@ -1712,6 +1728,7 @@ Description "U_Cavern_DESC"
   LeadsTo "LW_MK4_REQ"
   LeadsTo "SW_MK4_REQ"  
   LeadsTo "ARMY20_REQ"
+  LeadsTo "6GEN_REQ"
 //  AvailableFrom 672000  
   //AIUpgradeTechHint Science 
   
@@ -1754,6 +1771,11 @@ Description "U_Cavern_DESC"
   Name "B1_REQ_NAME"
   Description "B1_REQ_DESC"  
   LeadsTo "B1"
+  
+[TECHNOLOGY] "6GEN_REQ"
+  Name "6GEN_REQ_NAME"
+  Description "6GEN_REQ_DESC"  
+  LeadsTo "6GEN"
   
 [TECHNOLOGY] "ASM1_REQ"
   Name "ASM1_REQ_NAME"
@@ -1833,6 +1855,22 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_CIWS_LASER"
   Name "M_CIWS_LASER_NAME"
   Description "M_CIWS_LASER_DESC" 
+  
+[TECHNOLOGY] "M_LASER_POD"
+  Name "M_LASER_POD_NAME"
+  Description "M_LASER_POD_DESC" 
+  
+[TECHNOLOGY] "M_ABM_LASER"
+  Name "M_ABM_LASER_NAME"
+  Description "M_ABM_LASER_DESC" 
+  
+[TECHNOLOGY] "M_SAM_LASER"
+  Name "M_SAM_LASER_NAME"
+  Description "M_SAM_LASER_DESC" 
+  
+[TECHNOLOGY] "M_LASER_POD"
+  Name "M_LASER_POD_NAME"
+  Description "M_LASER_POD_DESC" 
 
 [TECHNOLOGY] "Not_Targetable"
   Name "Not_Targetable_NAME"

@@ -29,13 +29,17 @@ Modifier options:
   Range 4500 // in km
   Power 1
   Config "Combat Air Patrol" Default 
-    Weapon "AAM" 4 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+    Weapon "AAM" 4 Launch 2 Time 60 AutoEngage Principal  
+	Weapon "LASER_POD" 200000 Launch 1 Time 2 AutoEngage
         ImprovedBy "3GEN"
-	        Weapon "AAM" 6 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+	        Weapon "AAM" 6 Launch 2 Time 60 AutoEngage Principal 
+		    Weapon "LASER_POD" 200000 Launch 1 Time 2 AutoEngage
         ImprovedBy "4GEN"
-	        Weapon "AAM" 8 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+	        Weapon "AAM" 8 Launch 2 Time 60 AutoEngage Principal 
+		    Weapon "LASER_POD" 200000 Launch 1 Time 2 AutoEngage			
         ImprovedBy "4GEN2"
-	        Weapon "AAM" 10 Launch 2 Time 60 AutoEngage // in seconds in 1x time 
+	        Weapon "AAM" 10 Launch 2 Time 60 AutoEngage Principal  
+		    Weapon "LASER_POD" 200000 Launch 1 Time 2 AutoEngage
   Config "Cruise Missiles"
         ImprovedBy "CRUISE4"
             Weapon "CONV_CRUISE" 1 Principal
@@ -193,16 +197,16 @@ Modifier options:
 	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Guided Bombs" Default
-        ImprovedBy "B1" 
+        ImprovedBy "ASM1" 
             Weapon "GBOMB" 2 Launch 1 Time 2 AutoEngage
             Weapon "AAM" 1 Launch 1 Time 100 AutoEngage
-        ImprovedBy "B2" 
+        ImprovedBy "ASM2" 
 	        Weapon "GBOMB" 4 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "B3" 
+        ImprovedBy "ASM3" 
 	        Weapon "GBOMB" 6 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "B4" 
+        ImprovedBy "ASM4" 
 	        Weapon "GBOMB" 8 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "ASM" Default
@@ -325,16 +329,16 @@ Modifier options:
 	        Weapon "Free fall bomb" 10 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "Guided Bombs" Default
-        ImprovedBy "B1" 
+        ImprovedBy "ASM1" 
             Weapon "GBOMB" 2 Launch 1 Time 2 AutoEngage
             Weapon "AAM" 1 Launch 1 Time 100 AutoEngage
-        ImprovedBy "B2" 
+        ImprovedBy "ASM2" 
 	        Weapon "GBOMB" 4 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "B3" 
+        ImprovedBy "ASM3" 
 	        Weapon "GBOMB" 6 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
-        ImprovedBy "B4" 
+        ImprovedBy "ASM4" 
 	        Weapon "GBOMB" 8 Launch 2 Time 2 AutoEngage Principal 
             Weapon "AAM" 2 Launch 1 Time 100 AutoEngage 
   Config "ASM" Default
@@ -442,13 +446,13 @@ Modifier options:
   Config "Bombs" Default
     Weapon "Free fall bomb" 45 Launch 1 Time 1 AutoEngage 
   Config "Guided Bombs" Default
-    ImprovedBy "B1"
+    ImprovedBy "ASM1"
     Weapon "GBOMB" 30 Launch 1 Time 1 AutoEngage
-    ImprovedBy "B2"
+    ImprovedBy "ASM2"
     Weapon "GBOMB" 35 Launch 1 Time 1 AutoEngage
-    ImprovedBy "B3"
+    ImprovedBy "ASM3"
     Weapon "GBOMB" 40 Launch 1 Time 1 AutoEngage
-    ImprovedBy "B4"
+    ImprovedBy "ASM4"
     Weapon "GBOMB" 45 Launch 1 Time 1 AutoEngage
   Config "Air to Surface Missile" Default 
     ImprovedBy "ASM1"
@@ -505,25 +509,31 @@ Modifier options:
   ImprovedBy "4GEN" Set ProductionCost 3.4
   ImprovedBy "4GEN2" Set ProductionCost 3.6
   ImprovedBy "5GEN" Set ProductionCost 5
+  ImprovedBy "6GEN" Set ProductionCost 6
   
   ImprovedBy "3GEN" Set Power 2.5
   ImprovedBy "4GEN" Set Power 2.6
   ImprovedBy "4GEN2" Set Power 2.8
   ImprovedBy "5GEN" Set Power 3
+  ImprovedBy "6GEN" Set Power 4
   
   ImprovedBy "3GEN" Set Speed 700
-  ImprovedBy "3GEN" Set TurnSpeed 5
-  ImprovedBy "3GEN" Set Size 0.055
-  ImprovedBy "3GEN" Set Range 17000
-  
   ImprovedBy "4GEN" Set Speed 720
-  ImprovedBy "4GEN" Set Size 0.05
-  ImprovedBy "4GEN" Set Range 19000
-  
   ImprovedBy "4GEN2" Set Speed 750
-  ImprovedBy "4GEN2" Set Range 22000
+  ImprovedBy "6GEN" Set Speed 800
+  
+  ImprovedBy "3GEN" Set TurnSpeed 5
+  
+  ImprovedBy "3GEN" Set Size 0.055
+  ImprovedBy "4GEN" Set Size 0.05
+  ImprovedBy "5GEN" Set Size 0.01
+  ImprovedBy "6GEN" Set Size 0.005
 
-  ImprovedBy "5GEN" Set Size 0.02
+  ImprovedBy "3GEN" Set Range 17000
+  ImprovedBy "4GEN" Set Range 19000
+  ImprovedBy "4GEN2" Set Range 22000
+  ImprovedBy "5GEN" Set Range 24000
+  ImprovedBy "6GEN" Set Range 27000
   
   ImprovedBy "3GEN" Movie "Units/Images/Airborne/BOMBER60.vidx"  Icon "Units/Images/Airborne/BOMBER60_I.vidx"
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/BOMBER70.vidx"  Icon "Units/Images/Airborne/BOMBER70_I.vidx"
@@ -1245,6 +1255,7 @@ Modifier options:
   Power 5
   Weapon "SAM" 20000 Launch 1 Time 130 AutoEngage
   Weapon "ABM" 20000 Launch 1 Time 800 AutoEngage
+  Weapon "SAM_LASER" 200000 Launch 1 Time 2 AutoEngage
   Radar "STD Short Wave"
   ProductionCost 7
   
@@ -1274,10 +1285,13 @@ Modifier options:
   Power 2
   Config "ABM" Default
     Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
+    Weapon "SAM_LASER" 200000 Launch 1 Time 2 AutoEngage
         ImprovedBy "ABM2"
             Weapon "ABM" 20000 Launch 1 Time 120 AutoEngage
+			Weapon "SAM_LASER" 200000 Launch 1 Time 2 AutoEngage
         ImprovedBy "ABM3"
             Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
+			Weapon "SAM_LASER" 200000 Launch 1 Time 2 AutoEngage
   Config "Nuclear ABM"
     Weapon "ABM_NUKE" 1 Launch 1 Time 180 AutoEngage
   Config "Heavy Nuclear ABM"
@@ -1422,7 +1436,7 @@ Config "Anti Submarine Warfare"
   Radar "STD Short Wave"
   Modifier "ARMY"
   HangarSpaceRequired 40
-  AutoRepair No
+  AutoRepair 0.1
   
   ImprovedBy "ARMY60" Set Speed 20
   ImprovedBy "ARMY70" Set Speed 22
@@ -1448,7 +1462,7 @@ Config "Anti Submarine Warfare"
   Radar "STD Short Wave"
   Modifier "ARMY"
   HangarSpaceRequired 20
-  AutoRepair No
+  AutoRepair 0.1
   
   ImprovedBy "ARMY60" Set Speed 23
   ImprovedBy "ARMY70" Set Speed 25
@@ -1474,7 +1488,7 @@ Config "Anti Submarine Warfare"
   Radar "STD Short Wave"
   Modifier "ARMY"
   HangarSpaceRequired 20
-  AutoRepair No
+  AutoRepair 0.1
   
   ImprovedBy "ARMY60" Set Speed 23
   ImprovedBy "ARMY70" Set Speed 25
@@ -1515,7 +1529,7 @@ Config "Anti Submarine Warfare"
 [UNIT] "LHA"
   Tech "U_LHA"
   Movie "Units/Images/Naval/TRANS50.vidx"
-  Icon "Units/Images/Naval/UI/AMERICA.png"
+  Icon "Units/Images/Naval/TRANS50_I.vidx"
   DrawSize 38.25
   FollowRadius 39//34
   Size 0.4
@@ -1544,8 +1558,8 @@ Config "Anti Submarine Warfare"
   ImprovedBy "NAVY80" Set Speed 55
   ImprovedBy "NAVY00" Set Speed 65
   
-  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/TRANS80.vidx"  Icon "Units/Images/Airborne/AIRTRANS70_I.vidx"
-  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/TRANS30.vidx"  Icon "Units/Images/Airborne/AIRTRANS00_I.vidx"
+  ImprovedBy "NAVY80" Movie "Units/Images/NAVAL/TRANS80.vidx"  Icon "Units/Images/NAVAL/TRANS80_I.vidx"
+  ImprovedBy "NAVY30" Movie "Units/Images/NAVAL/TRANS30.vidx"  Icon "Units/Images/NAVAL/TRANS30_I.vidx"
   
 [UNIT] "AIRPORT4"
   Tech "U_AIRPORT4"

@@ -23,6 +23,7 @@ Modifier options:
   CanBeUsedAgainst Ground
   CanBeUsedAgainst City
   CanBeUsedAgainst AbstractPosition
+  Affects Naval
   
 [TYPE] "CONV_CRUISE"
   RequiresPreciseTargeting No
@@ -100,6 +101,12 @@ Modifier options:
   Affects Missile
   
 [TYPE] "CIWS_LASER_TYPE"
+  RequiresPreciseTargeting Yes      
+  CanBeUsedAgainst Missile
+  CanBeUsedAgainst HighMissile
+  Affects Missile
+  
+[TYPE] "LASER_POD_TYPE"
   RequiresPreciseTargeting Yes      
   CanBeUsedAgainst Missile
   CanBeUsedAgainst HighMissile
@@ -204,21 +211,21 @@ Modifier options:
   AffectedBy Unit "ARMY" Damage 3
   AffectedBy "ABM2" CanBeIntercepted 1.4 
   
-  ImprovedBy "B2" Set Precision 0.1 
-  ImprovedBy "B2" Set Range 150
-  ImprovedBy "B2" Set CanBeIntercepted 0.7 
+  ImprovedBy "ASM2" Set Precision 0.1 
+  ImprovedBy "ASM2" Set Range 150
+  ImprovedBy "ASM2" Set CanBeIntercepted 0.7 
  
-  ImprovedBy "B3" Set Precision 0.05 
-  ImprovedBy "B3" Set Range 300 
-  ImprovedBy "B3" Set CanBeIntercepted 0.6 
+  ImprovedBy "ASM3" Set Precision 0.05 
+  ImprovedBy "ASM3" Set Range 300 
+  ImprovedBy "ASM3" Set CanBeIntercepted 0.6 
   
-  ImprovedBy "B4" Set Precision 0.01 
-  ImprovedBy "B4" Set Range 450 
-  ImprovedBy "B4" Set CanBeIntercepted 0.5 
+  ImprovedBy "ASM4" Set Precision 0.01 
+  ImprovedBy "ASM4" Set Range 450 
+  ImprovedBy "ASM4" Set CanBeIntercepted 0.5 
   
-  ImprovedBy "B2" Movie Image "Units/Images/Missiles/B2.vidx"
-  ImprovedBy "B3" Movie Image "Units/Images/Missiles/B3.vidx"
-  ImprovedBy "B4" Movie Image "Units/Images/Missiles/B4.vidx"
+  ImprovedBy "ASM2" Movie Image "Units/Images/Missiles/B2.vidx"
+  ImprovedBy "ASM3" Movie Image "Units/Images/Missiles/B3.vidx"
+  ImprovedBy "ASM4" Movie Image "Units/Images/Missiles/B4.vidx"
 
 [MISSILE] "Low-power nuclear bomb"
   Tech "M_Nuclear_bomb"
@@ -523,13 +530,13 @@ Modifier options:
   AffectedBy Unit "Stealth_aircrafts_bombers" Precision 1.7
   
   ImprovedBy "SAM60" Set Range 450
-  ImprovedBy "SAM60" Set Speed 2500
+  ImprovedBy "SAM60" Set Speed 2100
   ImprovedBy "SAM60" Set Precision 0.15
   ImprovedBy "SAM60" Set Precision 0.15
   ImprovedBy "SAM60" Set MaxElevation 10
   
   ImprovedBy "SAM80" Set Range 550
-  ImprovedBy "SAM80" Set Speed 2500
+  ImprovedBy "SAM80" Set Speed 2200
   ImprovedBy "SAM80" Set Precision 0.1
   ImprovedBy "SAM80" Set MaxElevation 18
   
@@ -537,6 +544,11 @@ Modifier options:
   ImprovedBy "SAM10" Set Speed 2500
   ImprovedBy "SAM10" Set Precision 0.09
   ImprovedBy "SAM10" Set MaxElevation 21
+  
+  ImprovedBy "SAM30" Set Range 900
+  ImprovedBy "SAM30" Set Speed 2800
+  ImprovedBy "SAM30" Set Precision 0.01
+  ImprovedBy "SAM30" Set MaxElevation 30
   
   AffectedBy InRange "EW" Precision 3.0
   
@@ -1039,6 +1051,51 @@ Modifier options:
   Sound 120
     MuteLength 1.25
   Type "CIWS_LASER_TYPE"
+  Explosion "LASER_EXP2"
+  DrawLaser
+  Ballistic 
+  Range 500
+  Speed 7000
+  Precision 0.05
+  Switchable ON
+  MaxElevation 600
+  
+  [MISSILE] "SAM_LASER"
+  Tech "M_SAM_LASER"
+  Icon "Units/Images/Missiles/CIWS2.png"
+  Sound 120
+    MuteLength 1.25
+  Type "CIWS_LASER_TYPE"
+  Explosion "LASER_EXP2"
+  DrawLaser
+  Ballistic 
+  Range 500
+  Speed 7000
+  Precision 0.05
+  Switchable ON
+  MaxElevation 600
+  
+  [MISSILE] "ABM_LASER"
+  Tech "M_ABM_LASER"
+  Icon "Units/Images/Missiles/CIWS2.png"
+  Sound 120
+    MuteLength 1.25
+  Type "CIWS_LASER_TYPE"
+  Explosion "LASER_EXP2"
+  DrawLaser
+  Ballistic 
+  Range 500
+  Speed 7000
+  Precision 0.05
+  Switchable ON
+  MaxElevation 1200
+  
+  [MISSILE] "LASER_POD"
+  Tech "M_LASER_POD"
+  Icon "Units/Images/Missiles/CIWS2.png"
+  Sound 120
+    MuteLength 1.25
+  Type "LASER_POD_TYPE"
   Explosion "LASER_EXP2"
   DrawLaser
   Ballistic 
