@@ -145,6 +145,30 @@
     TimeGrowing 3.25
     TimeTotal 3.25
     DrawYShift 0.55
+	
+[EXPLOSION] "ROD_EXP"
+//  Movie "Images/Explosion/nuke_2_f.midx"
+  Emulated "Units/Emulated/500K.txt"
+  Sound 72 or 104 or 105
+        Priority 1
+        Volume 2
+        MuteLength 0.05
+  Kilotons 500
+  Damage 350
+  Range 100
+  FullEffectRange 12.5
+  DrawSize 11
+  TimeGrowing 3.25
+  TimeTotal 3.25
+  DrawYShift 0.55
+  PollutionSize 0
+
+  Variant Water
+    Emulated "Units/Emulated/Water_500K.txt"
+    DrawSize 33
+    TimeGrowing 3.25
+    TimeTotal 3.25
+    DrawYShift 0.55
 
 [EXPLOSION] "nuke_1000"
   Emulated "Units/Emulated/1M.txt"

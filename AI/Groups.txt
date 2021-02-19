@@ -1,418 +1,76 @@
+// Describes the complement of each unit group.
+// As we always operate groups, even the single units must be described as a group
 
-Group FixedLWradar_Balanced
-  PlacementType Radar distant
-  "Fixed LW radar"
-  "SAM_site"
+// PlacementType means the points where AI should deplay the unit, "self" modifier means to use the own points instead of selecting the ones that can be used against the choosen enemy
+// AttackType means where the unit group should go to perform the attack. This actually influences the selection of the placement point and wait point as well
+// WaitType means where to wait before moving to the attack point, until the global attack is commanded
+// PatrolType means what type of points to patrol, randomly selecting from the available ones.
+//
+// Default Priority is 1
+// Default Fade is 0.02 for units, 0.4 for the cities - the fade means the multiplier applied to the priority each time the unit is targeted
+// Default PriorityDivider is 50 - this means the target is to be changed if the candidate target has the priority at least PriorityDivider times bigger
 
-
-Group SAM_site_Balanced
-  PlacementType CityDefence self
-  "SAM_site"
-  Avoid City
-
-
-Group Satellite_Balanced
-  PlacementType Orbit self
-  "Satellite"
-  Avoid City
-
-
-Group Over_Horizonradar_Balanced
-  PlacementType OverHorizonRadar distant
-  DistanceFrom "Over_Horizon radar"
-  "Over_Horizon radar"
-  "SAM_site"
-
-
-Group Space_radar_Balanced
-  PlacementType Orbit self distant
-  "Space_radar"
-  "SAM_site"
-
-
-Group Carrier_Balanced_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "Carrier" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group LHA_Balanced_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "LHA" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group Carrier_Balanced
+// the standard carrier group, to attack enemy territory
+Group Carrier
   PlacementType NavalBase self
   AttackType CarrierAttack
   WaitType SubmarineHide
   "Carrier" leader
   "Destroyer"
   "Destroyer"
-  "Cruiser" optional
   "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
+  "Cruiser" optional
   Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
+  Target "Missile Silo"  Priority 10000 Nuclear
+  Target "Mobile_ICBM"  Priority 10000 Conventional Nuclear
+  Target "Mobile_MRBM"  Priority 5000 Conventional Nuclear
   Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
+  Target City Priority 100 Nuclear
+//  Target "Fixed SW radar" Priority 100
+  Target "Fixed LW radar" Priority 100
+  Target "Space_radar" Priority 100
+  Target "Airport" Priority 100 Nuclear
+  Target "Carrier" Priority 100 Nuclear
+  Target "Nuclear_Submarine" Immediate Priority 1000
   Avoid "Destroyer"
-  Avoid "Cruiser"
   MaxTargets 2
+
   return when type "Fighter" 3 type "Attack" 5
 
-
-Group LHA_Balanced
-  PlacementType NavalBase self
-  AttackType CarrierAttack
-  WaitType SubmarineHide
-  "LHA" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group Airport_Balanced
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Airport2_Balanced
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport2"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Airport3_Balanced
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport3"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group AIRPORT4_Balanced
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "AIRPORT4"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Submarine_Balanced_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Submarine" leader
-  "Submarine"
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 1000
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Carrier" Immediate Priority 100
-  Target "LHA" Immediate Priority 100
-  Avoid City
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-
-
-Group Submarine_Balanced
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Submarine" leader
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 1000
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Carrier" Immediate Priority 100
-  Target "LHA" Immediate Priority 100
-  Avoid City
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-
-
-Group Destroyer_Balanced
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "Destroyer" leader
-  "Destroyer" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Avoid City
-  Avoid "Cruiser"
-  Avoid "Battlecruiser"
-  Avoid "Carrier"
-  Avoid "LHA"
-
-
-Group Cruiser_Balanced
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "Cruiser" leader
-  "Cruiser" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Avoid City
-  Avoid "Cruiser"
-  Avoid "Battlecruiser"
-  Avoid "Carrier"
-  Avoid "LHA"
-
-
-Group Nuclear_Submarine_Balanced
+// the nuclear submarine group, to attack enemy cities
+Group Submarine
   PlacementType NavalBase self
   AttackType SubmarineAttack distant
   WaitType SubmarineHide
   "Nuclear_Submarine" leader
   "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 100
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Mobile_MRBM" Priority 10000 Nuclear
-  Target "Mobile_ICBM" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
   Target "Over_Horizon radar" Priority 10000 Fade 0.01 Nuclear
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Mobile_ICBM" Priority 10000 Nuclear
+  Target "Mobile_MRBM" Priority 10000 Nuclear
+  Target "Airport" Priority 10000 Nuclear
+  Target City Priority 100 Nuclear
   Target "Carrier" Priority 100 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "LHA" Priority 100 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
+  Target "Nuclear_Submarine" Immediate Priority 100
+  MaxTargets 4
 
-
-Group MissileSilo_Balanced
-  PlacementType MissileSilo
-  DistanceFrom "Missile Silo"
-  "Missile Silo"
-  extra missile 3
-  Target City Priority 100 Nuclear
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-
-
-Group Mobile_MRBM_Balanced
-  PlacementType MobileMissile
-  "Mobile_MRBM"
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 10000 Nuclear
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Carrier" Priority 3000 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-  extra missile 3
-  MaxTargets 3
-
-
-Group Mobile_ICBM_Balanced
-  PlacementType MobileMissile
-  "Mobile_ICBM"
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 10000 Nuclear
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Carrier" Priority 3000 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-  extra missile 3
-  MaxTargets 3
-
-
-Group Cruiser_SAG_Balanced_TacNuke
-  PlacementType NavalBase self
-  AttackType CarrierAttack distant
-  WaitType SubmarineHide
-  "Cruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Battlecruiser_SAG_Balanced_TacNuke
-  PlacementType NavalBase self
-  AttackType CarrierAttack distant
-  WaitType SubmarineHide
-  "Battlecruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Cruiser_SAG_Balanced
+// the small defensive group, to attack the Carrier group
+// it should not necessarily be extremely strong, just strong enough to significanly lower
+// the potential of the Carrier group
+Group Cruiser
   PlacementType NavalBase self
   PatrolType SubmarineHide self distant
+  PatrolType CarrierAttack self 
   "Cruiser" leader
+  "Cruiser"
   "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
+  "Destroyer" optional
   Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
   Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
+  Target "Submarine" Immediate Priority 500
+  Target "Destroyer" Immediate Priority 100
   Avoid City
-
-
+  
 Group Battlecruiser_SAG_Balanced
   PlacementType NavalBase self
   PatrolType SubmarineHide self distant
@@ -433,283 +91,147 @@ Group Battlecruiser_SAG_Balanced
   Target "AIRPORT4" Immediate Priority 1000
   Avoid City
 
-
-Group Carrier_Aggressive_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "Carrier" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group LHA_Aggressive_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "LHA" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group Carrier_Aggressive
-  PlacementType NavalBase self
-  AttackType CarrierAttack
-  WaitType SubmarineHide
-  "Carrier" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group LHA_Aggressive
-  PlacementType NavalBase self
-  AttackType CarrierAttack
-  WaitType SubmarineHide
-  "LHA" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group Airport_Aggressive
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Airport2_Aggressive
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport2"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Airport3_Aggressive
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport3"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group AIRPORT4_Aggressive
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "AIRPORT4"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Submarine_Aggressive_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Submarine" leader
-  "Submarine"
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 1000
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Carrier" Immediate Priority 100
-  Target "LHA" Immediate Priority 100
-  Avoid City
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-
-
-Group Submarine_Aggressive
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Submarine" leader
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 1000
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Carrier" Immediate Priority 100
-  Target "LHA" Immediate Priority 100
-  Avoid City
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-
-
-Group Destroyer_Aggressive
+// the small and fast group to search for enemy submarines and destroy them
+Group Patrol
   PlacementType NavalBase self
   PatrolType SubmarineAttack self distant
   "Destroyer" leader
   "Destroyer" optional
-  Target "Submarine" Immediate Priority 500
   Target "Nuclear_Submarine" Immediate Priority 10000
+  Target "Submarine" Immediate Priority 500
   Avoid City
   Avoid "Cruiser"
-  Avoid "Battlecruiser"
   Avoid "Carrier"
-  Avoid "LHA"
 
-
-Group Cruiser_Aggressive
+// the subwater group to search for enemy carrier groups and submarines
+Group HiddenPatrol
   PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "Cruiser" leader
-  "Cruiser" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Avoid City
-  Avoid "Cruiser"
-  Avoid "Battlecruiser"
-  Avoid "Carrier"
-  Avoid "LHA"
-
-
-Group Nuclear_Submarine_Aggressive
-  PlacementType NavalBase self
-  AttackType SubmarineAttack distant
-  WaitType SubmarineHide
-  "Nuclear_Submarine" leader
+  PatrolType SubmarineHide self distant
+  "Submarine" leader
   "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 100
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Mobile_MRBM" Priority 10000 Nuclear
-  Target "Mobile_ICBM" Priority 10000 Nuclear
+  Target "Nuclear_Submarine" Immediate Priority 10000
+  Target "Submarine" Immediate Priority 1000
+  Target "Carrier" Immediate Priority 100
+  Avoid City
+  Avoid "Destroyer"
+
+Group MissileSilo
+  PlacementType MissileSilo
+  DistanceFrom "Missile Silo"
+  "Missile Silo"
+  "SAM_site" optional
+  extra missile 3
   Target "Missile Silo" Priority 10000 Nuclear
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01 Nuclear
-  Target "Carrier" Priority 100 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "LHA" Priority 100 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
+  Target "Airport" Priority 10000 Nuclear
+  Target City Priority 100 Nuclear
+  MaxTargets 2
 
+Group OverHorizon
+  PlacementType OverHorizonRadar distant
+  DistanceFrom "Over_Horizon radar"
+  "Over_Horizon radar" 
+  "SAM_site"
+  "SAM_site"
+  "SAM_site"
+  "SAM_site"
+  "SAM_site" optional
 
-Group MissileSilo_Aggressive
+Group Airport
+  PlacementType Airbase
+  DistanceFrom "Bomber"
+  DistanceType flight
+  "Airport"
+  "SAM_site"
+  "SAM_site" optional
+  Target "Missile Silo" Priority 8000 Nuclear
+  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
+  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
+  Target City Priority 100 Nuclear
+  Avoid "Carrier"
+  Avoid "SAM_site"
+  Avoid "Destroyer"
+  MaxTargets 3
+  
+Group Airport2
+  PlacementType Airbase
+  DistanceFrom "Bomber"
+  DistanceType flight
+  "Airport2"
+  "SAM_site"
+  "SAM_site" optional
+  extra missile 10
+  Target City Priority 100 Nuclear
+  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
+  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
+  Target "Missile Silo" Priority 8000 Nuclear
+  Avoid "Destroyer"
+  Avoid "Cruiser"
+  Avoid "SAM_site"
+  Avoid "Carrier"
+  Avoid "LHA"
+  MaxTargets 3
+  
+Group Airport3
+  PlacementType Airbase
+  DistanceFrom "Bomber"
+  DistanceType flight
+  "Airport3"
+  "SAM_site"
+  "SAM_site" optional
+  extra missile 10
+  Target "SAM_site" Priority 8000 Conventional Nuclear
+  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
+  Target "Destroyer" Priority 5000 Fade 0 Conventional Nuclear
+  Target City Priority 100 Nuclear
+  MaxTargets 3
+
+Group LWRadar
+  PlacementType Radar distant
+  "Fixed LW radar"
+  "SAM_site"
+
+Group SpaceRadar
+  PlacementType Orbit self distant
+  "Space_radar"
+  "SAM_site" optional
+
+Group SAMSite
+  PlacementType CityDefence self
+  "SAM_site"
+  Avoid City
+
+Group MobileMRBM
+  PlacementType MobileMissile
+  "Mobile_MRBM"
+  extra missile 3
+  Target "Over_Horizon radar" Priority 10000 Nuclear
+  Target "Airport" Priority 10000 Nuclear
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Mobile_ICBM" Priority 10000 Nuclear
+  Target "Nuclear_Submarine" Immediate Priority 10000 Nuclear
+  Target "Mobile_MRBM" Priority 5000 Nuclear
+  Target "Carrier" Priority 3000 Nuclear
+  Target "Cruiser" Priority 1000 Nuclear
+  Target "Destroyer" Priority 300 Nuclear
+  Target "Submarine" Priority 300 Nuclear
+  Target "SAM_site" Priority 100 Nuclear
+  Target City Priority 100 Nuclear
+  MaxTargets 3
+
+Group MobileICBM
+  PlacementType MissileSilo
+  "Mobile_ICBM"
+  extra missile 3
+  Target "Missile Silo" Priority 10000 Nuclear
+  Target "Airport" Priority 10000 Nuclear
+  Target "Nuclear_Submarine" Priority 10000 Nuclear
+  Target "Carrier" Priority 3000 Nuclear
+  Target City Priority 100 Nuclear
+  MaxTargets 2
+  
+Group ICBM
   PlacementType MissileSilo
   DistanceFrom "Missile Silo"
   "Missile Silo"
@@ -721,586 +243,8 @@ Group MissileSilo_Aggressive
   Target "Airport3" Priority 10000 Nuclear
   Target "AIRPORT4" Priority 10000 Nuclear
 
-
-Group Mobile_MRBM_Aggressive
-  PlacementType MobileMissile
-  "Mobile_MRBM"
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 10000 Nuclear
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Carrier" Priority 3000 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-  extra missile 3
-  MaxTargets 3
-
-
-Group Mobile_ICBM_Aggressive
-  PlacementType MobileMissile
-  "Mobile_ICBM"
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 10000 Nuclear
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Carrier" Priority 3000 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-  extra missile 3
-  MaxTargets 3
-
-
-Group Cruiser_SAG_Aggressive_TacNuke
-  PlacementType NavalBase self
-  AttackType CarrierAttack distant
-  WaitType SubmarineHide
-  "Cruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Battlecruiser_SAG_Aggressive_TacNuke
-  PlacementType NavalBase self
-  AttackType CarrierAttack distant
-  WaitType SubmarineHide
-  "Battlecruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Cruiser_SAG_Aggressive
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Cruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Battlecruiser_SAG_Aggressive
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Battlecruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Carrier_Cautious_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "Carrier" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group LHA_Cautious_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "LHA" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group Carrier_Cautious
-  PlacementType NavalBase self
-  AttackType CarrierAttack
-  WaitType SubmarineHide
-  "Carrier" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group LHA_Cautious
-  PlacementType NavalBase self
-  AttackType CarrierAttack
-  WaitType SubmarineHide
-  "LHA" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 1000
-  Target "Airport" Priority 100 Conventional Nuclear
-  Target "Airport2" Priority 100 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 5000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 10000 Conventional Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Fixed LW radar" Priority 100
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01
-  Target "Space_radar" Priority 100
-  Target "SAM_site" Priority 3000
-  Target "ABM_SITE" Priority 3000
-  Target "Carrier" Priority 100 Conventional Nuclear
-  Target "Airport3" Priority 100 Conventional Nuclear
-  Target "AIRPORT4" Priority 100 Conventional Nuclear
-  Avoid "Submarine"
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  MaxTargets 2
-  return when type "Fighter" 3 type "Attack" 5
-
-
-Group Airport_Cautious
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Airport2_Cautious
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport2"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Airport3_Cautious
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "Airport3"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group AIRPORT4_Cautious
-  PlacementType Airbase
-  DistanceFrom "Bomber"
-  DistanceType flight
-  "AIRPORT4"
-  extra missile 10
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 5000 Fade 0 Conventional Nuclear
-  Target "Mobile_MRBM" Priority 8000 Conventional Nuclear
-  Target "Mobile_ICBM" Priority 8000 Conventional Nuclear
-  Target "Missile Silo" Priority 8000 Nuclear
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-  Avoid "SAM_site"
-  Avoid "Carrier"
-  Avoid "LHA"
-  MaxTargets 3
-
-
-Group Submarine_Cautious_Rush
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Submarine" leader
-  "Submarine"
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 1000
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Carrier" Immediate Priority 100
-  Target "LHA" Immediate Priority 100
-  Avoid City
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-
-
-Group Submarine_Cautious
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Submarine" leader
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 1000
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Carrier" Immediate Priority 100
-  Target "LHA" Immediate Priority 100
-  Avoid City
-  Avoid "Destroyer"
-  Avoid "Cruiser"
-
-
-Group Destroyer_Cautious
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "Destroyer" leader
-  "Destroyer" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Avoid City
-  Avoid "Cruiser"
-  Avoid "Battlecruiser"
-  Avoid "Carrier"
-  Avoid "LHA"
-
-
-Group Cruiser_Cautious
-  PlacementType NavalBase self
-  PatrolType SubmarineAttack self distant
-  "Cruiser" leader
-  "Cruiser" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Avoid City
-  Avoid "Cruiser"
-  Avoid "Battlecruiser"
-  Avoid "Carrier"
-  Avoid "LHA"
-
-
-Group Nuclear_Submarine_Cautious
-  PlacementType NavalBase self
-  AttackType SubmarineAttack distant
-  WaitType SubmarineHide
-  "Nuclear_Submarine" leader
-  "Submarine" optional
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Immediate Priority 100
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Mobile_MRBM" Priority 10000 Nuclear
-  Target "Mobile_ICBM" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Over_Horizon radar" Priority 10000 Fade 0.01 Nuclear
-  Target "Carrier" Priority 100 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "LHA" Priority 100 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-
-
-Group MissileSilo_Cautious
-  PlacementType MissileSilo
-  DistanceFrom "Missile Silo"
-  "Missile Silo"
-  extra missile 3
-  Target City Priority 100 Nuclear
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-
-
-Group Mobile_MRBM_Cautious
-  PlacementType MobileMissile
-  "Mobile_MRBM"
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 10000 Nuclear
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Carrier" Priority 3000 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-  extra missile 3
-  MaxTargets 3
-
-
-Group Mobile_ICBM_Cautious
-  PlacementType MobileMissile
-  "Mobile_ICBM"
-  Target City Priority 100 Nuclear
-  Target "Nuclear_Submarine" Priority 10000 Nuclear
-  Target "Airport" Priority 10000 Nuclear
-  Target "Airport2" Priority 10000 Nuclear
-  Target "Missile Silo" Priority 10000 Nuclear
-  Target "Carrier" Priority 3000 Nuclear
-  Target "Airport3" Priority 10000 Nuclear
-  Target "AIRPORT4" Priority 10000 Nuclear
-  extra missile 3
-  MaxTargets 3
-
-
-Group Cruiser_SAG_Cautious_TacNuke
-  PlacementType NavalBase self
-  AttackType CarrierAttack distant
-  WaitType SubmarineHide
-  "Cruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Battlecruiser_SAG_Cautious_TacNuke
-  PlacementType NavalBase self
-  AttackType CarrierAttack distant
-  WaitType SubmarineHide
-  "Battlecruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Cruiser_SAG_Cautious
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Cruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group Battlecruiser_SAG_Cautious
-  PlacementType NavalBase self
-  PatrolType SubmarineHide self distant
-  "Battlecruiser" leader
-  "Destroyer"
-  "Destroyer"
-  "Cruiser" optional
-  "Submarine" optional
-  Target "Submarine" Immediate Priority 500
-  Target "Nuclear_Submarine" Immediate Priority 10000
-  Target "Destroyer" Immediate Priority 100
-  Target "Cruiser" Immediate Priority 100
-  Target "Airport" Immediate Priority 1000
-  Target "Airport2" Immediate Priority 1000
-  Target "Missile Silo" Priority 1200 Conventional Nuclear
-  Target "Carrier" Immediate Priority 1000
-  Target "Airport3" Immediate Priority 1000
-  Target "AIRPORT4" Immediate Priority 1000
-  Avoid City
-
-
-Group FixedLWradar_Aggressive
-  PlacementType Radar distant
-  "Fixed LW radar"
-  "SAM_site"
-
-
-Group SAM_site_Aggressive
-  PlacementType CityDefence self
-  "SAM_site"
-  Avoid City
-
-
-Group Satellite_Aggressive
-  PlacementType Orbit self
+Group Satellite
+  PlacementType Orbit distant
   "Satellite"
-  Avoid City
-
-
-Group Over_Horizonradar_Aggressive
-  PlacementType OverHorizonRadar distant
-  DistanceFrom "Over_Horizon radar"
-  "Over_Horizon radar"
-  "SAM_site"
-
-
-Group Space_radar_Aggressive
-  PlacementType Orbit self distant
-  "Space_radar"
-
-
-Group FixedLWradar_Cautious
-  PlacementType Radar distant
-  "Fixed LW radar"
-
-
-Group SAM_site_Cautious
-  PlacementType CityDefence self
-  "SAM_site"
-  Avoid City
-
-
-Group Satellite_Cautious
-  PlacementType Orbit self
-  "Satellite"
-  Avoid City
-
-
-Group Over_Horizonradar_Cautious
-  PlacementType OverHorizonRadar distant
-  DistanceFrom "Over_Horizon radar"
-  "Over_Horizon radar"
-  "SAM_site"
-  "SAM_site"
-
-
-Group Space_radar_Cautious
-  PlacementType Orbit self distant
-  "Space_radar"
-  "SAM_site"
-
 
 END

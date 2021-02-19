@@ -8,7 +8,7 @@
 [TECHNOLOGY] "Satellite"
   Name "SATELLITE_NAME"
   Description "SATELLITE_DESC"
-  Image "Images/Science/Satellite.png"
+  Image "Images/Science/SAT.png"
   Points 15
   LeadsTo "SPYSAT"
     LeadsTo "GPS"
@@ -37,9 +37,25 @@
 [TECHNOLOGY] "Improved_optics"
   Name "Improved_optics_NAME"
   Description "Improved_optics_DESC"
-  Image "Images/Science/Improved_optics.png"
+  Image "Images/Science/SPYSAT2.png"
   Points 15
   LeadsTo "Laser_weapon"
+  LeadsTo "KAS_TECH"
+  
+[TECHNOLOGY] "LASER_ANTISAT"
+  Name "LASER_ANTISAT_NAME"
+  Description "LASER_ANTISAT_DESC"
+  Image "Images/Science/LASER_ANTISAT.png"  
+  Points 15
+  LeadsTo "M_Laser_weapon2"
+  
+[TECHNOLOGY] "KAS_TECH"
+  Name "KAS_TECH_NAME"
+  Description "KAS_TECH_DESC"
+  Image "Images/Science/KAS.png"
+  Points 15
+  LeadsTo "U_KAS_SAT"
+  LeadsTo "M_KIN_ROD"
 
 [TECHNOLOGY] "GPS"
   Name "GPS_NAME"
@@ -71,14 +87,20 @@
 [TECHNOLOGY] "Laser_weapon"
   Name "Laser_weapon_NAME"
   Description "Laser_weapon_DESC"
-  Image "Images/Science/Laser_weapon.png"
+  Image "Images/Science/LASER_SAT.png"
   Points 15
   LeadsTo "M_Laser_weapon"
+  LeadsTo "LASER_ANTISAT"
+  LeadsTo "U_LASER_SAT"
   //AIUpgradeTechHint Satellite
 
 [TECHNOLOGY] "M_Laser_weapon"
   Name "M_Laser_weapon_NAME"
   Description "M_Laser_weapon_DESC"
+  
+[TECHNOLOGY] "M_Laser_weapon2"
+  Name "M_Laser_weapon2_NAME"
+  Description "M_Laser_weapon2_DESC"
 
 
 // chain MRBM  ICBM          Heavy missiles
@@ -765,6 +787,7 @@ Description "U_Cavern_DESC"
   Name "SAM30_NAME"
   Description "SAM30_DESC"
   Image "Images/Science/SAM5.png"
+  LeadsTo "M_SAM_LASER"
   Points 15
   
 [TECHNOLOGY] "ABM1"
@@ -802,6 +825,7 @@ Description "U_Cavern_DESC"
   Description "ABM4_DESC"
   Image "Images/Science/ABM4.png"
   Points 15
+  LeadsTo "M_ABM_LASER"
   //AIUpgradeTechHint Intercept
 
 [TECHNOLOGY] "M_anti_ballistic_missile"
@@ -1729,6 +1753,7 @@ Description "U_Cavern_DESC"
   LeadsTo "SW_MK4_REQ"  
   LeadsTo "ARMY20_REQ"
   LeadsTo "6GEN_REQ"
+  LeadsTo "SAM30_REQ"
 //  AvailableFrom 672000  
   //AIUpgradeTechHint Science 
   
@@ -1736,6 +1761,11 @@ Description "U_Cavern_DESC"
   Name "ARMY20_REQ_NAME"
   Description "ARMY20_REQ_DESC" 
   LeadsTo "ARMY20"
+  
+[TECHNOLOGY] "SAM30_REQ"
+  Name "SAM30_REQ_NAME"
+  Description "SAM30_REQ_DESC" 
+  LeadsTo "SAM30"
   
 [TECHNOLOGY] "ABM3_REQ"
   Name "ABM3_REQ_NAME"
@@ -1789,6 +1819,9 @@ Description "U_Cavern_DESC"
   Points 30
   LeadsTo "CIWS_LASER_REQ" 
   LeadsTo "Laser_weapon_REQ" 
+  LeadsTo "M_SAM_LASER"
+  LeadsTo "M_ABM_LASER" 
+  LeadsTo "M_LASER_POD" 
   //AIUpgradeTechHint ShipToShip
   
 [TECHNOLOGY] "CIWS_LASER_REQ"
@@ -1936,5 +1969,21 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_ABM_NUKE2"
   Name "M_ABM_NUKE2_NAME"
   Description "M_ABM_NUKE2_DESC"
+  
+[TECHNOLOGY] "LADEF"
+  Name "LADEF_NAME"
+  Description "LADEF_DESC"
+  
+[TECHNOLOGY] "U_LASER_SAT"
+  Name "U_LASER_SAT_NAME"
+  Description "U_LASER_SAT_DESC"
+  
+[TECHNOLOGY] "U_KAS_SAT"
+  Name "U_KAS_SAT_NAME"
+  Description "U_KAS_SAT_DESC"
+  
+[TECHNOLOGY] "M_KIN_ROD"
+  Name "M_KIN_ROD_NAME"
+  Description "M_KIN_ROD_DESC"
 
 [END]

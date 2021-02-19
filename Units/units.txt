@@ -56,6 +56,8 @@ Modifier options:
   Modifier "4GEN2"
   Modifier "5GEN"  
   
+  Modifier "LADEF"  
+  
   ImprovedBy "3GEN" Set ProductionCost 1.3
   ImprovedBy "4GEN" Set ProductionCost 1.8
   ImprovedBy "4GEN2" Set ProductionCost 2.0
@@ -65,11 +67,12 @@ Modifier options:
   ImprovedBy "4GEN" Set Power 1.8
   ImprovedBy "4GEN2" Set Power 2.2
   ImprovedBy "5GEN" Set Power 2.6
+  ImprovedBy "6GEN" Set Power 3
 
   ImprovedBy "3GEN" Set Speed 820
   ImprovedBy "3GEN" Set TurnSpeed 9
   ImprovedBy "3GEN" Set Size 0.035
-  ImprovedBy "4GEN2" Set Range 5500
+  ImprovedBy "3GEN" Set Range 5500
   
   ImprovedBy "4GEN" Set Speed 840
   ImprovedBy "4GEN" Set TurnSpeed 12
@@ -85,12 +88,18 @@ Modifier options:
   ImprovedBy "5GEN" Set Speed 1000
   ImprovedBy "5GEN" Set TurnSpeed 15
   ImprovedBy "5GEN" Set Size 0.005
-  ImprovedBy "4GEN2" Set Range 7500
+  ImprovedBy "5GEN" Set Range 7500
+  
+  ImprovedBy "6GEN" Set Speed 1100
+  ImprovedBy "6GEN" Set TurnSpeed 16
+  ImprovedBy "6GEN" Set Size 0.001
+  ImprovedBy "6GEN" Set Range 8200
  
   ImprovedBy "3GEN" Movie "Units/Images/Airborne/FR60.vidx" Icon "Units/Images/Airborne/FR60_I.vidx"  
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/FR70.vidx" Icon "Units/Images/Airborne/FR70_I.vidx"
   ImprovedBy "4GEN2" Movie "Units/Images/Airborne/FR00.vidx" Icon "Units/Images/Airborne/FR00_I.vidx"    
   ImprovedBy "5GEN"  Movie "Units/Images/Airborne/FR10.vidx" Icon "Units/Images/Airborne/FR10_I.vidx"
+  ImprovedBy "6GEN"  Movie "Units/Images/Airborne/FR30.vidx" Icon "Units/Images/Airborne/FR30_I.vidx"
 
 [UNIT] "CVN_FR"
   Tech "CVN_FR"
@@ -124,7 +133,12 @@ Modifier options:
   ProductionCost 1
   Crash "std_bomb"
   
+  Modifier "3GEN"
+  Modifier "4GEN"
+  Modifier "4GEN2"
   Modifier "5GEN"
+  
+  Modifier "LADEF"
   
   ImprovedBy "3GEN" Set ProductionCost 1.3
   ImprovedBy "4GEN" Set ProductionCost 1.8
@@ -161,6 +175,7 @@ Modifier options:
   ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_FR70.vidx"  Icon "Units/Images/Airborne/CVN_FR70_I.vidx"
   ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_FR00.vidx"  Icon "Units/Images/Airborne/CVN_FR00_I.vidx"
   ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_FR10.vidx"  Icon "Units/Images/Airborne/CVN_FR10_I.vidx"
+  ImprovedBy "6GEN"  Movie "Units/Images/Airborne/CVN_FR30.vidx"  Icon "Units/Images/Airborne/CVN_FR30_I.vidx"
   
 [UNIT] "Attack"
   Tech "U_Attack"
@@ -293,6 +308,7 @@ Modifier options:
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/MULTI70.vidx" Icon "Units/Images/Airborne/MULTI70_I.vidx"
   ImprovedBy "4GEN2" Movie "Units/Images/Airborne/MULTI00.vidx" Icon "Units/Images/Airborne/MULTI00_I.vidx"
   ImprovedBy "5GEN" Movie "Units/Images/Airborne/MULTI10.vidx" Icon "Units/Images/Airborne/MULTI10_I.vidx"
+  ImprovedBy "6GEN" Movie "Units/Images/Airborne/MULTI30.vidx" Icon "Units/Images/Airborne/MULTI30_I.vidx"
 
 [UNIT] "CVN_ATK"
   Tech "CVN_ATK"
@@ -424,6 +440,7 @@ Modifier options:
   ImprovedBy "4GEN"  Movie "Units/Images/Airborne/CVN_ATK70.vidx"  Icon "Units/Images/Airborne/CVN_ATK70_I.vidx"
   ImprovedBy "4GEN2"  Movie "Units/Images/Airborne/CVN_ATK00.vidx"  Icon "Units/Images/Airborne/CVN_ATK00_I.vidx"
   ImprovedBy "5GEN"  Movie "Units/Images/Airborne/CVN_ATK10.vidx"  Icon "Units/Images/Airborne/CVN_ATK10_I.vidx"
+  ImprovedBy "6GEN"  Movie "Units/Images/Airborne/CVN_ATK30.vidx"  Icon "Units/Images/Airborne/CVN_ATK30_I.vidx"
 
 
 
@@ -442,6 +459,7 @@ Modifier options:
   TurnSpeed 3
   Range 15000
   Power 1.5
+  MaxElevation 5
 
   Config "Bombs" Default
     Weapon "Free fall bomb" 45 Launch 1 Time 1 AutoEngage 
@@ -480,7 +498,7 @@ Modifier options:
     ImprovedBy "CRUISE3"
         Weapon "NUKE_CRUISE" 2 Launch 2 Time 90 AutoEngage 
     ImprovedBy "CRUISE5"
-        Weapon "NUKE_CRUISE" 4 Launch 2 Time 90 AutoEngage 
+        Weapon "NUKE_CRUISE" 3 Launch 2 Time 90 AutoEngage 
   Config "Anti-ship" 
     ImprovedBy "CRUISE1"
         Weapon "SPSPM" 2 Launch 2 Time 10 AutoEngage 
@@ -535,10 +553,17 @@ Modifier options:
   ImprovedBy "5GEN" Set Range 24000
   ImprovedBy "6GEN" Set Range 27000
   
+  ImprovedBy "3GEN" Set MaxElevation 5
+  ImprovedBy "4GEN" Set MaxElevation 8
+  ImprovedBy "4GEN2" Set MaxElevation 12
+  ImprovedBy "5GEN" Set MaxElevation 19
+  ImprovedBy "6GEN" Set MaxElevation 28
+  
   ImprovedBy "3GEN" Movie "Units/Images/Airborne/BOMBER60.vidx"  Icon "Units/Images/Airborne/BOMBER60_I.vidx"
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/BOMBER70.vidx"  Icon "Units/Images/Airborne/BOMBER70_I.vidx"
   ImprovedBy "4GEN2" Movie "Units/Images/Airborne/BOMBER00.vidx"  Icon "Units/Images/Airborne/BOMBER00_I.vidx"
   ImprovedBy "5GEN" Movie "Units/Images/Airborne/BOMBER10.vidx"  Icon "Units/Images/Airborne/BOMBER10_I.vidx"
+  ImprovedBy "6GEN" Movie "Units/Images/Airborne/BOMBER30.vidx"  Icon "Units/Images/Airborne/BOMBER30_I.vidx"
 
 //  ImprovedBy "S_FACTION_ID_3" Speed 3
 
@@ -563,14 +588,14 @@ Modifier options:
   Radar "AIR_CAMERA"
   Crash "big_bomb"
   CanPatrolPoint
-  MaxElevation 15
+  MaxElevation 9
 
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
   
   ImprovedBy "4GEN" Set Speed 720
   ImprovedBy "4GEN" Set Size 0.05
   ImprovedBy "4GEN" Set Range 26000
-  ImprovedBy "4GEN" Set MaxElevation 18
+  ImprovedBy "4GEN" Set MaxElevation 22
 
   ImprovedBy "5GEN" Set Power 3
   ImprovedBy "5GEN" Set Size 0.01
@@ -746,6 +771,7 @@ Modifier options:
 [UNIT] "Submarine"
   Tech "U_Submarine"
   Movie "Units/Images/Naval/SSN50.vidx"
+  Icon "Units/Images/Naval/SSN50_I.vidx"
   DrawSize 27
   FollowRadius 28//24
   Size 0.2
@@ -785,14 +811,15 @@ Modifier options:
   ImprovedBy "SUB30" Modify Weapon "Torpedo" Set Time 240
 
   
-  ImprovedBy "SUB60" Movie "Units/Images/NAVAL/SSN60.vidx"
-  ImprovedBy "SUB80" Movie "Units/Images/NAVAL/SSN80.vidx"
-  ImprovedBy "SUB00" Movie "Units/Images/NAVAL/SSN00.vidx"
-  ImprovedBy "SUB30" Movie "Units/Images/NAVAL/SSN30.vidx"
+  ImprovedBy "SUB60" Movie "Units/Images/NAVAL/SSN60.vidx"  Icon "Units/Images/Naval/SSN60_I.vidx"
+  ImprovedBy "SUB80" Movie "Units/Images/NAVAL/SSN80.vidx"  Icon "Units/Images/Naval/SSN80_I.vidx"
+  ImprovedBy "SUB00" Movie "Units/Images/NAVAL/SSN00.vidx"  Icon "Units/Images/Naval/SSN00_I.vidx"
+  ImprovedBy "SUB30" Movie "Units/Images/NAVAL/SSN30.vidx"  Icon "Units/Images/Naval/SSN30_I.vidx"
 
 [UNIT] "Nuclear_Submarine"
   Tech "U_Nuclear_Submarine"
   Movie "Units/Images/Naval/SSBN60.vidx"
+  Icon "Units/Images/Naval/SSBN60_I.vidx"
   DrawSize 31.5
   FollowRadius 32//28
   Size 0.25
@@ -805,7 +832,7 @@ Modifier options:
   Power 5
   Config "Nuclear"
     Weapon "Torpedo" 20000 Launch 1 Time 480 AutoEngage
-    Weapon "SUB_MRBM" 12 Launch 1  Time 200 Principal
+    Weapon "SUB_MRBM" 12 Launch 1  Time 100 Principal
   Radar "Sonar"
   ProductionCost 20
   NoAutoAttack
@@ -825,9 +852,9 @@ Modifier options:
   ImprovedBy "SUB00" Modify Weapon "Torpedo" Set Time 300
   ImprovedBy "SUB30" Modify Weapon "Torpedo" Set Time 240
   
-  ImprovedBy "SUB80" Movie "Units/Images/NAVAL/SSBN80.vidx"
-  ImprovedBy "SUB00" Movie "Units/Images/NAVAL/SSBN00.vidx"
-  ImprovedBy "SUB30" Movie "Units/Images/NAVAL/SSBN30.vidx"
+  ImprovedBy "SUB80" Movie "Units/Images/NAVAL/SSBN80.vidx"  Icon "Units/Images/Naval/SSBN80_I.vidx"
+  ImprovedBy "SUB00" Movie "Units/Images/NAVAL/SSBN00.vidx"  Icon "Units/Images/Naval/SSBN00_I.vidx"
+  ImprovedBy "SUB30" Movie "Units/Images/NAVAL/SSBN30.vidx"  Icon "Units/Images/Naval/SSBN30_I.vidx"
 
   MaxNumberToOrder 0
 
@@ -842,7 +869,7 @@ Modifier options:
   Sound 131 Volume 0.75
   Type Naval
   //AIVarietyHint NavalEscort
-  Speed 55
+  Speed 40
   TurnSpeed 5 // in angles per second
   Power 10
   Config "Multi-Mission" Default 
@@ -889,12 +916,13 @@ Modifier options:
   ImprovedBy "NAVY00" Modify Weapon "SAM" Set Time 50
 
   ImprovedBy "ABM2" Modify Weapon "ABM" Set Time 120
-  ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 80   
+  ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 80 
+  ImprovedBy "ABM4" Modify Weapon "ABM" Set Time 60   
   
-  ImprovedBy "NAVY60" Set Speed 65
-  ImprovedBy "NAVY80" Set Speed 75
-  ImprovedBy "NAVY00" Set Speed 85
-  ImprovedBy "NAVY30" Set Speed 90
+  ImprovedBy "NAVY60" Set Speed 45
+  ImprovedBy "NAVY80" Set Speed 55
+  ImprovedBy "NAVY00" Set Speed 65
+  ImprovedBy "NAVY30" Set Speed 75
   ImprovedBy "NAVY30" Set Size 0.15
   
   ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/DD60.vidx"  Icon "Units/Images/Naval/DD60_I.vidx"
@@ -944,10 +972,10 @@ Modifier options:
   Modifier "NAVY00"
   ProductionCost 27
   
-  ImprovedBy "NAVY60" Set Speed 50
-  ImprovedBy "NAVY80" Set Speed 60
-  ImprovedBy "NAVY00" Set Speed 70
-  ImprovedBy "NAVY30" Set Speed 80
+  ImprovedBy "NAVY60" Set Speed 45
+  ImprovedBy "NAVY80" Set Speed 55
+  ImprovedBy "NAVY00" Set Speed 65
+  ImprovedBy "NAVY30" Set Speed 75
   ImprovedBy "NAVY30" Set Size 0.2
   
   ImprovedBy "NAVY60" Modify Weapon "SPSPM" Set Time 460
@@ -961,6 +989,7 @@ Modifier options:
   
   ImprovedBy "ABM2" Modify Weapon "ABM" Set Time 120
   ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 80  
+  ImprovedBy "ABM4" Modify Weapon "ABM" Set Time 60  
 
   ImprovedBy "NAVY00" Modify Weapon "CONV_CRUISE" Set Time 230
   ImprovedBy "NAVY30" Modify Weapon "CONV_CRUISE" Set Time 220   
@@ -984,7 +1013,7 @@ Modifier options:
   Type Naval
   //AIVarietyHint NavalCapital
   AttackerInPlanner
-  Speed 35
+  Speed 40
   TurnSpeed 5 // in angles per second
   Power 20
   
@@ -1044,10 +1073,10 @@ Modifier options:
   ImprovedBy "NAVY00" Modify Weapon "NUKE_CRUISE" Set Time 230
   ImprovedBy "NAVY30" Modify Weapon "NUKE_CRUISE" Set Time 220   
   
-  ImprovedBy "NAVY60" Set Speed 40
-  ImprovedBy "NAVY80" Set Speed 50
-  ImprovedBy "NAVY00" Set Speed 60
-  ImprovedBy "NAVY30" Set Speed 70
+  ImprovedBy "NAVY60" Set Speed 45
+  ImprovedBy "NAVY80" Set Speed 55
+  ImprovedBy "NAVY00" Set Speed 65
+  ImprovedBy "NAVY30" Set Speed 75
   ImprovedBy "NAVY30" Set Size 0.3
   
   ImprovedBy "NAVY60" Movie "Units/Images/NAVAL/BC60.vidx" Icon "Units/Images/Naval/BC60_I.vidx"
@@ -1268,7 +1297,8 @@ Modifier options:
   ImprovedBy "SAM10" Modify Weapon "SAM" Set Time 50
     
   ImprovedBy "ABM2" Modify Weapon "ABM" Set Time 180
-  ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 130   
+  ImprovedBy "ABM3" Modify Weapon "ABM" Set Time 130  
+  ImprovedBy "ABM4" Modify Weapon "ABM" Set Time 90   
   
 	ImprovedBy "SAM60" Movie "Units/Images/GROUND/SAM60.vidx"
     ImprovedBy "SAM80" Movie "Units/Images/GROUND/SAM80.vidx"
@@ -1285,13 +1315,16 @@ Modifier options:
   Power 2
   Config "ABM" Default
     Weapon "ABM" 20000 Launch 1 Time 180 AutoEngage
-    Weapon "SAM_LASER" 200000 Launch 1 Time 2 AutoEngage
+    Weapon "ABM_LASER" 200000 Launch 1 Time 2 AutoEngage
         ImprovedBy "ABM2"
             Weapon "ABM" 20000 Launch 1 Time 120 AutoEngage
-			Weapon "SAM_LASER" 200000 Launch 1 Time 2 AutoEngage
+			Weapon "ABM_LASER" 200000 Launch 1 Time 2 AutoEngage
         ImprovedBy "ABM3"
             Weapon "ABM" 20000 Launch 1 Time 60 AutoEngage
-			Weapon "SAM_LASER" 200000 Launch 1 Time 2 AutoEngage
+			Weapon "ABM_LASER" 200000 Launch 1 Time 2 AutoEngage
+        ImprovedBy "ABM4"
+            Weapon "ABM" 20000 Launch 1 Time 40 AutoEngage
+			Weapon "ABM_LASER" 200000 Launch 1 Time 2 AutoEngage
   Config "Nuclear ABM"
     Weapon "ABM_NUKE" 1 Launch 1 Time 180 AutoEngage
   Config "Heavy Nuclear ABM"
@@ -1303,7 +1336,23 @@ Modifier options:
 
 [UNIT] "Satellite"
   Tech "U_Satellite"
-  Movie "Units/Images/Satellite/sat.midx"
+  Movie "Units/Images/GROUND/SPY1.midx"
+  DrawSize 32
+  Size 0.175
+  Sound 142 Volume 0.75
+  Type Satellite
+  //AIVarietyHint Satellite
+  Power 1
+  MinElevation 2000
+  MaxElevation 10000
+  Radar "Satellite Camera"
+  ProductionCost 30
+  
+  ImprovedBy "Improved_optics" Movie "Units/Images/GROUND/SPY2.midx"
+	
+[UNIT] "LASER_SAT"
+  Tech "U_LASER_SAT"
+  Movie "Units/Images/GROUND/LS.midx"
   DrawSize 32
   Size 0.175
   Sound 142 Volume 0.75
@@ -1311,11 +1360,24 @@ Modifier options:
   //AIVarietyHint Satellite
   Power 1
   Weapon "Laser" 20000 Launch 1 Time 60 AutoEngage
-  MinElevation 4000
+  Weapon "Laser2" 20000 Launch 1 Time 60 AutoEngage
+  MinElevation 2000
   MaxElevation 10000
-  Radar "Satellite Camera"
-  ProductionCost 38
- 
+  ProductionCost 45
+
+[UNIT] "KAS_SAT"
+  Tech "U_KAS_SAT"
+  Movie "Units/Images/GROUND/KAS.midx"
+  DrawSize 32
+  Size 0.175
+  Sound 142 Volume 0.75
+  Type Satellite
+  //AIVarietyHint Satellite
+  Power 1
+  Weapon "KIN_ROD" 12 Launch 1 Time 60
+  MinElevation 2000
+  MaxElevation 10000
+  ProductionCost 50  
   
 [UNIT] "CVN_ASW"
   Tech "CVN_ASW"
@@ -1368,7 +1430,8 @@ Config "Anti Submarine Warfare"
   CanHostAircrafts airway 1 "CVN_AWACS" 1
   CanHostAircrafts airway 2 "CVN_ASW" 1 Patrol 1
   CanHostAircrafts airway 1 "CVN_EWAIR" 1
-  CanStoreMissiles "Low-power nuclear bomb" 20
+  CanStoreMissiles "Low-power nuclear bomb" 10
+  CanStoreMissiles "NUKE_CRUISE" 20
   CanStoreMissiles "ASM" 20
   CanStoreMissiles "AAM" 50000
   CanStoreMissiles "ASM" 50000
@@ -1543,6 +1606,7 @@ Config "Anti Submarine Warfare"
   CanCarryUnit "ARMY"
   CanCarryUnit "MARINES"
   HangarMaxLoad 50
+  ResupplyRange 300
   
   Weapon "FLAKGUN" 20000 Launch 3 Time 30 AutoEngage
   Weapon "CIWS" 200000 Launch 1 Time 2 AutoEngage

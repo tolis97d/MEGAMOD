@@ -260,7 +260,7 @@ Modifier options:
   Type "OverHorizon"
   Range 5000
   Sector 360
-  MaxHeight 1500 // the default value is 100
+  MaxHeight 9000 // the default value is 100
   ImprovedBy "Over_horizon_radar_Mk2" Set Range 8000
 
 [RADAR] "Naval_Over_Horizon"

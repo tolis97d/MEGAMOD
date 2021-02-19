@@ -298,12 +298,14 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "FR_CIWS_NAME" LANG "Defensive Laser Pods"
 "FR_CIWS_DESC" LANG "Defensive Laser Pods are a megawatt-class chemical oxygen iodine laser mounted inside an external hardpoint.It is primarily designed as a missile defense system to destroy enemy AAMs.\n\n\n+Can be mounted with the AA loadouts of fighters and Multiroles"
 
-"ABM_LASER_NAME" LANG "Anti-Ballistic Laser"
-"ABM_LASER_DESC" LANG "High powered Laser capable of intercepting high altidute projectiles."
+"M_ABM_LASER_NAME" LANG "Anti-Ballistic Laser"
+"M_ABM_LASER_DESC" LANG "High powered Laser capable of intercepting high altidute projectiles."
 
-"SAM_LASER_NAME" LANG "Air Defence Laser"
-"SAM_LASER_DESC" LANG "Mobile version of naval lasers capable of intercepting small projectiles such as missiles at low and medium altidutes."
+"M_LASER_POD_NAME" LANG "Defensive Laser Pod"
+"M_LASER_POD_DESC" LANG "Lightweight Laser Pod capable of intercepting enemy AAMs and SAMs greatly increasing aircraft survivability."
 
+"M_SAM_LASER_NAME" LANG "Air Defence Laser"
+"M_SAM_LASER_DESC" LANG "Mobile version of naval lasers capable of intercepting small projectiles such as missiles at low and medium altidutes."
 
 "ASM1_NAME" LANG "Laser Guided Munitions"
 "ASM1_DESC" LANG "Laser-guided munitions use semi-active laser guidance to strike a designated target with greater accuracy than unguided weapons. First developed by the United States during the Vietnam War, laser-guided weapons quickly proved their value in precision strikes of difficult point targets. These weapons use on-board electronics to track targets that are designated by laser, typically in the infrared spectrum, and adjust their glide path to accurately strike the target.\n\n\n+Heavy damage Air-Ground Weapon but with limited speed and range.Their large numbers can saturate enemy Air-Defences.\n\n\n+Air-Ground Weapons(excluding cruise missiles) damage against armies is multiplied making them very effective"
@@ -376,6 +378,24 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "M_ICBM_10MMIRV_NAME" LANG "Heavy MIRV ICBM"
 "M_ICBM_10MMIRV_DESC" LANG "A heavy ICBM containing 13 1Mt Warheads"
+
+"M_KIN_ROD_NAME" LANG "Kinetic Rod"
+"M_KIN_ROD_DESC" LANG "Tungsten rod with a directional thrust system capable of amasing massive amounts of kinetic energy."
+
+"M_Laser_weapon2_NAME" LANG "Anti-Satellite Laser"
+"M_Laser_weapon2_DESC" LANG "High powered Laser capable of neutralising hostile satellites by burning their electronics."
+
+"U_LASER_SAT_NAME" LANG "Laser Satellite"
+"U_LASER_SAT_DESC" LANG "A satellite equiped with directed energy weapons capable of engaging ballistic targets and other satellites."
+
+"U_KAS_SAT_NAME" LANG "Kinetic Bombardment Satellite"
+"U_KAS_SAT_DESC" LANG "A satellite equiped with 12 kinetic rods capable of amasing large amounts of kinetic energy causing widespread destruction."
+
+"KAS_TECH_NAME" LANG "Kinetic Bombardment"
+"KAS_TECH_DESC" LANG "A kinetic bombardment or a kinetic orbital strike is the hypothetical act of attacking a planetary surface with an inert projectile from orbit, where the destructive power comes from the kinetic energy of the projectile impacting at very high speeds. The concept originated during the Cold War.\n\n\n+Requires Space Radar for targeting.\n\n\n+Contains 12 Rods\n\n\n+CANNOT BE RESUPPLIED"
+
+"LASER_ANTISAT_NAME" LANG "Anti-Satellite Laser"
+"LASER_ANTISAT_DESC" LANG "High powered Laser capable of neutralising hostile satellites by burning their electronics."
 
 "ARMY60_NAME" LANG "Ground Forces 60s"
 "ARMY60_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
