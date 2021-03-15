@@ -17,6 +17,17 @@ Modifier options:
   CanBeUsedAgainst Naval
   CanBeUsedAgainst City
   CanBeUsedAgainst AbstractPosition
+  
+[TYPE] "EMP_WEAPON"
+  RequiresPreciseTargeting No   
+  CanBeUsedAgainst City
+  CanBeUsedAgainst AbstractPosition
+  CanBeUsedAgainst Ground
+  CanBeUsedAgainst Naval
+  Affects Ground
+  Affects Naval
+  Affects Missile
+  Affects Airborne 
 
 [TYPE] "CRUISE"
   RequiresPreciseTargeting No
@@ -129,6 +140,8 @@ Modifier options:
   CanBeUsedAgainst Naval
   CanBeUsedAgainst Subwater
   CanBeUsedAgainst Satellite
+  Affects Ground
+  Affects Airborne
 
 /////// Now, actual Missiles
 
@@ -342,7 +355,7 @@ Modifier options:
   ImprovedBy "AA4" Set MaxElevation 35
   
   ImprovedBy "AA5" Set Precision 0.001
-  ImprovedBy "AA5" Set Range 650
+  ImprovedBy "AA5" Set Range 700
 
   ImprovedBy "AA1" Movie Image "Units/Images/Missiles/AA1.vidx"
   ImprovedBy "AA2" Movie Image "Units/Images/Missiles/AA2.vidx"
@@ -351,6 +364,8 @@ Modifier options:
   ImprovedBy "AA5" Movie Image "Units/Images/Missiles/AA5.vidx"
 
   AffectedBy InRange "EW" Precision 5.0
+  
+  ImprovedBy Inrange "AWACS_EFFECT" Range 4
 
 [MISSILE] "ASM"
   Tech "ASM1_M"
@@ -364,7 +379,7 @@ Modifier options:
   Ballistic
   CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
   Precision 0.2
-  AffectedBy Unit "ARMY" Damage 3
+  AffectedBy Unit "ARMY" Damage 2
   AffectedBy "ABM2" CanBeIntercepted 1.4
 
   ImprovedBy "ASM2" Set Precision 0.1
@@ -415,11 +430,12 @@ Modifier options:
 
   ImprovedBy "CRUISE6" Set Range 1200
   ImprovedBy "CRUISE6" Set Speed 3000
-  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.1
+  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.05
 
   AffectedBy "SAM60" CanBeIntercepted 1.4
   AffectedBy "SAM80" CanBeIntercepted 1.7
   AffectedBy "SAM10" CanBeIntercepted 1.9
+  AffectedBy "SAM30" CanBeIntercepted 2.5
 
   AffectedBy InRange "EW" Precision 2.0
 
@@ -508,7 +524,7 @@ Modifier options:
   ImprovedBy "CRUISE6" Set Range 2500
   ImprovedBy "CRUISE6" Set Speed 3000
   ImprovedBy "CRUISE6" Set Precision 0.01
-  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.05
+  ImprovedBy "CRUISE6" Set CanBeIntercepted 0.04
 
   AffectedBy "SAM60" CanBeIntercepted 1.4
   AffectedBy "SAM80" CanBeIntercepted 1.7
@@ -570,7 +586,9 @@ Modifier options:
 
 [MISSILE] "ABM"
   Tech "M_anti_ballistic_missile"
-  Type "AntiMissile"
+  RequiresPreciseTargeting Yes
+  CanBeUsedAgainst HighMissile
+  CanBeUsedAgainst "KIN_ROD"
   Icon "Units/Images/Missiles/ABM1.png"
   Sound 117 or 118
   Explosion "std_bomb"
@@ -644,43 +662,6 @@ Modifier options:
   ImprovedBy "ABM3" Movie Image "Units/Images/Missiles/ABM3.png"
 
   GlobalShowType ABM_RANGES
-
-
-[MISSILE] "Laser"
-  Tech "M_Laser_weapon"
-  Type "Laser_Weapon"
-  Icon "Units/Images/Missiles/SAT_LASER.png"
-  Sound 120
-  DrawLaser
-  DrawSteps 4
-  DrawCycles 8
-//  Color RGBA 10 255 30 128
-  Explosion "std_bomb"
-  SingleAttack
-  Range 2800
-  Speed 5000
-  MinElevation 300 // means attacking target only above this altitude
-  MaxElevation 5000
-  Precision 0.9 // in this case the Precision is the Interception Chance
-
-  GlobalShowType ABM_RANGES
-  
-[MISSILE] "Laser2"
-  Tech "M_Laser_weapon2"
-  Type "AntiSat"
-  Icon "Units/Images/Missiles/SAT_LASER.png"
-  Sound 120
-  DrawLaser
-  DrawSteps 4
-  DrawCycles 8
-  Color RGBA 10 10 255 255
-  Explosion "std_bomb"
-  SingleAttack
-  Range 2800
-  Speed 5000
-  MinElevation 300 // means attacking target only above this altitude
-  MaxElevation 10000
-  Precision 0.05 // in this case the Precision is the Interception Chance
 
 [MISSILE] "Torpedo"
   Tech "M_Torpedo"
@@ -821,6 +802,7 @@ Trajectory
   DrawNuke
   Type "Nuke"
   Explosion "ROD_EXP"
+  Power 5
   Range 3000
   MinRange 300
   SingleAttack
@@ -828,7 +810,6 @@ Trajectory
   CanBeIntercepted 0.7
   Speed 3000
   Precision 5.0
-  AffectedBy "ABM2" CanBeIntercepted 1.5
 
   GlobalShowType ICBM_RANGES
 
@@ -870,7 +851,34 @@ Trajectory
   DrawNuke
   Type "Nuke"
   Explosion "nuke_1000"
-  Range 12000
+  Range 8000
+  MinRange 3000
+  Ballistic
+  SingleAttack
+  AutoSlowDown
+  CanBeIntercepted 0.3
+  Elevation 1000
+  Speed 3000
+  Precision 5.0
+  ProductionCost 1.8
+  ProductionCostDegrades
+  MaxNumberToOrder 3
+  AffectedBy "ABM2" CanBeIntercepted 1.5
+
+  ImprovedBy "ICBM2" Set Range 12000
+  ImprovedBy "ICBM2" Movie Image "Units/IMAGES/MISSILES/ICBM2.png"
+
+  GlobalShowType ICBM_RANGES
+  
+[MISSILE] "ICBM EMP"
+  Tech "M_ICBM_EMP"
+  Icon "Units/Images/Missiles/EMP_ICBM.png"
+  Sound 69 Volume 1.25
+  DrawSize 14
+  DrawNuke
+  Type "Nuke"
+  Explosion "EMP"
+  Range 8000
   MinRange 3000
   Ballistic
   SingleAttack
@@ -954,6 +962,22 @@ Trajectory
   Precision 3.0
   CanBeIntercepted 0.3
   AffectedBy "ABM2" CanBeIntercepted 1.5
+  
+[MISSILE] "EMP warhead"
+  Tech "M_EMP_WARHEAD"
+  Type "Nuke"
+  Icon "Units/Images/Missiles/warhead.png"
+  Sound 75 Volume 1.25
+  DrawSize 6
+  DrawNuke
+  Explosion "EMP"
+  Range 18000
+  Speed 3000
+  SingleAttack
+  AutoSlowDown
+  Precision 3.0
+  CanBeIntercepted 0.3
+  AffectedBy "ABM2" CanBeIntercepted 1.5
 
 
 
@@ -981,6 +1005,30 @@ Trajectory
   DrawNuke
   Type "Nuke"
   Explosion "nuke_1000" Heads 3 "1M warhead"
+  Range 18000
+  MinRange 3000
+  Ballistic
+  SingleAttack
+  AutoSlowDown
+  CanBeIntercepted 0.3
+  Elevation 1000
+  Speed 3000
+  Precision 5.0
+  ProductionCost 3.6
+  ProductionCostDegrades
+  MaxNumberToOrder 0
+  AffectedBy "ABM2" CanBeIntercepted 1.5
+
+  GlobalShowType ICBM_RANGES
+  
+[MISSILE] "ICBM MIRV EMP"
+  Tech "M_ICBM_MIRV_EMP"
+  Icon "Units/Images/Missiles/MIRV_EMP_ICBM.png"
+  Sound 69 Volume 1.25
+  DrawSize 14
+  DrawNuke
+  Type "Nuke"
+  Explosion "nuke_1000" Heads 3 "1M warhead" FakeHeads 1 "EMP warhead"
   Range 18000
   MinRange 3000
   Ballistic
@@ -1074,7 +1122,7 @@ Trajectory
   Switchable ON
 
   ImprovedBy "JAM2" Set Range 1100
-  ImprovedBy "JAM3" Set Range 1700
+  ImprovedBy "JAM3" Set Range 1800
   ImprovedBy "JAM2" Movie Image "Units/Images/Missiles/J2.png"
   ImprovedBy "JAM3" Movie Image "Units/Images/Missiles/J3.png"
 
@@ -1082,7 +1130,7 @@ Trajectory
   Tech "M_CIWS"
   Icon "Units/Images/Missiles/CIWS.png"
   Sound 205 or 206
-    Volume .20
+    Volume 	0.5
     MuteLength 1
   Type "CIWS_TYPE"
   Explosion "CIWS_EXP"
@@ -1092,7 +1140,7 @@ Trajectory
   Range 350
   Speed 1400
 //  Elevation 200
-  Precision 0.1
+  Precision 0.99
   Switchable ON
 
   DisablingTech "M_CIWS_LASER"
@@ -1108,9 +1156,45 @@ Trajectory
   Ballistic
   Range 500
   Speed 7000
-  Precision 0.05
+  Precision 0.4
   Switchable ON
   MaxElevation 600
+  
+[MISSILE] "Laser" //USED FOR ANTI MISSILE SAT LASER
+  Tech "M_Laser_weapon"
+  Type "Laser_Weapon"
+  Icon "Units/Images/Missiles/SAT_LASER.png"
+  Sound 120
+  DrawLaser
+  DrawSteps 4
+  DrawCycles 8
+//  Color RGBA 10 255 30 128
+  Explosion "LASER_EXP2"
+  SingleAttack
+  Range 2800
+  Speed 5000
+  MinElevation 300 // means attacking target only above this altitude
+  MaxElevation 5000
+  Precision 0.4 // in this case the Precision is the Interception Chance
+
+  GlobalShowType ABM_RANGES
+  
+[MISSILE] "Laser2" //USED FOR ANTI SAT LASER
+  Tech "M_Laser_weapon2"
+  Type "AntiSat"
+  Icon "Units/Images/Missiles/SAT_LASER.png"
+  Sound 120
+  DrawLaser
+  DrawSteps 4
+  DrawCycles 8
+  Color RGBA 10 10 255 255
+  Explosion "LASER_EXP2"
+  SingleAttack
+  Range 2800
+  Speed 5000
+  MinElevation 300 // means attacking target only above this altitude
+  MaxElevation 10000
+  Precision 0.2 // in this case the Precision is the Interception Chance
 
   [MISSILE] "SAM_LASER"
   Tech "M_SAM_LASER"
@@ -1118,12 +1202,12 @@ Trajectory
   Sound 120
     MuteLength 1.25
   Type "SAM_LASER_TYPE"
-  Explosion "LASER_EXP2"
+  Explosion "LASER_EXP_SAM"
   DrawLaser
   Ballistic
-  Range 500
+  Range 400
   Speed 7000
-  Precision 0.05
+  Precision 0.4
   Switchable ON
   MaxElevation 300
 
@@ -1139,7 +1223,7 @@ Trajectory
   Ballistic
   Range 800
   Speed 7000
-  Precision 0.05
+  Precision 0.2
   Switchable ON
   MaxElevation 2000
   MinElevation 30
@@ -1157,7 +1241,7 @@ Trajectory
   Ballistic
   Range 500
   Speed 7000
-  Precision 0.05
+  Precision 0.4
   Switchable ON
   MaxElevation 50
 
@@ -1165,14 +1249,30 @@ Trajectory
   Tech "NORAD_EFFECT"
   Type "NORAD_EFFECT"
   RequiresPreciseTargeting No
-  Icon "Units/Images/Missiles/SAM.png"
+  Icon "Units/Images/Missiles/SILO_COMMAND.png"
   Sound 119
   DrawWave
   Explosion "std_torpedo"
-  Range 10000
+  Range 6000
   Speed 1
   Ballistic
   Switchable ON
+  
+[MISSILE] "AWACS_EFFECT"
+  Tech "AWACS_EFFECT"
+  Type "NORAD_EFFECT"
+  RequiresPreciseTargeting No
+  Icon "Units/Images/Missiles/AWACS.png"
+  Sound 119
+  DrawWave
+  Explosion "std_torpedo"
+  Range 1500
+  Speed 1
+  Ballistic
+  Switchable ON
+  
+  ImprovedBy "LW_Mk2" Set Range 1750
+  ImprovedBy "LW_Mk3" Set Range 2000
 
 [MISSILE] "ARMY_WEP"
   Tech "ARMY_WEP"
@@ -1185,7 +1285,7 @@ Trajectory
   Speed 800
   AttackAngle 120
   Ballistic
-  CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
+  CanBeIntercepted 0 // 0 to 1, interception chance, the default is 0
   Precision 0.25
   Switchable ON
   AffectedBy Unit "ARMY" Damage 10
@@ -1208,7 +1308,7 @@ Trajectory
   Speed 800
   AttackAngle 120
   Ballistic
-  CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
+  CanBeIntercepted 0 // 0 to 1, interception chance, the default is 0
   Precision 0.25
   Switchable ON
   AffectedBy Unit "ARMY" Damage 5
@@ -1228,7 +1328,7 @@ Trajectory
   Speed 800
   AttackAngle 120
   Ballistic
-  CanBeIntercepted 0.5 // 0 to 1, interception chance, the default is 0
+  CanBeIntercepted 0 // 0 to 1, interception chance, the default is 0
   Precision 0.25
   Switchable ON
   AffectedBy Unit "ARMY" Damage 5

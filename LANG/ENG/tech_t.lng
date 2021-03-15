@@ -397,6 +397,9 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "LASER_ANTISAT_NAME" LANG "Anti-Satellite Laser"
 "LASER_ANTISAT_DESC" LANG "High powered Laser capable of neutralising hostile satellites by burning their electronics."
 
+"U_CDMS_NAME" LANG "Anti-Ship Missile Battery"
+"U_CDMS_DESC" LANG "Anti-Ship Missile Battery is a military unit tasked with defending costal waters against enemy surface combatans.They are equivalent to cruisers in terms of ship to ship firepower."
+
 "ARMY60_NAME" LANG "Ground Forces 60s"
 "ARMY60_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
 
@@ -414,5 +417,23 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 
 "ARMY20_NAME" LANG "Ground Forces 20s"
 "ARMY20_DESC" LANG "Allows the fielding of improved military vehicles as well as improvements in doctrine and training."
+
+"U_NORAD_NAME" LANG "Airspace Defence Command"
+"U_NORAD_DESC" LANG "Airspace Defense Command located in a hardened command organization responsible for monitoring strategic nuclear threats and managing various strategic assets.Only on can exist during any time.(Allows silos to fire 3 missiles at a time)"
+
+"AWACS_EFFECT_NAME" LANG "Early Warning and Control Center"
+"AWACS_EFFECT_DESC" LANG "Combines information from multiple platforms and shares informations via datalink."
+
+"NORAD_EFFECT_NAME" LANG "Missile Silo Command"
+"NORAD_EFFECT_DESC" LANG "Allows silos to fire 3 missiles at a time."
+
+"M_ICBM_EMP_NAME" LANG "EMP ICBM"
+"M_ICBM_EMP_DESC" LANG "This ICBM is programmed to detonate in the upper atmosphere creating a Nuclear electromagnetic pulse overloading electrical systems while minimizing physical damage."
+
+"M_ICBM_MIRV_EMP_NAME" LANG "EMP MIRV ICBM"
+"M_ICBM_MIRV_EMP_DESC" LANG "This ICBM contains 3 1 Mt nuclear warheads as well as a warhead detonating in the upper atomoshpere creating a Nuclear electromagnetic pulse"
+
+"M_EMP_WARHEAD_NAME" LANG "EMP warhead"
+"M_EMP_WARHEAD_DESC" LANG "A warhead programmed to detonate in the upper atmosphere creating a Nuclear electromagnetic pulse."
 
 END

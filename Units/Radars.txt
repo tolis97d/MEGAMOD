@@ -37,6 +37,7 @@ Modifier options:
   PreciseTargeting Yes
   CanCalculateLaunchPosition Yes
   CanDetect HighMissile // This is for the high-flying missiles only (on the low orbit)
+  CanDetect Missile
   RadarColor 0.0 0.05 0.1 0.15
   GlobalShowType OVERHORIZONT_RANGES
 
@@ -87,12 +88,14 @@ Modifier options:
   Range 250
   Sector 360
   Precision 0
+  
   ImprovedBy "SW_Mk2" Set Range 350
   ImprovedBy "SW_Mk2" Set MaxHeight 250
   ImprovedBy "SW_Mk3" Set Range 450
   ImprovedBy "SW_Mk3" Set MaxHeight 400
   ImprovedBy "SW_Mk4" Set Range 500
   ImprovedBy "SW_Mk4" Set MaxHeight 500
+  
   AffectedBy Unit "5GEN" Range 0.4
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
@@ -121,16 +124,20 @@ Modifier options:
   Range 300
   Sector 360
   Precision 0
+  
   ImprovedBy "SW_Mk2" Set Range 500
   ImprovedBy "SW_Mk2" Set MaxHeight 250
   ImprovedBy "SW_Mk3" Set Range 700
   ImprovedBy "SW_Mk3" Set MaxHeight 400
   ImprovedBy "SW_Mk4" Set Range 800
   ImprovedBy "SW_Mk4" Set MaxHeight 500
+  
   AffectedBy Unit "5GEN" Range 0.4
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
-  AffectedBy InRange "EW" Range 0.6
+  AffectedBy InRange "EW" Range 0.4	
+  
+AffectedBy Explosion "EMP" Range 0.0001
 
 [RADAR] "AWACS Short Wave"
   Tech "R_Short_wave_radar"
@@ -166,14 +173,19 @@ Modifier options:
   Range 700
   Sector 360
   Precision 0
+  
   ImprovedBy "LW_Mk2" Set Range 850
   ImprovedBy "LW_Mk2" Set MaxHeight 250
   ImprovedBy "LW_Mk3" Set Range 1000
   ImprovedBy "LW_Mk3" Set MaxHeight 400
+  
   AffectedBy Unit "5GEN" Range 0.5
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.8
+  
+AffectedBy Explosion "EMP" Range 0.0001
+  
 
 [RADAR] "Fixed Long Wave"
   Tech "R_Long_wave_radar"
@@ -181,16 +193,22 @@ Modifier options:
   Range 700
   Sector 360
   Precision 0
+  
+  
   ImprovedBy "LW_Mk2" Set Range 900
   ImprovedBy "LW_Mk2" Set MaxHeight 250
   ImprovedBy "LW_Mk3" Set Range 1200
   ImprovedBy "LW_Mk3" Set MaxHeight 400
   ImprovedBy "LW_Mk4" Set Range 1400
   ImprovedBy "LW_Mk4" Set MaxHeight 400
+  
+  
   AffectedBy Unit "5GEN" Range 0.6
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.7
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.4
+  
+AffectedBy Explosion "EMP" Range 0.0001
 
 [RADAR] "AWACS Long Wave"
   Tech "R_Long_wave_radar"
@@ -240,13 +258,13 @@ Modifier options:
 [RADAR] "AWACS Sonar"
   Tech "R_Sonar"
   Type "Sonar"
-  Range 100
+  Range 200
   Sector 360
   Precision 0.75
   
-  ImprovedBy "SONAR1" Set Range 200
-  ImprovedBy "SONAR2" Set Range 300
-  ImprovedBy "SONAR3" Set Range 400
+  ImprovedBy "SONAR1" Set Range 300
+  ImprovedBy "SONAR2" Set Range 400
+  ImprovedBy "SONAR3" Set Range 600
   
   AffectedBy Unit "ENGINE_SSN1" Range 0.75 // 300
   AffectedBy Unit "ENGINE_SSBN1" Range 0.875 // 350
@@ -260,7 +278,7 @@ Modifier options:
   Type "OverHorizon"
   Range 5000
   Sector 360
-  MaxHeight 9000 // the default value is 100
+  MaxHeight 12000 // the default value is 100
   ImprovedBy "Over_horizon_radar_Mk2" Set Range 8000
 
 [RADAR] "Naval_Over_Horizon"
@@ -276,7 +294,7 @@ Modifier options:
   Type "OverHorizon"
   Range 1000
   Sector 360
-  MaxHeight 1500 // the default value is 100
+  MaxHeight 3000 // the default value is 100
 
 [RADAR] "Naval_Small_Over_Horizon"
   Tech "R_Over_horizon_radar"
@@ -306,7 +324,8 @@ Modifier options:
   Range 1000
   Sector 360
   MaxHeight 3000
-  AffectedBy Unit "Underground" Range 0.25
+  AffectedBy Unit "Underground" Range 0.1
+  AffectedBy Unit "can_cover" Range 0.25
   ImprovedBy "Improved_optics" Range 1.5
   
 [RADAR] "AIR_CAMERA"

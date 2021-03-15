@@ -160,6 +160,7 @@
   LeadsTo "Heavy_Missiles"
   LeadsTo "Mobile_ICBM"
   LeadsTo "MIRV"
+  LeadsTo "M_ICBM_EMP"
   
 [TECHNOLOGY] "Heavy_Missiles"
   Name "Heavy_Missiles_NAME"
@@ -195,6 +196,7 @@
   LeadsTo "M_ICBM_MIRV"
   LeadsTo "M_ICBM_10MMIRV"
   LeadsTo "Advanced_MRBM_MIRV"
+  LeadsTo "M_ICBM_MIRV_EMP"
 
 [TECHNOLOGY] "False_warheads"
   Name "False_warheads_NAME"
@@ -511,6 +513,10 @@
 [TECHNOLOGY] "Underground"
   Name "Underground_NAME"
   Description "Underground_DESC"
+  
+[TECHNOLOGY] "can_cover"
+  Name "can_cover_NAME"
+  Description "can_cover_DESC"
 
 [TECHNOLOGY] "Advanced_Sonar"
   Name "Advanced_Sonar_NAME"
@@ -851,6 +857,7 @@ Description "U_Cavern_DESC"
   Points 15
   LeadsTo "CRUISE2"
   LeadsTo "M_SHIP_SHIP"
+  LeadsTo "U_CDMS"
   LeadsTo "M_NUKE_CRUISE"
   //AIUpgradeTechHint Cruise
   
@@ -1974,6 +1981,10 @@ Description "U_Cavern_DESC"
   Name "LADEF_NAME"
   Description "LADEF_DESC"
   
+[TECHNOLOGY] "RODEF"
+  Name "RODEF_NAME"
+  Description "RODEF_DESC"
+  
 [TECHNOLOGY] "U_LASER_SAT"
   Name "U_LASER_SAT_NAME"
   Description "U_LASER_SAT_DESC"
@@ -1985,5 +1996,30 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_KIN_ROD"
   Name "M_KIN_ROD_NAME"
   Description "M_KIN_ROD_DESC"
+  
+[TECHNOLOGY] "U_NORAD"
+  Name "U_NORAD_NAME"
+  Description "U_NORAD_DESC"
+  
+[TECHNOLOGY] "U_CDMS"
+  Name "U_CDMS_NAME"
+  Description "U_CDMS_DESC"
+  
+[TECHNOLOGY] "AWACS_EFFECT"
+  Name "AWACS_EFFECT_NAME"
+  Description "AWACS_EFFECT_DESC"
+  
+[TECHNOLOGY] "M_ICBM_EMP"
+  Name "M_ICBM_EMP_NAME"
+  Description "M_ICBM_EMP_DESC"
+  
+[TECHNOLOGY] "M_EMP_WARHEAD"
+  Name "M_EMP_WARHEAD_NAME"
+  Description "M_EMP_WARHEAD_DESC"
+  
+[TECHNOLOGY] "M_ICBM_MIRV_EMP"
+  Name "M_ICBM_MIRV_EMP_NAME"
+  Description "M_ICBM_MIRV_EMP_DESC"
+  
 
 [END]

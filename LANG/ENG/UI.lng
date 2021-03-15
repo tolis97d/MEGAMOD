@@ -1,4 +1,11 @@
 USE PREVIOUS "LANG/ENG/UI.lng"
+2580 LANG "Electronic Systems Fried"
+
+
+
+
+
+
 2851 LANG "Disabled for %s"
 2850 LANG "REFRESH"
 2849 LANG "Server incompatible, please update the game!\n"

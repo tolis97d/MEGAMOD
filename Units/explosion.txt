@@ -98,6 +98,20 @@
   DrawSize 15
   TimeGrowing 0.5
   TimeTotal 1
+  
+[EXPLOSION] "EMP"
+  Movie "Images/Explosion/ABM_NUKE.midx"
+  Sound 200
+        Priority 1
+        Volume 10
+        MuteLength 0.05
+  Damage 0
+  Range 700
+  FullEffectRange 700
+  DrawSize 15
+  TimeGrowing 0.5
+  TimeTotal 3.00 
+  LastingEffect 10000 StringID 2580
 
 [EXPLOSION] "nuke_100"
   Emulated "Units/Emulated/100K.txt"
@@ -328,7 +342,7 @@
   
 [EXPLOSION] "CIWS_EXP"
   Movie "Images/Explosion/small_1.midx" 
-  Damage 3
+  Damage 1
   Range 0.01
   FullEffectRange 0.01
   DrawSize .001
@@ -340,9 +354,21 @@
   Sound 120
     Volume 0.25
     MuteLength 0.25
-  Damage .10
-  Range 0.07
-  FullEffectRange 0.07
+  Damage 0.2
+  Range 0.1
+  FullEffectRange 0.1
+  DrawSize 1
+  TimeGrowing 0.5
+  TimeTotal 0.5
+  
+[EXPLOSION] "LASER_EXP_SAM"
+  Movie "Images/Explosion/small_1.midx"
+  Sound 120
+    Volume 0.25
+    MuteLength 0.25
+  Damage 0.2
+  Range 0.01
+  FullEffectRange 0.01
   DrawSize 1
   TimeGrowing 0.5
   TimeTotal 0.5
