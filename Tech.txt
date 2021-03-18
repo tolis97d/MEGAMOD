@@ -61,7 +61,7 @@
   Name "GPS_NAME"
   Description "GPS_DESC"
   Image "Images/Science/GPS.png"
-  Points 15
+  Points 8
   LeadsTo "B2_REQ"
   LeadsTo "ASM2_REQ"
   LeadsTo "CRUISE3_REQ2"  
@@ -316,6 +316,12 @@
   Points 15
   LeadsTo "M_Aircraft-launched_MRBM"
   LeadsTo "CRUISE3_REQ3"
+  LeadsTo "MIRV1_REQ"
+  
+[TECHNOLOGY] "MIRV1_REQ"
+  Name "MIRV1_REQ_NAME"
+  Description "MIRV1_REQ_DESC"
+  LeadsTo "MIRV"
   
 [TECHNOLOGY] "CRUISE3_REQ3"
   Name "CRUISE3_REQ3_NAME"
@@ -504,6 +510,10 @@
 [TECHNOLOGY] "R_Sonar"
   Name "R_SONAR_NAME"
   Description "R_SONAR_DESC"
+  
+[TECHNOLOGY] "R_SONAR_L"
+  Name "R_SONAR_L_NAME"
+  Description "R_SONAR_L_DESC"
 
 [TECHNOLOGY] "Antitorpedo"
   Name "ANTITORPEDO_NAME"
@@ -2020,6 +2030,14 @@ Description "U_Cavern_DESC"
 [TECHNOLOGY] "M_ICBM_MIRV_EMP"
   Name "M_ICBM_MIRV_EMP_NAME"
   Description "M_ICBM_MIRV_EMP_DESC"
+  
+[TECHNOLOGY] "R_AWACS_CVN_LW_RADAR"
+  Name "R_AWACS_CVN_LW_RADAR_NAME"
+  Description "R_AWACS_CVN_LW_RADAR_DESC"
+  
+[TECHNOLOGY] "R_AWACS_CVN_SW_RADAR"
+  Name "R_AWACS_CVN_SW_RADAR_NAME"
+  Description "R_AWACS_CVN_SW_RADAR_DESC"
   
 
 [END]

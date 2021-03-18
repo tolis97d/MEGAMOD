@@ -600,14 +600,16 @@ Modifier options:
   ImprovedBy "5GEN" Set Power 3
   ImprovedBy "5GEN" Set Size 0.01
   ImprovedBy "5GEN" Set Range 35000
+  ImprovedBy "4GEN" Set MaxElevation 30
   
   ImprovedBy "4GEN" Movie "Units/Images/Airborne/SPY70.vidx"  Icon "Units/Images/Airborne/SPY70_I.vidx"
+  ImprovedBy "5GEN" Movie "Units/Images/Airborne/SPY10.vidx"  Icon "Units/Images/Airborne/SPY10_I.vidx"
 
 [UNIT] "ASW"
   Tech "ASW"
-  Movie "Units/Images/Airborne/ASW1.vidx"
-  Icon "Units/Images/Airborne/ASW1_I.vidx"
-  DrawSize 20
+  Movie "Units/Images/Airborne/ASW50.vidx"
+  Icon "Units/Images/Airborne/ASW50_I.vidx"
+  DrawSize 25
   LaunchMeSound 85
   Size 0.075
   Sound 143 Volume 0.4
@@ -630,11 +632,14 @@ Modifier options:
         ImprovedBy "4GEN" 
             Weapon "SPSPM" 6 Launch 2 Time 10 AutoEngage 
 //  Weapon "EW" 1 DefaultOff
-  Radar "AWACS Sonar"
+  Radar "AWACS Sonar Large"
   Radar "STD Vision"
   Radar "STD Long Wave"
   ProductionCost 2
   Crash "big_bomb"
+  
+  ImprovedBy "3GEN" Movie "Units/Images/Airborne/ASW60.vidx"  Icon "Units/Images/Airborne/ASW60_I.vidx"
+  ImprovedBy "4GEN2" Movie "Units/Images/Airborne/ASW00.vidx"  Icon "Units/Images/Airborne/ASW00_I.vidx"
 
   CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
 
@@ -666,6 +671,38 @@ Modifier options:
   ImprovedBy "4GEN2" Set Speed 500
   ImprovedBy "4GEN2" Set TurnSpeed 4
   ImprovedBy "4GEN2" Set Range 17000
+
+  ImprovedBy "5GEN" Set Speed 550
+  ImprovedBy "5GEN" Size 0.85
+  
+[UNIT] "CVN_AWACS"
+  Tech "CVN_AWACS"
+  Movie "Units/Images/Airborne/CVN_AWACS.vidx"
+  DrawSize 24
+  LaunchMeSound 84
+  Size 0.075
+  Sound 136 Volume 0.4
+  Type Airborne
+  //AIVarietyHint CarrierAWACS
+  NoAutoDeploy
+  Slave
+  AutoReturn Yes
+  Speed 400
+  TurnSpeed 5
+  Range 7000
+  CanPatrolPoint
+  Weapon "AWACS_EFFECT" 20000
+  Power 1.5
+  Radar "Naval AWACS Short Wave"
+  Radar "Naval AWACS Long Wave"
+  ProductionCost 2.2
+  Crash "big_bomb"
+
+  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
+  
+  ImprovedBy "4GEN2" Set Speed 500
+  ImprovedBy "4GEN2" Set TurnSpeed 4
+  ImprovedBy "4GEN2" Set Range 9000
 
   ImprovedBy "5GEN" Set Speed 550
   ImprovedBy "5GEN" Size 0.85
@@ -739,38 +776,6 @@ Modifier options:
   ImprovedBy "5GEN" Size 0.85
   
   ImprovedBy "JAM2" Movie "Units/Images/Airborne/CVN_EWAIR00.vidx" Icon "Units/Images/Airborne/CVN_EWAIR00_I.vidx"
-
-[UNIT] "CVN_AWACS"
-  Tech "CVN_AWACS"
-  Movie "Units/Images/Airborne/CVN_AWACS.vidx"
-  DrawSize 24
-  LaunchMeSound 84
-  Size 0.075
-  Sound 136 Volume 0.4
-  Type Airborne
-  //AIVarietyHint CarrierAWACS
-  NoAutoDeploy
-  Slave
-  AutoReturn Yes
-  Speed 400
-  TurnSpeed 5
-  Range 7000
-  CanPatrolPoint
-  Power 1.5
-  Weapon "NORAD_EFFECT" 20000
-  Radar "AWACS Short Wave"
-  Radar "AWACS Long Wave"
-  ProductionCost 2.2
-  Crash "big_bomb"
-
-  CheckTargeting BY "AAM" OR "SAM" Message Lock 2841 NoLock 2842
-  
-  ImprovedBy "4GEN2" Set Speed 500
-  ImprovedBy "4GEN2" Set TurnSpeed 4
-  ImprovedBy "4GEN2" Set Range 9000
-
-  ImprovedBy "5GEN" Set Speed 550
-  ImprovedBy "5GEN" Size 0.85
 
 [UNIT] "Submarine"
   Tech "U_Submarine"
@@ -972,7 +977,7 @@ Modifier options:
   Radar "Fixed Short Wave"
   Radar "STD Long Wave"
   Radar "Naval Space_Radar" DefaultOff
-  Radar "Naval_Small_Over_Horizon" DefaultOff
+  Radar "Small_Over_Horizon" DefaultOff
   Modifier "NAVY60"
   Modifier "NAVY80"
   Modifier "NAVY00"
@@ -1059,7 +1064,7 @@ Modifier options:
   Radar "Fixed Short Wave"
   Radar "STD Long Wave"
   Radar "Naval Space_Radar" DefaultOff
-  Radar "Naval_Small_Over_Horizon" DefaultOff
+  Radar "Small_Over_Horizon" DefaultOff
   Modifier "NAVY60"
   Modifier "NAVY80"
   Modifier "NAVY00"
@@ -1136,7 +1141,7 @@ Modifier options:
   CanAccessGlobalStorage
   Radar "STD Vision"
   Radar "STD Long Wave"
-  ProductionCost 7
+  ProductionCost 5
   NoAutoAttack
   
 [UNIT] "CDMS"
@@ -1156,7 +1161,6 @@ Modifier options:
   Config "Costal Defence" Default
         Weapon "SPSPM" 20000 Launch 2 Time 240 AutoEngage
   Radar "STD Vision"
-//  Radar "STD Long Wave"
   ProductionCost 10
   
   ImprovedBy "CRUISE3" Movie "Units/Images/Ground/CDMS_80.vidx"
@@ -1183,7 +1187,6 @@ Modifier options:
   Config "Anti-Ship ballistic missile"
     Weapon "ASBM" 20000 Time 200 AutoEngage
   Radar "STD Vision"
-//  Radar "STD Long Wave"
   ProductionCost 10
   
   ImprovedBy "MRBM2" Movie "Units/Images/Ground/MIS_VEH_LAT.vidx"
@@ -1213,7 +1216,6 @@ Modifier options:
   Config "MIRV 4x1M+6F"
     Weapon "ICBM MIRV+" 2 Launch 1 Time 5000
   Radar "STD Vision"
-//  Radar "STD Long Wave"
   ProductionCost 22
   
   Modifier "can_cover"
@@ -1252,7 +1254,7 @@ Modifier options:
     Weapon "HEAVY ICBM MIRV" 3 Launch 1 Time 5000
   Config "ICBM EMP"
     Weapon "ICBM EMP" 3 Launch 1 Time 5000
-  Config "ICBM EMP MIRV"
+  Config "ICBM MIRV EMP"
     Weapon "ICBM MIRV EMP" 3 Launch 1 Time 5000
   Config "ASAT"
     Weapon "ASAT" 1
@@ -1269,7 +1271,7 @@ Modifier options:
   ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM (50M)" Set Launch 3
   ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "HEAVY ICBM MIRV" Set Launch 3
   ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM EMP" Set Launch 3
-  ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM EMP MIRV" Set Launch 3
+  ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM MIRV EMP" Set Launch 3
   
   ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM (1M)" Set Time 1480
   ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM (10M)" Set Time 1480
@@ -1278,7 +1280,7 @@ Modifier options:
   ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM (50M)" Set Time 1480
   ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "HEAVY ICBM MIRV" Set Time 1480
   ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM EMP" Set Time 1480
-  ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM EMP MIRV" Set Time 1480
+  ImprovedBy Inrange "NORAD_EFFECT" Modify Weapon "ICBM MIRV EMP" Set Time 1480
 
   ImprovedBy "ICBM2" Movie "Units/Images/Ground/Silo.midx"
 
@@ -1344,7 +1346,7 @@ Modifier options:
   Radar "STD Short Wave"
   ProductionCost 7
   
-  CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
+  CheckCoverage "ABM" BY "Over_Horizon" OR "Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
 
   ImprovedBy "SAM80" Set Size 0.05
   
@@ -1385,7 +1387,7 @@ Modifier options:
     Weapon "ABM_NUKE" 1 Launch 1 Time 180 AutoEngage
   Config "Heavy Nuclear ABM"
     Weapon "ABM_NUKE2" 1 Launch 1 Time 180 AutoEngage
-  CheckCoverage "ABM" BY "Over_Horizon" OR "Naval_Over_Horizon" OR "Small_Over_Horizon" OR "Naval_Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
+  CheckCoverage "ABM" BY "Over_Horizon" OR "Small_Over_Horizon" OR "Satellite Camera" OR "AWACS Short Wave" OR "Naval AWACS Short Wave" Message 2818
   ProductionCost 10
   ImprovedBy "ABM2" Set Size 0.05
 
@@ -1430,8 +1432,8 @@ Modifier options:
   //AIVarietyHint Satellite
   Power 1
   Weapon "KIN_ROD" 12 Launch 1 Time 60
-  MinElevation 2000
-  MaxElevation 10000
+  MinElevation 3000
+  MaxElevation 3000
   ProductionCost 50  
   
 [UNIT] "CVN_ASW"

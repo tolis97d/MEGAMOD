@@ -605,6 +605,10 @@ Modifier options:
   ImprovedBy "ABM3" Set Speed 7000
   ImprovedBy "ABM3" Set Precision 0.02
   ImprovedBy "ABM3" Movie Image "Units/Images/Missiles/ABM3.png"
+  
+  ImprovedBy "ABM4" Set Range 1200
+  ImprovedBy "ABM4" Set Speed 8000
+  ImprovedBy "ABM4" Set Precision 0.02
 
   GlobalShowType ABM_RANGES
 
@@ -802,6 +806,8 @@ Trajectory
   DrawNuke
   Type "Nuke"
   Explosion "ROD_EXP"
+  Ballistic
+  Elevation 3000
   Power 5
   Range 3000
   MinRange 300
@@ -1125,6 +1131,9 @@ Trajectory
   ImprovedBy "JAM3" Set Range 1800
   ImprovedBy "JAM2" Movie Image "Units/Images/Missiles/J2.png"
   ImprovedBy "JAM3" Movie Image "Units/Images/Missiles/J3.png"
+  
+
+  InRangeStringID 2581
 
 [MISSILE] "CIWS"
   Tech "M_CIWS"
@@ -1140,7 +1149,7 @@ Trajectory
   Range 350
   Speed 1400
 //  Elevation 200
-  Precision 0.99
+  Precision 0.2
   Switchable ON
 
   DisablingTech "M_CIWS_LASER"
@@ -1257,6 +1266,8 @@ Trajectory
   Speed 1
   Ballistic
   Switchable ON
+  
+  InRangeStringID 2582
   
 [MISSILE] "AWACS_EFFECT"
   Tech "AWACS_EFFECT"

@@ -70,6 +70,7 @@
   TimeTotal 2.25
   DrawYShift 0.5
   PollutionSize 5
+  LightmapWashoutRadius 50
   
 [EXPLOSION] "ABM_NUKE"
   Movie "Images/Explosion/ABM_NUKE.midx"
@@ -82,8 +83,8 @@
   Range 20
   FullEffectRange 20
   DrawSize 7
-  TimeGrowing 0.5
-  TimeTotal 10
+  TimeGrowing 1.25
+  TimeTotal 2
   
 [EXPLOSION] "ABM_NUKE2"
   Movie "Images/Explosion/ABM_NUKE.midx"
@@ -96,8 +97,8 @@
   Range 280
   FullEffectRange 80
   DrawSize 15
-  TimeGrowing 0.5
-  TimeTotal 1
+  TimeGrowing 1.25
+  TimeTotal 5
   
 [EXPLOSION] "EMP"
   Movie "Images/Explosion/ABM_NUKE.midx"
@@ -109,9 +110,10 @@
   Range 700
   FullEffectRange 700
   DrawSize 15
-  TimeGrowing 0.5
-  TimeTotal 3.00 
+  TimeGrowing 1.25
+  TimeTotal 5
   LastingEffect 10000 StringID 2580
+  LightmapWashoutRadius 400
 
 [EXPLOSION] "nuke_100"
   Emulated "Units/Emulated/100K.txt"
@@ -128,6 +130,7 @@
   TimeTotal 3.0
   DrawYShift 0.55
   PollutionSize 10
+  LightmapWashoutRadius 100
 
   Variant Water
     Emulated "Units/Emulated/Water_100K.txt"
@@ -152,6 +155,7 @@
   TimeTotal 3.25
   DrawYShift 0.55
   PollutionSize 20
+  LightmapWashoutRadius 150
 
   Variant Water
     Emulated "Units/Emulated/Water_500K.txt"
@@ -176,6 +180,7 @@
   TimeTotal 3.25
   DrawYShift 0.55
   PollutionSize 0
+  LightmapWashoutRadius 150
 
   Variant Water
     Emulated "Units/Emulated/Water_500K.txt"
@@ -200,6 +205,7 @@
   TimeTotal 3.5
   DrawYShift 0.55
   PollutionSize 100
+  LightmapWashoutRadius 200
 
   Variant Water
     Emulated "Units/Emulated/Water_1M.txt"
@@ -225,6 +231,7 @@
   TimeTotal 3.5
   DrawYShift 0.55
   PollutionSize 90
+  LightmapWashoutRadius 200
 
   Variant Water
     Emulated "Units/Emulated/Water_1M.txt"
@@ -249,6 +256,7 @@
   TimeTotal 4 //7
   DrawYShift 0.55
   PollutionSize 200
+  LightmapWashoutRadius 250
   
   Variant Water
     Emulated "Units/Emulated/Water_10M.txt"
@@ -273,6 +281,7 @@
   TimeTotal 5 //7
   DrawYShift 0.55
   PollutionSize 300
+  LightmapWashoutRadius 400
 
   Variant Water
     Emulated "Units/Emulated/Water_50M.txt"
@@ -343,8 +352,8 @@
 [EXPLOSION] "CIWS_EXP"
   Movie "Images/Explosion/small_1.midx" 
   Damage 1
-  Range 0.01
-  FullEffectRange 0.01
+  Range 0.2
+  FullEffectRange 0.1
   DrawSize .001
   TimeGrowing .25 
   TimeTotal 0.25

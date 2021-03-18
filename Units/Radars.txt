@@ -37,7 +37,6 @@ Modifier options:
   PreciseTargeting Yes
   CanCalculateLaunchPosition Yes
   CanDetect HighMissile // This is for the high-flying missiles only (on the low orbit)
-  CanDetect Missile
   RadarColor 0.0 0.05 0.1 0.15
   GlobalShowType OVERHORIZONT_RANGES
 
@@ -82,7 +81,7 @@ Modifier options:
   Precision 0.25
   DoNotShow
 
-[RADAR] "STD Short Wave"
+[RADAR] "STD Short Wave" //Aircrafts,armies,sam
   Tech "R_Short_wave_radar"
   Type "ShortWave"
   Range 250
@@ -100,25 +99,8 @@ Modifier options:
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
   AffectedBy Unit "Underground" Range 0.5
   AffectedBy InRange "EW" Range 0.4
-  
-[RADAR] "NAVAL SW"
-  Tech "NAVAL_SW"
-  Type "ShortWave"
-  Range 350
-  Sector 180
-  Precision 0
-  ImprovedBy "SW_Mk2" Set Range 400
-  ImprovedBy "SW_Mk2" Set MaxHeight 250
-  ImprovedBy "SW_Mk3" Set Range 500
-  ImprovedBy "SW_Mk3" Set MaxHeight 400
-  ImprovedBy "SW_Mk4" Set Range 550
-  ImprovedBy "SW_Mk4" Set MaxHeight 500
-  AffectedBy Unit "5GEN" Range 0.4
-  AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.6
-  AffectedBy Unit "Underground" Range 0.5
-  AffectedBy InRange "EW" Range 0.4
 
-[RADAR] "Fixed Short Wave"
+[RADAR] "Fixed Short Wave" //surface ships,Fixed lw radar,
   Tech "R_Short_wave_radar"
   Type "ShortWave"
   Range 300
@@ -139,7 +121,7 @@ Modifier options:
   
 AffectedBy Explosion "EMP" Range 0.0001
 
-[RADAR] "AWACS Short Wave"
+[RADAR] "AWACS Short Wave" //awacs
   Tech "R_Short_wave_radar"
   Type "ShortWave"
   Range 800
@@ -153,10 +135,10 @@ AffectedBy Explosion "EMP" Range 0.0001
   AffectedBy Unit "Underground" Range 0.5
   GlobalShowType OVERHORIZONT_RANGES
 
-[RADAR] "Naval AWACS Short Wave"
-  Tech "R_Short_wave_radar"
+[RADAR] "Naval AWACS Short Wave" //naval awacs
+  Tech "R_AWACS_CVN_SW_RADAR"
   Type "ShortWave"
-  Range 800
+  Range 700
   Sector 360
   MaxHeight 1500 // the default value is 100
   Precision 0
@@ -167,7 +149,7 @@ AffectedBy Explosion "EMP" Range 0.0001
   AffectedBy Unit "Underground" Range 0.5
   GlobalShowType OVERHORIZONT_RANGES
 
-[RADAR] "STD Long Wave"
+[RADAR] "STD Long Wave" //surface ships,airports,CDMS,
   Tech "R_Long_wave_radar"
   Type "LongWave"
   Range 700
@@ -187,7 +169,7 @@ AffectedBy Explosion "EMP" Range 0.0001
 AffectedBy Explosion "EMP" Range 0.0001
   
 
-[RADAR] "Fixed Long Wave"
+[RADAR] "Fixed Long Wave" // fixed radar
   Tech "R_Long_wave_radar"
   Type "LongWave"
   Range 700
@@ -223,8 +205,8 @@ AffectedBy Explosion "EMP" Range 0.0001
   AffectedBy Unit "Stealth_aircrafts_bombers" Range 0.7
   AffectedBy Unit "Underground" Range 0.5
 
-[RADAR] "Naval AWACS Long Wave"
-  Tech "R_Long_wave_radar"
+[RADAR] "Naval AWACS Long Wave" //CARRIER AWACS
+  Tech "R_AWACS_CVN_LW_RADAR"
   Type "LongWave"
   Range 1300
   Sector 360
@@ -255,7 +237,7 @@ AffectedBy Explosion "EMP" Range 0.0001
 
 //  AffectedBy InRange "EW" Range 0.1
 
-[RADAR] "AWACS Sonar"
+[RADAR] "AWACS Sonar" //CARRIER BASED ASW
   Tech "R_Sonar"
   Type "Sonar"
   Range 200
@@ -272,6 +254,24 @@ AffectedBy Explosion "EMP" Range 0.0001
   AffectedBy Unit "ENGINE_SSBN2" Range 0.857 // 300
   AffectedBy Unit "ENGINE_SSN3" Range 0.8 // 200
   AffectedBy Unit "ENGINE_SSBN3" Range 0.84 // 250
+  
+[RADAR] "AWACS Sonar Large" //LAND BASED ASW
+  Tech "R_SONAR_L"
+  Type "Sonar"
+  Range 300
+  Sector 360
+  Precision 0.75
+  
+  ImprovedBy "SONAR1" Set Range 450
+  ImprovedBy "SONAR2" Set Range 550
+  ImprovedBy "SONAR3" Set Range 800
+  
+  AffectedBy Unit "ENGINE_SSN1" Range 0.75 // 300
+  AffectedBy Unit "ENGINE_SSBN1" Range 0.875 // 350
+  AffectedBy Unit "ENGINE_SSN2" Range 0.84 // 252
+  AffectedBy Unit "ENGINE_SSBN2" Range 0.857 // 300
+  AffectedBy Unit "ENGINE_SSN3" Range 0.8 // 200
+  AffectedBy Unit "ENGINE_SSBN3" Range 0.84 // 250
 
 [RADAR] "Over_Horizon"
   Tech "R_Over_horizon_radar"
@@ -281,27 +281,12 @@ AffectedBy Explosion "EMP" Range 0.0001
   MaxHeight 12000 // the default value is 100
   ImprovedBy "Over_horizon_radar_Mk2" Set Range 8000
 
-[RADAR] "Naval_Over_Horizon"
-  Tech "R_Over_horizon_radar"
-  Type "OverHorizon"
-  Range 1200
-  Sector 360
-  MaxHeight 1500 // the default value is 100
-  ImprovedBy "Over_horizon_radar_Mk2" Set Range 1750
-
 [RADAR] "Small_Over_Horizon"
   Tech "R_Space_radar_OTH"
   Type "OverHorizon"
   Range 1000
   Sector 360
   MaxHeight 3000 // the default value is 100
-
-[RADAR] "Naval_Small_Over_Horizon"
-  Tech "R_Over_horizon_radar"
-  Type "OverHorizon"
-  Range 1000
-  Sector 360
-  MaxHeight 1500 // the default value is 100
 
 [RADAR] "Space_Radar"
   Tech "R_Space_radar"

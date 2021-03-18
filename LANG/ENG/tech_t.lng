@@ -430,10 +430,19 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "M_ICBM_EMP_NAME" LANG "EMP ICBM"
 "M_ICBM_EMP_DESC" LANG "This ICBM is programmed to detonate in the upper atmosphere creating a Nuclear electromagnetic pulse overloading electrical systems while minimizing physical damage."
 
-"M_ICBM_MIRV_EMP_NAME" LANG "EMP MIRV ICBM"
+"M_ICBM_MIRV_EMP_NAME" LANG "ICBM MIRV EMP"
 "M_ICBM_MIRV_EMP_DESC" LANG "This ICBM contains 3 1 Mt nuclear warheads as well as a warhead detonating in the upper atomoshpere creating a Nuclear electromagnetic pulse"
 
 "M_EMP_WARHEAD_NAME" LANG "EMP warhead"
 "M_EMP_WARHEAD_DESC" LANG "A warhead programmed to detonate in the upper atmosphere creating a Nuclear electromagnetic pulse."
+
+"R_SONAR_L_NAME" LANG "MPA Sonar"
+"R_SONAR_L_DESC" LANG "MPA Sonar"
+
+"R_AWACS_CVN_LW_RADAR_NAME" LANG "Carrier AWACS LW"
+"R_AWACS_CVN_LW_RADAR_DESC" LANG "Carrier AWACS LW"
+
+"R_AWACS_CVN_SW_RADAR_NAME" LANG "Carrier AWACS SW"
+"R_AWACS_CVN_SW_RADAR_DESC" LANG "Carrier AWACS SW"
 
 END
