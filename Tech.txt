@@ -279,7 +279,7 @@
   Points 30
   LeadsTo "Mega-warheads"
   LeadsTo "M_10M_thermonuclear_bomb"
-  LeadsTo "Tactical_nukes"
+  LeadsTo "TACTICAL_NUKES"
   LeadsTo "ABM0_REQ"
   
 [TECHNOLOGY] "ABM0_REQ"
@@ -299,7 +299,6 @@
   Description "Mega-warheads_DESC"
   Image "Images/Science/Mega-warheads.png"
   Points 45
-//  LeadsTo "Tactical_nukes"
   LeadsTo "Heavy_Missiles"
   LeadsTo "M_50M_thermonuclear_bomb"
   LeadsTo "ABM02_REQ"
@@ -309,12 +308,11 @@
   Description "ABM02_REQ_DESC"
   
 
-[TECHNOLOGY] "Tactical_nukes"
-  Name "Tactical_nukes_NAME"
-  Description "Tactical_nukes_DESC"
-  Image "Images/Science/Tactical_nukes.png"
-  Points 15
-  LeadsTo "M_Aircraft-launched_MRBM"
+[TECHNOLOGY] "TACTICAL_NUKES"
+  Name "TACTICAL_NUKES_NAME"
+  Description "TACTICAL_NUKES_DESC"
+  Image "Images/Science/TACTICAL_NUKES.png"
+  Points 10
   LeadsTo "CRUISE3_REQ3"
   LeadsTo "MIRV1_REQ"
   
@@ -458,10 +456,6 @@
   Name "Aircraft-launched_MRBM_NAME"
   Description "Aircraft-launched_MRBM_DESC"
   Image "Images/Science/Aircraft-launched_MRBM.png"
-
-[TECHNOLOGY] "M_Aircraft-launched_MRBM"
-  Name "M_Aircraft-launched_MRBM_NAME"
-  Description "M_Aircraft-launched_MRBM_DESC"
   
 [TECHNOLOGY] "M_SHIP_SHIP"
   Name "M_SHIP_SHIP_NAME"

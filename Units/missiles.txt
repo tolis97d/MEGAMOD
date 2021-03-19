@@ -264,7 +264,7 @@ Modifier options:
   MaxNumberToOrder 25
   AutoSlowDown
 
-  ImprovedBy "Tactical_nukes" Movie Image "Units/Images/Missiles/BOMB_NUKE2.png"
+  ImprovedBy "TACTICAL_NUKES" Movie Image "Units/Images/Missiles/BOMB_NUKE2.png"
 
 [MISSILE] "1M nuke"
   Tech "M_1M_nuclear_bomb"

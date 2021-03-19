@@ -1567,15 +1567,16 @@ Config "Anti Submarine Warfare"
   Sound 141 Volume 0.3
   Type Ground
   Speed 15 // in km per h
-  Power 5000
+  Power 3000
   Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
   Weapon "ARMY_WEP" 20000 Launch 2 Time 180 AutoEngage
-  ProductionCost 70
+  ProductionCost 50
   Radar "STD Vision"
   Radar "STD Short Wave"
   Modifier "ARMY"
   HangarSpaceRequired 40
   AutoRepair 0.1
+  OccupationRadius 400
   
   ImprovedBy "ARMY60" Set Speed 20
   ImprovedBy "ARMY70" Set Speed 22
@@ -1596,12 +1597,13 @@ Config "Anti Submarine Warfare"
   Power 1500
   Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
   Weapon "P_ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
-  ProductionCost 70
+  ProductionCost 30
   Radar "STD Vision"
   Radar "STD Short Wave"
   Modifier "ARMY"
   HangarSpaceRequired 20
   AutoRepair 0.1
+  OccupationRadius 200
   
   ImprovedBy "ARMY60" Set Speed 23
   ImprovedBy "ARMY70" Set Speed 25
@@ -1622,12 +1624,13 @@ Config "Anti Submarine Warfare"
   Power 1500
   Weapon "SAM" 20000 Launch 1 Time 80 AutoEngage
   Weapon "M_ARMY_WEP" 20000 Launch 1 Time 180 AutoEngage
-  ProductionCost 70
+  ProductionCost 30
   Radar "STD Vision"
   Radar "STD Short Wave"
   Modifier "ARMY"
   HangarSpaceRequired 20
   AutoRepair 0.1
+  OccupationRadius 200
   
   ImprovedBy "ARMY60" Set Speed 23
   ImprovedBy "ARMY70" Set Speed 25

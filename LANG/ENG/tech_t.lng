@@ -445,4 +445,7 @@ USE PREVIOUS "LANG/ENG/tech_t.lng"
 "R_AWACS_CVN_SW_RADAR_NAME" LANG "Carrier AWACS SW"
 "R_AWACS_CVN_SW_RADAR_DESC" LANG "Carrier AWACS SW"
 
+"TACTICAL_NUKES_NAME" LANG "Warhead Miniaturization"
+"TACTICAL_NUKES_DESC" LANG "Warhead Miniaturization is the technological process in which nuclear warheads are miniaturized in order to fit in smaller delivery systems while retaining considerable destructive power."
+
 END
