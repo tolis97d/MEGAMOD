@@ -365,7 +365,7 @@ Modifier options:
 
   AffectedBy InRange "EW" Precision 5.0
   
-  ImprovedBy Inrange "AWACS_EFFECT" Range 4
+  ImprovedBy Inrange "AWACS_EFFECT" Range 1.5
 
 [MISSILE] "ASM"
   Tech "ASM1_M"
@@ -1134,6 +1134,35 @@ Trajectory
   
 
   InRangeStringID 2581
+  
+[MISSILE] "NORAD_EFFECT"
+  Tech "NORAD_EFFECT"
+  RequiresPreciseTargeting No
+  Icon "Units/Images/Missiles/SILO_COMMAND.png"
+  Sound 119
+  DrawWave
+  Explosion "std_torpedo"
+  Range 6000
+  Speed 1
+  Ballistic
+  Switchable ON
+  
+  InRangeStringID 2582
+  
+[MISSILE] "AWACS_EFFECT"
+  Tech "AWACS_EFFECT"
+  RequiresPreciseTargeting No
+  Icon "Units/Images/Missiles/AWACS.png"
+  Sound 119
+  DrawWave
+  Explosion "std_torpedo"
+  Range 1500
+  Speed 1
+  Ballistic
+  Switchable ON
+  
+  ImprovedBy "LW_Mk2" Set Range 1750
+  ImprovedBy "LW_Mk3" Set Range 2000
 
 [MISSILE] "CIWS"
   Tech "M_CIWS"
@@ -1253,37 +1282,6 @@ Trajectory
   Precision 0.4
   Switchable ON
   MaxElevation 50
-
-[MISSILE] "NORAD_EFFECT"
-  Tech "NORAD_EFFECT"
-  Type "NORAD_EFFECT"
-  RequiresPreciseTargeting No
-  Icon "Units/Images/Missiles/SILO_COMMAND.png"
-  Sound 119
-  DrawWave
-  Explosion "std_torpedo"
-  Range 6000
-  Speed 1
-  Ballistic
-  Switchable ON
-  
-  InRangeStringID 2582
-  
-[MISSILE] "AWACS_EFFECT"
-  Tech "AWACS_EFFECT"
-  Type "NORAD_EFFECT"
-  RequiresPreciseTargeting No
-  Icon "Units/Images/Missiles/AWACS.png"
-  Sound 119
-  DrawWave
-  Explosion "std_torpedo"
-  Range 1500
-  Speed 1
-  Ballistic
-  Switchable ON
-  
-  ImprovedBy "LW_Mk2" Set Range 1750
-  ImprovedBy "LW_Mk3" Set Range 2000
 
 [MISSILE] "ARMY_WEP"
   Tech "ARMY_WEP"

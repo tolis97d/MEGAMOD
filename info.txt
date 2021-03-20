@@ -1,4 +1,4 @@
-ICBM MOD "DAWN AT MIDNIGHT:A total conversion Mod DEEEEV"
+ICBM MOD "DAWN AT MIDNIGHT:A total conversion Mod DEV-GIT"
 
 Version "1.2.1"
 

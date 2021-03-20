@@ -311,7 +311,7 @@
 [TECHNOLOGY] "TACTICAL_NUKES"
   Name "TACTICAL_NUKES_NAME"
   Description "TACTICAL_NUKES_DESC"
-  Image "Images/Science/TACTICAL_NUKES.png"
+  Image "Images/Science/WAR_MIN.png"
   Points 10
   LeadsTo "CRUISE3_REQ3"
   LeadsTo "MIRV1_REQ"
